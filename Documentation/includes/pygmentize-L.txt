@@ -1,3 +1,7 @@
+2021-07-14
+
+dockrun_t3rd bashcmd "pygmentize -L lexers"
+
 Pygments version 2.5.2, (c) 2006-2019 by Georg Brandl.
 
 Lexers:
@@ -847,7 +851,7 @@ Lexers:
 * twig:
     Twig
 * typoscript:
-    TypoScript (filenames *.typoscript)
+    TypoScript (filenames *.ts, *.txt)
 * typoscriptcssdata:
     TypoScriptCssData
 * typoscripthtmldata:
@@ -928,130 +932,3 @@ Lexers:
     Zephir (filenames *.zep)
 * zig:
     Zig (filenames *.zig)
-
-Formatters:
-~~~~~~~~~~~
-* bbcode, bb:
-    Format tokens with BBcodes. These formatting codes are used by many bulletin boards, so you can highlight your sourcecode with pygments before posting it there.
-* bmp, bitmap:
-    Create a bitmap image from source code. This uses the Python Imaging Library to generate a pixmap from the source code. (filenames *.bmp)
-* gif:
-    Create a GIF image from source code. This uses the Python Imaging Library to generate a pixmap from the source code. (filenames *.gif)
-* html:
-    Format tokens as HTML 4 ``<span>`` tags within a ``<pre>`` tag, wrapped in a ``<div>`` tag. The ``<div>``'s CSS class can be set by the `cssclass` option. (filenames *.html, *.htm)
-* img, IMG, png:
-    Create a PNG image from source code. This uses the Python Imaging Library to generate a pixmap from the source code. (filenames *.png)
-* irc, IRC:
-    Format tokens with IRC color sequences
-* jpg, jpeg:
-    Create a JPEG image from source code. This uses the Python Imaging Library to generate a pixmap from the source code. (filenames *.jpg)
-* latex, tex:
-    Format tokens as LaTeX code. This needs the `fancyvrb` and `color` standard packages. (filenames *.tex)
-* raw, tokens:
-    Format tokens as a raw representation for storing token streams. (filenames *.raw)
-* rtf:
-    Format tokens as RTF markup. This formatter automatically outputs full RTF documents with color information and other useful stuff. Perfect for Copy and Paste into Microsoft(R) Word(R) documents. (filenames *.rtf)
-* svg:
-    Format tokens as an SVG graphics file.  This formatter is still experimental. Each line of code is a ``<text>`` element with explicit ``x`` and ``y`` coordinates containing ``<tspan>`` elements with the individual token styles. (filenames *.svg)
-* terminal, console:
-    Format tokens with ANSI color sequences, for output in a text console. Color sequences are terminated at newlines, so that paging the output works correctly.
-* terminal16m, console16m, 16m:
-    Format tokens with ANSI color sequences, for output in a true-color terminal or console.  Like in `TerminalFormatter` color sequences are terminated at newlines, so that paging the output works correctly.
-* terminal256, console256, 256:
-    Format tokens with ANSI color sequences, for output in a 256-color terminal or console.  Like in `TerminalFormatter` color sequences are terminated at newlines, so that paging the output works correctly.
-* testcase:
-    Format tokens as appropriate for a new testcase.
-* text, null:
-    Output the text unchanged without any formatting. (filenames *.txt)
-
-Filters:
-~~~~~~~~
-* raiseonerror:
-    Raise an exception when the lexer generates an error token.
-* whitespace:
-    Convert tabs, newlines and/or spaces to visible characters.
-* tokenmerge:
-    Merges consecutive tokens with the same token type in the output stream of a lexer.
-* highlight:
-    Highlight a normal Name (and Name.*) token with a different token type.
-* gobble:
-    Gobbles source code lines (eats initial characters).
-* codetagify:
-    Highlight special code tags in comments and docstrings.
-* keywordcase:
-    Convert keywords to lowercase or uppercase or capitalize them, which means first letter uppercase, rest lowercase.
-
-Styles:
-~~~~~~~
-* solarized-dark:
-    The solarized style, dark.
-* monokai:
-    This style mimics the Monokai color scheme.
-* manni:
-    A colorful style, inspired by the terminal highlighting style.
-* colorful:
-    A colorful style, inspired by CodeRay.
-* igor:
-    Pygments version of the official colors for Igor Pro procedures.
-* lovelace:
-    The style used in Lovelace interactive learning environment. Tries to avoid the "angry fruit salad" effect with desaturated and dim colours.
-* xcode:
-    Style similar to the Xcode default colouring theme.
-* murphy:
-    Murphy's style from CodeRay.
-* paraiso-dark:
-
-* vim:
-    Styles somewhat like vim 7.0
-* autumn:
-    A colorful style, inspired by the terminal highlighting style.
-* stata-light:
-    Light mode style inspired by Stata's do-file editor. This is not meant to be a complete style, just for use with Stata.
-* abap:
-
-* bw:
-
-* inkpot:
-
-* sas:
-    Style inspired by SAS' enhanced program editor. Note This is not meant to be a complete style. It's merely meant to mimic SAS' program editor syntax highlighting.
-* stata-dark:
-
-* rrt:
-    Minimalistic "rrt" theme, based on Zap and Emacs defaults.
-* pastie:
-    Style similar to the pastie default style.
-* rainbow_dash:
-    A bright and colorful syntax highlighting theme.
-* native:
-    Pygments version of the "native" vim theme.
-* solarized-light:
-    The solarized style, light.
-* paraiso-light:
-
-* perldoc:
-    Style similar to the style used in the perldoc code blocks.
-* borland:
-    Style similar to the style used in the borland IDEs.
-* trac:
-    Port of the default trac highlighter design.
-* arduino:
-    The Arduino® language style. This style is designed to highlight the Arduino source code, so exepect the best results with it.
-* default:
-    The default style (inspired by Emacs 22).
-* tango:
-    The Crunchy default Style inspired from the color palette from the Tango Icon Theme Guidelines.
-* fruity:
-    Pygments version of the "native" vim theme.
-* vs:
-
-* emacs:
-    The default style (inspired by Emacs 22).
-* algol_nu:
-
-* stata:
-    Light mode style inspired by Stata's do-file editor. This is not meant to be a complete style, just for use with Stata.
-* algol:
-
-* friendly:
-    A modern style based on the VIM pyte theme.

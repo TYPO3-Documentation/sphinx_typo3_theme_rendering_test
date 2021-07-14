@@ -202,20 +202,6 @@ Code with Sidebar
     With a sidebar on the right.
 
 
-.. literalinclude:: ../test_py_module/test.py
-    :language: python
-    :linenos:
-    :lines: 1-40
-
-Code without Sidebar
-====================
-
-.. literalinclude:: ../test_py_module/test.py
-    :language: python
-    :linenos:
-    :lines: 1-40
-
-
 
 Inline code and references
 ==========================

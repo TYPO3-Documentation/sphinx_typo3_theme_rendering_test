@@ -810,7 +810,7 @@ Xml
 pymentize -L
 ============
 
-.. highlight:: bash
+.. highlight:: rst
 
 .. literalinclude:: ../includes/pygmentize-L.txt
 

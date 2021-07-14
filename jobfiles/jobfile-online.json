@@ -1,0 +1,40 @@
+{
+  "Overrides_cfg": {
+    "general": {
+      "html_theme": "sphinx_typo3_theme",
+      "exclude_patterns_from_JOBFILE_JSON": [
+        "_make",
+        "library/xml.rst",
+        "library/xml",
+        "library/xml*",
+        "**/.svn"
+      ]
+    },
+    "html_theme_options": {
+      "docstypo3org": "yes"
+    },
+    "extensions": [
+    ]
+  },
+  "tctconfig": {
+    "activateLocalSphinxDebugging": 0,
+    "allow_unsafe": 1,
+    "disable_include_files_check": 1,
+    "force_rebuild_needed": 1,
+    "make_html": 1,
+    "make_latex": 0,
+    "make_package": 0,
+    "make_pdf": 0,
+    "make_singlehtml": 1,
+    "makedirDISABLED": "./Makedir",
+    "rebuild_needed": 1,
+    "replace_static_in_html": 0,
+    "resultdirDISABLED": "./Documentation-GENERATED-temp",
+    "reveal_exitcodes": 1,
+    "reveal_milestones": 1,
+    "sphinxVerboseLevel": 3,
+    "talk": 1,
+    "themesdirDISABLED": "/home/marble/.dockrun/dockrun_t3rd/THEMES",
+    "try_pdf_build_from_published_latex": 1
+  }
+}
