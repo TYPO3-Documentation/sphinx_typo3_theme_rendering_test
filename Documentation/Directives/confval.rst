@@ -139,3 +139,26 @@ Adapted from the TypoScript Reference Manual:
 
       HELLO WORLD!
 
+
+.. _Demo 3 - addRecord:
+
+Demo 3 - addRecord
+==================
+
+.. confval:: addRecord
+
+   :type: array
+   :Scope: fieldControl
+   :Types: :ref:`group <Demo 3 - addRecord>`
+
+   Control button to directly add a related record. Leaves the current view and opens a new form to add
+   a new record. On 'Save and close', the record is directly selected as referenced element
+   in the `type='group'` field. If multiple tables are :ref:`allowed <Demo 3 - addRecord>`, the
+   first table from the allowed list is selected, if no specific `table` option is given.
+
+   .. note::
+
+      The add record control is disabled by default, enable it if needed. It
+      is shown below the `edit popup` control if not changed by `below` or
+      `after` settings.
+
