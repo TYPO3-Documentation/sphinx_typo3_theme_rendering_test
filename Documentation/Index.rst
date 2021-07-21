@@ -6,9 +6,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-==========================
-t3SphinxThemeRtd Demo Docs
-==========================
+=================================
+Sphinx TYPO3 Theme Rendering Test
+=================================
 
 This repository demonstrates how reST constructs look like when rendered with
 the `t3SphinxThemeRtd <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd>`__ theme.
