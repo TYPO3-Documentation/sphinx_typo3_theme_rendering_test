@@ -14,7 +14,6 @@
       "docstypo3org": "yes"
     },
     "extensions": [
-      "sphinx_copybutton"
     ]
   },
   "tctconfig": {
@@ -29,7 +28,7 @@
     "make_singlehtml": 1,
     "makedirDISABLED": "./Makedir",
     "rebuild_needed": 1,
-    "replace_static_in_html": 0,
+    "replace_static_in_html": 1,
     "resultdirDISABLED": "./Documentation-GENERATED-temp",
     "reveal_exitcodes": 1,
     "reveal_milestones": 1,

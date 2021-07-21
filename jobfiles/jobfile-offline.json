@@ -8,20 +8,18 @@
         "library/xml",
         "library/xml*",
         "**/.svn"
-      ],
-      "panels_add_bootstrap_css": false
+      ]
     },
     "html_theme_options": {
       "docstypo3org": ""
     },
     "extensions": [
-      "sphinx_copybutton"
     ]
   },
   "tctconfig": {
     "activateLocalSphinxDebugging": 0,
-    "allow_unsafe": 1,
-    "disable_include_files_check": 1,
+    "allow_unsafe": 0,
+    "disable_include_files_check": 0,
     "force_rebuild_needed": 1,
     "make_html": 1,
     "make_latex": 0,
