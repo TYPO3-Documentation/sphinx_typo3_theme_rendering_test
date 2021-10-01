@@ -13,14 +13,14 @@ Sphinx TYPO3 Theme Rendering Test
 This repository demonstrates how reST constructs look like when rendered with
 the `t3SphinxThemeRtd <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd>`__ theme.
 
-.. important::
-
-   Due to some included extensions in Settings.cfg, this will not render with
-   older versions of the Docker image.
 
 See `_buildinfo <_buildinfo>`_
 
-:Rendered: |today|
+:Rendered:  |today|
+:Author:    TYPO3 Documentation Team
+:What else:
+   Something really long and special.
+
 
 .. rst-class:: compact-list
 .. toctree::
