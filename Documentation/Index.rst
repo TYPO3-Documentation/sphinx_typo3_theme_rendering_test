@@ -1,22 +1,16 @@
 .. include:: /Includes.rst.txt
 
-
-.. Sphinx RTD theme demo documentation master file, created by
-   sphinx-quickstart on Sun Nov  3 11:56:36 2013.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 =================================
 Sphinx TYPO3 Theme Rendering Test
 =================================
 
 This repository demonstrates how reST constructs look like when rendered with
-the `t3SphinxThemeRtd <https://github.com/TYPO3-Documentation/t3SphinxThemeRtd>`__ theme.
+the `sphinx_typo3_theme <https://github.com/TYPO3-Documentation/sphinx_typo3_theme`__ theme.
 
 
 See `_buildinfo <_buildinfo>`_
 
-:Rendered:  |today|
+:Rendered:  |today| (machine time)
 :Author:    TYPO3 Documentation Team
 :What else:
    Something really long and special.
