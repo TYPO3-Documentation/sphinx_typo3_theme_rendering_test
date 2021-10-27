@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Sphinx TYPO3 Theme Rendering Test" name="docsearch:name"/>
+<meta content="" name="docsearch:package_type"/>
+<meta content="1.0.0" name="docsearch:release"/>
+<meta content="1.0" name="docsearch:version"/>
+<meta content="2021-10-27T20:21:13+00:00" name="docsearch:modified"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
+<meta content="2021-10-27T20:21:13+00:00" name="dc.modified"/>
+<meta content="2021-10-27T20:21:13+00:00" property="article:modified_time"/>
+<title>Lexers of Pygments 2.5.2 — Sphinx TYPO3 Theme Rendering Test 1.0.0 documentation</title>
+<link href="_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<!-- linktags -->
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="Sphinx TYPO3 Theme Rendering Test 1.0.0 documentation"/>
+<link href="genindex.html" rel="prev" title="Index"/>
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+<script src="_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<!--block pageheader-->
+<div class="row">
+<div class="col-sm-6 col-lg-7">
+<div class="logo">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="_static/img/typo3-logo.svg" title="TYPO3 Documentation" width="484"/>
+</div>
+</div><!--/.col-x-->
+<div class="col-sm-6 col-lg-5">
+<div role="search">
+<!--form global search-->
+</div>
+</div><!--/.col-x-->
+</div><!--/.row-->
+<!--/block pageheader-->
+</div><!--/.page-header-inner-->
+</div><!--/.page-header-->
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="Index.html">Sphinx TYPO3 Theme Rendering Test</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<!-- searchbox.html -->
+<div class="toc-search" id="searchbox" role="search">
+<form action="search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+<!-- /searchbox.html -->
+<div aria-label="main navigation" class="toc" role="navigation">
+<!-- menu -->
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Admonitions-and-buttons/Index.html">Admonitions and buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Blockquotes/Index.html">Block quotes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Codeblocks/Index.html">Codeblocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Directives/Index.html">Directives</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Directives/confval.html">confval</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/glossary.html">glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/raw.html">raw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinx-tabs.html">sphinx-tabs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinx_ext_graphviz.html">sphinx.ext.graphviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinxcontrib-plantuml.html">Plantuml basic examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinxcontrib-slide.html">sphinxcontrib-slide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinxcontrib-t3fieldlisttable.html">sphinxcontrib-t3fieldlisttable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinxcontrib-t3targets.html">sphinxcontrib-t3targets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/sphinxcontrib-youtube.html">sphinxcontrib-youtube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Directives/versionadded.html">versionadded &amp; friends</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="FieldLists/Index.html">Field lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Fonts/Index.html">Fonts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Highlighting/Index.html">Highlighting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ImagesAndFigures/Index.html">Images and figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Inline-code-and-textroles/Index.html">Inline code and text roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lineblocks/Index.html">Line blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Lists/Index.html">Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ListsAsButtons/Index.html">List Items as Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Nested-pages/Index.html">Nested pages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Nested-pages/1/index.html">Page title</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Nested-pages/1/1/index.html">Page title</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Nested-pages/1/1/1/index.html">Page title</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Nested-pages/1/1/1/1/index.html">Page title</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="Nested-pages/1/1/1/1/1/index.html">Page title</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="PhpDomain/Index.html">Phpdomain</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Sitemap/Index.html">Sitemap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SpecialCharacters/Index.html">Special characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="StyledNumberedLists/Index.html">Styled numbered lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tables/Index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ThisAndThat/Index.html">This and that</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Typesetting/Index.html">Typesetting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Typesetting/Index.html#typesetting-h1">Typesetting H1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Typesetting/Index.html#id1">Typesetting H1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="genindex.html">Index</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Lexers of Pygments 2.5.2</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+<ul>
+<li><a class="reference internal" href="#">Lexers of Pygments 2.5.2</a><ul>
+<li><a class="reference internal" href="#lexers">Lexers:</a></li>
+</ul>
+</li>
+</ul>
+<!-- /menu -->
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="genindex.html" tabindex="-1"></a>
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="Index.html">Start</a></li>
+<li aria-current="page" class="breadcrumb-item active">Lexers of Pygments 2.5.2</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-light" href="_sources/pygmentize-L.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+<a class="btn btn-sm btn-light" href="https://docs.typo3.org/m/typo3/docs-how-to-document/master/en-us/WritingDocsOfficial/GithubMethod.html" id="btnHowToEdit" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fas fa-info-circle"></span></span>
+<span class="btn-text">How to edit</span>
+</a>
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/edit/master/Documentation/pygmentize-L.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+<span class="btn-icon"><span class="fab fa-github"></span></span>
+<span class="btn-text">Edit on GitHub</span>
+</a>
+</div>
+</div>
+<!-- /breadcrumbs.html -->
+<!-- versionhints.html -->
+<div class="version-hints">
+<div class="version-hints-inner" data-run-ajax="no">
+<!--filled from _static/ajax-version-hints.html-->
+</div><!--/.version-hints-inner-->
+</div><!--/.version-hints-->
+<!-- /versionhints.html -->
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<!-- body -->
+<div class="section" id="lexers-of-pygments-2-5-2">
+<h1>Lexers of Pygments 2.5.2<a class="headerlink" href="#lexers-of-pygments-2-5-2" title="Permalink to this headline">¶</a></h1>
+<p>2021-07-14</p>
+<p><code class="code docutils literal notranslate"><span class="pre">dockrun_t3rd</span> <span class="pre">bashcmd</span> <span class="pre">"pygmentize</span> <span class="pre">-L</span> <span class="pre">lexers"</span></code></p>
+<p>Pygments version 2.5.2, (c) 2006-2019 by Georg Brandl.</p>
+<div class="section" id="lexers">
+<h2>Lexers:<a class="headerlink" href="#lexers" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="m">*</span> abap:
+    ABAP (filenames <span class="ge">*.abap, *</span>.ABAP)
+<span class="m">*</span> abnf:
+    ABNF (filenames *.abnf)
+<span class="m">*</span> ada, ada95, ada2005:
+    Ada (filenames <span class="ge">*.adb, *</span>.ads, *.ada)
+<span class="m">*</span> adl:
+    ADL (filenames <span class="ge">*.adl, *</span>.adls, <span class="ge">*.adlf, *</span>.adlx)
+<span class="m">*</span> agda:
+    Agda (filenames *.agda)
+<span class="m">*</span> aheui:
+    Aheui (filenames *.aheui)
+<span class="m">*</span> ahk, autohotkey:
+    autohotkey (filenames <span class="ge">*.ahk, *</span>.ahkl)
+<span class="m">*</span> alloy:
+    Alloy (filenames *.als)
+<span class="m">*</span> ampl:
+    Ampl (filenames *.run)
+<span class="m">*</span> antlr-as, antlr-actionscript:
+    ANTLR With ActionScript Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-cpp:
+    ANTLR With CPP Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-csharp, antlr-c#:
+    ANTLR With C# Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-java:
+    ANTLR With Java Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-objc:
+    ANTLR With ObjectiveC Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-perl:
+    ANTLR With Perl Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-python:
+    ANTLR With Python Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr-ruby, antlr-rb:
+    ANTLR With Ruby Target (filenames <span class="ge">*.G, *</span>.g)
+<span class="m">*</span> antlr:
+    ANTLR
+<span class="m">*</span> apacheconf, aconf, apache:
+    ApacheConf (filenames .htaccess, apache.conf, apache2.conf)
+<span class="m">*</span> apl:
+    APL (filenames *.apl)
+<span class="m">*</span> applescript:
+    AppleScript (filenames *.applescript)
+<span class="m">*</span> arduino:
+    Arduino (filenames *.ino)
+<span class="m">*</span> as, actionscript:
+    ActionScript (filenames *.as)
+<span class="m">*</span> as3, actionscript3:
+    ActionScript 3 (filenames *.as)
+<span class="m">*</span> aspectj:
+    AspectJ (filenames *.aj)
+<span class="m">*</span> aspx-cs:
+    aspx-cs (filenames <span class="ge">*.aspx, *</span>.asax, <span class="ge">*.ascx, *</span>.ashx, <span class="ge">*.asmx, *</span>.axd)
+<span class="m">*</span> aspx-vb:
+    aspx-vb (filenames <span class="ge">*.aspx, *</span>.asax, <span class="ge">*.ascx, *</span>.ashx, <span class="ge">*.asmx, *</span>.axd)
+<span class="m">*</span> asy, asymptote:
+    Asymptote (filenames *.asy)
+<span class="m">*</span> at, ambienttalk, ambienttalk/2:
+    AmbientTalk (filenames *.at)
+<span class="m">*</span> augeas:
+    Augeas (filenames *.aug)
+<span class="m">*</span> autoit:
+    AutoIt (filenames *.au3)
+<span class="m">*</span> awk, gawk, mawk, nawk:
+    Awk (filenames *.awk)
+<span class="m">*</span> basemake:
+    Base Makefile
+<span class="m">*</span> bash, sh, ksh, zsh, shell:
+    Bash (filenames <span class="ge">*.sh, *</span>.ksh, <span class="ge">*.bash, *</span>.ebuild, <span class="ge">*.eclass, *</span>.exheres-0, <span class="ge">*.exlib, *</span>.zsh, .bashrc, bashrc, .bash_<span class="ge">*, bash_*</span>, zshrc, .zshrc, PKGBUILD)
+<span class="m">*</span> bat, batch, dosbatch, winbatch:
+    Batchfile (filenames <span class="ge">*.bat, *</span>.cmd)
+<span class="m">*</span> bbcbasic:
+    BBC Basic (filenames *.bbc)
+<span class="m">*</span> bbcode:
+    BBCode
+<span class="m">*</span> bc:
+    BC (filenames *.bc)
+<span class="m">*</span> befunge:
+    Befunge (filenames *.befunge)
+<span class="m">*</span> bib, bibtex:
+    BibTeX (filenames *.bib)
+<span class="m">*</span> blitzbasic, b3d, bplus:
+    BlitzBasic (filenames <span class="ge">*.bb, *</span>.decls)
+<span class="m">*</span> blitzmax, bmax:
+    BlitzMax (filenames *.bmx)
+<span class="m">*</span> bnf:
+    BNF (filenames *.bnf)
+<span class="m">*</span> boa:
+    Boa (filenames *.boa)
+<span class="m">*</span> boo:
+    Boo (filenames *.boo)
+<span class="m">*</span> boogie:
+    Boogie (filenames *.bpl)
+<span class="m">*</span> brainfuck, bf:
+    Brainfuck (filenames <span class="ge">*.bf, *</span>.b)
+<span class="m">*</span> bst, bst-pybtex:
+    BST (filenames *.bst)
+<span class="m">*</span> bugs, winbugs, openbugs:
+    BUGS (filenames *.bug)
+<span class="m">*</span> c-objdump:
+    c-objdump (filenames *.c-objdump)
+<span class="m">*</span> c:
+    C (filenames <span class="ge">*.c, *</span>.h, *.idc)
+<span class="m">*</span> ca65:
+    ca65 assembler (filenames *.s)
+<span class="m">*</span> cadl:
+    cADL (filenames *.cadl)
+<span class="m">*</span> camkes, idl4:
+    CAmkES (filenames <span class="ge">*.camkes, *</span>.idl4)
+<span class="m">*</span> capdl:
+    CapDL (filenames *.cdl)
+<span class="m">*</span> capnp:
+    Cap'n Proto (filenames *.capnp)
+<span class="m">*</span> cbmbas:
+    CBM BASIC V2 (filenames *.bas)
+<span class="m">*</span> ceylon:
+    Ceylon (filenames *.ceylon)
+<span class="m">*</span> cfc:
+    Coldfusion CFC (filenames *.cfc)
+<span class="m">*</span> cfengine3, cf3:
+    CFEngine3 (filenames *.cf)
+<span class="m">*</span> cfm:
+    Coldfusion HTML (filenames <span class="ge">*.cfm, *</span>.cfml)
+<span class="m">*</span> cfs:
+    cfstatement
+<span class="m">*</span> chai, chaiscript:
+    ChaiScript (filenames *.chai)
+<span class="m">*</span> chapel, chpl:
+    Chapel (filenames *.chpl)
+<span class="m">*</span> charmci:
+    Charmci (filenames *.ci)
+<span class="m">*</span> cheetah, spitfire:
+    Cheetah (filenames <span class="ge">*.tmpl, *</span>.spt)
+<span class="m">*</span> cirru:
+    Cirru (filenames *.cirru)
+<span class="m">*</span> clay:
+    Clay (filenames *.clay)
+<span class="m">*</span> clean:
+    Clean (filenames <span class="ge">*.icl, *</span>.dcl)
+<span class="m">*</span> clojure, clj:
+    Clojure (filenames *.clj)
+<span class="m">*</span> clojurescript, cljs:
+    ClojureScript (filenames *.cljs)
+<span class="m">*</span> cmake:
+    CMake (filenames *.cmake, CMakeLists.txt)
+<span class="m">*</span> cobol:
+    COBOL (filenames <span class="ge">*.cob, *</span>.COB, <span class="ge">*.cpy, *</span>.CPY)
+<span class="m">*</span> cobolfree:
+    COBOLFree (filenames <span class="ge">*.cbl, *</span>.CBL)
+<span class="m">*</span> coffee-script, coffeescript, coffee:
+    CoffeeScript (filenames *.coffee)
+<span class="m">*</span> common-lisp, cl, lisp:
+    Common Lisp (filenames <span class="ge">*.cl, *</span>.lisp)
+<span class="m">*</span> componentpascal, cp:
+    Component Pascal (filenames <span class="ge">*.cp, *</span>.cps)
+<span class="m">*</span> console, shell-session:
+    Bash Session (filenames <span class="ge">*.sh-session, *</span>.shell-session)
+<span class="m">*</span> control, debcontrol:
+    Debian Control file (filenames control)
+<span class="m">*</span> coq:
+    Coq (filenames *.v)
+<span class="m">*</span> cpp, c++:
+    C++ (filenames <span class="ge">*.cpp, *</span>.hpp, <span class="ge">*.c++, *</span>.h++, <span class="ge">*.cc, *</span>.hh, <span class="ge">*.cxx, *</span>.hxx, <span class="ge">*.C, *</span>.H, <span class="ge">*.cp, *</span>.CPP)
+<span class="m">*</span> cpp-objdump, c++-objdumb, cxx-objdump:
+    cpp-objdump (filenames <span class="ge">*.cpp-objdump, *</span>.c++-objdump, *.cxx-objdump)
+<span class="m">*</span> cpsa:
+    CPSA (filenames *.cpsa)
+<span class="m">*</span> cr, crystal:
+    Crystal (filenames *.cr)
+<span class="m">*</span> crmsh, pcmk:
+    Crmsh (filenames <span class="ge">*.crmsh, *</span>.pcmk)
+<span class="m">*</span> croc:
+    Croc (filenames *.croc)
+<span class="m">*</span> cryptol, cry:
+    Cryptol (filenames *.cry)
+<span class="m">*</span> csharp, c#:
+    C# (filenames *.cs)
+<span class="m">*</span> csound, csound-orc:
+    Csound Orchestra (filenames <span class="ge">*.orc, *</span>.udo)
+<span class="m">*</span> csound-document, csound-csd:
+    Csound Document (filenames *.csd)
+<span class="m">*</span> csound-score, csound-sco:
+    Csound Score (filenames *.sco)
+<span class="m">*</span> css+django, css+jinja:
+    CSS+Django/Jinja
+<span class="m">*</span> css+erb, css+ruby:
+    CSS+Ruby
+<span class="m">*</span> css+genshitext, css+genshi:
+    CSS+Genshi Text
+<span class="m">*</span> css+lasso:
+    CSS+Lasso
+<span class="m">*</span> css+mako:
+    CSS+Mako
+<span class="m">*</span> css+mozpreproc:
+    CSS+mozpreproc (filenames *.css.in)
+<span class="m">*</span> css+myghty:
+    CSS+Myghty
+<span class="m">*</span> css+php:
+    CSS+PHP
+<span class="m">*</span> css+smarty:
+    CSS+Smarty
+<span class="m">*</span> css:
+    CSS (filenames *.css)
+<span class="m">*</span> cucumber, gherkin:
+    Gherkin (filenames *.feature)
+<span class="m">*</span> cuda, cu:
+    CUDA (filenames <span class="ge">*.cu, *</span>.cuh)
+<span class="m">*</span> cypher:
+    Cypher (filenames <span class="ge">*.cyp, *</span>.cypher)
+<span class="m">*</span> cython, pyx, pyrex:
+    Cython (filenames <span class="ge">*.pyx, *</span>.pxd, *.pxi)
+<span class="m">*</span> d-objdump:
+    d-objdump (filenames *.d-objdump)
+<span class="m">*</span> d:
+    D (filenames <span class="ge">*.d, *</span>.di)
+<span class="m">*</span> dart:
+    Dart (filenames *.dart)
+<span class="m">*</span> dasm16:
+    DASM16 (filenames <span class="ge">*.dasm16, *</span>.dasm)
+<span class="m">*</span> delphi, pas, pascal, objectpascal:
+    Delphi (filenames <span class="ge">*.pas, *</span>.dpr)
+<span class="m">*</span> dg:
+    dg (filenames *.dg)
+<span class="m">*</span> diff, udiff:
+    Diff (filenames <span class="ge">*.diff, *</span>.patch)
+<span class="m">*</span> django, jinja:
+    Django/Jinja
+<span class="m">*</span> docker, dockerfile:
+    Docker (filenames Dockerfile, *.docker)
+<span class="m">*</span> doscon:
+    MSDOS Session
+<span class="m">*</span> dpatch:
+    Darcs Patch (filenames <span class="ge">*.dpatch, *</span>.darcspatch)
+<span class="m">*</span> dtd:
+    DTD (filenames *.dtd)
+<span class="m">*</span> duel, jbst, jsonml+bst:
+    Duel (filenames <span class="ge">*.duel, *</span>.jbst)
+<span class="m">*</span> dylan-console, dylan-repl:
+    Dylan session (filenames *.dylan-console)
+<span class="m">*</span> dylan-lid, lid:
+    DylanLID (filenames <span class="ge">*.lid, *</span>.hdp)
+<span class="m">*</span> dylan:
+    Dylan (filenames <span class="ge">*.dylan, *</span>.dyl, *.intr)
+<span class="m">*</span> earl-grey, earlgrey, eg:
+    Earl Grey (filenames *.eg)
+<span class="m">*</span> easytrieve:
+    Easytrieve (filenames <span class="ge">*.ezt, *</span>.mac)
+<span class="m">*</span> ebnf:
+    EBNF (filenames *.ebnf)
+<span class="m">*</span> ec:
+    eC (filenames <span class="ge">*.ec, *</span>.eh)
+<span class="m">*</span> ecl:
+    ECL (filenames *.ecl)
+<span class="m">*</span> eiffel:
+    Eiffel (filenames *.e)
+<span class="m">*</span> elixir, ex, exs:
+    Elixir (filenames <span class="ge">*.ex, *</span>.exs)
+<span class="m">*</span> elm:
+    Elm (filenames *.elm)
+<span class="m">*</span> emacs, elisp, emacs-lisp:
+    EmacsLisp (filenames *.el)
+<span class="m">*</span> email, eml:
+    E-mail (filenames *.eml)
+<span class="m">*</span> erb:
+    ERB
+<span class="m">*</span> erl:
+    Erlang erl session (filenames *.erl-sh)
+<span class="m">*</span> erlang:
+    Erlang (filenames <span class="ge">*.erl, *</span>.hrl, <span class="ge">*.es, *</span>.escript)
+<span class="m">*</span> evoque:
+    Evoque (filenames *.evoque)
+<span class="m">*</span> extempore:
+    xtlang (filenames *.xtm)
+<span class="m">*</span> ezhil:
+    Ezhil (filenames *.n)
+<span class="m">*</span> factor:
+    Factor (filenames *.factor)
+<span class="m">*</span> fan:
+    Fantom (filenames *.fan)
+<span class="m">*</span> fancy, fy:
+    Fancy (filenames <span class="ge">*.fy, *</span>.fancypack)
+<span class="m">*</span> felix, flx:
+    Felix (filenames <span class="ge">*.flx, *</span>.flxh)
+<span class="m">*</span> fennel, fnl:
+    Fennel (filenames *.fnl)
+<span class="m">*</span> fish, fishshell:
+    Fish (filenames <span class="ge">*.fish, *</span>.load)
+<span class="m">*</span> flatline:
+    Flatline
+<span class="m">*</span> floscript, flo:
+    FloScript (filenames *.flo)
+<span class="m">*</span> forth:
+    Forth (filenames <span class="ge">*.frt, *</span>.fs)
+<span class="m">*</span> fortran:
+    Fortran (filenames <span class="ge">*.f03, *</span>.f90, <span class="ge">*.F03, *</span>.F90)
+<span class="m">*</span> fortranfixed:
+    FortranFixed (filenames <span class="ge">*.f, *</span>.F)
+<span class="m">*</span> foxpro, vfp, clipper, xbase:
+    FoxPro (filenames <span class="ge">*.PRG, *</span>.prg)
+<span class="m">*</span> freefem:
+    Freefem (filenames *.edp)
+<span class="m">*</span> fsharp, f#:
+    F# (filenames <span class="ge">*.fs, *</span>.fsi)
+<span class="m">*</span> gap:
+    GAP (filenames <span class="ge">*.g, *</span>.gd, <span class="ge">*.gi, *</span>.gap)
+<span class="m">*</span> gas, asm:
+    GAS (filenames <span class="ge">*.s, *</span>.S)
+<span class="m">*</span> genshi, kid, xml+genshi, xml+kid:
+    Genshi (filenames *.kid)
+<span class="m">*</span> genshitext:
+    Genshi Text
+<span class="m">*</span> glsl:
+    GLSL (filenames <span class="ge">*.vert, *</span>.frag, *.geo)
+<span class="m">*</span> gnuplot:
+    Gnuplot (filenames <span class="ge">*.plot, *</span>.plt)
+<span class="m">*</span> go:
+    Go (filenames *.go)
+<span class="m">*</span> golo:
+    Golo (filenames *.golo)
+<span class="m">*</span> gooddata-cl:
+    GoodData-CL (filenames *.gdc)
+<span class="m">*</span> gosu:
+    Gosu (filenames <span class="ge">*.gs, *</span>.gsx, <span class="ge">*.gsp, *</span>.vark)
+<span class="m">*</span> groff, nroff, man:
+    Groff (filenames <span class="ge">*.[1234567], *</span>.man)
+<span class="m">*</span> groovy:
+    Groovy (filenames <span class="ge">*.groovy, *</span>.gradle)
+<span class="m">*</span> gst:
+    Gosu Template (filenames *.gst)
+<span class="m">*</span> haml:
+    Haml (filenames *.haml)
+<span class="m">*</span> handlebars:
+    Handlebars
+<span class="m">*</span> haskell, hs:
+    Haskell (filenames *.hs)
+<span class="m">*</span> haxeml, hxml:
+    Hxml (filenames *.hxml)
+<span class="m">*</span> hexdump:
+    Hexdump
+<span class="m">*</span> hlsl:
+    HLSL (filenames <span class="ge">*.hlsl, *</span>.hlsli)
+<span class="m">*</span> hsail, hsa:
+    HSAIL (filenames *.hsail)
+<span class="m">*</span> hspec:
+    Hspec
+<span class="m">*</span> html+cheetah, html+spitfire, htmlcheetah:
+    HTML+Cheetah
+<span class="m">*</span> html+django, html+jinja, htmldjango:
+    HTML+Django/Jinja
+<span class="m">*</span> html+evoque:
+    HTML+Evoque (filenames *.html)
+<span class="m">*</span> html+genshi, html+kid:
+    HTML+Genshi
+<span class="m">*</span> html+handlebars:
+    HTML+Handlebars (filenames <span class="ge">*.handlebars, *</span>.hbs)
+<span class="m">*</span> html+lasso:
+    HTML+Lasso
+<span class="m">*</span> html+mako:
+    HTML+Mako
+<span class="m">*</span> html+myghty:
+    HTML+Myghty
+<span class="m">*</span> html+ng2:
+    HTML + Angular2 (filenames *.ng2)
+<span class="m">*</span> html+php:
+    HTML+PHP (filenames *.phtml)
+<span class="m">*</span> html+smarty:
+    HTML+Smarty
+<span class="m">*</span> html+twig:
+    HTML+Twig (filenames *.twig)
+<span class="m">*</span> html+velocity:
+    HTML+Velocity
+<span class="m">*</span> html:
+    HTML (filenames <span class="ge">*.html, *</span>.htm, <span class="ge">*.xhtml, *</span>.xslt)
+<span class="m">*</span> http:
+    HTTP
+<span class="m">*</span> hx, haxe, hxsl:
+    Haxe (filenames <span class="ge">*.hx, *</span>.hxsl)
+<span class="m">*</span> hybris, hy:
+    Hybris (filenames <span class="ge">*.hy, *</span>.hyb)
+<span class="m">*</span> hylang:
+    Hy (filenames *.hy)
+<span class="m">*</span> i6t:
+    Inform 6 template (filenames *.i6t)
+<span class="m">*</span> icon:
+    Icon (filenames <span class="ge">*.icon, *</span>.ICON)
+<span class="m">*</span> idl:
+    IDL (filenames *.pro)
+<span class="m">*</span> idris, idr:
+    Idris (filenames *.idr)
+<span class="m">*</span> iex:
+    Elixir iex session
+<span class="m">*</span> igor, igorpro:
+    Igor (filenames *.ipf)
+<span class="m">*</span> inform6, i6:
+    Inform 6 (filenames *.inf)
+<span class="m">*</span> inform7, i7:
+    Inform 7 (filenames <span class="ge">*.ni, *</span>.i7x)
+<span class="m">*</span> ini, cfg, dosini:
+    INI (filenames <span class="ge">*.ini, *</span>.cfg, *.inf)
+<span class="m">*</span> io:
+    Io (filenames *.io)
+<span class="m">*</span> ioke, ik:
+    Ioke (filenames *.ik)
+<span class="m">*</span> irc:
+    IRC logs (filenames *.weechatlog)
+<span class="m">*</span> isabelle:
+    Isabelle (filenames *.thy)
+<span class="m">*</span> j:
+    J (filenames *.ijs)
+<span class="m">*</span> jags:
+    JAGS (filenames <span class="ge">*.jag, *</span>.bug)
+<span class="m">*</span> jasmin, jasminxt:
+    Jasmin (filenames *.j)
+<span class="m">*</span> java:
+    Java (filenames *.java)
+<span class="m">*</span> javascript+mozpreproc:
+    Javascript+mozpreproc (filenames *.js.in)
+<span class="m">*</span> jcl:
+    JCL (filenames *.jcl)
+<span class="m">*</span> jlcon:
+    Julia console
+<span class="m">*</span> js+cheetah, javascript+cheetah, js+spitfire, javascript+spitfire:
+    JavaScript+Cheetah
+<span class="m">*</span> js+django, javascript+django, js+jinja, javascript+jinja:
+    JavaScript+Django/Jinja
+<span class="m">*</span> js+erb, javascript+erb, js+ruby, javascript+ruby:
+    JavaScript+Ruby
+<span class="m">*</span> js+genshitext, js+genshi, javascript+genshitext, javascript+genshi:
+    JavaScript+Genshi Text
+<span class="m">*</span> js+lasso, javascript+lasso:
+    JavaScript+Lasso
+<span class="m">*</span> js+mako, javascript+mako:
+    JavaScript+Mako
+<span class="m">*</span> js+myghty, javascript+myghty:
+    JavaScript+Myghty
+<span class="m">*</span> js+php, javascript+php:
+    JavaScript+PHP
+<span class="m">*</span> js+smarty, javascript+smarty:
+    JavaScript+Smarty
+<span class="m">*</span> js, javascript:
+    JavaScript (filenames <span class="ge">*.js, *</span>.jsm)
+<span class="m">*</span> jsgf:
+    JSGF (filenames *.jsgf)
+<span class="m">*</span> json-object:
+    JSONBareObject
+<span class="m">*</span> json:
+    JSON (filenames *.json)
+<span class="m">*</span> jsonld, json-ld:
+    JSON-LD (filenames *.jsonld)
+<span class="m">*</span> jsp:
+    Java Server Page (filenames *.jsp)
+<span class="m">*</span> julia, jl:
+    Julia (filenames *.jl)
+<span class="m">*</span> juttle, juttle:
+    Juttle (filenames *.juttle)
+<span class="m">*</span> kal:
+    Kal (filenames *.kal)
+<span class="m">*</span> kconfig, menuconfig, linux-config, kernel-config:
+    Kconfig (filenames Kconfig, <span class="ge">*Config.in*</span>, external.in*, standard-modules.in)
+<span class="m">*</span> koka:
+    Koka (filenames <span class="ge">*.kk, *</span>.kki)
+<span class="m">*</span> kotlin:
+    Kotlin (filenames *.kt)
+<span class="m">*</span> lagda, literate-agda:
+    Literate Agda (filenames *.lagda)
+<span class="m">*</span> lasso, lassoscript:
+    Lasso (filenames <span class="ge">*.lasso, *</span>.lasso[89])
+<span class="m">*</span> lcry, literate-cryptol, lcryptol:
+    Literate Cryptol (filenames *.lcry)
+<span class="m">*</span> lean:
+    Lean (filenames *.lean)
+<span class="m">*</span> less:
+    LessCss (filenames *.less)
+<span class="m">*</span> lhs, literate-haskell, lhaskell:
+    Literate Haskell (filenames *.lhs)
+<span class="m">*</span> lidr, literate-idris, lidris:
+    Literate Idris (filenames *.lidr)
+<span class="m">*</span> lighty, lighttpd:
+    Lighttpd configuration file
+<span class="m">*</span> limbo:
+    Limbo (filenames *.b)
+<span class="m">*</span> liquid:
+    liquid (filenames *.liquid)
+<span class="m">*</span> live-script, livescript:
+    LiveScript (filenames *.ls)
+<span class="m">*</span> llvm:
+    LLVM (filenames *.ll)
+<span class="m">*</span> logos:
+    Logos (filenames <span class="ge">*.x, *</span>.xi, <span class="ge">*.xm, *</span>.xmi)
+<span class="m">*</span> logtalk:
+    Logtalk (filenames <span class="ge">*.lgt, *</span>.logtalk)
+<span class="m">*</span> lsl:
+    LSL (filenames *.lsl)
+<span class="m">*</span> lua:
+    Lua (filenames <span class="ge">*.lua, *</span>.wlua)
+<span class="m">*</span> make, makefile, mf, bsdmake:
+    Makefile (filenames <span class="ge">*.mak, *</span>.mk, Makefile, makefile, Makefile.*, GNUmakefile)
+<span class="m">*</span> mako:
+    Mako (filenames *.mao)
+<span class="m">*</span> maql:
+    MAQL (filenames *.maql)
+<span class="m">*</span> mask:
+    Mask (filenames *.mask)
+<span class="m">*</span> mason:
+    Mason (filenames <span class="ge">*.m, *</span>.mhtml, <span class="ge">*.mc, *</span>.mi, autohandler, dhandler)
+<span class="m">*</span> mathematica, mma, nb:
+    Mathematica (filenames <span class="ge">*.nb, *</span>.cdf, <span class="ge">*.nbp, *</span>.ma)
+<span class="m">*</span> matlab:
+    Matlab (filenames *.m)
+<span class="m">*</span> matlabsession:
+    Matlab session
+<span class="m">*</span> md:
+    markdown (filenames *.md)
+<span class="m">*</span> mime:
+    MIME
+<span class="m">*</span> minid:
+    MiniD
+<span class="m">*</span> modelica:
+    Modelica (filenames *.mo)
+<span class="m">*</span> modula2, m2:
+    Modula-2 (filenames <span class="ge">*.def, *</span>.mod)
+<span class="m">*</span> monkey:
+    Monkey (filenames *.monkey)
+<span class="m">*</span> monte:
+    Monte (filenames *.mt)
+<span class="m">*</span> moocode, moo:
+    MOOCode (filenames *.moo)
+<span class="m">*</span> moon, moonscript:
+    MoonScript (filenames *.moon)
+<span class="m">*</span> mozhashpreproc:
+    mozhashpreproc
+<span class="m">*</span> mozpercentpreproc:
+    mozpercentpreproc
+<span class="m">*</span> mql, mq4, mq5, mql4, mql5:
+    MQL (filenames <span class="ge">*.mq4, *</span>.mq5, *.mqh)
+<span class="m">*</span> mscgen, msc:
+    Mscgen (filenames *.msc)
+<span class="m">*</span> mupad:
+    MuPAD (filenames *.mu)
+<span class="m">*</span> mxml:
+    MXML (filenames *.mxml)
+<span class="m">*</span> myghty:
+    Myghty (filenames *.myt, autodelegate)
+<span class="m">*</span> mysql:
+    MySQL
+<span class="m">*</span> nasm:
+    NASM (filenames <span class="ge">*.asm, *</span>.ASM)
+<span class="m">*</span> ncl:
+    NCL (filenames *.ncl)
+<span class="m">*</span> nemerle:
+    Nemerle (filenames *.n)
+<span class="m">*</span> nesc:
+    nesC (filenames *.nc)
+<span class="m">*</span> newlisp:
+    NewLisp (filenames <span class="ge">*.lsp, *</span>.nl, *.kif)
+<span class="m">*</span> newspeak:
+    Newspeak (filenames *.ns2)
+<span class="m">*</span> ng2:
+    Angular2
+<span class="m">*</span> nginx:
+    Nginx configuration file (filenames nginx.conf)
+<span class="m">*</span> nim, nimrod:
+    Nimrod (filenames <span class="ge">*.nim, *</span>.nimrod)
+<span class="m">*</span> nit:
+    Nit (filenames *.nit)
+<span class="m">*</span> nixos, nix:
+    Nix (filenames *.nix)
+<span class="m">*</span> notmuch:
+    Notmuch
+<span class="m">*</span> nsis, nsi, nsh:
+    NSIS (filenames <span class="ge">*.nsi, *</span>.nsh)
+<span class="m">*</span> numpy:
+    NumPy
+<span class="m">*</span> nusmv:
+    NuSMV (filenames *.smv)
+<span class="m">*</span> objdump-nasm:
+    objdump-nasm (filenames *.objdump-intel)
+<span class="m">*</span> objdump:
+    objdump (filenames *.objdump)
+<span class="m">*</span> objective-c++, objectivec++, obj-c++, objc++:
+    Objective-C++ (filenames <span class="ge">*.mm, *</span>.hh)
+<span class="m">*</span> objective-c, objectivec, obj-c, objc:
+    Objective-C (filenames <span class="ge">*.m, *</span>.h)
+<span class="m">*</span> objective-j, objectivej, obj-j, objj:
+    Objective-J (filenames *.j)
+<span class="m">*</span> ocaml:
+    OCaml (filenames <span class="ge">*.ml, *</span>.mli, <span class="ge">*.mll, *</span>.mly)
+<span class="m">*</span> octave:
+    Octave (filenames *.m)
+<span class="m">*</span> odin:
+    ODIN (filenames *.odin)
+<span class="m">*</span> ooc:
+    Ooc (filenames *.ooc)
+<span class="m">*</span> opa:
+    Opa (filenames *.opa)
+<span class="m">*</span> openedge, abl, progress:
+    OpenEdge ABL (filenames <span class="ge">*.p, *</span>.cls)
+<span class="m">*</span> pacmanconf:
+    PacmanConf (filenames pacman.conf)
+<span class="m">*</span> pan:
+    Pan (filenames *.pan)
+<span class="m">*</span> parasail:
+    ParaSail (filenames <span class="ge">*.psi, *</span>.psl)
+<span class="m">*</span> pawn:
+    Pawn (filenames <span class="ge">*.p, *</span>.pwn, *.inc)
+<span class="m">*</span> perl, pl:
+    Perl (filenames <span class="ge">*.pl, *</span>.pm, *.t)
+<span class="m">*</span> perl6, pl6:
+    Perl6 (filenames <span class="ge">*.pl, *</span>.pm, <span class="ge">*.nqp, *</span>.p6, <span class="ge">*.6pl, *</span>.p6l, <span class="ge">*.pl6, *</span>.6pm, <span class="ge">*.p6m, *</span>.pm6, *.t)
+<span class="m">*</span> php, php3, php4, php5:
+    PHP (filenames <span class="ge">*.php, *</span>.php[345], *.inc)
+<span class="m">*</span> pig:
+    Pig (filenames *.pig)
+<span class="m">*</span> pike:
+    Pike (filenames <span class="ge">*.pike, *</span>.pmod)
+<span class="m">*</span> pkgconfig:
+    PkgConfig (filenames *.pc)
+<span class="m">*</span> plpgsql:
+    PL/pgSQL
+<span class="m">*</span> pony:
+    Pony (filenames *.pony)
+<span class="m">*</span> postgresql, postgres:
+    PostgreSQL SQL dialect
+<span class="m">*</span> postscript, postscr:
+    PostScript (filenames <span class="ge">*.ps, *</span>.eps)
+<span class="m">*</span> pot, po:
+    Gettext Catalog (filenames <span class="ge">*.pot, *</span>.po)
+<span class="m">*</span> pov:
+    POVRay (filenames <span class="ge">*.pov, *</span>.inc)
+<span class="m">*</span> powershell, posh, ps1, psm1:
+    PowerShell (filenames <span class="ge">*.ps1, *</span>.psm1)
+<span class="m">*</span> praat:
+    Praat (filenames <span class="ge">*.praat, *</span>.proc, *.psc)
+<span class="m">*</span> prolog:
+    Prolog (filenames <span class="ge">*.ecl, *</span>.prolog, <span class="ge">*.pro, *</span>.pl)
+<span class="m">*</span> properties, jproperties:
+    Properties (filenames *.properties)
+<span class="m">*</span> protobuf, proto:
+    Protocol Buffer (filenames *.proto)
+<span class="m">*</span> ps1con:
+    PowerShell Session
+<span class="m">*</span> psql, postgresql-console, postgres-console:
+    PostgreSQL console (psql)
+<span class="m">*</span> pug, jade:
+    Pug (filenames <span class="ge">*.pug, *</span>.jade)
+<span class="m">*</span> puppet:
+    Puppet (filenames *.pp)
+<span class="m">*</span> py2tb:
+    Python 2.x Traceback (filenames *.py2tb)
+<span class="m">*</span> pycon:
+    Python console session
+<span class="m">*</span> pypylog, pypy:
+    PyPy Log (filenames *.pypylog)
+<span class="m">*</span> pytb, py3tb:
+    Python Traceback (filenames <span class="ge">*.pytb, *</span>.py3tb)
+<span class="m">*</span> python, py, sage, python3, py3:
+    Python (filenames <span class="ge">*.py, *</span>.pyw, <span class="ge">*.jy, *</span>.sage, <span class="ge">*.sc, SConstruct, SConscript, *</span>.bzl, BUCK, BUILD, BUILD.bazel, WORKSPACE, *.tac)
+<span class="m">*</span> python2, py2:
+    Python 2.x
+<span class="m">*</span> qbasic, basic:
+    QBasic (filenames <span class="ge">*.BAS, *</span>.bas)
+<span class="m">*</span> qml, qbs:
+    QML (filenames <span class="ge">*.qml, *</span>.qbs)
+<span class="m">*</span> qvto, qvt:
+    QVTO (filenames *.qvto)
+<span class="m">*</span> racket, rkt:
+    Racket (filenames <span class="ge">*.rkt, *</span>.rktd, *.rktl)
+<span class="m">*</span> ragel-c:
+    Ragel in C Host (filenames *.rl)
+<span class="m">*</span> ragel-cpp:
+    Ragel in CPP Host (filenames *.rl)
+<span class="m">*</span> ragel-d:
+    Ragel in D Host (filenames *.rl)
+<span class="m">*</span> ragel-em:
+    Embedded Ragel (filenames *.rl)
+<span class="m">*</span> ragel-java:
+    Ragel in Java Host (filenames *.rl)
+<span class="m">*</span> ragel-objc:
+    Ragel in Objective C Host (filenames *.rl)
+<span class="m">*</span> ragel-ruby, ragel-rb:
+    Ragel in Ruby Host (filenames *.rl)
+<span class="m">*</span> ragel:
+    Ragel
+<span class="m">*</span> raw:
+    Raw token data
+<span class="m">*</span> rb, ruby, duby:
+    Ruby (filenames <span class="ge">*.rb, *</span>.rbw, Rakefile, <span class="ge">*.rake, *</span>.gemspec, <span class="ge">*.rbx, *</span>.duby, Gemfile)
+<span class="m">*</span> rbcon, irb:
+    Ruby irb session
+<span class="m">*</span> rconsole, rout:
+    RConsole (filenames *.Rout)
+<span class="m">*</span> rd:
+    Rd (filenames *.Rd)
+<span class="m">*</span> rebol:
+    REBOL (filenames <span class="ge">*.r, *</span>.r3, *.reb)
+<span class="m">*</span> red, red/system:
+    Red (filenames <span class="ge">*.red, *</span>.reds)
+<span class="m">*</span> redcode:
+    Redcode (filenames *.cw)
+<span class="m">*</span> registry:
+    reg (filenames *.reg)
+<span class="m">*</span> resource, resourcebundle:
+    ResourceBundle
+<span class="m">*</span> rexx, arexx:
+    Rexx (filenames <span class="ge">*.rexx, *</span>.rex, <span class="ge">*.rx, *</span>.arexx)
+<span class="m">*</span> rhtml, html+erb, html+ruby:
+    RHTML (filenames *.rhtml)
+<span class="m">*</span> rnc, rng-compact:
+    Relax-NG Compact (filenames *.rnc)
+<span class="m">*</span> roboconf-graph:
+    Roboconf Graph (filenames *.graph)
+<span class="m">*</span> roboconf-instances:
+    Roboconf Instances (filenames *.instances)
+<span class="m">*</span> robotframework:
+    RobotFramework (filenames *.robot)
+<span class="m">*</span> rql:
+    RQL (filenames *.rql)
+<span class="m">*</span> rsl:
+    RSL (filenames *.rsl)
+<span class="m">*</span> rst, rest, restructuredtext:
+    reStructuredText (filenames <span class="ge">*.rst, *</span>.rest)
+<span class="m">*</span> rts, trafficscript:
+    TrafficScript (filenames *.rts)
+<span class="m">*</span> rust, rs:
+    Rust (filenames <span class="ge">*.rs, *</span>.rs.in)
+<span class="m">*</span> sarl:
+    SARL (filenames *.sarl)
+<span class="m">*</span> sas:
+    SAS (filenames <span class="ge">*.SAS, *</span>.sas)
+<span class="m">*</span> sass:
+    Sass (filenames *.sass)
+<span class="m">*</span> sc, supercollider:
+    SuperCollider (filenames <span class="ge">*.sc, *</span>.scd)
+<span class="m">*</span> scala:
+    Scala (filenames *.scala)
+<span class="m">*</span> scaml:
+    Scaml (filenames *.scaml)
+<span class="m">*</span> scdoc, scd:
+    scdoc (filenames <span class="ge">*.scd, *</span>.scdoc)
+<span class="m">*</span> scheme, scm:
+    Scheme (filenames <span class="ge">*.scm, *</span>.ss)
+<span class="m">*</span> scilab:
+    Scilab (filenames <span class="ge">*.sci, *</span>.sce, *.tst)
+<span class="m">*</span> scss:
+    SCSS (filenames *.scss)
+<span class="m">*</span> sgf:
+    SmartGameFormat (filenames *.sgf)
+<span class="m">*</span> shen:
+    Shen (filenames *.shen)
+<span class="m">*</span> shexc, shex:
+    ShExC (filenames *.shex)
+<span class="m">*</span> silver:
+    Silver (filenames <span class="ge">*.sil, *</span>.vpr)
+<span class="m">*</span> slash:
+    Slash (filenames *.sl)
+<span class="m">*</span> slim:
+    Slim (filenames *.slim)
+<span class="m">*</span> slurm, sbatch:
+    Slurm (filenames *.sl)
+<span class="m">*</span> smali:
+    Smali (filenames *.smali)
+<span class="m">*</span> smalltalk, squeak, st:
+    Smalltalk (filenames *.st)
+<span class="m">*</span> smarty:
+    Smarty (filenames *.tpl)
+<span class="m">*</span> sml:
+    Standard ML (filenames <span class="ge">*.sml, *</span>.sig, *.fun)
+<span class="m">*</span> snobol:
+    Snobol (filenames *.snobol)
+<span class="m">*</span> snowball:
+    Snowball (filenames *.sbl)
+<span class="m">*</span> solidity:
+    Solidity (filenames *.sol)
+<span class="m">*</span> sourceslist, sources.list, debsources:
+    Debian Sourcelist (filenames sources.list)
+<span class="m">*</span> sp:
+    SourcePawn (filenames *.sp)
+<span class="m">*</span> sparql:
+    SPARQL (filenames <span class="ge">*.rq, *</span>.sparql)
+<span class="m">*</span> spec:
+    RPMSpec (filenames *.spec)
+<span class="m">*</span> splus, s, r:
+    S (filenames <span class="ge">*.S, *</span>.R, .Rhistory, .Rprofile, .Renviron)
+<span class="m">*</span> sql:
+    SQL (filenames *.sql)
+<span class="m">*</span> sqlite3:
+    sqlite3con (filenames *.sqlite3-console)
+<span class="m">*</span> squidconf, squid.conf, squid:
+    SquidConf (filenames squid.conf)
+<span class="m">*</span> ssp:
+    Scalate Server Page (filenames *.ssp)
+<span class="m">*</span> stan:
+    Stan (filenames *.stan)
+<span class="m">*</span> stata, do:
+    Stata (filenames <span class="ge">*.do, *</span>.ado)
+<span class="m">*</span> swift:
+    Swift (filenames *.swift)
+<span class="m">*</span> swig:
+    SWIG (filenames <span class="ge">*.swg, *</span>.i)
+<span class="m">*</span> systemverilog, sv:
+    systemverilog (filenames <span class="ge">*.sv, *</span>.svh)
+<span class="m">*</span> tads3:
+    TADS 3 (filenames *.t)
+<span class="m">*</span> tap:
+    TAP (filenames *.tap)
+<span class="m">*</span> tasm:
+    TASM (filenames <span class="ge">*.asm, *</span>.ASM, *.tasm)
+<span class="m">*</span> tcl:
+    Tcl (filenames <span class="ge">*.tcl, *</span>.rvt)
+<span class="m">*</span> tcsh, csh:
+    Tcsh (filenames <span class="ge">*.tcsh, *</span>.csh)
+<span class="m">*</span> tcshcon:
+    Tcsh Session
+<span class="m">*</span> tea:
+    Tea (filenames *.tea)
+<span class="m">*</span> termcap:
+    Termcap (filenames termcap, termcap.src)
+<span class="m">*</span> terminfo:
+    Terminfo (filenames terminfo, terminfo.src)
+<span class="m">*</span> terraform, tf:
+    Terraform (filenames *.tf)
+<span class="m">*</span> tex, latex:
+    TeX (filenames <span class="ge">*.tex, *</span>.aux, *.toc)
+<span class="m">*</span> text:
+    Text only (filenames *.txt)
+<span class="m">*</span> thrift:
+    Thrift (filenames *.thrift)
+<span class="m">*</span> todotxt:
+    Todotxt (filenames todo.txt, *.todotxt)
+<span class="m">*</span> toml:
+    TOML (filenames *.toml)
+<span class="m">*</span> trac-wiki, moin:
+    MoinMoin/Trac Wiki markup
+<span class="m">*</span> treetop:
+    Treetop (filenames <span class="ge">*.treetop, *</span>.tt)
+<span class="m">*</span> ts, typescript:
+    TypeScript (filenames <span class="ge">*.ts, *</span>.tsx)
+<span class="m">*</span> tsql, t-sql:
+    Transact-SQL (filenames *.sql)
+<span class="m">*</span> ttl, teraterm, teratermmacro:
+    Tera Term macro (filenames *.ttl)
+<span class="m">*</span> turtle:
+    Turtle (filenames *.ttl)
+<span class="m">*</span> twig:
+    Twig
+<span class="m">*</span> typoscript:
+    TypoScript (filenames <span class="ge">*.ts, *</span>.txt)
+<span class="m">*</span> typoscriptcssdata:
+    TypoScriptCssData
+<span class="m">*</span> typoscripthtmldata:
+    TypoScriptHtmlData
+<span class="m">*</span> ucode:
+    ucode (filenames <span class="ge">*.u, *</span>.u1, *.u2)
+<span class="m">*</span> unicon:
+    Unicon (filenames *.icn)
+<span class="m">*</span> urbiscript:
+    UrbiScript (filenames *.u)
+<span class="m">*</span> vala, vapi:
+    Vala (filenames <span class="ge">*.vala, *</span>.vapi)
+<span class="m">*</span> vb.net, vbnet:
+    VB.net (filenames <span class="ge">*.vb, *</span>.bas)
+<span class="m">*</span> vbscript:
+    VBScript (filenames <span class="ge">*.vbs, *</span>.VBS)
+<span class="m">*</span> vcl:
+    VCL (filenames *.vcl)
+<span class="m">*</span> vclsnippets, vclsnippet:
+    VCLSnippets
+<span class="m">*</span> vctreestatus:
+    VCTreeStatus
+<span class="m">*</span> velocity:
+    Velocity (filenames <span class="ge">*.vm, *</span>.fhtml)
+<span class="m">*</span> verilog, v:
+    verilog (filenames *.v)
+<span class="m">*</span> vgl:
+    VGL (filenames *.rpf)
+<span class="m">*</span> vhdl:
+    vhdl (filenames <span class="ge">*.vhdl, *</span>.vhd)
+<span class="m">*</span> vim:
+    VimL (filenames *.vim, .vimrc, .exrc, .gvimrc, _vimrc, _exrc, _gvimrc, vimrc, gvimrc)
+<span class="m">*</span> wdiff:
+    WDiff (filenames *.wdiff)
+<span class="m">*</span> whiley:
+    Whiley (filenames *.whiley)
+<span class="m">*</span> x10, xten:
+    X10 (filenames *.x10)
+<span class="m">*</span> xml+cheetah, xml+spitfire:
+    XML+Cheetah
+<span class="m">*</span> xml+django, xml+jinja:
+    XML+Django/Jinja
+<span class="m">*</span> xml+erb, xml+ruby:
+    XML+Ruby
+<span class="m">*</span> xml+evoque:
+    XML+Evoque (filenames *.xml)
+<span class="m">*</span> xml+lasso:
+    XML+Lasso
+<span class="m">*</span> xml+mako:
+    XML+Mako
+<span class="m">*</span> xml+myghty:
+    XML+Myghty
+<span class="m">*</span> xml+php:
+    XML+PHP
+<span class="m">*</span> xml+smarty:
+    XML+Smarty
+<span class="m">*</span> xml+velocity:
+    XML+Velocity
+<span class="m">*</span> xml:
+    XML (filenames <span class="ge">*.xml, *</span>.xsl, <span class="ge">*.rss, *</span>.xslt, <span class="ge">*.xsd, *</span>.wsdl, *.wsf)
+<span class="m">*</span> xorg.conf:
+    Xorg (filenames xorg.conf)
+<span class="m">*</span> xquery, xqy, xq, xql, xqm:
+    XQuery (filenames <span class="ge">*.xqy, *</span>.xquery, <span class="ge">*.xq, *</span>.xql, *.xqm)
+<span class="m">*</span> xslt:
+    XSLT (filenames <span class="ge">*.xsl, *</span>.xslt, *.xpl)
+<span class="m">*</span> xtend:
+    Xtend (filenames *.xtend)
+<span class="m">*</span> xul+mozpreproc:
+    XUL+mozpreproc (filenames *.xul.in)
+<span class="m">*</span> yaml+jinja, salt, sls:
+    YAML+Jinja (filenames *.sls)
+<span class="m">*</span> yaml:
+    YAML (filenames <span class="ge">*.yaml, *</span>.yml)
+<span class="m">*</span> zeek, bro:
+    Zeek (filenames <span class="ge">*.zeek, *</span>.bro)
+<span class="m">*</span> zephir:
+    Zephir (filenames *.zep)
+<span class="m">*</span> zig:
+    Zig (filenames *.zig)
+</pre></div>
+</div>
+</div>
+</div>
+<!-- /body -->
+</div>
+</div>
+<!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="genindex.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+</ul>
+</nav>
+<!-- /pager.html -->
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<!-- footer.html -->
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner">
+<div class="footer-additional">
+<p class="text-center">
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/4c9f976c3cf46f7450167c5d12065c29ed623ac8" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Oct 27, 2021 20:21
+                        </a>
+</p>
+<p class="text-center">Last rendered: Oct 27, 2021 20:22</p>
+<p class="text-center">
+<a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank">
+                            TYPO3 Theme 4.7.dev1
+                        </a>
+</p>
+</div>
+<div class="footer-meta">
+<div class="footer-meta-copyright">
+<a href="Copyright.html">© Copyright since 1970 by My Authorname</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- /footer.html -->
+</div>
+</div>
+<script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: './',
+            VERSION: '1.0.0',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+<script src="_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="_static/js/popper.min.js" type="text/javascript"></script>
+<script src="_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="_static/js/theme.min.js" type="text/javascript"></script>
+<script src="_static/language_data.js" type="text/javascript"></script>
+<script src="_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+<script src="_static/clipboard.min.js"></script>
+<script src="_static/copybutton.js"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+</body>
+</html>

@@ -1,0 +1,892 @@
+{
+   "php:attr": {
+      "DateTime::$testattr": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::$testattr",
+         "-"
+      ],
+      "DateTimeInterface::$testattr": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTimeInterface::$testattr",
+         "-"
+      ],
+      "LibraryName\\LibraryClass::$property": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClass::$property",
+         "-"
+      ],
+      "LibraryName\\NamespaceClass::$property": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NamespaceClass::$property",
+         "-"
+      ],
+      "OtherClass::$nonIndentedAttribute": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherClass::$nonIndentedAttribute",
+         "-"
+      ]
+   },
+   "php:class": {
+      "DateTime": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime",
+         "-"
+      ],
+      "Imagine\\Draw\\DrawerInterface": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#Imagine\\Draw\\DrawerInterface",
+         "-"
+      ],
+      "LibraryName\\LibraryClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClass",
+         "-"
+      ],
+      "LibraryName\\LibraryClassAbstract": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassAbstract",
+         "-"
+      ],
+      "LibraryName\\LibraryClassFinal": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassFinal",
+         "-"
+      ],
+      "LibraryName\\NamespaceClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NamespaceClass",
+         "-"
+      ],
+      "LibraryName\\OtherClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\OtherClass",
+         "-"
+      ],
+      "LibraryName\\SubPackage\\SubpackageClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\SubPackage\\SubpackageClass",
+         "-"
+      ],
+      "LibraryName\\ThirdClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\ThirdClass",
+         "-"
+      ],
+      "OtherClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherClass",
+         "-"
+      ],
+      "OtherLibrary\\ReturnedClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturnedClass",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass",
+         "-"
+      ]
+   },
+   "php:const": {
+      "DateTime::ATOM": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::ATOM",
+         "-"
+      ],
+      "DateTime::SOME_CONSTANT": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::SOME_CONSTANT",
+         "-"
+      ],
+      "DateTime::VALUE": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::VALUE",
+         "-"
+      ],
+      "DateTimeInterface::ATOM": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTimeInterface::ATOM",
+         "-"
+      ],
+      "LibraryName\\LibraryClass::TEST_CONST": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClass::TEST_CONST",
+         "-"
+      ],
+      "LibraryName\\NS_CONST": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NS_CONST",
+         "-"
+      ],
+      "LibraryName\\NamespaceClass::NAMESPACE_CONST": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NamespaceClass::NAMESPACE_CONST",
+         "-"
+      ],
+      "OtherClass::NO_INDENT": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherClass::NO_INDENT",
+         "-"
+      ]
+   },
+   "php:exception": {
+      "InvalidArgumentException": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#InvalidArgumentException",
+         "-"
+      ],
+      "LibraryName\\NamespaceException": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NamespaceException",
+         "-"
+      ],
+      "LibraryName\\SubPackage\\NestedNamespaceException": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\SubPackage\\NestedNamespaceException",
+         "-"
+      ]
+   },
+   "php:function": {
+      "LibraryName\\namespaced_function": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\namespaced_function",
+         "-"
+      ],
+      "in_array": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#in_array",
+         "-"
+      ]
+   },
+   "php:global": {
+      "$global_var": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#$global_var",
+         "-"
+      ],
+      "$other_global_var": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#$other_global_var",
+         "-"
+      ],
+      "strpos": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#strpos",
+         "-"
+      ]
+   },
+   "php:interface": {
+      "DateTimeInterface": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTimeInterface",
+         "-"
+      ],
+      "LibraryName\\LibraryInterface": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryInterface",
+         "-"
+      ],
+      "LibraryName\\SubPackage\\SubpackageInterface": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\SubPackage\\SubpackageInterface",
+         "-"
+      ],
+      "OtherInterface": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherInterface",
+         "-"
+      ]
+   },
+   "php:method": {
+      "DateTime::getLastErrors": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::getLastErrors",
+         "-"
+      ],
+      "DateTime::setDate": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::setDate",
+         "-"
+      ],
+      "DateTime::setTime": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTime::setTime",
+         "-"
+      ],
+      "DateTimeInterface::setDate": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTimeInterface::setDate",
+         "-"
+      ],
+      "DateTimeInterface::setTime": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#DateTimeInterface::setTime",
+         "-"
+      ],
+      "Imagine\\Draw\\DrawerInterface::arc": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#Imagine\\Draw\\DrawerInterface::arc",
+         "-"
+      ],
+      "LibraryName\\LibraryClass::instanceMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClass::instanceMethod",
+         "-"
+      ],
+      "LibraryName\\LibraryClassFinal::fifthMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassFinal::fifthMethod",
+         "-"
+      ],
+      "LibraryName\\LibraryClassFinal::firstMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassFinal::firstMethod",
+         "-"
+      ],
+      "LibraryName\\LibraryClassFinal::fourthMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassFinal::fourthMethod",
+         "-"
+      ],
+      "LibraryName\\LibraryClassFinal::secondMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassFinal::secondMethod",
+         "-"
+      ],
+      "LibraryName\\LibraryClassFinal::thirdMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClassFinal::thirdMethod",
+         "-"
+      ],
+      "LibraryName\\LibraryInterface::instanceMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryInterface::instanceMethod",
+         "-"
+      ],
+      "LibraryName\\NamespaceClass::firstMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NamespaceClass::firstMethod",
+         "-"
+      ],
+      "LibraryName\\TemplateTrait::render": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\TemplateTrait::render",
+         "-"
+      ],
+      "LogTrait::log": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LogTrait::log",
+         "-"
+      ],
+      "OtherClass::update": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherClass::update",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnClassConstant": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnClassConstant",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnClassFromOtherNamespace": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnClassFromOtherNamespace",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnClassFromSameNamespace": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnClassFromSameNamespace",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnExceptionInstance": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnExceptionInstance",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnGlobalConstant": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnGlobalConstant",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnScalarType": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnScalarType",
+         "-"
+      ],
+      "OtherLibrary\\ReturningClass::returnUnionType": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherLibrary\\ReturningClass::returnUnionType",
+         "-"
+      ]
+   },
+   "php:namespace": {
+      "Imagine\\Draw": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#namespace-Imagine\\Draw",
+         "-"
+      ],
+      "LibraryName": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#namespace-LibraryName",
+         "-"
+      ],
+      "LibraryName\\SubPackage": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#namespace-LibraryName\\SubPackage",
+         "-"
+      ],
+      "OtherLibrary": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#namespace-OtherLibrary",
+         "-"
+      ]
+   },
+   "php:staticmethod": {
+      "LibraryName\\LibraryClass::staticMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\LibraryClass::staticMethod",
+         "-"
+      ],
+      "LibraryName\\NamespaceClass::namespaceStatic": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\NamespaceClass::namespaceStatic",
+         "-"
+      ],
+      "OtherClass::staticMethod": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#OtherClass::staticMethod",
+         "-"
+      ]
+   },
+   "php:trait": {
+      "LibraryName\\TemplateTrait": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LibraryName\\TemplateTrait",
+         "-"
+      ],
+      "LogTrait": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#LogTrait",
+         "-"
+      ]
+   },
+   "py:class": {
+      "payments.dotpay.DotpayProvider": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "ThisAndThat/Index.html#payments.dotpay.DotpayProvider",
+         "-"
+      ]
+   },
+   "std:confval": {
+      "addRecord": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#confval-addRecord",
+         "-"
+      ],
+      "align": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#confval-align",
+         "-"
+      ],
+      "boolean": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#confval-boolean",
+         "-"
+      ],
+      "case": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#confval-case",
+         "-"
+      ],
+      "mr_pommeroy": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#confval-mr_pommeroy",
+         "-"
+      ]
+   },
+   "std:doc": {
+      "Admonitions-and-buttons/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Admonitions-and-buttons/Index.html",
+         "Admonitions and buttons"
+      ],
+      "Blockquotes/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Blockquotes/Index.html",
+         "Block quotes"
+      ],
+      "Codeblocks/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Codeblocks/Index.html",
+         "Codeblocks"
+      ],
+      "Copyright": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Copyright.html",
+         "-"
+      ],
+      "Directives/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/Index.html",
+         "Directives"
+      ],
+      "Directives/confval": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html",
+         "confval"
+      ],
+      "Directives/glossary": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/glossary.html",
+         "glossary"
+      ],
+      "Directives/raw": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/raw.html",
+         "raw"
+      ],
+      "Directives/sphinx-tabs": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinx-tabs.html",
+         "sphinx-tabs"
+      ],
+      "Directives/sphinx_ext_graphviz": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinx_ext_graphviz.html",
+         "sphinx.ext.graphviz"
+      ],
+      "Directives/sphinxcontrib-plantuml": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-plantuml.html",
+         "Plantuml basic examples"
+      ],
+      "Directives/sphinxcontrib-slide": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-slide.html",
+         "sphinxcontrib-slide"
+      ],
+      "Directives/sphinxcontrib-t3fieldlisttable": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-t3fieldlisttable.html",
+         "sphinxcontrib-t3fieldlisttable"
+      ],
+      "Directives/sphinxcontrib-t3targets": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-t3targets.html",
+         "sphinxcontrib-t3targets"
+      ],
+      "Directives/sphinxcontrib-youtube": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-youtube.html",
+         "sphinxcontrib-youtube"
+      ],
+      "Directives/versionadded": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/versionadded.html",
+         "versionadded & friends"
+      ],
+      "FieldLists/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "FieldLists/Index.html",
+         "Field lists"
+      ],
+      "Fonts/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Fonts/Index.html",
+         "Fonts"
+      ],
+      "Highlighting/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Highlighting/Index.html",
+         "Highlighting"
+      ],
+      "ImagesAndFigures/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "ImagesAndFigures/Index.html",
+         "Images and figures"
+      ],
+      "Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Index.html",
+         "Sphinx TYPO3 Theme Rendering Test"
+      ],
+      "Inline-code-and-textroles/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Inline-code-and-textroles/Index.html",
+         "Inline code and text roles"
+      ],
+      "Lineblocks/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Lineblocks/Index.html",
+         "Line blocks"
+      ],
+      "Lists/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Lists/Index.html",
+         "Lists"
+      ],
+      "ListsAsButtons/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "ListsAsButtons/Index.html",
+         "List Items as Buttons"
+      ],
+      "Nested-pages/1/1/1/1/1/index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Nested-pages/1/1/1/1/1/index.html",
+         "Page title"
+      ],
+      "Nested-pages/1/1/1/1/index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Nested-pages/1/1/1/1/index.html",
+         "Page title"
+      ],
+      "Nested-pages/1/1/1/index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Nested-pages/1/1/1/index.html",
+         "Page title"
+      ],
+      "Nested-pages/1/1/index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Nested-pages/1/1/index.html",
+         "Page title"
+      ],
+      "Nested-pages/1/index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Nested-pages/1/index.html",
+         "Page title"
+      ],
+      "Nested-pages/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Nested-pages/Index.html",
+         "Nested pages"
+      ],
+      "PhpDomain/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html",
+         "Phpdomain"
+      ],
+      "Sitemap/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Sitemap/Index.html",
+         "Sitemap"
+      ],
+      "SpecialCharacters/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "SpecialCharacters/Index.html",
+         "Special characters"
+      ],
+      "StyledNumberedLists/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "StyledNumberedLists/Index.html",
+         "Styled numbered lists"
+      ],
+      "Tables/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Tables/Index.html",
+         "Tables"
+      ],
+      "ThisAndThat/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "ThisAndThat/Index.html",
+         "This and that"
+      ],
+      "Typesetting/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Typesetting/Index.html",
+         "Typesetting"
+      ],
+      "genindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "genindex.html",
+         "Index"
+      ],
+      "pygmentize-L": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "pygmentize-L.html",
+         "Lexers of Pygments 2.5.2"
+      ]
+   },
+   "std:label": {
+      "block-quotes": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Blockquotes/Index.html#block-quotes",
+         "Block quotes"
+      ],
+      "codeblocks": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Codeblocks/Index.html#codeblocks",
+         "Codeblocks"
+      ],
+      "confval": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#confval",
+         "-"
+      ],
+      "copyright": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Copyright.html#copyright",
+         "Copyright"
+      ],
+      "demo 3 - addrecord": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/confval.html#demo-3-addrecord",
+         "Demo 3 - addRecord"
+      ],
+      "directives": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/Index.html#directives",
+         "Directives"
+      ],
+      "glossary": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/glossary.html#glossary",
+         "-"
+      ],
+      "images-and-figures": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "ImagesAndFigures/Index.html#images-and-figures",
+         "Images and figures"
+      ],
+      "inline-code-and-text-roles": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Inline-code-and-textroles/Index.html#inline-code-and-text-roles",
+         "Inline code and text roles"
+      ],
+      "line-blocks": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Lineblocks/Index.html#line-blocks",
+         "Line blocks"
+      ],
+      "modindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "py-modindex.html",
+         "Module Index"
+      ],
+      "php-modindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "php-modindex.html",
+         "PHP Namespace Index"
+      ],
+      "plantuml-basic-examples": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-plantuml.html#plantuml-basic-examples",
+         "Plantuml basic examples"
+      ],
+      "py-modindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "py-modindex.html",
+         "Python Module Index"
+      ],
+      "search": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "search.html",
+         "Search Page"
+      ],
+      "sitemap": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Sitemap/Index.html#sitemap",
+         "Sitemap"
+      ],
+      "sphinxcontrib--t3targets": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-t3targets.html#sphinxcontrib-t3targets",
+         "sphinxcontrib-t3targets"
+      ],
+      "sphinxcontrib-php-domain": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "PhpDomain/Index.html#sphinxcontrib-php-domain",
+         "Phpdomain"
+      ],
+      "sphinxcontrib-slide": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-slide.html#sphinxcontrib-slide",
+         "-"
+      ],
+      "sphinxcontrib-t3fieldlisttable": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-t3fieldlisttable.html#sphinxcontrib-t3fieldlisttable",
+         "-"
+      ],
+      "sphinxcontrib-youtube": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinxcontrib-youtube.html#sphinxcontrib-youtube",
+         "-"
+      ],
+      "styled-numbered-lists": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "StyledNumberedLists/Index.html#styled-numbered-lists",
+         "Styled numbered lists"
+      ],
+      "this is a label": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinx_ext_graphviz.html#this-is-a-label",
+         "caption of the graph"
+      ]
+   },
+   "std:term": {
+      "CMS": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/glossary.html#term-CMS",
+         "-"
+      ],
+      "OS": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/glossary.html#term-OS",
+         "-"
+      ],
+      "magic number": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Inline-code-and-textroles/Index.html#term-magic-number",
+         "-"
+      ],
+      "term text role": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Inline-code-and-textroles/Index.html#term-term-text-role",
+         "-"
+      ]
+   }
+}
