@@ -8,7 +8,6 @@ This repository demonstrates how reST constructs look like when rendered with
 the `sphinx_typo3_theme
 <https://github.com/TYPO3-Documentation/sphinx_typo3_theme>`__ theme.
 
-
 See `_buildinfo <_buildinfo>`_
 
 :Rendered:     |today| (machine time)
