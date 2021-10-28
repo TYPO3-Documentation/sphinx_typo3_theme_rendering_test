@@ -88,8 +88,8 @@ jobs:
               echo '{"Overrides_cfg":{"html_theme_options":{"docstypo3org":"nonempty"}}}' > Documentation-GENERATED-temp/jobfile.json
           fi
       - run: mkdir -p tmp-GENERATED-Wheels
-      - run: wget https://github.com/TYPO3-Documentation/sphinx_typo3_theme/suites/4189465675/artifacts/107977222 \
-               --output-document=tmp-GENERATED-Wheels/bdist-wheel-package.zip
+      - run: wget https://github.com/TYPO3-Documentation/sphinx_typo3_theme/suites/4189465675/artifacts/107977222
+                  --output-document=tmp-GENERATED-Wheels/bdist-wheel-package.zip
       - run: unzip tmp-GENERATED-Wheels/bdist-wheel-package.zip -d tmp-GENERATED-Wheels
       - name: docker run
         run: |
