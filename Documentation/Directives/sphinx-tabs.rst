@@ -1,7 +1,10 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
-.. index:: sphinx-tabs
+.. index:: sphinx-tabs, Tabs
+.. index:: pair: Tabs; Bootstrap
+.. index:: pair: Tabs; Sphinx
 
+.. _Sphinx-Tabs:
 
 ===========
 sphinx-tabs
