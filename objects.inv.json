@@ -686,6 +686,12 @@
          "SpecialCharacters/Index.html",
          "Special characters"
       ],
+      "SphinxPanels/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "SphinxPanels/Index.html",
+         "Sphinx panels"
+      ],
       "StyledNumberedLists/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "1.0",
@@ -819,6 +825,18 @@
          "1.0",
          "Sitemap/Index.html#sitemap",
          "Sitemap"
+      ],
+      "sphinx-panels": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "SphinxPanels/Index.html#sphinx-panels",
+         "Sphinx panels"
+      ],
+      "sphinx-tabs": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Directives/sphinx-tabs.html#sphinx-tabs",
+         "-"
       ],
       "sphinxcontrib--t3targets": [
          "Sphinx TYPO3 Theme Rendering Test",

@@ -37,4 +37,9 @@
 ./Documentation/PhpDomain/Index.rst:565: WARNING: php:obj reference target not found: integer
 ./Documentation/PhpDomain/Index.rst:565: WARNING: php:obj reference target not found: integer
 ./Documentation/PhpDomain/Index.rst:565: WARNING: php:obj reference target not found: ImagineImageColor
+./Documentation/SphinxPanels/Index.rst:109: WARNING: 'any' reference target not found: panels/usage
+./Documentation/SphinxPanels/Index.rst:239: WARNING: 'any' reference target not found: panels/usage
+./Documentation/SphinxPanels/Index.rst:258: WARNING: 'any' reference target not found: panels/usage
+./Documentation/SphinxPanels/Index.rst:274: WARNING: 'any' reference target not found: panels/usage
+./Documentation/SphinxPanels/Index.rst:571: WARNING: 'any' reference target not found: panels/usage
 ./Documentation/Highlighting/Index.rst:439: WARNING: Could not lex literal_block as "guess". Highlighting skipped.

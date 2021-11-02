@@ -12,6 +12,8 @@
 <link href="_static/graphviz.css" rel="stylesheet" type="text/css"/>
 <link href="_static/copybutton.css" rel="stylesheet" type="text/css"/>
 <link href="_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" rel="stylesheet" type="text/css"/>
+<link href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
 <link href="_static/css/theme.css" rel="stylesheet" type="text/css"/>
@@ -112,6 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="PhpDomain/Index.html">Phpdomain</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Sitemap/Index.html">Sitemap</a></li>
 <li class="toctree-l1"><a class="reference internal" href="SpecialCharacters/Index.html">Special characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="SphinxPanels/Index.html">Sphinx panels</a></li>
 <li class="toctree-l1"><a class="reference internal" href="StyledNumberedLists/Index.html">Styled numbered lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tables/Index.html">Tables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ThisAndThat/Index.html">This and that</a></li>
@@ -153,8 +156,8 @@
 <div class="displaysettingsui" id="displaysettingsui">
 <div class="dsDivCogwheel"><i class="fas fa-cog" id="dsCogwheel" title="Display settings"></i></div>
 <div class="dsPanel" id="dsPanel"><p><b>Display settings</b></p>
-<input id="cbFullWidth" type="checkbox"/>
-<label for="cbFullWidth">Use full width</label>
+<input id="cbFullWidth" type="checkbox"/><label for="cbFullWidth">Use full width</label><br/>
+<input id="cbPermanent" type="checkbox"/><label for="cbPermanent">Make settings permanent</label><br/>
 </div><!--/.dsPanel-->
 </div><!--/.displaysettingsui-->
 <!-- /displaysettingsui.html -->
@@ -250,6 +253,20 @@
 
                                         <ul>
 <li><a href="Directives/confval.html#confval-boolean">configuration value</a>
+</li>
+</ul></li>
+</ul>
+</td>
+<td>
+<ul>
+<li>
+                                    
+        Bootstrap
+
+                                        <ul>
+<li><a href="SphinxPanels/Index.html#index-1">Panels</a>
+</li>
+<li><a href="Directives/sphinx-tabs.html#index-1">Tabs</a>
 </li>
 </ul></li>
 </ul>
@@ -551,8 +568,20 @@
 <td>
 <ul>
 <li>
+<a href="SphinxPanels/Index.html#index-0">Panels</a>
+<ul>
+<li><a href="SphinxPanels/Index.html#index-1">Bootstrap</a>
+</li>
+<li><a href="SphinxPanels/Index.html#index-2">Sphinx</a>
+</li>
+</ul></li>
+<li>
 <a href="ThisAndThat/Index.html#payments.dotpay.DotpayProvider">payments.dotpay.DotpayProvider (built-in class)</a>
 </li>
+</ul>
+</td>
+<td>
+<ul>
 <li>
                                     
         plantuml
@@ -561,10 +590,6 @@
 <li><a href="Directives/sphinxcontrib-plantuml.html#index-0">basic examples</a>
 </li>
 </ul></li>
-</ul>
-</td>
-<td>
-<ul>
 <li>
 <a href="PhpDomain/Index.html#LibraryName\LibraryClass::$property"><strong>property (LibraryName\LibraryClass property)</strong></a>
 <ul>
@@ -654,6 +679,16 @@
 <li><a href="PhpDomain/Index.html#DateTimeInterface::setTime"><strong>(DateTimeInterface method)</strong></a>
 </li>
 </ul></li>
+<li>
+                                    
+        Sphinx
+
+                                        <ul>
+<li><a href="SphinxPanels/Index.html#index-2">Panels</a>
+</li>
+<li><a href="Directives/sphinx-tabs.html#index-2">Tabs</a>
+</li>
+</ul></li>
 </ul>
 </td>
 <td>
@@ -686,8 +721,20 @@
 <td>
 <ul>
 <li>
+<a href="Directives/sphinx-tabs.html#index-0">Tabs</a>
+<ul>
+<li><a href="Directives/sphinx-tabs.html#index-1">Bootstrap</a>
+</li>
+<li><a href="Directives/sphinx-tabs.html#index-2">Sphinx</a>
+</li>
+</ul></li>
+<li>
 <a href="PhpDomain/Index.html#LibraryName\TemplateTrait"><strong>TemplateTrait (trait in LibraryName)</strong></a>
 </li>
+</ul>
+</td>
+<td>
+<ul>
 <li>
 <a href="Inline-code-and-textroles/Index.html#term-term-text-role"><strong>term text role</strong></a>
 </li>
@@ -697,10 +744,6 @@
 <li><a href="PhpDomain/Index.html#DateTimeInterface::$testattr"><strong>(DateTimeInterface property)</strong></a>
 </li>
 </ul></li>
-</ul>
-</td>
-<td>
-<ul>
 <li>
 <a href="PhpDomain/Index.html#LibraryName\ThirdClass"><strong>ThirdClass (class in LibraryName)</strong></a>
 </li>
@@ -739,12 +782,12 @@
 <div class="frame-container">
 <div class="frame-inner">
 <div class="footer-additional">
-<p class="text-center">Last rendered: Oct 28, 2021 17:34</p>
+<p class="text-center">Last rendered: Nov 02, 2021 17:07</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme at GitHub">
-<span>TYPO3 Theme 4.6.3.dev40+g188eef9</span></a></li>
+<span>TYPO3 Theme 4.6.3.dev41+g4649efd</span></a></li>
 <li><a href="https://github.com/t3docs/docker-render-documentation" rel="nofollow noopener" target="_blank" title="DRC - Docker Rendering Container at GitHub">
-<span>DRC v3.0.dev2</span></a></li>
+<span>DRC v3.0.dev3</span></a></li>
 </ul>
 </div>
 <div class="footer-meta">
