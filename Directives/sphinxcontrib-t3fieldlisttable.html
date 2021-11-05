@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-11-05T10:09:12+00:00" name="docsearch:modified"/>
+<meta content="2021-11-05T17:41:58+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-11-05T10:09:12+00:00" name="dc.modified"/>
-<meta content="2021-11-05T10:09:12+00:00" property="article:modified_time"/>
+<meta content="2021-11-05T17:41:58+00:00" name="dc.modified"/>
+<meta content="2021-11-05T17:41:58+00:00" property="article:modified_time"/>
 <title>sphinxcontrib-t3fieldlisttable — Sphinx TYPO3 Theme Rendering Test 1.0.0 documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -136,7 +136,7 @@
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
 <li><a class="reference internal" href="#">sphinxcontrib-t3fieldlisttable</a><ul>
-<li><a class="reference internal" href="#learning-by-example-the-t3-field-list-table-directive">Learning by example: The “t3-field-list-table” directive</a><ul>
+<li><a class="reference internal" href="#learning-by-example-the-t3-field-list-table-directive">Learning by example: The "t3-field-list-table" directive</a><ul>
 <li><a class="reference internal" href="#the-most-simple-form">The most simple form</a><ul>
 <li><a class="reference internal" href="#source">Source</a></li>
 <li><a class="reference internal" href="#result">Result</a></li>
@@ -148,7 +148,7 @@
 <li><a class="reference internal" href="#id3">Result</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#the-more-illustrative-example-nested-in-another-t3-field-list-table">The “More illustrative example” nested in another t3-field-list-table</a></li>
+<li><a class="reference internal" href="#the-more-illustrative-example-nested-in-another-t3-field-list-table">The "More illustrative example" nested in another t3-field-list-table</a></li>
 <li><a class="reference internal" href="#column-spans">Column spans</a><ul>
 <li><a class="reference internal" href="#id4">Source</a></li>
 <li><a class="reference internal" href="#id5">Result</a></li>
@@ -242,7 +242,7 @@
 <div class="contents compact-list local topic" id="this-page">
 <p class="topic-title">This page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#learning-by-example-the-t3-field-list-table-directive" id="id13">Learning by example: The “t3-field-list-table” directive</a></p>
+<li><p><a class="reference internal" href="#learning-by-example-the-t3-field-list-table-directive" id="id13">Learning by example: The "t3-field-list-table" directive</a></p>
 <ul>
 <li><p><a class="reference internal" href="#the-most-simple-form" id="id14">The most simple form</a></p>
 <ul>
@@ -257,7 +257,7 @@
 <li><p><a class="reference internal" href="#id3" id="id20">Result</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#the-more-illustrative-example-nested-in-another-t3-field-list-table" id="id21">The “More illustrative example” nested in another t3-field-list-table</a></p></li>
+<li><p><a class="reference internal" href="#the-more-illustrative-example-nested-in-another-t3-field-list-table" id="id21">The "More illustrative example" nested in another t3-field-list-table</a></p></li>
 <li><p><a class="reference internal" href="#column-spans" id="id22">Column spans</a></p>
 <ul>
 <li><p><a class="reference internal" href="#id4" id="id23">Source</a></p></li>
@@ -296,7 +296,7 @@
 </ul>
 </div>
 <div class="section" id="learning-by-example-the-t3-field-list-table-directive">
-<h2><a class="toc-backref" href="#this-page">Learning by example: The “t3-field-list-table” directive</a><a class="headerlink" href="#learning-by-example-the-t3-field-list-table-directive" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#this-page">Learning by example: The "t3-field-list-table" directive</a><a class="headerlink" href="#learning-by-example-the-t3-field-list-table-directive" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="the-most-simple-form">
 <h3><a class="toc-backref" href="#this-page">The most simple form</a><a class="headerlink" href="#the-most-simple-form" title="Permalink to this headline">¶</a></h3>
 <p>The most simple form consists of just the directive statement,
@@ -361,11 +361,11 @@ in the right column.</p></th>
 </div>
 <div class="section" id="a-more-illustrative-example">
 <h3><a class="toc-backref" href="#this-page">A more illustrative example</a><a class="headerlink" href="#a-more-illustrative-example" title="Permalink to this headline">¶</a></h3>
-<p>The names of the field list like “year”, “type a” and “type b” are identifiers of columns
-and therefore called “columnId”. The are used internally only.</p>
+<p>The names of the field list like "year", "type a" and "type b" are identifiers of columns
+and therefore called "columnId". The are used internally only.</p>
 <p><strong>The first field list always</strong> is the <em>definition row</em>. Following field lists are <em>data rows</em>.
-In data rows the order of the items doesn’t matter. For <em>data rows</em> columns may be omitted.</p>
-<p>In this example we have a table title, one header row and one stub column. The “year” column is
+In data rows the order of the items doesn't matter. For <em>data rows</em> columns may be omitted.</p>
+<p>In this example we have a table title, one header row and one stub column. The "year" column is
 given a width of 10%. The remaining 90% are equally split and given to the
 remaining columns.</p>
 <div class="section" id="id2">
@@ -443,22 +443,22 @@ remaining columns.</p>
 </div>
 </div>
 <div class="section" id="the-more-illustrative-example-nested-in-another-t3-field-list-table">
-<h3><a class="toc-backref" href="#this-page">The “More illustrative example” nested in another t3-field-list-table</a><a class="headerlink" href="#the-more-illustrative-example-nested-in-another-t3-field-list-table" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#this-page">The "More illustrative example" nested in another t3-field-list-table</a><a class="headerlink" href="#the-more-illustrative-example-nested-in-another-t3-field-list-table" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 50%"/>
 <col style="width: 50%"/>
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head" colspan="2"><p>Example “Column identifiers” nested in another t3-field-list-table</p></th>
+<tr class="row-odd"><th class="head" colspan="2"><p>Example "Column identifiers" nested in another t3-field-list-table</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td colspan="2"><p>The names of the field list like “year”, “type a” and “type b” are identifiers of columns
-and therefore called “columnId”. The are used internally only.</p>
+<tr class="row-even"><td colspan="2"><p>The names of the field list like "year", "type a" and "type b" are identifiers of columns
+and therefore called "columnId". The are used internally only.</p>
 <p><strong>The first field list always</strong> is the <em>definition row</em>. Following field lists are <em>data rows</em>.
-In data rows the order of the items doesn’t matter. For <em>data rows</em> columns may be omitted.</p>
-<p>In this example we have a table title, one header row and one stub column. The “year” column is
+In data rows the order of the items doesn't matter. For <em>data rows</em> columns may be omitted.</p>
+<p>In this example we have a table title, one header row and one stub column. The "year" column is
 given a width of 10%. The remaining 90% are equally split and given to the
 remaining columns.</p>
 </td>
@@ -539,9 +539,9 @@ remaining columns.</p>
 <div class="section" id="column-spans">
 <h3><a class="toc-backref" href="#this-page">Column spans</a><a class="headerlink" href="#column-spans" title="Permalink to this headline">¶</a></h3>
 <p>We can have column spans. To make these possible even for
-the first table row there is an option “definition-row”
-working as a flag. It defaults to “no”.</p>
-<p>If “yes”, the flag indicates
+the first table row there is an option "definition-row"
+working as a flag. It defaults to "no".</p>
+<p>If "yes", the flag indicates
 that the first row is used to define the table columns only.
 Its data is then discarded and stripped
 from final output.</p>
@@ -925,18 +925,18 @@ empty: <code class="docutils literal notranslate"><span class="pre">--&gt;</span
 <div class="section" id="alignment-for-columns">
 <h3><a class="toc-backref" href="#this-page">Alignment for columns</a><a class="headerlink" href="#alignment-for-columns" title="Permalink to this headline">¶</a></h3>
 <p>A default alignment can be specified for each column. The alignment
-may be given by one word from [‘left’, ‘right’, ‘justify’, ‘center’]
-and one word from [‘top’, ‘middle’, ‘bottom’]. Words are separated
+may be given by one word from ['left', 'right', 'justify', 'center']
+and one word from ['top', 'middle', 'bottom']. Words are separated
 by one ore more spaces.
 The words may be shortend down to one letter. Letters may be upper or lower case.
 The following spellings all mean the same:</p>
 <div class="line-block">
-<div class="line">right top -&gt; “right top”</div>
-<div class="line">top   right right top top right -&gt; “right top”</div>
-<div class="line">RiGhT ToP  -&gt; “right top”</div>
-<div class="line">RI TO  -&gt; “right top”</div>
-<div class="line">R T  -&gt; “right top”</div>
-<div class="line">r t  -&gt; “right top”</div>
+<div class="line">right top -&gt; "right top"</div>
+<div class="line">top   right right top top right -&gt; "right top"</div>
+<div class="line">RiGhT ToP  -&gt; "right top"</div>
+<div class="line">RI TO  -&gt; "right top"</div>
+<div class="line">R T  -&gt; "right top"</div>
+<div class="line">r t  -&gt; "right top"</div>
 </div>
 <div class="line-block">
 <div class="line">Contradicting values lead to an error:</div>
@@ -946,7 +946,7 @@ The following spellings all mean the same:</p>
 <div class="line">L R -&gt; error</div>
 <div class="line">B T -&gt; error</div>
 </div>
-<p>The actual rendering depends on the writer. The modified HTML-writer used here adds classes ‘left’, ‘right’, ‘center’, ‘justify’, ‘top’, ‘middle’, ‘bottom’ to the TH ord TD tag of the table cell.</p>
+<p>The actual rendering depends on the writer. The modified HTML-writer used here adds classes 'left', 'right', 'center', 'justify', 'top', 'middle', 'bottom' to the TH ord TD tag of the table cell.</p>
 <table class="docutils align-default">
 <colgroup>
 <col style="width: 11%"/>
@@ -1169,7 +1169,7 @@ The following spellings all mean the same:</p>
 <h3><a class="toc-backref" href="#this-page">Defining columns: column identifiers</a><a class="headerlink" href="#defining-columns-column-identifiers" title="Permalink to this headline">¶</a></h3>
 <p>The first row is the <em>definition row</em>. The order of the field list items
 determine the order of the columns. Each column has a <em>columnId</em> which
-is taken from the field name. Column spans are noted in ‘..’-notation.
+is taken from the field name. Column spans are noted in '..'-notation.
 Rowspans are indicated by putting column identifiers in parantheses.
 Examples:</p>
 <table class="docutils align-default">
@@ -1186,51 +1186,51 @@ Examples:</p>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>:fname: First name</p></td>
-<td><p>‘fname’</p></td>
+<td><p>'fname'</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>:lname: Last name</p></td>
-<td><p>‘lname’</p></td>
+<td><p>'lname'</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>:city:  City</p></td>
-<td><p>‘city’</p></td>
+<td><p>'city'</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>:fname..city:</p></td>
 <td></td>
-<td><p>column span from ‘fname’ to ‘city’</p></td>
+<td><p>column span from 'fname' to 'city'</p></td>
 </tr>
 <tr class="row-even"><td><p>:1:     One</p></td>
-<td><p>‘1’</p></td>
+<td><p>'1'</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>:2:     Two</p></td>
-<td><p>‘2’</p></td>
+<td><p>'2'</p></td>
 <td></td>
 </tr>
 <tr class="row-even"><td><p>:3:     Three</p></td>
-<td><p>‘3’</p></td>
+<td><p>'3'</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>:(3):</p></td>
 <td></td>
-<td><p>rowspan - column ‘3’ is continued</p></td>
+<td><p>rowspan - column '3' is continued</p></td>
 </tr>
 <tr class="row-even"><td><p>:1..3:</p></td>
 <td></td>
-<td><p>column span from ‘1’ to ‘3’</p></td>
+<td><p>column span from '1' to '3'</p></td>
 </tr>
 <tr class="row-odd"><td><p>:(1..3):</p></td>
 <td></td>
-<td><p>rowspan - colspan ‘1’ to ‘3’ is continued</p></td>
+<td><p>rowspan - colspan '1' to '3' is continued</p></td>
 </tr>
 <tr class="row-even"><td><p>:A and B:</p></td>
-<td><p>‘A and B’</p></td>
+<td><p>'A and B'</p></td>
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>:yes - me too:</p></td>
-<td><p>‘yes - me too’</p></td>
+<td><p>'yes - me too'</p></td>
 <td></td>
 </tr>
 </tbody>
@@ -1259,12 +1259,12 @@ and must be separated by commas. Syntax:
 </thead>
 <tbody>
 <tr class="row-even"><td><p>:abc , ,:</p></td>
-<td><p>‘abc’</p></td>
+<td><p>'abc'</p></td>
 <td><p>default</p></td>
 <td><p>default</p></td>
 </tr>
 <tr class="row-odd"><td><p>:abc,,,,:</p></td>
-<td><p>‘abc’</p></td>
+<td><p>'abc'</p></td>
 <td><p>default</p></td>
 <td><p>default</p></td>
 </tr>
@@ -1274,29 +1274,29 @@ and must be separated by commas. Syntax:
 <td></td>
 </tr>
 <tr class="row-odd"><td><p>:abc,10:</p></td>
-<td><p>‘abc’</p></td>
+<td><p>'abc'</p></td>
 <td><p>10</p></td>
 <td><p>default</p></td>
 </tr>
 <tr class="row-even"><td><p>:abc,,t r:</p></td>
-<td><p>‘abc’</p></td>
+<td><p>'abc'</p></td>
 <td><p>default</p></td>
 <td><p>top right</p></td>
 </tr>
 <tr class="row-odd"><td><p>:abc,60,bottom:</p></td>
-<td><p>‘abc’</p></td>
+<td><p>'abc'</p></td>
 <td><p>60</p></td>
 <td><p>bottom</p></td>
 </tr>
 <tr class="row-even"><td><p>:abc,,L M:</p></td>
-<td><p>‘abc’</p></td>
+<td><p>'abc'</p></td>
 <td><p>60</p></td>
 <td><p>left middle</p></td>
 </tr>
 </tbody>
 </table>
 <p>The total width of a table row defaults to 100. It may be set to another
-positive integer value using the ‘total-width’ option of the t3-field-list-table
+positive integer value using the 'total-width' option of the t3-field-list-table
 directive.</p>
 <p>The <strong>width</strong> of columns without explicit specification will be assigned
 automatically. Any remaining free space in the row equally be distributed
@@ -1328,41 +1328,41 @@ In short:</p>
 <li><p>header-rows: A positive integer. Determines
 how many rows will make up the table header.</p></li>
 <li><p>stub-columns: Is a positive integer. Determines
-how many columns to the left are “header” columns.</p></li>
+how many columns to the left are "header" columns.</p></li>
 </ul>
 </dd>
 </dl>
 <dl>
 <dt>definition-row</dt><dd><p>May be True or False. Default is False. Takes one
-of the values ‘yes’, ‘1’, ‘no’, ‘0’. If True,
-the first row of the table is treated as ‘definition-row’
+of the values 'yes', '1', 'no', '0'. If True,
+the first row of the table is treated as 'definition-row'
 as usual but is not shown in output.</p>
 </dd>
 <dt>total-width</dt><dd><p>Is a positive integer. Default is 100. It sets the maximum for the total
 width of all columns.</p>
 </dd>
 <dt>allow-comments</dt><dd><p>May be True or False. Default is True. Takes one
-of the values ‘yes’, ‘1’, ‘no’, ‘0’. If False,
+of the values 'yes', '1', 'no', '0'. If False,
 items will never be treated as comment even if the
 field name consists of a sequence of on punctuation
 character only.</p>
 </dd>
 <dt>debug-cellinfo</dt><dd><p>May be True or False. Default is False. Takes one
-of the values ‘yes’, ‘1’, ‘no’, ‘0’. If switched
+of the values 'yes', '1', 'no', '0'. If switched
 on it will display information about table cells
 right in the table cell itself. This mainly aims
 at developers but may be useful to users of
 the t3-field-list-table directive as well.</p>
 </dd>
 <dt>transformation</dt><dd><p>May be True or False. Default is True. Takes one
-of the values ‘yes’, ‘1’, ‘no’, ‘0’. If set to
-False it will put the directive in “pass through”
+of the values 'yes', '1', 'no', '0'. If set to
+False it will put the directive in "pass through"
 mode. The transformation of the nested list
 structure into the table structure is skipped
 and the list structure is returned unaltered.</p>
 <p>If provided by the application the commandline
 option <code class="docutils literal notranslate"><span class="pre">--t3-field-list-table-off</span></code> has the same effect.
-It has higher priority and affects all ‘t3-field-list-tables’.</p>
+It has higher priority and affects all 't3-field-list-tables'.</p>
 </dd>
 </dl>
 </div>
@@ -1399,16 +1399,16 @@ It has higher priority and affects all ‘t3-field-list-tables’.</p>
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/b461fd097873865ffdf14ca41142f36a9d2a5971" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Nov 05, 2021 10:09
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/34d26b79331095cab7a04ecf1e8ea16b144796bf" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Nov 05, 2021 17:41
                         </a>
 </p>
-<p class="text-center">Last rendered: Nov 05, 2021 10:10</p>
+<p class="text-center">Last rendered: Nov 05, 2021 17:42</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme at GitHub">
 <span>TYPO3 Theme 4.6.3.dev42+gb181248</span></a></li>
 <li><a href="https://github.com/t3docs/docker-render-documentation" rel="nofollow noopener" target="_blank" title="DRC - Docker Rendering Container at GitHub">
-<span>DRC v3.0.dev3</span></a></li>
+<span>DRC v3.0.dev4</span></a></li>
 </ul>
 </div>
 <div class="footer-meta">

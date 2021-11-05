@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-11-05T10:09:12+00:00" name="docsearch:modified"/>
+<meta content="2021-11-05T17:41:58+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-11-05T10:09:12+00:00" name="dc.modified"/>
-<meta content="2021-11-05T10:09:12+00:00" property="article:modified_time"/>
+<meta content="2021-11-05T17:41:58+00:00" name="dc.modified"/>
+<meta content="2021-11-05T17:41:58+00:00" property="article:modified_time"/>
 <title>Codeblocks — Sphinx TYPO3 Theme Rendering Test 1.0.0 documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -134,7 +134,16 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Codeblocks</a></li>
+<li><a class="reference internal" href="#">Codeblocks</a><ul>
+<li><a class="reference internal" href="#basic-examples">Basic examples</a></li>
+<li><a class="reference internal" href="#image-and-code-block-without-caption">Image and code-block without caption</a></li>
+<li><a class="reference internal" href="#image-and-code-block-with-caption">Image and code-block with caption</a></li>
+<li><a class="reference internal" href="#figure-and-code-block-without-caption">Figure and code-block without caption</a></li>
+<li><a class="reference internal" href="#figure-and-code-block-with-caption">Figure and code-block with caption</a></li>
+<li><a class="reference internal" href="#code-block-without-caption-within-figure-s-caption">Code-block without caption within figure's caption</a></li>
+<li><a class="reference internal" href="#code-block-with-caption-within-figure-s-caption">Code-block with caption within figure's caption</a></li>
+</ul>
+</li>
 </ul>
 <!-- /menu -->
 </div>
@@ -190,7 +199,9 @@
 <!-- body -->
 <div class="section" id="codeblocks">
 <span id="id1"></span><h1>Codeblocks<a class="headerlink" href="#codeblocks" title="Permalink to this headline">¶</a></h1>
-<p>List files, ‘let see’:</p>
+<div class="section" id="basic-examples">
+<h2>Basic examples<a class="headerlink" href="#basic-examples" title="Permalink to this headline">¶</a></h2>
+<p>List files, 'let see':</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls
 </pre></div>
 </div>
@@ -201,6 +212,97 @@
 <p>Or short:</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls -1
 </pre></div>
+</div>
+</div>
+<div class="section" id="image-and-code-block-without-caption">
+<h2>Image and code-block without caption<a class="headerlink" href="#image-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+.
+</pre></div>
+</div>
+</div>
+<div class="section" id="image-and-code-block-with-caption">
+<h2>Image and code-block with caption<a class="headerlink" href="#image-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
+<p>Code blocks with caption show up in html as
+<code class="code html docutils literal notranslate"><span class="pre">div.literal-block-wrapper.docutils.container</span></code> due to <code class="code docutils literal notranslate"><span class="pre">docutils</span></code>.
+Since DRC v3.0.dev2 html post-processing is changing this to
+<code class="code docutils literal notranslate"><span class="pre">div.literal-block-wrapper.docutils.du-container</span></code>. This should prevent
+<a class="reference external" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/148" rel="nofollow noopener">sphinx_typo3_theme issue #148</a>.</p>
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<div class="literal-block-wrapper docutils du-container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="figure-and-code-block-without-caption">
+<h2>Figure and code-block without caption<a class="headerlink" href="#figure-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id3">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+.
+</pre></div>
+</div>
+</div>
+<div class="section" id="figure-and-code-block-with-caption">
+<h2>Figure and code-block with caption<a class="headerlink" href="#figure-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id4">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="literal-block-wrapper docutils du-container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="code-block-without-caption-within-figure-s-caption">
+<h2>Code-block without caption within figure's caption<a class="headerlink" href="#code-block-without-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id6">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="code-block-with-caption-within-figure-s-caption">
+<h2>Code-block with caption within figure's caption<a class="headerlink" href="#code-block-with-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id7">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<div class="literal-block-wrapper docutils du-container" id="id8">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+.
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 </div>
 <!-- /body -->
@@ -234,16 +336,16 @@
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/b461fd097873865ffdf14ca41142f36a9d2a5971" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Nov 05, 2021 10:09
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/34d26b79331095cab7a04ecf1e8ea16b144796bf" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Nov 05, 2021 17:41
                         </a>
 </p>
-<p class="text-center">Last rendered: Nov 05, 2021 10:10</p>
+<p class="text-center">Last rendered: Nov 05, 2021 17:42</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme at GitHub">
 <span>TYPO3 Theme 4.6.3.dev42+gb181248</span></a></li>
 <li><a href="https://github.com/t3docs/docker-render-documentation" rel="nofollow noopener" target="_blank" title="DRC - Docker Rendering Container at GitHub">
-<span>DRC v3.0.dev3</span></a></li>
+<span>DRC v3.0.dev4</span></a></li>
 </ul>
 </div>
 <div class="footer-meta">

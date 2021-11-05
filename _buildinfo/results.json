@@ -1,6 +1,6 @@
 {
-  "build_time": "2021-11-05 10:10:17",
-  "checksum": "c8768071197c0146e1fb065923b8ebd1",
+  "build_time": "2021-11-05 17:43:07",
+  "checksum": "3fa500baa15de320bb420053df0592c7",
   "checksum_ttl_seconds": 604800,
   "copyright": "since 1970 by My Authorname",
   "created": {
@@ -12,11 +12,11 @@
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:develop",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v3.0.dev3",
-    "THEME_MTIME": "1633212000",
+    "OUR_IMAGE_VERSION": "v3.0.dev4",
+    "THEME_MTIME": "1636066800",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
-    "TOOLCHAIN_VERSION": "2.12-dev",
+    "TOOLCHAIN_VERSION": "2.12.dev2",
     "TYPOSCRIPT_PY_VERSION": "v2.2.4"
   },
   "gitdir": "/PROJECT",
@@ -31,7 +31,7 @@
   "t3author": "My Authorname",
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1635875722",
+    "build_mtime": "1636133768",
     "module_name": "sphinx_typo3_theme",
     "version_scm": "4.6.3.dev42+gb181248",
     "version_scm_build": "gb181248",

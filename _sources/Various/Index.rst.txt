@@ -11,94 +11,10 @@ Various
    :local:
 
 
-2021-11-05 Code-block, caption
-##############################
+2021-11-05
+##########
 
-Image and code-block without caption
-====================================
+Something to test
+=================
 
-.. image:: ../images/loremipsum/a4.jpg
-
-.. code-block:: none
-
-   .
-   ├── composer.json
-   ├── ext_emconf.php
-   .
-
-
-Image and code-block with caption
-=================================
-
-.. image:: ../images/loremipsum/a4.jpg
-
-.. code-block:: none
-   :caption: Generated extension with boilerplate code
-
-   .
-   ├── composer.json
-   ├── ext_emconf.php
-   .
-
-
-Figure and code-block without caption
-=====================================
-
-.. figure:: ../images/loremipsum/a4.jpg
-
-   Caption of image
-
-.. code-block:: none
-
-   .
-   ├── composer.json
-   ├── ext_emconf.php
-   .
-
-
-Figure and code-block with caption
-==================================
-
-.. figure:: ../images/loremipsum/a4.jpg
-
-   Caption of image
-
-.. code-block:: none
-   :caption: Generated extension with boilerplate code
-
-   .
-   ├── composer.json
-   ├── ext_emconf.php
-   .
-
-
-Code-block without caption within figure's caption
-==================================================
-
-.. figure:: ../images/loremipsum/a4.jpg
-
-   Caption of image
-
-   .. code-block:: none
-
-      .
-      ├── composer.json
-      ├── ext_emconf.php
-      .
-
-
-Code-block with caption within figure's caption
-===============================================
-
-.. figure:: ../images/loremipsum/a4.jpg
-
-   Caption of image
-
-   .. code-block:: none
-      :caption: Generated extension with boilerplate code
-
-      .
-      ├── composer.json
-      ├── ext_emconf.php
-      .
-
+...
