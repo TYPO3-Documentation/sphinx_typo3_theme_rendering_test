@@ -37,6 +37,7 @@ StyledNumberedLists/Index.html
 Tables/Index.html
 ThisAndThat/Index.html
 Typesetting/Index.html
+Various/Index.html
 genindex.html
 php-modindex.html
 pygmentize-L.html

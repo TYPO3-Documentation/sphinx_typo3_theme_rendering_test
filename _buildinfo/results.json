@@ -1,6 +1,6 @@
 {
-  "build_time": "2021-11-02 17:07:49",
-  "checksum": "7fe5ece21c4351821e9522cf5ddac3d6",
+  "build_time": "2021-11-05 09:56:56",
+  "checksum": "e68bafc4ecd79d9c447bd9695b4605cd",
   "checksum_ttl_seconds": 604800,
   "copyright": "since 1970 by My Authorname",
   "created": {
@@ -23,20 +23,20 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 43,
+  "postprocessed_html_files": 44,
   "project": "Sphinx TYPO3 Theme Rendering Test",
   "publish_dir": "project/0.0.0",
   "release": "1.0.0",
-  "sitemap_files_html_count": 43,
+  "sitemap_files_html_count": 44,
   "t3author": "My Authorname",
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1635872520",
+    "build_mtime": "1635875722",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.6.3.dev41+g4649efd",
-    "version_scm_build": "g4649efd",
+    "version_scm": "4.6.3.dev42+gb181248",
+    "version_scm_build": "gb181248",
     "version_scm_core": "4.6.3",
-    "version_scm_pre_release": "dev41"
+    "version_scm_pre_release": "dev42"
   },
   "version": "1.0"
 }

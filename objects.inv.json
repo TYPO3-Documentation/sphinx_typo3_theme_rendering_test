@@ -716,6 +716,12 @@
          "Typesetting/Index.html",
          "Typesetting"
       ],
+      "Various/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Various/Index.html",
+         "Various"
+      ],
       "genindex": [
          "Sphinx TYPO3 Theme Rendering Test",
          "1.0",
