@@ -11,8 +11,8 @@ Various
    :local:
 
 
-2021-11-05
-==========
+2021-11-05 Code-block, caption
+##############################
 
 Image and code-block without caption
 ====================================
@@ -24,6 +24,7 @@ Image and code-block without caption
    .
    ├── composer.json
    ├── ext_emconf.php
+   .
 
 
 Image and code-block with caption
@@ -37,6 +38,7 @@ Image and code-block with caption
    .
    ├── composer.json
    ├── ext_emconf.php
+   .
 
 
 Figure and code-block without caption
@@ -51,6 +53,7 @@ Figure and code-block without caption
    .
    ├── composer.json
    ├── ext_emconf.php
+   .
 
 
 Figure and code-block with caption
@@ -66,6 +69,7 @@ Figure and code-block with caption
    .
    ├── composer.json
    ├── ext_emconf.php
+   .
 
 
 Code-block without caption within figure's caption
@@ -80,6 +84,7 @@ Code-block without caption within figure's caption
       .
       ├── composer.json
       ├── ext_emconf.php
+      .
 
 
 Code-block with caption within figure's caption
@@ -95,4 +100,5 @@ Code-block with caption within figure's caption
       .
       ├── composer.json
       ├── ext_emconf.php
+      .
 
