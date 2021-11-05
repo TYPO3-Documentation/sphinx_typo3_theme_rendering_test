@@ -43,7 +43,8 @@ Figure and code-block without caption
 =====================================
 
 .. figure:: ../images/loremipsum/a4.jpg
-   :caption: Caption of image
+
+   Caption of image
 
 .. code-block:: none
 
@@ -56,7 +57,8 @@ Figure and code-block with caption
 ==================================
 
 .. figure:: ../images/loremipsum/a4.jpg
-   :caption: Caption of image
+
+   Caption of image
 
 .. code-block:: none
    :caption: Generated extension with boilerplate code
@@ -64,4 +66,33 @@ Figure and code-block with caption
    .
    ├── composer.json
    ├── ext_emconf.php
+
+
+Code-block without caption within figure's caption
+==================================================
+
+.. figure:: ../images/loremipsum/a4.jpg
+
+   Caption of image
+
+   .. code-block:: none
+
+      .
+      ├── composer.json
+      ├── ext_emconf.php
+
+
+Code-block with caption within figure's caption
+===============================================
+
+.. figure:: ../images/loremipsum/a4.jpg
+
+   Caption of image
+
+   .. code-block:: none
+      :caption: Generated extension with boilerplate code
+
+      .
+      ├── composer.json
+      ├── ext_emconf.php
 

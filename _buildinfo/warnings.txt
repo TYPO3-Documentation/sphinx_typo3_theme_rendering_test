@@ -1,14 +1,4 @@
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
-./Documentation/Various/Index.rst:45: WARNING: Error in "figure" directive:
-unknown option: "caption".
-
-.. figure:: ../images/loremipsum/a4.jpg
-   :caption: Caption of image
-./Documentation/Various/Index.rst:58: WARNING: Error in "figure" directive:
-unknown option: "caption".
-
-.. figure:: ../images/loremipsum/a4.jpg
-   :caption: Caption of image
 ./Documentation/Directives/confval.rst:: WARNING: 'class' reference target not found: shy
 ./Documentation/Directives/confval.rst:: WARNING: 'class' reference target not found: align
 ./Documentation/Directives/confval.rst:: WARNING: 'class' reference target not found: boolean

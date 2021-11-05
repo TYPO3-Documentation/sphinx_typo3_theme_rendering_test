@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-11-05T09:55:46+00:00" name="docsearch:modified"/>
+<meta content="2021-11-05T10:06:50+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-11-05T09:55:46+00:00" name="dc.modified"/>
-<meta content="2021-11-05T09:55:46+00:00" property="article:modified_time"/>
+<meta content="2021-11-05T10:06:50+00:00" name="dc.modified"/>
+<meta content="2021-11-05T10:06:50+00:00" property="article:modified_time"/>
 <title>Various — Sphinx TYPO3 Theme Rendering Test 1.0.0 documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -140,6 +140,8 @@
 <li><a class="reference internal" href="#image-and-code-block-with-caption">Image and code-block with caption</a></li>
 <li><a class="reference internal" href="#figure-and-code-block-without-caption">Figure and code-block without caption</a></li>
 <li><a class="reference internal" href="#figure-and-code-block-with-caption">Figure and code-block with caption</a></li>
+<li><a class="reference internal" href="#code-block-without-caption-within-figure-s-caption">Code-block without caption within figure’s caption</a></li>
+<li><a class="reference internal" href="#code-block-with-caption-within-figure-s-caption">Code-block with caption within figure’s caption</a></li>
 </ul>
 </li>
 </ul>
@@ -200,11 +202,13 @@
 <div class="contents compact-list local topic" id="this-page">
 <p class="topic-title">This page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#id1" id="id4">2021-11-05</a></p></li>
-<li><p><a class="reference internal" href="#image-and-code-block-without-caption" id="id5">Image and code-block without caption</a></p></li>
-<li><p><a class="reference internal" href="#image-and-code-block-with-caption" id="id6">Image and code-block with caption</a></p></li>
-<li><p><a class="reference internal" href="#figure-and-code-block-without-caption" id="id7">Figure and code-block without caption</a></p></li>
-<li><p><a class="reference internal" href="#figure-and-code-block-with-caption" id="id8">Figure and code-block with caption</a></p></li>
+<li><p><a class="reference internal" href="#id1" id="id9">2021-11-05</a></p></li>
+<li><p><a class="reference internal" href="#image-and-code-block-without-caption" id="id10">Image and code-block without caption</a></p></li>
+<li><p><a class="reference internal" href="#image-and-code-block-with-caption" id="id11">Image and code-block with caption</a></p></li>
+<li><p><a class="reference internal" href="#figure-and-code-block-without-caption" id="id12">Figure and code-block without caption</a></p></li>
+<li><p><a class="reference internal" href="#figure-and-code-block-with-caption" id="id13">Figure and code-block with caption</a></p></li>
+<li><p><a class="reference internal" href="#code-block-without-caption-within-figure-s-caption" id="id14">Code-block without caption within figure’s caption</a></p></li>
+<li><p><a class="reference internal" href="#code-block-with-caption-within-figure-s-caption" id="id15">Code-block with caption within figure’s caption</a></p></li>
 </ul>
 </div>
 <div class="section" id="id1">
@@ -233,6 +237,10 @@
 </div>
 <div class="section" id="figure-and-code-block-without-caption">
 <h2><a class="toc-backref" href="#this-page">Figure and code-block without caption</a><a class="headerlink" href="#figure-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id3">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+</div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
 ├── ext_emconf.php
@@ -241,12 +249,47 @@
 </div>
 <div class="section" id="figure-and-code-block-with-caption">
 <h2><a class="toc-backref" href="#this-page">Figure and code-block with caption</a><a class="headerlink" href="#figure-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
-<div class="literal-block-wrapper docutils container" id="id3">
-<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
+<div class="figure align-default" id="id4">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+</div>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
 ├── ext_emconf.php
 </pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="code-block-without-caption-within-figure-s-caption">
+<h2><a class="toc-backref" href="#this-page">Code-block without caption within figure’s caption</a><a class="headerlink" href="#code-block-without-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id6">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="code-block-with-caption-within-figure-s-caption">
+<h2><a class="toc-backref" href="#this-page">Code-block with caption within figure’s caption</a><a class="headerlink" href="#code-block-with-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id7">
+<img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
+├── composer.json
+├── ext_emconf.php
+</pre></div>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -282,11 +325,11 @@
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/9a29f387b659e834a7cba4cc04ecaa9b3677f525" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Nov 05, 2021 09:55
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/e64892756c11ca83bad3be5bff499c1d210c4173" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Nov 05, 2021 10:06
                         </a>
 </p>
-<p class="text-center">Last rendered: Nov 05, 2021 09:56</p>
+<p class="text-center">Last rendered: Nov 05, 2021 10:07</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme at GitHub">
 <span>TYPO3 Theme 4.6.3.dev42+gb181248</span></a></li>
