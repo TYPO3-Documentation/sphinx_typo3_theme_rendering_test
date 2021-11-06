@@ -35,12 +35,7 @@ Image and code-block without caption
    ├── composer.json
    ├── ext_emconf.php
    .
-   
-   
-:php:`MyCustomException`code in title
-=====================================
 
-Style for code in titles
 
 
 Image and code-block with caption
