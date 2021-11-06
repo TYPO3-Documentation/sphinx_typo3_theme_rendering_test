@@ -44,6 +44,21 @@ Sphinx extension 'sphinx-panels'
 Examples
 ========
 
+Example: Extension manual search
+--------------------------------
+
+.. panels::
+   :container: container
+   :column: col-12 padding-0-important
+   :card:
+   :header: bold-important
+
+   Extension manual search
+   ^^^^^^^^^^^^^^^^^^^^^^^
+
+   fill in here
+
+
 Example
 -------
 
