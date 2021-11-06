@@ -194,3 +194,19 @@ Check the following to see if we have give those an individual styling:
 - This is how ``:typoscript:`lib.hello.value = Hello World!``` looks like: :typoscript:`lib.hello.value = Hello World!`
 
 - This is how ``:ts:`lib.hello.value = Hello World!``` looks like: :ts:`lib.hello.value = Hello World!`
+
+
+Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
+==========================================================
+
+Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
+----------------------------------------------------------
+
+Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
+##########################################################
