@@ -14,6 +14,7 @@ Directives/sphinxcontrib-t3fieldlisttable.html
 Directives/sphinxcontrib-t3targets.html
 Directives/sphinxcontrib-youtube.html
 Directives/versionadded.html
+Extensions/Index.html
 FieldLists/Index.html
 Fonts/Index.html
 Highlighting/Index.html

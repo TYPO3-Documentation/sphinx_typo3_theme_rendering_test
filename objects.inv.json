@@ -578,6 +578,12 @@
          "Directives/versionadded.html",
          "versionadded & friends"
       ],
+      "Extensions/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "1.0",
+         "Extensions/Index.html",
+         "Developing & Using Extensions"
+      ],
       "FieldLists/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "1.0",
