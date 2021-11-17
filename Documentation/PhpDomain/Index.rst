@@ -485,9 +485,10 @@ Test Case - global access
 Any Cross Ref
 =============
 
-:any:`LibraryName\\NS_CONST`
+:any:`LibraryName\\SubPackage\\NestedNamespaceException`
 
-:any:`DateTimeInterface::setTime()`
+:any:`DateTimeInterface::$testattr`
+
 
 
 Nested namespaces

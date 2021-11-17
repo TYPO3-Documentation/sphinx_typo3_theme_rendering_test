@@ -40,6 +40,12 @@ Sphinx extension 'sphinx-panels'
    :local:
 
 
+.. _panels/usage:
+
+Dummy target 'panels/usage'
+===========================
+...
+
 
 Examples
 ========
