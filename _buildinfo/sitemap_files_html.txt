@@ -22,6 +22,7 @@ ImagesAndFigures/Index.html
 Index.html
 Inline-code-and-textroles/Index.html
 Lineblocks/Index.html
+LinkStyles/Index.html
 Lists/Index.html
 ListsAsButtons/Index.html
 Nested-pages/1/1/1/1/1/index.html

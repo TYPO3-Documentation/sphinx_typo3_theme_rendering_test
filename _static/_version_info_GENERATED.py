@@ -1,6 +1,6 @@
 version_info = (
 {
-  "build_mtime": "1636216311",
+  "build_mtime": "1636232878",
   "module_name": "sphinx_typo3_theme",
   "version_scm": "4.6.3.dev48+gea64282",
   "version_scm_build": "gea64282",
