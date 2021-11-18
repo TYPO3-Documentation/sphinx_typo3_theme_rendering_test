@@ -2,7 +2,6 @@
 sphinx_typo3_theme_rendering_test
 =================================
 
-
 This is a test suite of reStructuredText files for the sphinx_typo3_theme.
 The emphasis is on running technical tests quickly. It should cover all possible
 reST markup and allow visual and technical inspection.

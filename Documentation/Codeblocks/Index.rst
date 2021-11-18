@@ -6,6 +6,13 @@
 Codeblocks
 ==================
 
+.. contents:: This page
+   :backlinks: top
+   :class: compact-list
+   :depth: 99
+   :local:
+
+
 Basic examples
 ==============
 
@@ -22,6 +29,36 @@ Show more::
 Or short::
 
    ls -1
+
+
+Code-block with line numbers
+============================
+
+*Note:* When you select code, the linenumbers should not be selected, also they
+are technically WITHIN the html that is selected. See :theme-issue:`149`.
+
+Select some of the following code to test whether the line number get selected
+as well.
+
+.. code-block:: rst
+   :caption: Example of 'contents' directive
+   :linenos:
+   :emphasize-lines: 2,3
+   :force:
+
+   This is an example block. Next two line have 'emphasis' background color.
+   With another line.
+   And a third one.
+
+   .. code-block:: rst
+      :caption: Example of 'contents' directive
+      :linenos:
+      :emphasize-lines: 2,3
+      :force:
+
+      This is an example block.
+      With another line.
+      And a third one.
 
 
 Image and code-block without caption
