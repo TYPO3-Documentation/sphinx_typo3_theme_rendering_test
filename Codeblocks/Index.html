@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="1.0.0" name="docsearch:release"/>
 <meta content="1.0" name="docsearch:version"/>
-<meta content="2021-11-17T17:58:09+00:00" name="docsearch:modified"/>
+<meta content="2021-11-18T15:05:25+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-11-17T17:58:09+00:00" name="dc.modified"/>
-<meta content="2021-11-17T17:58:09+00:00" property="article:modified_time"/>
+<meta content="2021-11-18T15:05:25+00:00" name="dc.modified"/>
+<meta content="2021-11-18T15:05:25+00:00" property="article:modified_time"/>
 <title>Codeblocks — Sphinx TYPO3 Theme Rendering Test 1.0.0 documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -138,6 +138,7 @@
 <ul>
 <li><a class="reference internal" href="#">Codeblocks</a><ul>
 <li><a class="reference internal" href="#basic-examples">Basic examples</a></li>
+<li><a class="reference internal" href="#code-block-with-line-numbers">Code-block with line numbers</a></li>
 <li><a class="reference internal" href="#image-and-code-block-without-caption">Image and code-block without caption</a></li>
 <li><a class="reference internal" href="#image-and-code-block-with-caption">Image and code-block with caption</a></li>
 <li><a class="reference internal" href="#figure-and-code-block-without-caption">Figure and code-block without caption</a></li>
@@ -201,8 +202,21 @@
 <!-- body -->
 <div class="section" id="codeblocks">
 <span id="id1"></span><h1>Codeblocks<a class="headerlink" href="#codeblocks" title="Permalink to this headline">¶</a></h1>
+<div class="contents compact-list local topic" id="this-page">
+<p class="topic-title">This page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#basic-examples" id="id10">Basic examples</a></p></li>
+<li><p><a class="reference internal" href="#code-block-with-line-numbers" id="id11">Code-block with line numbers</a></p></li>
+<li><p><a class="reference internal" href="#image-and-code-block-without-caption" id="id12">Image and code-block without caption</a></p></li>
+<li><p><a class="reference internal" href="#image-and-code-block-with-caption" id="id13">Image and code-block with caption</a></p></li>
+<li><p><a class="reference internal" href="#figure-and-code-block-without-caption" id="id14">Figure and code-block without caption</a></p></li>
+<li><p><a class="reference internal" href="#figure-and-code-block-with-caption" id="id15">Figure and code-block with caption</a></p></li>
+<li><p><a class="reference internal" href="#code-block-without-caption-within-figure-s-caption" id="id16">Code-block without caption within figure's caption</a></p></li>
+<li><p><a class="reference internal" href="#code-block-with-caption-within-figure-s-caption" id="id17">Code-block with caption within figure's caption</a></p></li>
+</ul>
+</div>
 <div class="section" id="basic-examples">
-<h2>Basic examples<a class="headerlink" href="#basic-examples" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#this-page">Basic examples</a><a class="headerlink" href="#basic-examples" title="Permalink to this headline">¶</a></h2>
 <p>List files, 'let see':</p>
 <div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>ls
 </pre></div>
@@ -216,8 +230,33 @@
 </pre></div>
 </div>
 </div>
+<div class="section" id="code-block-with-line-numbers">
+<h2><a class="toc-backref" href="#this-page">Code-block with line numbers</a><a class="headerlink" href="#code-block-with-line-numbers" title="Permalink to this headline">¶</a></h2>
+<p><em>Note:</em> When you select code, the linenumbers should not be selected, also they
+are technically WITHIN the html that is selected. See <a class="reference external" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/149" rel="nofollow noopener">issue #149</a>.</p>
+<p>Select some of the following code to test whether the line number get selected
+as well.</p>
+<div class="literal-block-wrapper docutils du-container" id="id2">
+<div class="code-block-caption"><span class="caption-text">Example of 'contents' directive</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>This is an example block. Next two line have 'emphasis' background color.
+<span class="hll"><span class="linenos"> 2</span>With another line.
+</span><span class="hll"><span class="linenos"> 3</span>And a third one.
+</span><span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="p">..</span> <span class="ow">code-block</span><span class="p">::</span> rst
+<span class="linenos"> 6</span>   <span class="nc">:caption:</span> Example of 'contents' directive
+<span class="linenos"> 7</span>   <span class="nc">:linenos:</span>
+<span class="linenos"> 8</span>   <span class="nc">:emphasize-lines:</span> 2,3
+<span class="linenos"> 9</span>   <span class="nc">:force:</span>
+<span class="linenos">10</span>
+<span class="linenos">11</span>   This is an example block.
+<span class="linenos">12</span>   With another line.
+<span class="linenos">13</span>   And a third one.
+</pre></div>
+</div>
+</div>
+</div>
 <div class="section" id="image-and-code-block-without-caption">
-<h2>Image and code-block without caption<a class="headerlink" href="#image-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#this-page">Image and code-block without caption</a><a class="headerlink" href="#image-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
 <img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
@@ -227,15 +266,15 @@
 </div>
 </div>
 <div class="section" id="image-and-code-block-with-caption">
-<h2>Image and code-block with caption<a class="headerlink" href="#image-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#this-page">Image and code-block with caption</a><a class="headerlink" href="#image-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
 <p>Code blocks with caption show up in html as
 <code class="code html docutils literal notranslate"><span class="pre">div.literal-block-wrapper.docutils.container</span></code> due to <code class="code docutils literal notranslate"><span class="pre">docutils</span></code>.
 Since DRC v3.0.dev2 html post-processing is changing this to
 <code class="code docutils literal notranslate"><span class="pre">div.literal-block-wrapper.docutils.du-container</span></code>. This should prevent
 <a class="reference external" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/148" rel="nofollow noopener">sphinx_typo3_theme issue #148</a>.</p>
 <img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
-<div class="literal-block-wrapper docutils du-container" id="id2">
-<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id2" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper docutils du-container" id="id3">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id3" title="Permalink to this code">¶</a></div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
 ├── ext_emconf.php
@@ -245,10 +284,10 @@ Since DRC v3.0.dev2 html post-processing is changing this to
 </div>
 </div>
 <div class="section" id="figure-and-code-block-without-caption">
-<h2>Figure and code-block without caption<a class="headerlink" href="#figure-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id3">
+<h2><a class="toc-backref" href="#this-page">Figure and code-block without caption</a><a class="headerlink" href="#figure-and-code-block-without-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id4">
 <img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
-<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id3" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
 </div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
@@ -258,13 +297,13 @@ Since DRC v3.0.dev2 html post-processing is changing this to
 </div>
 </div>
 <div class="section" id="figure-and-code-block-with-caption">
-<h2>Figure and code-block with caption<a class="headerlink" href="#figure-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id4">
+<h2><a class="toc-backref" href="#this-page">Figure and code-block with caption</a><a class="headerlink" href="#figure-and-code-block-with-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id5">
 <img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
-<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id4" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id5" title="Permalink to this image">¶</a></p>
 </div>
-<div class="literal-block-wrapper docutils du-container" id="id5">
-<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id5" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper docutils du-container" id="id6">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id6" title="Permalink to this code">¶</a></div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
 ├── ext_emconf.php
@@ -274,10 +313,10 @@ Since DRC v3.0.dev2 html post-processing is changing this to
 </div>
 </div>
 <div class="section" id="code-block-without-caption-within-figure-s-caption">
-<h2>Code-block without caption within figure's caption<a class="headerlink" href="#code-block-without-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id6">
+<h2><a class="toc-backref" href="#this-page">Code-block without caption within figure's caption</a><a class="headerlink" href="#code-block-without-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id7">
 <img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
-<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id6" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
 <div class="legend">
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
@@ -289,13 +328,13 @@ Since DRC v3.0.dev2 html post-processing is changing this to
 </div>
 </div>
 <div class="section" id="code-block-with-caption-within-figure-s-caption">
-<h2>Code-block with caption within figure's caption<a class="headerlink" href="#code-block-with-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
-<div class="figure align-default" id="id7">
+<h2><a class="toc-backref" href="#this-page">Code-block with caption within figure's caption</a><a class="headerlink" href="#code-block-with-caption-within-figure-s-caption" title="Permalink to this headline">¶</a></h2>
+<div class="figure align-default" id="id8">
 <img alt="../_images/a4.jpg" src="../_images/a4.jpg"/>
-<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id7" title="Permalink to this image">¶</a></p>
+<p class="caption"><span class="caption-text">Caption of image</span><a class="headerlink" href="#id8" title="Permalink to this image">¶</a></p>
 <div class="legend">
-<div class="literal-block-wrapper docutils du-container" id="id8">
-<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id8" title="Permalink to this code">¶</a></div>
+<div class="literal-block-wrapper docutils du-container" id="id9">
+<div class="code-block-caption"><span class="caption-text">Generated extension with boilerplate code</span><a class="headerlink" href="#id9" title="Permalink to this code">¶</a></div>
 <div class="highlight-none notranslate"><div class="highlight"><pre><span></span>.
 ├── composer.json
 ├── ext_emconf.php
@@ -338,14 +377,14 @@ Since DRC v3.0.dev2 html post-processing is changing this to
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/1fc62d8d953fae54880b6cbeb258676f59af2d24" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Nov 17, 2021 17:58
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/f26a70ca5273ce81cd69ba29b1f73ab870081b5d" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Nov 18, 2021 15:05
                         </a>
 </p>
-<p class="text-center">Last rendered: Nov 17, 2021 17:59</p>
+<p class="text-center">Last rendered: Nov 18, 2021 15:07</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme at GitHub">
-<span>TYPO3 Theme 4.6.3.dev48+gea64282</span></a></li>
+<span>TYPO3 Theme 4.6.3.dev50+gd614583</span></a></li>
 <li><a href="https://github.com/t3docs/docker-render-documentation" rel="nofollow noopener" target="_blank" title="DRC - Docker Rendering Container at GitHub">
 <span>DRC v3.0.dev6</span></a></li>
 </ul>
