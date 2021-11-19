@@ -1,6 +1,6 @@
 {
-  "build_time": "2021-11-18 15:07:43",
-  "checksum": "82ededbd1fdfbf3e8ccc49c7a5e97951",
+  "build_time": "2021-11-19 22:48:39",
+  "checksum": "5ee4d219ae0dc6329d8bebf238a5a8ac",
   "checksum_ttl_seconds": 604800,
   "copyright": "since 1970 by My Authorname",
   "created": {
@@ -31,12 +31,12 @@
   "t3author": "My Authorname",
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1637246367",
+    "build_mtime": "1637361828",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.6.3.dev50+gd614583",
-    "version_scm_build": "gd614583",
+    "version_scm": "4.6.3.dev53+g4b453b9",
+    "version_scm_build": "g4b453b9",
     "version_scm_core": "4.6.3",
-    "version_scm_pre_release": "dev50"
+    "version_scm_pre_release": "dev53"
   },
   "version": "1.0"
 }
