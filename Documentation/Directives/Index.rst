@@ -6,7 +6,6 @@
 Directives
 ==========
 
-
 .. rst-class:: compact-list
 .. toctree::
    :glob:
