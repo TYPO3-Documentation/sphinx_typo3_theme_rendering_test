@@ -43,7 +43,7 @@ A sphinx extension for creating panels in a grid layout or as drop-downs.
 
             ---
 
-            .. link-button:: https://example.com
+            .. link-button:: https://example.org
                 :text: Clickable Panel
                 :classes: stretched-link
 
@@ -68,7 +68,7 @@ A sphinx extension for creating panels in a grid layout or as drop-downs.
 
         ---
 
-        ```{link-button} https://example.com
+        ```{link-button} https://example.org
         :text: Clickable Panel
         :classes: stretched-link
         ```
@@ -93,7 +93,7 @@ A sphinx extension for creating panels in a grid layout or as drop-downs.
 
     ---
 
-    .. link-button:: https://example.com
+    .. link-button:: https://example.org
         :text: Clickable Panel
         :classes: stretched-link
 
@@ -454,7 +454,7 @@ They can be styled by `Bootstrap button classes <https://getbootstrap.com/docs/4
 
 .. code-block:: rst
 
-    .. link-button:: https://example.com
+    .. link-button:: https://example.org
         :type: url
         :text: some text
         :tooltip: hallo
@@ -464,7 +464,7 @@ They can be styled by `Bootstrap button classes <https://getbootstrap.com/docs/4
         :text: some other text
         :classes: btn-outline-primary btn-block
 
-.. link-button:: https://example.com
+.. link-button:: https://example.org
     :type: url
     :text: some text
     :tooltip: hallo
@@ -481,7 +481,7 @@ to make the entire panel clickable:
 
     .. panels::
 
-        .. link-button:: https://example.com
+        .. link-button:: https://example.org
             :classes: btn-success
 
         ---
@@ -497,7 +497,7 @@ to make the entire panel clickable:
 
 .. panels::
 
-    .. link-button:: https://example.com
+    .. link-button:: https://example.org
         :classes: btn-success
 
     ---
@@ -548,12 +548,12 @@ The ``link-badge`` also adds the ability to use a link to a URI or reference:
 
 .. code-block:: rst
 
-    :link-badge:`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
-    :link-badge:`https://example.com,"my, text",cls=badge-dark text-white`
+    :link-badge:`https://example.org,cls=badge-primary text-white,tooltip=a tooltip`
+    :link-badge:`https://example.org,"my, text",cls=badge-dark text-white`
     :link-badge:`panels/usage,my reference,ref,badge-success text-white,hallo`
 
-:link-badge:`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
-:link-badge:`https://example.com,"my, text",cls=badge-dark text-white`
+:link-badge:`https://example.org,cls=badge-primary text-white,tooltip=a tooltip`
+:link-badge:`https://example.org,"my, text",cls=badge-dark text-white`
 :link-badge:`panels/usage,my reference,ref,badge-success text-white`
 
 Note the inputs are parsed by the following functions. The role text therefore uses these
@@ -583,7 +583,7 @@ drop-down panel.
 
         I'm the content which can be anything:
 
-        .. link-button:: https://example.com
+        .. link-button:: https://example.org
             :text: Like a Button
             :classes: btn-primary
 
@@ -591,7 +591,7 @@ drop-down panel.
 
     I'm the content which can be anything:
 
-    .. link-button:: https://example.com
+    .. link-button:: https://example.org
         :text: Like a Button
         :classes: btn-primary
 

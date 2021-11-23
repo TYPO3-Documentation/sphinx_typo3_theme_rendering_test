@@ -86,7 +86,7 @@ Example
 
     ---
 
-    .. link-button:: https://example.com
+    .. link-button:: https://example.org
         :text: Clickable Panel
         :classes: stretched-link
 
@@ -116,7 +116,7 @@ Example
 
 .. panels::
 
-   .. link-button:: https://example.com
+   .. link-button:: https://example.org
       :type: url
       :tooltip: hallo
       :classes: btn-success
@@ -139,7 +139,7 @@ Example
 
    I'm the content which can be anything:
 
-   .. link-button:: https://example.com
+   .. link-button:: https://example.org
        :text: Like a Button
        :classes: btn-primary
 
@@ -252,7 +252,7 @@ Example
 Example
 =======
 
-.. link-button:: https://example.com
+.. link-button:: https://example.org
    :type: url
    :text: some text
    :tooltip: hallo
@@ -267,7 +267,7 @@ Example
 
 .. panels::
 
-   .. link-button:: https://example.com
+   .. link-button:: https://example.org
       :classes: btn-success
 
    ---
@@ -292,8 +292,8 @@ Example
 Example
 =======
 
-:link-badge:`https://example.com,cls=badge-primary text-white,tooltip=a tooltip`
-:link-badge:`https://example.com,"my, text",cls=badge-dark text-white`
+:link-badge:`https://example.org,cls=badge-primary text-white,tooltip=a tooltip`
+:link-badge:`https://example.org,"my, text",cls=badge-dark text-white`
 :link-badge:`panels/usage,my reference,ref,badge-success text-white,hallo`
 
 Example
@@ -303,7 +303,7 @@ Example
 
    I'm the content which can be anything:
 
-   .. link-button:: https://example.com
+   .. link-button:: https://example.org
       :text: Like a Button
       :classes: btn-primary
 
