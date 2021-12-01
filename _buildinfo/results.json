@@ -1,18 +1,18 @@
 {
-  "build_time": "2021-11-23 14:06:22",
-  "checksum": "f81e328fe8d490fc193d7b4b110cc152",
+  "build_time": "2021-12-01 19:45:12",
+  "checksum": "ae4309ccf00c0c5b044b489e0f7c5af5",
   "checksum_ttl_seconds": 604800,
-  "copyright": "since 1970 by My Authorname",
+  "copyright": "2020 by the TYPO3 Documentation Team",
   "created": {
     "html": 1
   },
-  "description": "Examples for formatting text for the sphinx_typo3_theme of the official TYPO3 documentation",
+  "description": "This project contains examples of documentation code in\nreStructuredText format. The purpose is to demonstrate what the\nsphinx_typo3_theme can handle and to test the theme.",
   "email_notify_about_new_build": [],
   "emails_user_from_project": [],
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:develop",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v3.0.dev6",
+    "OUR_IMAGE_VERSION": "v3.0.dev7",
     "THEME_MTIME": "1636153200",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
@@ -23,20 +23,19 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 46,
+  "postprocessed_html_files": 47,
   "project": "Sphinx TYPO3 Theme Rendering Test",
   "publish_dir": "project/0.0.0",
-  "release": "1.0.0",
-  "sitemap_files_html_count": 46,
-  "t3author": "My Authorname",
+  "release": "main",
+  "sitemap_files_html_count": 47,
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1637361828",
+    "build_mtime": "1638387681",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.6.3.dev53+g4b453b9",
-    "version_scm_build": "g4b453b9",
+    "version_scm": "4.6.3.dev54+g457db68",
+    "version_scm_build": "g457db68",
     "version_scm_core": "4.6.3",
-    "version_scm_pre_release": "dev53"
+    "version_scm_pre_release": "dev54"
   },
-  "version": "1.0"
+  "version": "main"
 }

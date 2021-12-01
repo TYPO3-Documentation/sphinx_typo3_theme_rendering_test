@@ -32,6 +32,7 @@ Nested-pages/1/1/index.html
 Nested-pages/1/index.html
 Nested-pages/Index.html
 PhpDomain/Index.html
+Replacements/Index.html
 Sitemap/Index.html
 SpecialCharacters/Index.html
 SphinxPanels/Index.html
