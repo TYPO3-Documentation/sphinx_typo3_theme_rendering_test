@@ -36,6 +36,7 @@ Notation              Result
 ===================== ==========================
 `|cfg_audience|`      |cfg_audience|
 `|cfg_author|`        |cfg_author|
+`|cfg_t3author|`      |cfg_t3author|
 `|cfg_copyright|`     |cfg_copyright|
 `|cfg_description|`   |cfg_description|
 `|cfg_language|`      |cfg_language|
