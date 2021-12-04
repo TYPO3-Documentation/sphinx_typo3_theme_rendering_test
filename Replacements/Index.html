@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="main" name="docsearch:release"/>
 <meta content="main" name="docsearch:version"/>
-<meta content="2021-12-01T19:44:04+00:00" name="docsearch:modified"/>
+<meta content="2021-12-04T21:32:28+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-12-01T19:44:04+00:00" name="dc.modified"/>
-<meta content="2021-12-01T19:44:04+00:00" property="article:modified_time"/>
+<meta content="2021-12-04T21:32:28+00:00" name="dc.modified"/>
+<meta content="2021-12-04T21:32:28+00:00" property="article:modified_time"/>
 <title>Replacements — Sphinx TYPO3 Theme Rendering Test main documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -138,12 +138,50 @@
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
 <li><a class="reference internal" href="#">Replacements</a><ul>
-<li><a class="reference internal" href="#sphinx-defaults">Sphinx defaults</a></li>
-<li><a class="reference internal" href="#provided-by-sphinxcontrib-docstypo3">Provided by 'sphinxcontrib-docstypo3'</a><ul>
-<li><a class="reference internal" href="#example-reconstruct-settings-cfg">Example: Reconstruct 'Settings.cfg'</a></li>
+<li><a class="reference internal" href="#available-replacements">Available replacements</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#meaning-of-prefixes">Meaning of prefixes</a></li>
+<li><a class="reference internal" href="#optional-postfixes">Optional postfixes</a><ul>
+<li><a class="reference internal" href="#postfix-example">Postfix example</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#about-the-settings">About the settings</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#demo-usage">Demo usage</a><ul>
+<li><a class="reference internal" href="#as-field-table">As field table</a><ul>
+<li><a class="reference internal" href="#source">Source</a></li>
+<li><a class="reference internal" href="#rendering-result">Rendering result</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#recreate-settings-cfg">Recreate Settings.cfg</a><ul>
+<li><a class="reference internal" href="#id5">Source</a></li>
+<li><a class="reference internal" href="#id6">Rendering result</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#about-the-settings">About the settings</a><ul>
+<li><a class="reference internal" href="#audience">Audience</a></li>
+<li><a class="reference internal" href="#author">Author</a></li>
+<li><a class="reference internal" href="#contact">Contact</a></li>
+<li><a class="reference internal" href="#copyright">Copyright</a></li>
+<li><a class="reference internal" href="#description">Description</a></li>
+<li><a class="reference internal" href="#discussions">Discussions</a></li>
+<li><a class="reference internal" href="#documentation-type">Documentation type</a></li>
+<li><a class="reference internal" href="#home">Home</a></li>
+<li><a class="reference internal" href="#issues">Issues</a></li>
+<li><a class="reference internal" href="#language-1">Language 1</a></li>
+<li><a class="reference internal" href="#language-2">Language 2</a></li>
+<li><a class="reference internal" href="#license">License</a></li>
+<li><a class="reference internal" href="#license-todo">License ((todo))</a></li>
+<li><a class="reference internal" href="#maintainer">Maintainer</a></li>
+<li><a class="reference internal" href="#maintainer-todo">Maintainer ((todo))</a></li>
+<li><a class="reference internal" href="#project">Project</a></li>
+<li><a class="reference internal" href="#repository">Repository</a></li>
+<li><a class="reference internal" href="#release">Release</a></li>
+<li><a class="reference internal" href="#version">Version</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -173,7 +211,7 @@
 <span class="btn-icon"><span class="fas fa-info-circle"></span></span>
 <span class="btn-text">How to edit</span>
 </a>
-<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/edit/master/Documentation/Replacements/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
+<a class="btn btn-sm btn-primary" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/edit/master/Documentation/Localization.deprecated/Replacements/Index.rst" id="btnEditOnGitHub" rel="nofollow noopener" target="_blank">
 <span class="btn-icon"><span class="fab fa-github"></span></span>
 <span class="btn-text">Edit on GitHub</span>
 </a>
@@ -204,285 +242,1155 @@
 <div class="contents compact-list local topic" id="this-page">
 <p class="topic-title">This page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#sphinx-defaults" id="id1">Sphinx defaults</a></p></li>
-<li><p><a class="reference internal" href="#provided-by-sphinxcontrib-docstypo3" id="id2">Provided by 'sphinxcontrib-docstypo3'</a></p>
+<li><p><a class="reference internal" href="#available-replacements" id="id7">Available replacements</a></p>
 <ul>
-<li><p><a class="reference internal" href="#example-reconstruct-settings-cfg" id="id3">Example: Reconstruct 'Settings.cfg'</a></p></li>
+<li><p><a class="reference internal" href="#overview" id="id8">Overview</a></p></li>
+<li><p><a class="reference internal" href="#meaning-of-prefixes" id="id9">Meaning of prefixes</a></p></li>
+<li><p><a class="reference internal" href="#optional-postfixes" id="id10">Optional postfixes</a></p>
+<ul>
+<li><p><a class="reference internal" href="#postfix-example" id="id11">Postfix example</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#about-the-settings" id="id4">About the settings</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#demo-usage" id="id12">Demo usage</a></p>
+<ul>
+<li><p><a class="reference internal" href="#as-field-table" id="id13">As field table</a></p>
+<ul>
+<li><p><a class="reference internal" href="#source" id="id14">Source</a></p></li>
+<li><p><a class="reference internal" href="#rendering-result" id="id15">Rendering result</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#recreate-settings-cfg" id="id16">Recreate Settings.cfg</a></p>
+<ul>
+<li><p><a class="reference internal" href="#id5" id="id17">Source</a></p></li>
+<li><p><a class="reference internal" href="#id6" id="id18">Rendering result</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#about-the-settings" id="id19">About the settings</a></p>
+<ul>
+<li><p><a class="reference internal" href="#audience" id="id20">Audience</a></p></li>
+<li><p><a class="reference internal" href="#author" id="id21">Author</a></p></li>
+<li><p><a class="reference internal" href="#contact" id="id22">Contact</a></p></li>
+<li><p><a class="reference internal" href="#copyright" id="id23">Copyright</a></p></li>
+<li><p><a class="reference internal" href="#description" id="id24">Description</a></p></li>
+<li><p><a class="reference internal" href="#discussions" id="id25">Discussions</a></p></li>
+<li><p><a class="reference internal" href="#documentation-type" id="id26">Documentation type</a></p></li>
+<li><p><a class="reference internal" href="#home" id="id27">Home</a></p></li>
+<li><p><a class="reference internal" href="#issues" id="id28">Issues</a></p></li>
+<li><p><a class="reference internal" href="#language-1" id="id29">Language 1</a></p></li>
+<li><p><a class="reference internal" href="#language-2" id="id30">Language 2</a></p></li>
+<li><p><a class="reference internal" href="#license" id="id31">License</a></p></li>
+<li><p><a class="reference internal" href="#license-todo" id="id32">License ((todo))</a></p></li>
+<li><p><a class="reference internal" href="#maintainer" id="id33">Maintainer</a></p></li>
+<li><p><a class="reference internal" href="#maintainer-todo" id="id34">Maintainer ((todo))</a></p></li>
+<li><p><a class="reference internal" href="#project" id="id35">Project</a></p></li>
+<li><p><a class="reference internal" href="#repository" id="id36">Repository</a></p></li>
+<li><p><a class="reference internal" href="#release" id="id37">Release</a></p></li>
+<li><p><a class="reference internal" href="#version" id="id38">Version</a></p></li>
+</ul>
+</li>
 </ul>
 </div>
-<div class="section" id="sphinx-defaults">
-<h2><a class="toc-backref" href="#this-page">Sphinx defaults</a><a class="headerlink" href="#sphinx-defaults" title="Permalink to this headline">¶</a></h2>
-<p>These replacements are always available in Sphinx:</p>
-<table class="docutils align-default">
-<colgroup>
-<col style="width: 45%"/>
-<col style="width: 55%"/>
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Notation</p></th>
-<th class="head"><p>Result</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|today|</span></code></p></td>
-<td><p>2021-12-01 19:45</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|release|</span></code></p></td>
-<td><p>main</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|version|</span></code></p></td>
-<td><p>main</p></td>
-</tr>
-</tbody>
-</table>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>As of today 2021-12-04 21:33, use this DRC to render this page:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>docker pull ghcr.io/t3docs/render-documentation:develop
+docker tag ghcr.io/t3docs/render-documentation:develop t3docs/render-documentation:develop
+eval "$(docker run --rm t3docs/render-documentation:develop show-shell-commands)"
+dockrun_t3rd makehtml-no-cache
+</pre></div>
 </div>
-<div class="section" id="provided-by-sphinxcontrib-docstypo3">
-<h2><a class="toc-backref" href="#this-page">Provided by 'sphinxcontrib-docstypo3'</a><a class="headerlink" href="#provided-by-sphinxcontrib-docstypo3" title="Permalink to this headline">¶</a></h2>
-<p>The following replacements are made available by the
-'sphinxcontrib-docstypo3' Sphinx extension. The actual values for this project
-are shown.</p>
+</div>
+<div class="section" id="available-replacements">
+<h2><a class="toc-backref" href="#this-page">Available replacements</a><a class="headerlink" href="#available-replacements" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="overview">
+<h3><a class="toc-backref" href="#this-page">Overview</a><a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h3>
 <table class="docutils align-default">
 <colgroup>
-<col style="width: 47%"/>
-<col style="width: 53%"/>
+<col style="width: 21%"/>
+<col style="width: 5%"/>
+<col style="width: 25%"/>
+<col style="width: 21%"/>
+<col style="width: 20%"/>
+<col style="width: 8%"/>
 </colgroup>
 <thead>
-<tr class="row-odd"><th class="head"><p>Notation</p></th>
-<th class="head"><p>Result</p></th>
+<tr class="row-odd"><th class="head"><p>Meaning</p></th>
+<th class="head"><p>Used
+by
+theme</p></th>
+<th class="head"><p>Markup</p></th>
+<th class="head"><p>Importance</p></th>
+<th class="head"><p>Name</p></th>
+<th class="head"><p>Prefix</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_audience|</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_author|</span></code></p></td>
-<td><p>Martin Bless &lt;martin.bless@mbless.de&gt;</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_t3author|</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_copyright|</span></code></p></td>
-<td><p>2020 by the TYPO3 Documentation Team</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_description|</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_language|</span></code></p></td>
-<td><p>en</p></td>
-</tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_license|</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_maintainer|</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_project|</span></code></p></td>
-<td><p>Sphinx TYPO3 Theme Rendering Test</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_published|</span></code></p></td>
-<td><p></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_release|</span></code></p></td>
-<td><p>main</p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|cfg_version|</span></code></p></td>
-<td><p>main</p></td>
-</tr>
-<tr class="row-even"><td><p># urls</p></td>
+<tr class="row-even"><td><p>Audience</p></td>
 <td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_audience|</span></code></p></td>
+<td><p>desired</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">audience</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_contact|</span></code></p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p>Author</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|std_author|</span></code></p></td>
+<td><p>expected</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">author</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">std_</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_discussions|</span></code></p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p>Copyright</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|std_copyright|</span></code></p></td>
+<td><p>expected</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">copyright</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">std_</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_home|</span></code></p></td>
-<td><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test</p></td>
+<tr class="row-odd"><td><p>Description</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_description|</span></code></p></td>
+<td><p>recommended</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">description</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
 </tr>
-<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_issues|</span></code></p></td>
-<td><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/issues</p></td>
+<tr class="row-even"><td><p>Doctype</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_doctype|</span></code></p></td>
+<td><p>desired</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">doctype</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
 </tr>
-<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_repository|</span></code></p></td>
-<td><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test</p></td>
+<tr class="row-odd"><td><p>Language (letter code)</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|std_language|</span></code></p></td>
+<td><p>required if not <code class="code docutils literal notranslate"><span class="pre">en</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">language</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">std_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Language (any text)</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_language|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">language</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>License</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_license|</span></code></p></td>
+<td><p>desired</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">license</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Maintainer</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_maintainer|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">maintainer</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Contact</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_contact|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">project_contact</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">hto_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Discussions</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_discussions|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">project_discussions</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">hto_</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Home</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_home|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">project_home</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">hto_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Issues</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_issues|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">project_issues</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">hto_</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Repository</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|hto_project_repository|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">project_repository</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">hto_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Project</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|std_project|</span></code></p></td>
+<td><p>required</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">project</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">std_</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Published</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_published|</span></code></p></td>
+<td><p>optional</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">published</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">dt3m_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Release</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|release|</span></code></p></td>
+<td><p>required</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">release</span></code></p></td>
+<td><p><a href="#id1"><span class="problematic" id="id2">``</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Release</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|std_release|</span></code></p></td>
+<td><p>is alias</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">release</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">std_</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Rendered</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|today|</span></code></p></td>
+<td><p>is read only</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">today</span></code></p></td>
+<td><p><a href="#id3"><span class="problematic" id="id4">``</span></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Version</p></td>
+<td><p>yes</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|version|</span></code></p></td>
+<td><p>required</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">version</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">version</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Version</p></td>
+<td></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">|std_version|</span></code></p></td>
+<td><p>is alias</p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">version</span></code></p></td>
+<td><p><code class="code docutils literal notranslate"><span class="pre">std_</span></code></p></td>
 </tr>
 </tbody>
 </table>
-<p>Use <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code> for configuration:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[general]</span>
+</div>
+<div class="section" id="meaning-of-prefixes">
+<h3><a class="toc-backref" href="#this-page">Meaning of prefixes</a><a class="headerlink" href="#meaning-of-prefixes" title="Permalink to this headline">¶</a></h3>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-std_">
+<span class="sig-name descname"><span class="pre">std_</span></span><a class="headerlink" href="#confval-std_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Spoken as</dt>
+<dd class="field-odd"><p>standard</p>
+</dd>
+<dt class="field-even">Section in Settings.cfg</dt>
+<dd class="field-even"><p>[general]</p>
+</dd>
+<dt class="field-odd">Assignment in conf.py</dt>
+<dd class="field-odd"><p><code class="code docutils literal notranslate"><span class="pre">name</span> <span class="pre">=</span> <span class="pre">"text"</span></code></p>
+</dd>
+<dt class="field-even">Provider</dt>
+<dd class="field-even"><p>built in, comes with Sphinx</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-hto_">
+<span class="sig-name descname"><span class="pre">hto_</span></span><a class="headerlink" href="#confval-hto_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Spoken as</dt>
+<dd class="field-odd"><p>html_theme_options</p>
+</dd>
+<dt class="field-even">Section in Settings.cfg</dt>
+<dd class="field-even"><p>[html_theme_options]</p>
+</dd>
+<dt class="field-odd">Assignment in conf.py</dt>
+<dd class="field-odd"><p><code class="code docutils literal notranslate"><span class="pre">html_theme_options["name"]</span> <span class="pre">=</span> <span class="pre">"text"</span></code></p>
+</dd>
+<dt class="field-even">Provider</dt>
+<dd class="field-even"><p>built in, comes with Sphinx</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-dt3m_">
+<span class="sig-name descname"><span class="pre">dt3m_</span></span><a class="headerlink" href="#confval-dt3m_" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Spoken as</dt>
+<dd class="field-odd"><p>docs typo 3 meta</p>
+</dd>
+<dt class="field-even">Section in Settings.cfg</dt>
+<dd class="field-even"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-odd">Assignment in conf.py</dt>
+<dd class="field-odd"><p><code class="code docutils literal notranslate"><span class="pre">docstypo3["meta"]["name"]</span> <span class="pre">=</span> <span class="pre">"text"</span></code></p>
+</dd>
+<dt class="field-even">Provider</dt>
+<dd class="field-even"><p>extension <a class="reference external" href="https://github.com/TYPO3-Documentation/sphinxcontrib-docstypo3" rel="nofollow noopener">sphinxcontrib-docstypo3</a></p>
+</dd>
+</dl>
+</dd></dl>
+</div>
+<div class="section" id="optional-postfixes">
+<h3><a class="toc-backref" href="#this-page">Optional postfixes</a><a class="headerlink" href="#optional-postfixes" title="Permalink to this headline">¶</a></h3>
+<p>You <em>may</em> append a postfix to the replacement key to specify through which
+function the replacement text should go.</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-_r">
+<span class="sig-name descname"><span class="pre">_r</span></span><a class="headerlink" href="#confval-_r" title="Permalink to this definition">¶</a></dt>
+<dd><p>'r' signals that you want a 'representation' of the text, not just the text
+itself. A represention is a string that can be evaluated (by Python)
+and results in the original string.</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-_json">
+<span class="sig-name descname"><span class="pre">_json</span></span><a class="headerlink" href="#confval-_json" title="Permalink to this definition">¶</a></dt>
+<dd><p>'json' means that the replacement text should be valid json code.</p>
+</dd></dl>
+<div class="section" id="postfix-example">
+<h4><a class="toc-backref" href="#this-page">Postfix example</a><a class="headerlink" href="#postfix-example" title="Permalink to this headline">¶</a></h4>
+<p>Consider this definition:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="c1"># in Settings.cfg</span>
 
-<span class="c1"># everything here goes to 'conf.py'</span>
+<span class="k">[docstypo3-meta]</span>
 
-<span class="na">audience</span> <span class="o">=</span>
-<span class="na">author</span> <span class="o">=</span>
-<span class="na">copyright</span> <span class="o">=</span>
 <span class="na">description</span> <span class="o">=</span>
-<span class="na">language</span> <span class="o">=</span>
-<span class="na">license</span> <span class="o">=</span>
-<span class="na">maintainer</span> <span class="o">=</span>
-<span class="na">project</span> <span class="o">=</span>
-<span class="na">published</span> <span class="o">=</span>
-<span class="na">release</span> <span class="o">=</span>
-<span class="na">version</span> <span class="o">=</span>
-
-
-<span class="k">[html_theme_options]</span>
-<span class="na">project_contact</span>     <span class="o">=</span>  <span class="s"># url or empty</span>
-<span class="na">project_discussions</span> <span class="o">=</span>  <span class="s"># url or empty</span>
-<span class="na">project_home</span>        <span class="o">=</span>  <span class="s"># url or empty</span>
-<span class="na">project_issues</span>      <span class="o">=</span>  <span class="s"># url or empty</span>
-<span class="na">project_repository</span>  <span class="o">=</span>  <span class="s"># url or empty</span>
+   <span class="na">Some explicite description</span>
+   <span class="na">follow up line 2</span>
+   <span class="na">follow up line 3</span>
 </pre></div>
 </div>
-<div class="section" id="example-reconstruct-settings-cfg">
-<h3><a class="toc-backref" href="#this-page">Example: Reconstruct 'Settings.cfg'</a><a class="headerlink" href="#example-reconstruct-settings-cfg" title="Permalink to this headline">¶</a></h3>
-<p><strong>Documentation source (rst):</strong></p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="p">..</span> <span class="ow">parsed-literal</span><span class="p">::</span>
+<p>The replacement text goes to one of three function, depending on what
+postfix you use:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 23%"/>
+<col style="width: 10%"/>
+<col style="width: 4%"/>
+<col style="width: 63%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Markup</p></th>
+<th class="head"><p>Function</p></th>
+<th class="head"></th>
+<th class="head"><p>Replacement</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_description|</span></code></p></td>
+<td><p>str</p></td>
+<td><p>→</p></td>
+<td><p>Some explicite description follow up line 2 follow up line 3</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_description_r|</span></code></p></td>
+<td><p>repr</p></td>
+<td><p>→</p></td>
+<td><p>'\nSome explicite description\nfollow up line 2\nfollow up line 3'</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="code docutils literal notranslate"><span class="pre">|dt3m_description_json|</span></code></p></td>
+<td><p>json.dumps</p></td>
+<td><p>→</p></td>
+<td><p>"\nSome explicite description\nfollow up line 2\nfollow up line 3"</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="demo-usage">
+<h2><a class="toc-backref" href="#this-page">Demo usage</a><a class="headerlink" href="#demo-usage" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="as-field-table">
+<h3><a class="toc-backref" href="#this-page">As field table</a><a class="headerlink" href="#as-field-table" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="source">
+<h4><a class="toc-backref" href="#this-page">Source</a><a class="headerlink" href="#source" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
 
-   [general]
-
-   # prefix in replacements: cfg
-   # everything here goes to 'conf.py'
-
-   audience    = |cfg_audience|
-   author      = |cfg_author|
-   t3author    = |cfg_t3author|
-   copyright   = |cfg_copyright|
-   description = |cfg_description|
-   language    = |cfg_language|
-   license     = |cfg_license|
-   maintainer  = |cfg_maintainer|
-   project     = |cfg_project|
-   published   = |cfg_published|
-   release     = |cfg_release|
-   version     = |cfg_version|
-
-
-   [html_theme_options]
-
-   # prefix in replacements: hto
-
-   project_contact     = |hto_project_contact|
-   project_discussions = |hto_project_discussions|
-   project_home        = |hto_project_home|
-   project_issues      = |hto_project_issues|
-   project_repository  = |hto_project_repository|
+<span class="cp">   :Audience:      |dt3m_audience|</span>
+<span class="cp">   :Author:        |std_author|</span>
+<span class="cp">   :Contact:       |hto_project_contact|</span>
+<span class="cp">   :Copyright:     |std_copyright|</span>
+<span class="cp">   :Description:   |dt3m_description|</span>
+<span class="cp">   :Discussions:   |hto_project_discussions|</span>
+<span class="cp">   :Doctype:       |dt3m_doctype|</span>
+<span class="cp">   :Home:          |hto_project_home|</span>
+<span class="cp">   :Issues:        |hto_project_issues|</span>
+<span class="cp">   :Language 1:    |std_language_json|</span>
+<span class="cp">   :Language 2:    |dt3m_language|</span>
+<span class="cp">   :License:       |dt3m_license|</span>
+<span class="cp">   :Maintainer:    |dt3m_maintainer|</span>
+<span class="cp">   :Project:       |std_project|</span>
+<span class="cp">   :Published:     |dt3m_published|</span>
+<span class="cp">   :Rendered:      |today|</span>
+<span class="cp">   :Release:       |release|</span>
+<span class="cp">   :Release alias: |std_release|</span>
+<span class="cp">   :Repository:    |hto_project_repository|</span>
+<span class="cp">   :Version:       |version|</span>
+<span class="cp">   :Version alias: |std_version|</span>
 </pre></div>
 </div>
-<p><strong>Rendering result:</strong></p>
-<pre class="literal-block">[general]
+</div>
+<div class="section" id="rendering-result">
+<h4><a class="toc-backref" href="#this-page">Rendering result</a><a class="headerlink" href="#rendering-result" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><dl class="field-list simple">
+<dt class="field-odd">Audience</dt>
+<dd class="field-odd"><p>TYPO3 documentation editors and developers</p>
+</dd>
+<dt class="field-even">Author</dt>
+<dd class="field-even"><p>Martin Bless &lt;martin.bless@mbless.de&gt;</p>
+</dd>
+<dt class="field-odd">Contact</dt>
+<dd class="field-odd"><p>https://typo3.org/community/teams/documentation</p>
+</dd>
+<dt class="field-even">Copyright</dt>
+<dd class="field-even"><p>2020, TYPO3 Documentation Team</p>
+</dd>
+<dt class="field-odd">Description</dt>
+<dd class="field-odd"><p>
+This project contains examples of documentation code in
+reStructuredText format. The purpose is to demonstrate what the
+sphinx_typo3_theme can handle and to test the theme.</p>
+</dd>
+<dt class="field-even">Discussions</dt>
+<dd class="field-even"><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/discussions</p>
+</dd>
+<dt class="field-odd">Doctype</dt>
+<dd class="field-odd"><p>Example documentation, Test documentation</p>
+</dd>
+<dt class="field-even">Home</dt>
+<dd class="field-even"><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test</p>
+</dd>
+<dt class="field-odd">Issues</dt>
+<dd class="field-odd"><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/issues</p>
+</dd>
+<dt class="field-even">Language 1</dt>
+<dd class="field-even"><p>en</p>
+</dd>
+<dt class="field-odd">Language 2</dt>
+<dd class="field-odd"><p>English</p>
+</dd>
+<dt class="field-even">License</dt>
+<dd class="field-even"><p>CC-BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0/&gt;</p>
+</dd>
+<dt class="field-odd">Maintainer</dt>
+<dd class="field-odd"><p>Martin Bless &lt;martin.bless@mbless.de&gt;</p>
+</dd>
+<dt class="field-even">Project</dt>
+<dd class="field-even"><p>Sphinx TYPO3 Theme Rendering Test</p>
+</dd>
+<dt class="field-odd">Published</dt>
+<dd class="field-odd"><p>https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/</p>
+</dd>
+<dt class="field-even">Rendered</dt>
+<dd class="field-even"><p>2021-12-04 21:33</p>
+</dd>
+<dt class="field-odd">Release</dt>
+<dd class="field-odd"><p>main</p>
+</dd>
+<dt class="field-even">Release alias</dt>
+<dd class="field-even"><p>main</p>
+</dd>
+<dt class="field-odd">Repository</dt>
+<dd class="field-odd"><p>https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test</p>
+</dd>
+<dt class="field-even">Version</dt>
+<dd class="field-even"><p>main</p>
+</dd>
+<dt class="field-odd">Version alias</dt>
+<dd class="field-odd"><p>main</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="recreate-settings-cfg">
+<h3><a class="toc-backref" href="#this-page">Recreate Settings.cfg</a><a class="headerlink" href="#recreate-settings-cfg" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id5">
+<h4><a class="toc-backref" href="#this-page">Source</a><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
 
-# prefix in replacements: cfg
-# everything here goes to 'conf.py'
+<span class="cp">   .. parsed-literal::</span>
 
-audience    = 
-author      = Martin Bless &lt;martin.bless@mbless.de&gt;
-t3author    = 
-copyright   = 2020 by the TYPO3 Documentation Team
-description = 
-language    = en
-license     = 
-maintainer  = 
-project     = Sphinx TYPO3 Theme Rendering Test
-published   = 
-release     = main
-version     = main
+<span class="cp">      [general]</span>
+
+<span class="cp">      author    =  |std_author|</span>
+<span class="cp">      copyright =  |std_copyright|</span>
+<span class="cp">      language  =  |std_language_json|</span>
+<span class="cp">      project   =  |std_project|</span>
+<span class="cp">      release   =  |std_release|</span>
+<span class="cp">      version   =  |std_version|</span>
 
 
-[html_theme_options]
+<span class="cp">      [docstypo3-meta]</span>
 
-# prefix in replacements: hto
+<span class="cp">      audience    =  |dt3m_audience|</span>
+<span class="cp">      description =  |dt3m_description_json|</span>
+<span class="cp">      doctype     =  |dt3m_doctype|</span>
+<span class="cp">      language    =  |dt3m_language|</span>
+<span class="cp">      license     =  |dt3m_license|</span>
+<span class="cp">      maintainer  =  |dt3m_maintainer|</span>
+<span class="cp">      published   =  |dt3m_published|</span>
 
-project_contact     = 
-project_discussions = 
-project_home        = https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test
-project_issues      = https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/issues
-project_repository  = https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test</pre>
+
+<span class="cp">      [html-theme-options]</span>
+
+<span class="cp">      project_contact     =  |hto_project_contact|</span>
+<span class="cp">      project_discussions =  |hto_project_discussions|</span>
+<span class="cp">      project_home        =  |hto_project_home|</span>
+<span class="cp">      project_issues      =  |hto_project_issues|</span>
+<span class="cp">      project_repository  =  |hto_project_repository|</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id6">
+<h4><a class="toc-backref" href="#this-page">Rendering result</a><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<blockquote>
+<div><pre class="literal-block">[general]
+
+author    =  Martin Bless &lt;martin.bless@mbless.de&gt;
+copyright =  2020, TYPO3 Documentation Team
+language  =  "en"
+project   =  Sphinx TYPO3 Theme Rendering Test
+release   =  main
+version   =  main
+
+
+[docstypo3-meta]
+
+audience    =  TYPO3 documentation editors and developers
+description =  "\nThis project contains examples of documentation code in\nreStructuredText format. The purpose is to demonstrate what the\nsphinx_typo3_theme can handle and to test the theme."
+doctype     =  Example documentation, Test documentation
+language    =  English
+license     =  CC-BY 4.0 &lt;https://creativecommons.org/licenses/by/4.0/&gt;
+maintainer  =  Martin Bless &lt;martin.bless@mbless.de&gt;
+published   =  https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/
+
+
+[html-theme-options]
+
+project_contact     =  https://typo3.org/community/teams/documentation
+project_discussions =  https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/discussions
+project_home        =  https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test
+project_issues      =  https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/issues
+project_repository  =  https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test</pre>
+</div></blockquote>
+</div>
 </div>
 </div>
 <div class="section" id="about-the-settings">
 <h2><a class="toc-backref" href="#this-page">About the settings</a><a class="headerlink" href="#about-the-settings" title="Permalink to this headline">¶</a></h2>
-<p><em>Note:</em> Choose only one of the example lines for <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>.</p>
+<ol class="arabic simple">
+<li><p>Missing values will show up as empty string.</p></li>
+<li><p>Choose only one of the example lines if multiple are given here for
+explanatory purposes.</p></li>
+</ol>
+<div class="section" id="audience">
+<h3><a class="toc-backref" href="#this-page">Audience</a><a class="headerlink" href="#audience" title="Permalink to this headline">¶</a></h3>
+<p>((Describe: This doc is for whom?))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_audience">
-<span id="confval-|cfg_audience|"></span><span class="sig-name descname"><span class="pre">|cfg_audience|</span></span><a class="headerlink" href="#confval-cfg_audience" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">audience</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<dt class="sig sig-object std" id="confval-audience">
+<span class="sig-name descname"><span class="pre">audience</span></span><a class="headerlink" href="#confval-audience" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>audience</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>dt3m_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|dt3m_audience|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>any text</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[docstypo3-meta]</span>
 
-audience = developers, power users
-audience = Everybody interested
+<span class="na">audience</span> <span class="o">=</span> <span class="s">Developers (and everybody interested)</span>
 </pre></div>
 </div>
-</dd></dl>
-<dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_author">
-<span id="confval-|cfg_author|"></span><span class="sig-name descname"><span class="pre">|cfg_author|</span></span><a class="headerlink" href="#confval-cfg_author" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">author</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>.
-If empty, <code class="code docutils literal notranslate"><span class="pre">t3author</span></code> will be used. If none is found, the empty string is
-used.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
-
-author = TYPO3 Documentation Team
-author = Ernest Hemingway &lt;ernest@example.org&gt;, Oscar Wilde
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docstypo3</span><span class="p">[</span><span class="s2">"meta"</span><span class="p">][</span><span class="s2">"audience"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"developers (and everybody interested)"</span>
 </pre></div>
 </div>
-</dd></dl>
-<dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_t3author">
-<span id="confval-|cfg_t3author|"></span><span class="sig-name descname"><span class="pre">|cfg_t3author|</span></span><a class="headerlink" href="#confval-cfg_t3author" title="Permalink to this definition">¶</a></dt>
-<dd><p>Deprecated.</p>
-</dd></dl>
-<dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_copyright">
-<span id="confval-|cfg_copyright|"></span><span class="sig-name descname"><span class="pre">|cfg_copyright|</span></span><a class="headerlink" href="#confval-cfg_copyright" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">copyright</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
 
-copyright = 2021 by the authors
+<span class="cp">   This book is written for |dt3m_audience|.</span>
 </pre></div>
 </div>
+<p>Example result:</p>
+<blockquote>
+<div><p>This book is written for developers (and everybody interested).</p>
+</div></blockquote>
 </dd></dl>
+</div>
+<div class="section" id="author">
+<h3><a class="toc-backref" href="#this-page">Author</a><a class="headerlink" href="#author" title="Permalink to this headline">¶</a></h3>
+<p>((Describe: Who has written the content?))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_description">
-<span id="confval-|cfg_description|"></span><span class="sig-name descname"><span class="pre">|cfg_description|</span></span><a class="headerlink" href="#confval-cfg_description" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">description</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<dt class="sig sig-object std" id="confval-author">
+<span class="sig-name descname"><span class="pre">author</span></span><a class="headerlink" href="#confval-author" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>author</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>std_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[general]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|std_author|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>required</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>any text</p>
+</dd>
+<dt class="field-odd">Recommended</dt>
+<dd class="field-odd"><p>John Doe &lt;<a class="reference external" href="mailto:john.doe%40example.org">john<span>.</span>doe<span>@</span>example<span>.</span>org</a>&gt;</p>
+</dd>
+<dt class="field-even">Sphinx docs</dt>
+<dd class="field-even"><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-author" rel="nofollow noopener">sphinx#confval-author</a></p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[general]</span>
 
-description =
-
-description = ...
-
-description =
-   This is the documentation of TYPO3's system extension 'adminpanel'. It
-   displays a bar at the bottom of the screen on the frontend, from which you
-   can access information per page.
+<span class="na">author</span> <span class="o">=</span> <span class="s">Ernest Hemingway &lt;ernest@example.org&gt;</span>
 </pre></div>
 </div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">author</span> <span class="o">=</span> <span class="s2">"Ernest Hemingway &lt;ernest@example.org&gt;"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   The author of those short stories was |std_author|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>The author of those short stories was Ernest Hemingway
+&lt;<a class="reference external" href="mailto:ernest%40example.org">ernest<span>@</span>example<span>.</span>org</a>&gt;.</p>
+</div></blockquote>
 </dd></dl>
+</div>
+<div class="section" id="contact">
+<h3><a class="toc-backref" href="#this-page">Contact</a><a class="headerlink" href="#contact" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_language">
-<span id="confval-|cfg_language|"></span><span class="sig-name descname"><span class="pre">|cfg_language|</span></span><a class="headerlink" href="#confval-cfg_language" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">language</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>((Let's see what the output of this is. <code class="code docutils literal notranslate"><span class="pre">language</span></code> may be a built in value.))</p>
+<dt class="sig sig-object std" id="confval-project_contact">
+<span class="sig-name descname"><span class="pre">project_contact</span></span><a class="headerlink" href="#confval-project_contact" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>project_contact</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>hto_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[html-theme-options]</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>Leave empty or provide an url like <code class="code docutils literal notranslate"><span class="pre">https://example.org/contact</span></code>
+or <code class="code docutils literal notranslate"><span class="pre">contact@example.org</span></code></p>
+</dd>
+<dt class="field-odd">Notation</dt>
+<dd class="field-odd"><p>|hto_project_contact|</p>
+</dd>
+<dt class="field-even">Used by</dt>
+<dd class="field-even"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[html-theme-options]</span>
+
+<span class="na">project_contact</span> <span class="o">=</span> <span class="s">http://example.org/contact</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span><span class="p">[</span><span class="s2">"project_contact"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"http://example.org/contact"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   If you want to get in contact visit |hto_project_contact|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>If you want to get in contact visit <a class="reference external" href="http://example.org/contact" rel="nofollow noopener">http://example.org/contact</a>.</p>
+</div></blockquote>
 </dd></dl>
+</div>
+<div class="section" id="copyright">
+<h3><a class="toc-backref" href="#this-page">Copyright</a><a class="headerlink" href="#copyright" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_license">
-<span id="confval-|cfg_license|"></span><span class="sig-name descname"><span class="pre">|cfg_license|</span></span><a class="headerlink" href="#confval-cfg_license" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">license</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<dt class="sig sig-object std" id="confval-copyright">
+<span class="sig-name descname"><span class="pre">copyright</span></span><a class="headerlink" href="#confval-copyright" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>copyright</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>std_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[general]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|std_copyright|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>required</p>
+</dd>
+<dt class="field-even">Sphinx docs</dt>
+<dd class="field-even"><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-copyright" rel="nofollow noopener">sphinx#confval-copyright</a></p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[general]</span>
+
+<span class="na">copyright</span> <span class="o">=</span> <span class="s">2021, TYPO3 Documentation Team</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">copyright</span> <span class="o">=</span> <span class="s2">"2021, TYPO3 Documentation Team"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   This material is copyrighted: |std_copyright|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>This material is copyrighted: 2021, TYPO3 Documentation Team.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="description">
+<h3><a class="toc-backref" href="#this-page">Description</a><a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h3>
+<p>((describe,</p>
+<p>The theme does not used the value in web pages. However, it goes into pdf, epub,
+man, ...
+))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#confval-description" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>description</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>dt3m_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|dt3m_description|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>Any text. Preferably some sentences suited for the cover of
+a book.</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[docstypo3-meta]</span>
+
+<span class="na">description</span> <span class="o">=</span> <span class="s">This project contains</span>
+   <span class="na">examples of documentation code in reStructuredText format. The purpose</span>
+   <span class="na">is to demonstrate what the sphinx_typo3_theme can handle and to test</span>
+   <span class="na">the theme.</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docstypo3</span><span class="p">[</span><span class="s2">"meta"</span><span class="p">][</span><span class="s2">"description"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span>
+   <span class="s2">"This project contains"</span>
+   <span class="s2">" examples of documentation code in reStructuredText format. The purpose"</span>
+   <span class="s2">" is to demonstrate what the sphinx_typo3_theme can handle and to test"</span>
+   <span class="s2">" the theme."</span>
+   <span class="p">)</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   Abstract:</span>
+
+<span class="cp">   |dt3m_description|</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>Abstract:</p>
+<p>
+This project contains examples of documentation code in
+reStructuredText format. The purpose is to demonstrate what the
+sphinx_typo3_theme can handle and to test the theme.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="discussions">
+<h3><a class="toc-backref" href="#this-page">Discussions</a><a class="headerlink" href="#discussions" title="Permalink to this headline">¶</a></h3>
+<p>URL to create the link "Discussions".</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-project_discussions">
+<span class="sig-name descname"><span class="pre">project_discussions</span></span><a class="headerlink" href="#confval-project_discussions" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>project_discussions</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>hto_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[html-theme-options]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|hto_project_discussions|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>empty or url</p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[html-theme-options]</span>
+
+<span class="na">project_discussions</span> <span class="o">=</span> <span class="s">https://example.org/discussions/</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span><span class="p">[</span><span class="s2">"project_discussions"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://example.org/discussions/"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   Join the discussions at |hto_project_discussions|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>Join the discussions at <a class="reference external" href="https://example.org/discussions/" rel="nofollow noopener">https://example.org/discussions/</a>.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="documentation-type">
+<h3><a class="toc-backref" href="#this-page">Documentation type</a><a class="headerlink" href="#documentation-type" title="Permalink to this headline">¶</a></h3>
+<p>((describe: Tutorial? Reference?, Example? ...))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-doctype">
+<span class="sig-name descname"><span class="pre">doctype</span></span><a class="headerlink" href="#confval-doctype" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>doctype</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>dt3m_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|dt3m_doctype|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>recommended</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>any text</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[docstypo3-meta]</span>
+
+<span class="na">doctype</span> <span class="o">=</span> <span class="s">Tutorial</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docstypo3</span><span class="p">[</span><span class="s2">"meta"</span><span class="p">][</span><span class="s2">"doctype"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Tutorial"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   This text is meant as "|dt3m_doctype|".</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>This text is meant as "Tutorial".</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="home">
+<h3><a class="toc-backref" href="#this-page">Home</a><a class="headerlink" href="#home" title="Permalink to this headline">¶</a></h3>
+<p>URL to create a "Home" link.</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-project_home">
+<span class="sig-name descname"><span class="pre">project_home</span></span><a class="headerlink" href="#confval-project_home" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>project_home</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>hto_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[html-theme-options]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|hto_project_home|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>empty or url</p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[html-theme-options]</span>
+
+<span class="na">project_home</span> <span class="o">=</span> <span class="s">https://example.org/</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span><span class="p">[</span><span class="s2">"project_home"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://example.org/"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   Visit the project in the internet at |hto_project_home|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>Visit the project in the internet at <a class="reference external" href="https://example.org/" rel="nofollow noopener">https://example.org/</a>.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="issues">
+<h3><a class="toc-backref" href="#this-page">Issues</a><a class="headerlink" href="#issues" title="Permalink to this headline">¶</a></h3>
+<p>URL to create an "Issues" link.</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-project_issues">
+<span class="sig-name descname"><span class="pre">project_issues</span></span><a class="headerlink" href="#confval-project_issues" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>project_issues</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>hto_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[html-theme-options]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|hto_project_issues|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>empty or url</p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[html-theme-options]</span>
+
+<span class="na">project_issues</span> <span class="o">=</span> <span class="s">https://github.com/example/test/issues/</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span><span class="p">[</span><span class="s2">"project_issues"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://github.com/example/test/issues/"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   Report bugs at |hto_project_issues|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>Report bugs at <a class="reference external" href="https://github.com/example/test/issues/" rel="nofollow noopener">https://github.com/example/test/issues/</a>.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="language-1">
+<h3><a class="toc-backref" href="#this-page">Language 1</a><a class="headerlink" href="#language-1" title="Permalink to this headline">¶</a></h3>
+<p>((describe, this is a two or five letter code, as recognized by Sphinx))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-std_language">
+<span class="sig-name descname"><span class="pre">std_language</span></span><a class="headerlink" href="#confval-std_language" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>language</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>std_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[general]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|std_language|</p>
+</dd>
+<dt class="field-odd">Default</dt>
+<dd class="field-odd"><p>empty, which means 'en'</p>
+</dd>
+<dt class="field-even">Importance</dt>
+<dd class="field-even"><p>optional</p>
+</dd>
+<dt class="field-odd">Value</dt>
+<dd class="field-odd"><p>Must be one of the predefined Sphinx keys like`de` or <code class="code docutils literal notranslate"><span class="pre">en</span></code>.</p>
+</dd>
+<dt class="field-even">Sphinx docs</dt>
+<dd class="field-even"><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language" rel="nofollow noopener">sphinx#confval-language</a></p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>Sphinx translation mechanism</p>
+</dd>
+</dl>
+<p>Sphinx will translate text constants accordingly, like "previous" (en)
+or "zurück" (de).</p>
+</dd></dl>
+</div>
+<div class="section" id="language-2">
+<h3><a class="toc-backref" href="#this-page">Language 2</a><a class="headerlink" href="#language-2" title="Permalink to this headline">¶</a></h3>
+<p>To specify the language in a human readable form, that is, as word or sentence.</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-dt3m_language">
+<span class="sig-name descname"><span class="pre">dt3m_language</span></span><a class="headerlink" href="#confval-dt3m_language" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>language</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>dt3m_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|dt3m_language|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>any text</p>
+</dd>
+</dl>
+</dd></dl>
+</div>
+<div class="section" id="license">
+<h3><a class="toc-backref" href="#this-page">License</a><a class="headerlink" href="#license" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-license">
+<span class="sig-name descname"><span class="pre">license</span></span><a class="headerlink" href="#confval-license" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>license</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>dt3m_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|dt3m_license|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>any text</p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>((sphinx_typo3_theme, planned for footer))</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[docstypo3-meta]</span>
+
+<span class="na">license</span> <span class="o">=</span> <span class="s">CC</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docstypo3</span><span class="p">[</span><span class="s2">"meta"</span><span class="p">][</span><span class="s2">"license"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"CC"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   Respect this license: |dt3m_license|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>Respect this license: CC.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="license-todo">
+<h3><a class="toc-backref" href="#this-page">License ((todo))</a><a class="headerlink" href="#license-todo" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-0">
+<span class="sig-name descname"><span class="pre">license</span></span><a class="headerlink" href="#confval-0" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+</dl>
+<p>Will be replaced by <code class="code docutils literal notranslate"><span class="pre">license</span></code> from section <code class="code docutils literal notranslate"><span class="pre">[docstypo3-meta]</span></code>.</p>
+<p>Example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[docstypo3-meta]
 
 license = CC-BY 4.0
 license = https://creativecommons.org/licenses/by/4.0/
@@ -491,24 +1399,108 @@ license = MIT
 </pre></div>
 </div>
 </dd></dl>
+</div>
+<div class="section" id="maintainer">
+<h3><a class="toc-backref" href="#this-page">Maintainer</a><a class="headerlink" href="#maintainer" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_maintainer">
-<span id="confval-|cfg_maintainer|"></span><span class="sig-name descname"><span class="pre">|cfg_maintainer|</span></span><a class="headerlink" href="#confval-cfg_maintainer" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">maintainer</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<dt class="sig sig-object std" id="confval-maintainer">
+<span class="sig-name descname"><span class="pre">maintainer</span></span><a class="headerlink" href="#confval-maintainer" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>maintainer</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>dt3m_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|dt3m_maintainer|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>any text</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[docstypo3-meta]</span>
+
+<span class="na">maintainer</span> <span class="o">=</span> <span class="s">Jon Doe &lt;john.doe@example.org&gt;</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">docstypo3</span><span class="p">[</span><span class="s2">"meta"</span><span class="p">][</span><span class="s2">"maintainer"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"Jon Doe &lt;john.doe@example.org&gt;"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   In case of doubt ask the maintainer: |dt3m_maintainer|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>In case of doubt ask the maintainer: Jon Doe &lt;<a class="reference external" href="mailto:john.doe%40example.org">john<span>.</span>doe<span>@</span>example<span>.</span>org</a>&gt;.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="maintainer-todo">
+<h3><a class="toc-backref" href="#this-page">Maintainer ((todo))</a><a class="headerlink" href="#maintainer-todo" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-dt3m_maintainer">
+<span id="confval-|dt3m_maintainer|"></span><span class="sig-name descname"><span class="pre">|dt3m_maintainer|</span></span><a class="headerlink" href="#confval-dt3m_maintainer" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[docstypo3-meta]</p>
+</dd>
+</dl>
+<p>Will be replaced by <code class="code docutils literal notranslate"><span class="pre">maintainer</span></code> from section <code class="code docutils literal notranslate"><span class="pre">[docstypo3-meta]</span></code>.</p>
+<p>Example:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[docstypo3-meta]
 
 maintainer = "John Doe &lt;john.doe@example.org&gt;"
 </pre></div>
 </div>
 </dd></dl>
+</div>
+<div class="section" id="project">
+<h3><a class="toc-backref" href="#this-page">Project</a><a class="headerlink" href="#project" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_project">
-<span id="confval-|cfg_project|"></span><span class="sig-name descname"><span class="pre">|cfg_project|</span></span><a class="headerlink" href="#confval-cfg_project" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">project</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<dt class="sig sig-object std" id="confval-project">
+<span class="sig-name descname"><span class="pre">project</span></span><a class="headerlink" href="#confval-project" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>project</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>std_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[general]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|std_project|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>required</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>Any string. Provide the most short and concise name.</p>
+</dd>
+<dt class="field-odd">Sphinx docs</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-project" rel="nofollow noopener">sphinx#confval-copyright</a></p>
+</dd>
+<dt class="field-even">Used by</dt>
+<dd class="field-even"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Examples:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
 
 project = extkey
@@ -518,35 +1510,154 @@ project = Core changelog
 </pre></div>
 </div>
 </dd></dl>
+</div>
+<div class="section" id="repository">
+<h3><a class="toc-backref" href="#this-page">Repository</a><a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h3>
+<p>URL to create a link "Repository" or "Source".</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_release">
-<span id="confval-|cfg_release|"></span><span class="sig-name descname"><span class="pre">|cfg_release|</span></span><a class="headerlink" href="#confval-cfg_release" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">release</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<dt class="sig sig-object std" id="confval-project_repository">
+<span class="sig-name descname"><span class="pre">project_repository</span></span><a class="headerlink" href="#confval-project_repository" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>project_repository</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>hto_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[html-theme-options]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|hto_project_repository|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>optional</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>empty or url</p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[html-theme-options]</span>
 
-release = 1.2.3
-release = v1.2.dev3
-release = main
-release = develop
+<span class="na">project_repository</span> <span class="o">=</span> <span class="s">https://github.com/example/test/</span>
+</pre></div>
+</div>
+<p>Example <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">html_theme_options</span><span class="p">[</span><span class="s2">"project_repository"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"https://github.com/example/test/"</span>
+</pre></div>
+</div>
+<p>Example source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="cp">..</span>
+
+<span class="cp">   Get the source from |hto_project_repository|.</span>
+</pre></div>
+</div>
+<p>Example result:</p>
+<blockquote>
+<div><p>Get the source from <a class="reference external" href="https://github.com/example/test/" rel="nofollow noopener">https://github.com/example/test/</a>.</p>
+</div></blockquote>
+</dd></dl>
+</div>
+<div class="section" id="release">
+<h3><a class="toc-backref" href="#this-page">Release</a><a class="headerlink" href="#release" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-release">
+<span class="sig-name descname"><span class="pre">release</span></span><a class="headerlink" href="#confval-release" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>release</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>std_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[general]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|std_release|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>required</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>Strict form would be a full semver like <code class="code docutils literal notranslate"><span class="pre">1.2.3</span></code>.
+We are more liberal and usually use the branch name.</p>
+</dd>
+<dt class="field-odd">Remark</dt>
+<dd class="field-odd"><p>Use the same value for <code class="code docutils literal notranslate"><span class="pre">release</span></code> and <code class="code docutils literal notranslate"><span class="pre">version</span></code> if there is no
+difference.</p>
+</dd>
+<dt class="field-even">Sphinx docs</dt>
+<dd class="field-even"><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-release" rel="nofollow noopener">sphinx#confval-copyright</a></p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[general]</span>
+
+<span class="na">release</span> <span class="o">=</span> <span class="s">1.2.3</span>
+<span class="na">release</span> <span class="o">=</span> <span class="s">v1.2.dev3</span>
+<span class="na">release</span> <span class="o">=</span> <span class="s">main</span>
+<span class="na">release</span> <span class="o">=</span> <span class="s">develop</span>
 </pre></div>
 </div>
 </dd></dl>
+</div>
+<div class="section" id="version">
+<h3><a class="toc-backref" href="#this-page">Version</a><a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h3>
+<p>((describe))</p>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-cfg_version">
-<span id="confval-|cfg_version|"></span><span class="sig-name descname"><span class="pre">|cfg_version|</span></span><a class="headerlink" href="#confval-cfg_version" title="Permalink to this definition">¶</a></dt>
-<dd><p>Will be replaced by the value of <code class="code docutils literal notranslate"><span class="pre">version</span></code> as defined in <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code>
-or the empty string.</p>
-<p>Example definition in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>[general]
+<dt class="sig sig-object std" id="confval-version">
+<span class="sig-name descname"><span class="pre">version</span></span><a class="headerlink" href="#confval-version" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Name</dt>
+<dd class="field-odd"><p>version</p>
+</dd>
+<dt class="field-even">Prefix</dt>
+<dd class="field-even"><p>std_</p>
+</dd>
+<dt class="field-odd">Section</dt>
+<dd class="field-odd"><p>[general]</p>
+</dd>
+<dt class="field-even">Notation</dt>
+<dd class="field-even"><p>|std_version|</p>
+</dd>
+<dt class="field-odd">Importance</dt>
+<dd class="field-odd"><p>required</p>
+</dd>
+<dt class="field-even">Value</dt>
+<dd class="field-even"><p>Strict form would be a part of semver like <code class="code docutils literal notranslate"><span class="pre">1.2</span></code>.
+We are more liberal and usually use the branch name.</p>
+</dd>
+<dt class="field-odd">Remark</dt>
+<dd class="field-odd"><p>Use the same value for <code class="code docutils literal notranslate"><span class="pre">release</span></code> and <code class="code docutils literal notranslate"><span class="pre">version</span></code> if there is no
+difference.</p>
+</dd>
+<dt class="field-even">Sphinx docs</dt>
+<dd class="field-even"><p><a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-version" rel="nofollow noopener">sphinx#confval-copyright</a></p>
+</dd>
+<dt class="field-odd">Used by</dt>
+<dd class="field-odd"><p>sphinx_typo3_theme</p>
+</dd>
+</dl>
+<p>Example:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[general]</span>
 
-version = 1.2
-version = main
-version = develop
+<span class="na">version</span> <span class="o">=</span> <span class="s">1.2</span>
+<span class="na">version</span> <span class="o">=</span> <span class="s">v1.2</span>
+<span class="na">version</span> <span class="o">=</span> <span class="s">main</span>
+<span class="na">version</span> <span class="o">=</span> <span class="s">develop</span>
 </pre></div>
 </div>
 </dd></dl>
+</div>
 </div>
 </div>
 <!-- /body -->
@@ -580,21 +1691,21 @@ version = develop
 <div class="frame-inner">
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/95731678d02436b5533a5548c8cf62d46e5dede9" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Dec 01, 2021 19:44
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/c32a75a4f0acb04435d354d2f866cdd4ee5f3c7e" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Dec 04, 2021 21:32
                         </a>
 </p>
-<p class="text-center">Last rendered: Dec 01, 2021 19:45</p>
+<p class="text-center">Last rendered: Dec 04, 2021 21:33</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme at GitHub">
 <span>TYPO3 Theme 4.6.3.dev54+g457db68</span></a></li>
 <li><a href="https://github.com/t3docs/docker-render-documentation" rel="nofollow noopener" target="_blank" title="DRC - Docker Rendering Container at GitHub">
-<span>DRC v3.0.dev7</span></a></li>
+<span>DRC v3.0.dev8</span></a></li>
 </ul>
 </div>
 <div class="footer-meta">
 <div class="footer-meta-copyright">
-<a href="../Copyright.html">© Copyright 2020 by the TYPO3 Documentation Team</a>
+<a href="../Copyright.html">© Copyright 2020, TYPO3 Documentation Team</a>
 </div>
 </div>
 </div>

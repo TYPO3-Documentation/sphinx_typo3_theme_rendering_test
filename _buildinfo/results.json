@@ -1,18 +1,17 @@
 {
-  "build_time": "2021-12-01 19:45:12",
-  "checksum": "ae4309ccf00c0c5b044b489e0f7c5af5",
+  "build_time": "2021-12-04 21:33:36",
+  "checksum": "5e58435b96717bac2e6f80a094ff1eaf",
   "checksum_ttl_seconds": 604800,
-  "copyright": "2020 by the TYPO3 Documentation Team",
+  "copyright": "2020, TYPO3 Documentation Team",
   "created": {
     "html": 1
   },
-  "description": "This project contains examples of documentation code in\nreStructuredText format. The purpose is to demonstrate what the\nsphinx_typo3_theme can handle and to test the theme.",
   "email_notify_about_new_build": [],
   "emails_user_from_project": [],
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:develop",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v3.0.dev7",
+    "OUR_IMAGE_VERSION": "v3.0.dev8",
     "THEME_MTIME": "1636153200",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
@@ -30,7 +29,7 @@
   "sitemap_files_html_count": 47,
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1638387681",
+    "build_mtime": "1638652954",
     "module_name": "sphinx_typo3_theme",
     "version_scm": "4.6.3.dev54+g457db68",
     "version_scm_build": "g457db68",

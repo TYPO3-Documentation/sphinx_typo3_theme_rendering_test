@@ -450,6 +450,18 @@
       ]
    },
    "std:confval": {
+      "_json": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-_json",
+         "-"
+      ],
+      "_r": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-_r",
+         "-"
+      ],
       "addRecord": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -460,6 +472,18 @@
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Directives/confval.html#confval-align",
+         "-"
+      ],
+      "audience": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-audience",
+         "-"
+      ],
+      "author": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-author",
          "-"
       ],
       "boolean": [
@@ -474,76 +498,124 @@
          "Directives/confval.html#confval-case",
          "-"
       ],
+      "copyright": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-copyright",
+         "-"
+      ],
+      "description": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-description",
+         "-"
+      ],
+      "doctype": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-doctype",
+         "-"
+      ],
+      "dt3m_": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-dt3m_",
+         "-"
+      ],
+      "dt3m_language": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-dt3m_language",
+         "-"
+      ],
+      "hto_": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-hto_",
+         "-"
+      ],
+      "license": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-0",
+         "-"
+      ],
+      "maintainer": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-maintainer",
+         "-"
+      ],
       "mr_pommeroy": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Directives/confval.html#confval-mr_pommeroy",
          "-"
       ],
-      "|cfg_audience|": [
+      "project": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_audience",
+         "Replacements/Index.html#confval-project",
          "-"
       ],
-      "|cfg_author|": [
+      "project_contact": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_author",
+         "Replacements/Index.html#confval-project_contact",
          "-"
       ],
-      "|cfg_copyright|": [
+      "project_discussions": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_copyright",
+         "Replacements/Index.html#confval-project_discussions",
          "-"
       ],
-      "|cfg_description|": [
+      "project_home": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_description",
+         "Replacements/Index.html#confval-project_home",
          "-"
       ],
-      "|cfg_language|": [
+      "project_issues": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_language",
+         "Replacements/Index.html#confval-project_issues",
          "-"
       ],
-      "|cfg_license|": [
+      "project_repository": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_license",
+         "Replacements/Index.html#confval-project_repository",
          "-"
       ],
-      "|cfg_maintainer|": [
+      "release": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_maintainer",
+         "Replacements/Index.html#confval-release",
          "-"
       ],
-      "|cfg_project|": [
+      "std_": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_project",
+         "Replacements/Index.html#confval-std_",
          "-"
       ],
-      "|cfg_release|": [
+      "std_language": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_release",
+         "Replacements/Index.html#confval-std_language",
          "-"
       ],
-      "|cfg_t3author|": [
+      "version": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_t3author",
+         "Replacements/Index.html#confval-version",
          "-"
       ],
-      "|cfg_version|": [
+      "|dt3m_maintainer|": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-cfg_version",
+         "Replacements/Index.html#confval-dt3m_maintainer",
          "-"
       ]
    },
