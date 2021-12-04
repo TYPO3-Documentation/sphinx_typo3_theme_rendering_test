@@ -11,238 +11,762 @@ Replacements
    :local:
 
 
-Sphinx defaults
-===============
+.. attention::
 
-These replacements are always available in Sphinx:
+   As of today |today|, use this DRC to render this page::
 
-===================== ==========================
-Notation              Result
-===================== ==========================
-`|today|`             |today|
-`|release|`           |release|
-`|version|`           |version|
-===================== ==========================
+      docker pull ghcr.io/t3docs/render-documentation:develop
+      docker tag ghcr.io/t3docs/render-documentation:develop t3docs/render-documentation:develop
+      eval "$(docker run --rm t3docs/render-documentation:develop show-shell-commands)"
+      dockrun_t3rd makehtml-no-cache
 
-Provided by 'sphinxcontrib-docstypo3'
-=====================================
 
-The following replacements are made available by the
-'sphinxcontrib-docstypo3' Sphinx extension. The actual values for this project
-are shown.
+Available replacements
+======================
 
-=============================  =================================
-Notation                       Result
-=============================  =================================
-`|cfg_audience|`                  |cfg_audience|
-`|cfg_author|`                    |cfg_author|
-`|cfg_t3author|`                  |cfg_t3author|
-`|cfg_copyright|`                 |cfg_copyright|
-`|cfg_description|`               |cfg_description|
-`|cfg_language|`                  |cfg_language|
-`|cfg_license|`                   |cfg_license|
-`|cfg_maintainer|`                |cfg_maintainer|
-`|cfg_project|`                   |cfg_project|
-`|cfg_published|`                 |cfg_published|
-`|cfg_release|`                   |cfg_release|
-`|cfg_version|`                   |cfg_version|
+Overview
+--------
 
-# urls
-`|hto_project_contact|`           |hto_project_contact|
-`|hto_project_discussions|`       |hto_project_discussions|
-`|hto_project_home|`              |hto_project_home|
-`|hto_project_issues|`            |hto_project_issues|
-`|hto_project_repository|`        |hto_project_repository|
-=============================  =================================
+======================  =====  ===========================  =======================  =====================  =========
+Meaning                 Used   Markup                       Importance               Name                   Prefix
+                        by
+                        theme
+======================  =====  ===========================  =======================  =====================  =========
+Audience                       `|dt3m_audience|`            desired                  `audience`             `dt3m_`
+Author                         `|std_author|`               expected                 `author`               `std_`
+Copyright               yes    `|std_copyright|`            expected                 `copyright`            `std_`
+Description                    `|dt3m_description|`         recommended              `description`          `dt3m_`
+Doctype                        `|dt3m_doctype|`             desired                  `doctype`              `dt3m_`
+Language (letter code)  yes    `|std_language|`             required if not `en`     `language`             `std_`
+Language (any text)            `|dt3m_language|`            optional                 `language`             `dt3m_`
+License                        `|dt3m_license|`             desired                  `license`              `dt3m_`
+Maintainer                     `|dt3m_maintainer|`          optional                 `maintainer`           `dt3m_`
+Contact                 yes    `|hto_project_contact|`      optional                 `project_contact`      `hto_`
+Discussions             yes    `|hto_project_discussions|`  optional                 `project_discussions`  `hto_`
+Home                    yes    `|hto_project_home|`         optional                 `project_home`         `hto_`
+Issues                  yes    `|hto_project_issues|`       optional                 `project_issues`       `hto_`
+Repository              yes    `|hto_project_repository|`   optional                 `project_repository`   `hto_`
+Project                 yes    `|std_project|`              required                 `project`              `std_`
+Published                      `|dt3m_published|`           optional                 `published`            `dt3m_`
+Release                 yes    `|release|`                  required                 `release`              ``
+Release                        `|std_release|`              is alias                 `release`              `std_`
+Rendered                       `|today|`                    is read only             `today`                ``
+Version                 yes    `|version|`                  required                 `version`              `version`
+Version                        `|std_version|`              is alias                 `version`              `std_`
+======================  =====  ===========================  =======================  =====================  =========
 
-Use :file:`Settings.cfg` for configuration:
+
+Meaning of prefixes
+-------------------
+
+.. confval::                  std_
+
+   :Spoken as:                standard
+   :Section in Settings.cfg:  [general]
+   :Assignment in conf.py:    `name = "text"`
+   :Provider:                 built in, comes with Sphinx
+
+
+.. confval::                  hto_
+
+   :Spoken as:                html_theme_options
+   :Section in Settings.cfg:  [html_theme_options]
+   :Assignment in conf.py:    `html_theme_options["name"] = "text"`
+   :Provider:                 built in, comes with Sphinx
+
+
+.. confval::                  dt3m_
+
+   :Spoken as:                docs typo 3 meta
+   :Section in Settings.cfg:  [docstypo3-meta]
+   :Assignment in conf.py:    `docstypo3["meta"]["name"] = "text"`
+   :Provider:                 extension `sphinxcontrib-docstypo3
+                              <https://github.com/TYPO3-Documentation/sphinxcontrib-docstypo3>`__
+
+Optional postfixes
+------------------
+
+You *may* append a postfix to the replacement key to specify through which
+function the replacement text should go.
+
+.. confval:: _r
+
+   'r' signals that you want a 'representation' of the text, not just the text
+   itself. A represention is a string that can be evaluated (by Python)
+   and results in the original string.
+
+.. confval:: _json
+
+   'json' means that the replacement text should be valid json code.
+
+
+Postfix example
+~~~~~~~~~~~~~~~
+
+Consider this definition:
 
 .. code-block:: ini
 
-   [general]
+   # in Settings.cfg
 
-   # everything here goes to 'conf.py'
+   [docstypo3-meta]
 
-   audience =
-   author =
-   copyright =
    description =
-   language =
-   license =
-   maintainer =
-   project =
-   published =
-   release =
-   version =
+      Some explicite description
+      follow up line 2
+      follow up line 3
+
+The replacement text goes to one of three function, depending on what
+postfix you use:
+
+=========================  =========== ====  ===============================
+Markup                     Function          Replacement
+=========================  =========== ====  ===============================
+`|dt3m_description|`       str           →   Some explicite description follow up line 2 follow up line 3
+`|dt3m_description_r|`     repr          →   '\\nSome explicite description\\nfollow up line 2\\nfollow up line 3'
+`|dt3m_description_json|`  json.dumps    →   "\\nSome explicite description\\nfollow up line 2\\nfollow up line 3"
+=========================  =========== ====  ===============================
 
 
-   [html_theme_options]
-   project_contact     =  # url or empty
-   project_discussions =  # url or empty
-   project_home        =  # url or empty
-   project_issues      =  # url or empty
-   project_repository  =  # url or empty
 
+Demo usage
+==========
 
-Example: Reconstruct 'Settings.cfg'
------------------------------------
+As field table
+--------------
 
-**Documentation source (rst):**
+Source
+~~~~~~
 
 .. code-block:: rst
+
+   ..
+
+      :Audience:      |dt3m_audience|
+      :Author:        |std_author|
+      :Contact:       |hto_project_contact|
+      :Copyright:     |std_copyright|
+      :Description:   |dt3m_description|
+      :Discussions:   |hto_project_discussions|
+      :Doctype:       |dt3m_doctype|
+      :Home:          |hto_project_home|
+      :Issues:        |hto_project_issues|
+      :Language 1:    |std_language_json|
+      :Language 2:    |dt3m_language|
+      :License:       |dt3m_license|
+      :Maintainer:    |dt3m_maintainer|
+      :Project:       |std_project|
+      :Published:     |dt3m_published|
+      :Rendered:      |today|
+      :Release:       |release|
+      :Release alias: |std_release|
+      :Repository:    |hto_project_repository|
+      :Version:       |version|
+      :Version alias: |std_version|
+
+Rendering result
+~~~~~~~~~~~~~~~~
+
+   :Audience:      |dt3m_audience|
+   :Author:        |std_author|
+   :Contact:       |hto_project_contact|
+   :Copyright:     |std_copyright|
+   :Description:   |dt3m_description|
+   :Discussions:   |hto_project_discussions|
+   :Doctype:       |dt3m_doctype|
+   :Home:          |hto_project_home|
+   :Issues:        |hto_project_issues|
+   :Language 1:    |std_language|
+   :Language 2:    |dt3m_language|
+   :License:       |dt3m_license|
+   :Maintainer:    |dt3m_maintainer|
+   :Project:       |std_project|
+   :Published:     |dt3m_published|
+   :Rendered:      |today|
+   :Release:       |release|
+   :Release alias: |std_release|
+   :Repository:    |hto_project_repository|
+   :Version:       |version|
+   :Version alias: |std_version|
+
+
+Recreate Settings.cfg
+---------------------
+
+Source
+~~~~~~
+
+.. code-block:: rst
+
+   ..
+
+      .. parsed-literal::
+
+         [general]
+
+         author    =  |std_author|
+         copyright =  |std_copyright|
+         language  =  |std_language_json|
+         project   =  |std_project|
+         release   =  |std_release|
+         version   =  |std_version|
+
+
+         [docstypo3-meta]
+
+         audience    =  |dt3m_audience|
+         description =  |dt3m_description_json|
+         doctype     =  |dt3m_doctype|
+         language    =  |dt3m_language|
+         license     =  |dt3m_license|
+         maintainer  =  |dt3m_maintainer|
+         published   =  |dt3m_published|
+
+
+         [html-theme-options]
+
+         project_contact     =  |hto_project_contact|
+         project_discussions =  |hto_project_discussions|
+         project_home        =  |hto_project_home|
+         project_issues      =  |hto_project_issues|
+         project_repository  =  |hto_project_repository|
+
+
+Rendering result
+~~~~~~~~~~~~~~~~
 
    .. parsed-literal::
 
       [general]
 
-      # prefix in replacements: cfg
-      # everything here goes to 'conf.py'
-
-      audience    = |cfg_audience|
-      author      = |cfg_author|
-      t3author    = |cfg_t3author|
-      copyright   = |cfg_copyright|
-      description = |cfg_description|
-      language    = |cfg_language|
-      license     = |cfg_license|
-      maintainer  = |cfg_maintainer|
-      project     = |cfg_project|
-      published   = |cfg_published|
-      release     = |cfg_release|
-      version     = |cfg_version|
+      author    =  |std_author|
+      copyright =  |std_copyright|
+      language  =  |std_language_json|
+      project   =  |std_project|
+      release   =  |std_release|
+      version   =  |std_version|
 
 
-      [html_theme_options]
+      [docstypo3-meta]
 
-      # prefix in replacements: hto
-
-      project_contact     = |hto_project_contact|
-      project_discussions = |hto_project_discussions|
-      project_home        = |hto_project_home|
-      project_issues      = |hto_project_issues|
-      project_repository  = |hto_project_repository|
-
-
-**Rendering result:**
-
-.. parsed-literal::
-
-   [general]
-
-   # prefix in replacements: cfg
-   # everything here goes to 'conf.py'
-
-   audience    = |cfg_audience|
-   author      = |cfg_author|
-   t3author    = |cfg_t3author|
-   copyright   = |cfg_copyright|
-   description = |cfg_description|
-   language    = |cfg_language|
-   license     = |cfg_license|
-   maintainer  = |cfg_maintainer|
-   project     = |cfg_project|
-   published   = |cfg_published|
-   release     = |cfg_release|
-   version     = |cfg_version|
+      audience    =  |dt3m_audience|
+      description =  |dt3m_description_json|
+      doctype     =  |dt3m_doctype|
+      language    =  |dt3m_language|
+      license     =  |dt3m_license|
+      maintainer  =  |dt3m_maintainer|
+      published   =  |dt3m_published|
 
 
-   [html_theme_options]
+      [html-theme-options]
 
-   # prefix in replacements: hto
+      project_contact     =  |hto_project_contact|
+      project_discussions =  |hto_project_discussions|
+      project_home        =  |hto_project_home|
+      project_issues      =  |hto_project_issues|
+      project_repository  =  |hto_project_repository|
 
-   project_contact     = |hto_project_contact|
-   project_discussions = |hto_project_discussions|
-   project_home        = |hto_project_home|
-   project_issues      = |hto_project_issues|
-   project_repository  = |hto_project_repository|
 
 
 About the settings
 ==================
 
-*Note:* Choose only one of the example lines for :file:`Settings.cfg`.
+1. Missing values will show up as empty string.
 
-.. confval:: |cfg_audience|
+2. Choose only one of the example lines if multiple are given here for
+   explanatory purposes.
 
-   Will be replaced by the value of `audience` as defined in :file:`conf.py`
-   or the empty string.
 
-   Example definition in :file:`Settings.cfg`::
+Audience
+--------
+
+((Describe: This doc is for whom?))
+
+.. confval::     audience
+
+   :Name:        audience
+   :Prefix:      dt3m\_
+   :Section:     [docstypo3-meta]
+   :Notation:    \|dt3m_audience\|
+   :Importance:  optional
+   :Value:       any text
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [docstypo3-meta]
+
+      audience = Developers (and everybody interested)
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      docstypo3["meta"]["audience"] = "developers (and everybody interested)"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         This book is written for |dt3m_audience|.
+
+   Example result:
+
+      This book is written for developers (and everybody interested).
+
+
+Author
+------
+
+((Describe: Who has written the content?))
+
+.. confval::     author
+
+   :Name:        author
+   :Prefix:      std\_
+   :Section:     [general]
+   :Notation:    \|std_author\|
+   :Importance:  required
+   :Value:       any text
+   :Recommended: John Doe <john.doe@example.org>
+   :Sphinx docs: `sphinx#confval-author <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-author>`__
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [general]
+
+      author = Ernest Hemingway <ernest@example.org>
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      author = "Ernest Hemingway <ernest@example.org>"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         The author of those short stories was |std_author|.
+
+   Example result:
+
+      The author of those short stories was Ernest Hemingway
+      <ernest@example.org>.
+
+
+Contact
+-------
+
+((describe))
+
+.. confval::     project_contact
+
+   :Name:        project_contact
+   :Prefix:      hto\_
+   :Section:     [html-theme-options]
+   :Value:       Leave empty or provide an url like `https://example.org/contact`
+                 or `contact@example.org`
+   :Notation:    \|hto_project_contact\|
+   :Used by:     sphinx_typo3_theme
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [html-theme-options]
+
+      project_contact = http://example.org/contact
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      html_theme_options["project_contact"] = "http://example.org/contact"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         If you want to get in contact visit |hto_project_contact|.
+
+   Example result:
+
+      If you want to get in contact visit http://example.org/contact.
+
+
+Copyright
+---------
+
+((describe))
+
+.. confval::     copyright
+
+   :Name:        copyright
+   :Prefix:      std\_
+   :Section:     [general]
+   :Notation:    \|std_copyright\|
+   :Importance:  required
+   :Sphinx docs: `sphinx#confval-copyright <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-copyright>`__
+   :Used by:     sphinx_typo3_theme
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
 
       [general]
 
-      audience = developers, power users
-      audience = Everybody interested
+      copyright = 2021, TYPO3 Documentation Team
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      copyright = "2021, TYPO3 Documentation Team"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         This material is copyrighted: |std_copyright|.
+
+   Example result:
+
+      This material is copyrighted: 2021, TYPO3 Documentation Team.
 
 
-.. confval:: |cfg_author|
+Description
+-----------
 
-   Will be replaced by the value of `author` as defined in :file:`conf.py`.
-   If empty, `t3author` will be used. If none is found, the empty string is
-   used.
+((describe,
 
-   Example definition in :file:`Settings.cfg`::
-
-      [general]
-
-      author = TYPO3 Documentation Team
-      author = Ernest Hemingway <ernest@example.org>, Oscar Wilde
+The theme does not used the value in web pages. However, it goes into pdf, epub,
+man, ...
+))
 
 
-.. confval:: |cfg_t3author|
+.. confval::     description
 
-   Deprecated.
+   :Name:        description
+   :Prefix:      dt3m\_
+   :Section:     [docstypo3-meta]
+   :Notation:    \|dt3m_description\|
+   :Importance:  optional
+   :Value:       Any text. Preferably some sentences suited for the cover of
+                 a book.
 
+   Example :file:`Settings.cfg`:
 
-.. confval:: |cfg_copyright|
+   .. code-block:: ini
 
-   Will be replaced by the value of `copyright` as defined in :file:`conf.py`
-   or the empty string.
+      [docstypo3-meta]
 
-   Example definition in :file:`Settings.cfg`::
-
-      [general]
-
-      copyright = 2021 by the authors
-
-
-
-.. confval:: |cfg_description|
-
-   Will be replaced by the value of `description` as defined in :file:`conf.py`
-   or the empty string.
-
-   Example definition in :file:`Settings.cfg`::
-
-      [general]
-
-      description =
-
-      description = ...
-
-      description =
-         This is the documentation of TYPO3's system extension 'adminpanel'. It
-         displays a bar at the bottom of the screen on the frontend, from which you
-         can access information per page.
+      description = This project contains
+         examples of documentation code in reStructuredText format. The purpose
+         is to demonstrate what the sphinx_typo3_theme can handle and to test
+         the theme.
 
 
+   Example :file:`conf.py`:
 
-.. confval:: |cfg_language|
+   .. code-block:: python
 
-   Will be replaced by the value of `language` as defined in :file:`conf.py`
-   or the empty string.
+      docstypo3["meta"]["description"] = (
+         "This project contains"
+         " examples of documentation code in reStructuredText format. The purpose"
+         " is to demonstrate what the sphinx_typo3_theme can handle and to test"
+         " the theme."
+         )
 
-   ((Let's see what the output of this is. `language` may be a built in value.))
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         Abstract:
+
+         |dt3m_description|
+
+   Example result:
+
+      Abstract:
+
+      |dt3m_description|
 
 
-.. confval:: |cfg_license|
+Discussions
+-----------
 
-   Will be replaced by the value of `license` as defined in :file:`conf.py`
-   or the empty string.
+URL to create the link "Discussions".
 
-   Example definition in :file:`Settings.cfg`::
+.. confval::     project_discussions
 
-      [general]
+   :Name:        project_discussions
+   :Prefix:      hto\_
+   :Section:     [html-theme-options]
+   :Notation:    \|hto_project_discussions\|
+   :Importance:  optional
+   :Value:       empty or url
+   :Used by:     sphinx_typo3_theme
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [html-theme-options]
+
+      project_discussions = https://example.org/discussions/
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      html_theme_options["project_discussions"] = "https://example.org/discussions/"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         Join the discussions at |hto_project_discussions|.
+
+   Example result:
+
+      Join the discussions at https://example.org/discussions/.
+
+
+Documentation type
+------------------
+
+((describe: Tutorial? Reference?, Example? ...))
+
+.. confval::     doctype
+
+   :Name:        doctype
+   :Prefix:      dt3m\_
+   :Section:     [docstypo3-meta]
+   :Notation:    \|dt3m_doctype\|
+   :Importance:  recommended
+   :Value:       any text
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [docstypo3-meta]
+
+      doctype = Tutorial
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      docstypo3["meta"]["doctype"] = "Tutorial"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         This text is meant as "|dt3m_doctype|".
+
+   Example result:
+
+      This text is meant as "Tutorial".
+
+
+
+Home
+----
+
+URL to create a "Home" link.
+
+.. confval::     project_home
+
+   :Name:        project_home
+   :Prefix:      hto\_
+   :Section:     [html-theme-options]
+   :Notation:    \|hto_project_home\|
+   :Importance:  optional
+   :Value:       empty or url
+   :Used by:     sphinx_typo3_theme
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [html-theme-options]
+
+      project_home = https://example.org/
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      html_theme_options["project_home"] = "https://example.org/"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         Visit the project in the internet at |hto_project_home|.
+
+   Example result:
+
+      Visit the project in the internet at https://example.org/.
+
+
+Issues
+------
+
+URL to create an "Issues" link.
+
+.. confval::     project_issues
+
+   :Name:        project_issues
+   :Prefix:      hto\_
+   :Section:     [html-theme-options]
+   :Notation:    \|hto_project_issues\|
+   :Importance:  optional
+   :Value:       empty or url
+   :Used by:     sphinx_typo3_theme
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [html-theme-options]
+
+      project_issues = https://github.com/example/test/issues/
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      html_theme_options["project_issues"] = "https://github.com/example/test/issues/"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         Report bugs at |hto_project_issues|.
+
+   Example result:
+
+      Report bugs at https://github.com/example/test/issues/.
+
+
+Language 1
+----------
+
+((describe, this is a two or five letter code, as recognized by Sphinx))
+
+.. confval::     std_language
+
+   :Name:        language
+   :Prefix:      std\_
+   :Section:     [general]
+   :Notation:    \|std_language\|
+   :Default:     empty, which means 'en'
+   :Importance:  optional
+   :Value:       Must be one of the predefined Sphinx keys like`de` or `en`.
+   :Sphinx docs: `sphinx#confval-language <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-language>`__
+   :Used by:     Sphinx translation mechanism
+
+   Sphinx will translate text constants accordingly, like "previous" (en)
+   or "zurück" (de).
+
+
+Language 2
+----------
+
+To specify the language in a human readable form, that is, as word or sentence.
+
+.. confval::     dt3m_language
+
+   :Name:        language
+   :Prefix:      dt3m\_
+   :Section:     [docstypo3-meta]
+   :Notation:    \|dt3m_language\|
+   :Importance:  optional
+   :Value:       any text
+
+
+License
+-------
+
+((describe))
+
+.. confval::     license
+
+   :Name:        license
+   :Prefix:      dt3m\_
+   :Section:     [docstypo3-meta]
+   :Notation:    \|dt3m_license\|
+   :Importance:  optional
+   :Value:       any text
+   :Used by:     ((sphinx_typo3_theme, planned for footer))
+
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [docstypo3-meta]
+
+      license = CC
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      docstypo3["meta"]["license"] = "CC"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         Respect this license: |dt3m_license|.
+
+   Example result:
+
+      Respect this license: CC.
+
+
+License ((todo))
+----------------
+
+((describe))
+
+.. confval:: license
+
+   :Section: [docstypo3-meta]
+
+   Will be replaced by `license` from section `[docstypo3-meta]`.
+
+   Example::
+
+      [docstypo3-meta]
 
       license = CC-BY 4.0
       license = https://creativecommons.org/licenses/by/4.0/
@@ -250,24 +774,83 @@ About the settings
       license = MIT
 
 
-.. confval:: |cfg_maintainer|
+Maintainer
+----------
 
-   Will be replaced by the value of `maintainer` as defined in :file:`conf.py`
-   or the empty string.
+((describe))
 
-   Example definition in :file:`Settings.cfg`::
+.. confval::     maintainer
 
-      [general]
+   :Name:        maintainer
+   :Prefix:      dt3m\_
+   :Section:     [docstypo3-meta]
+   :Notation:    \|dt3m_maintainer\|
+   :Importance:  optional
+   :Value:       any text
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [docstypo3-meta]
+
+      maintainer = Jon Doe <john.doe@example.org>
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      docstypo3["meta"]["maintainer"] = "Jon Doe <john.doe@example.org>"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         In case of doubt ask the maintainer: |dt3m_maintainer|.
+
+   Example result:
+
+      In case of doubt ask the maintainer: Jon Doe <john.doe@example.org>.
+
+
+Maintainer ((todo))
+-------------------
+
+((describe))
+
+.. confval:: |dt3m_maintainer|
+
+   :Section: [docstypo3-meta]
+
+   Will be replaced by `maintainer` from section `[docstypo3-meta]`.
+
+   Example::
+
+      [docstypo3-meta]
 
       maintainer = "John Doe <john.doe@example.org>"
 
 
-.. confval:: |cfg_project|
 
-   Will be replaced by the value of `project` as defined in :file:`conf.py`
-   or the empty string.
+Project
+-------
 
-   Example definition in :file:`Settings.cfg`::
+((describe))
+
+.. confval::     project
+
+   :Name:        project
+   :Prefix:      std\_
+   :Section:     [general]
+   :Notation:    \|std_project\|
+   :Importance:  required
+   :Value:       Any string. Provide the most short and concise name.
+   :Sphinx docs: `sphinx#confval-copyright <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-project>`__
+   :Used by:     sphinx_typo3_theme
+
+   Examples::
 
       [general]
 
@@ -277,13 +860,70 @@ About the settings
       project = Core changelog
 
 
+Repository
+----------
 
-.. confval:: |cfg_release|
+URL to create a link "Repository" or "Source".
 
-   Will be replaced by the value of `release` as defined in :file:`conf.py`
-   or the empty string.
+.. confval::     project_repository
 
-   Example definition in :file:`Settings.cfg`::
+   :Name:        project_repository
+   :Prefix:      hto\_
+   :Section:     [html-theme-options]
+   :Notation:    \|hto_project_repository\|
+   :Importance:  optional
+   :Value:       empty or url
+   :Used by:     sphinx_typo3_theme
+
+   Example :file:`Settings.cfg`:
+
+   .. code-block:: ini
+
+      [html-theme-options]
+
+      project_repository = https://github.com/example/test/
+
+   Example :file:`conf.py`:
+
+   .. code-block:: python
+
+      html_theme_options["project_repository"] = "https://github.com/example/test/"
+
+   Example source:
+
+   .. code-block:: rst
+
+      ..
+
+         Get the source from |hto_project_repository|.
+
+   Example result:
+
+      Get the source from https://github.com/example/test/.
+
+
+Release
+-------
+
+((describe))
+
+.. confval::     release
+
+   :Name:        release
+   :Prefix:      std\_
+   :Section:     [general]
+   :Notation:    \|std_release\|
+   :Importance:  required
+   :Value:       Strict form would be a full semver like `1.2.3`.
+                 We are more liberal and usually use the branch name.
+   :Remark:      Use the same value for `release` and `version` if there is no
+                 difference.
+   :Sphinx docs: `sphinx#confval-copyright <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-release>`__
+   :Used by:     sphinx_typo3_theme
+
+   Example:
+
+   .. code-block:: ini
 
       [general]
 
@@ -293,16 +933,35 @@ About the settings
       release = develop
 
 
-.. confval:: |cfg_version|
+Version
+-------
 
-   Will be replaced by the value of `version` as defined in :file:`conf.py`
-   or the empty string.
+((describe))
 
-   Example definition in :file:`Settings.cfg`::
+.. confval::     version
+
+   :Name:        version
+   :Prefix:      std\_
+   :Section:     [general]
+   :Notation:    \|std_version\|
+   :Importance:  required
+   :Value:       Strict form would be a part of semver like `1.2`.
+                 We are more liberal and usually use the branch name.
+   :Remark:      Use the same value for `release` and `version` if there is no
+                 difference.
+   :Sphinx docs: `sphinx#confval-copyright <https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-version>`__
+   :Used by:     sphinx_typo3_theme
+
+   Example:
+
+   .. code-block:: ini
 
       [general]
 
       version = 1.2
+      version = v1.2
       version = main
       version = develop
+
+
 
