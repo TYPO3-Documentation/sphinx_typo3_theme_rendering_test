@@ -4,23 +4,52 @@
 Sphinx TYPO3 Theme Rendering Test
 =================================
 
-This repository demonstrates how reST constructs look like when rendered with
-the `sphinx_typo3_theme
-<https://github.com/TYPO3-Documentation/sphinx_typo3_theme>`__ theme.
+-----
 
-See `_buildinfo <_buildinfo>`_
+.. rubric:: Abstract
 
-:Rendered:     |today| (machine time)
-:Author:       TYPO3 Documentation Team
-:What else:
-   Something really long and special.
-:Repository:   `GitHub TYPO3-Documentation/sphinx_typo3_theme_rendering_test
-               <https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test>`__
-:Rendered at:  https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/
+:Description:   |dt3m_description|
+
+-----
 
 
-.. rst-class:: compact-list
+.. rubric:: Project meta
+
+:Project:       |std_project|
+:Version:       |version|
+:Author:        |std_author|
+:Maintainer:    |dt3m_maintainer|
+:Language 2:    |dt3m_language|
+:Doctype:       |dt3m_doctype|
+:Audience:      |dt3m_audience|
+:Copyright:     |std_copyright|
+:License:       |dt3m_license|
+
+-----
+
+
+.. rubric:: Releated links
+
+:Contact:       |hto_project_contact|
+:Discussions:   |hto_project_discussions|
+:Home:          |hto_project_home|
+:Issues:        |hto_project_issues|
+:Repository:    |hto_project_repository|
+
+-----
+
+
+.. rubric:: Published here
+
+:Online at:     |dt3m_published|
+:Buildinfo:     `_buildinfo <_buildinfo>`_
+:Rendered:      |today| (machine time)
+
+-----
+
+.. rst-class::  compact-list
 .. toctree::
+   :caption:    Pages
    :titlesonly:
    :glob:
 

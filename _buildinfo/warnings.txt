@@ -1,5 +1,6 @@
+./Documentation/Index.rst:7: WARNING: Document or section may not begin with a transition.
 ./Documentation/LinkStyles/Index.rst:155: WARNING: Literal block ends without a blank line; unexpected unindent.
-./Documentation/Confvals/Index.rst:57: WARNING: Unknown directive type "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:66: WARNING: Unknown directive type "confval-values".
 
 .. confval-values:: requireMfa
 
@@ -15,8 +16,8 @@
       Require multi-factor authentication only for admin users
    4:
       Require multi-factor authentication only for system maintainers
-./Documentation/Confvals/Index.rst:87: WARNING: duplicate confval description of lockIP, other instance in Confvals/Index
-./Documentation/Confvals/Index.rst:103: WARNING: Unknown directive type "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:96: WARNING: duplicate confval description of lockIP, other instance in ConfvalForTYPO3/Index
+./Documentation/ConfvalForTYPO3/Index.rst:112: WARNING: Unknown directive type "confval-values".
 
 .. confval-values:: lockIP
 
@@ -36,15 +37,15 @@
    4
       Use the visitors full IPv4 address (for example "192.168.13.84") as part of
       the session locking of Frontend Users (highest security)
-./Documentation/Confvals/Index.rst:126: WARNING: Unknown interpreted text role "confval-values".
-./Documentation/Confvals/Index.rst:126: WARNING: Unknown interpreted text role "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
 ./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:54: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:761: WARNING: duplicate confval description of license, other instance in Replacements/Index
-./Documentation/Confvals/Index.rst:81: WARNING: undefined label: typo3confvars_fe_lockip
-./Documentation/Confvals/Index.rst:123: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
-./Documentation/Confvals/Index.rst:123: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
-./Documentation/Confvals/Index.rst:126: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
-./Documentation/Confvals/Index.rst:131: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
+./Documentation/ConfvalForTYPO3/Index.rst:90: WARNING: undefined label: typo3confvars_fe_lockip
+./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
+./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
+./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
+./Documentation/ConfvalForTYPO3/Index.rst:140: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
 ./Documentation/Highlighting/Index.rst:439: WARNING: Could not lex literal_block as "guess". Highlighting skipped.

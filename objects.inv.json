@@ -453,19 +453,19 @@
       "BE": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html#confval-BE",
+         "ConfvalForTYPO3/Index.html#confval-BE",
          "-"
       ],
       "FE": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html#confval-FE",
+         "ConfvalForTYPO3/Index.html#confval-FE",
          "-"
       ],
       "TYPO3_CONF_VARS": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html#confval-TYPO3_CONF_VARS",
+         "ConfvalForTYPO3/Index.html#confval-TYPO3_CONF_VARS",
          "-"
       ],
       "_json": [
@@ -483,13 +483,13 @@
       "addRecord": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#confval-addRecord",
+         "Confval/Index.html#confval-addRecord",
          "-"
       ],
       "align": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#confval-align",
+         "Confval/Index.html#confval-align",
          "-"
       ],
       "audience": [
@@ -507,13 +507,13 @@
       "boolean": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#confval-boolean",
+         "Confval/Index.html#confval-boolean",
          "-"
       ],
       "case": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#confval-case",
+         "Confval/Index.html#confval-case",
          "-"
       ],
       "copyright": [
@@ -561,7 +561,7 @@
       "lockIP": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html#confval-0",
+         "ConfvalForTYPO3/Index.html#confval-0",
          "-"
       ],
       "maintainer": [
@@ -573,7 +573,7 @@
       "mr_pommeroy": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#confval-mr_pommeroy",
+         "Confval/Index.html#confval-mr_pommeroy",
          "-"
       ],
       "project": [
@@ -621,7 +621,7 @@
       "requireMfa": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html#confval-requireMfa",
+         "ConfvalForTYPO3/Index.html#confval-requireMfa",
          "-"
       ],
       "std_": [
@@ -668,11 +668,17 @@
          "Codeblocks/Index.html",
          "Codeblocks"
       ],
-      "Confvals/Index": [
+      "Confval/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html",
-         "Configure TYPO3 configuration variables"
+         "Confval/Index.html",
+         "confval"
+      ],
+      "ConfvalForTYPO3/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "ConfvalForTYPO3/Index.html",
+         "confval for TYPO3"
       ],
       "Copyright": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -685,12 +691,6 @@
          "main",
          "Directives/Index.html",
          "Directives"
-      ],
-      "Directives/confval": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "Directives/confval.html",
-         "confval"
       ],
       "Directives/glossary": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -943,7 +943,7 @@
       "confval": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#confval",
+         "Confval/Index.html#confval",
          "-"
       ],
       "copyright": [
@@ -955,7 +955,7 @@
       "demo 3 - addrecord": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/confval.html#demo-3-addrecord",
+         "Confval/Index.html#demo-3-addrecord",
          "Demo 3 - addRecord"
       ],
       "directives": [
@@ -1093,8 +1093,8 @@
       "typo3_conf_var_usage": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Confvals/Index.html#typo3-conf-var-usage",
-         "Configure TYPO3 configuration variables"
+         "ConfvalForTYPO3/Index.html#typo3-conf-var-usage",
+         "-"
       ]
    },
    "std:term": {

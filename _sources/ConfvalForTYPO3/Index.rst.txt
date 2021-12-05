@@ -2,6 +2,15 @@
 
 .. _typo3_conf_var_usage:
 
+
+.. document title
+
+#################
+confval for TYPO3
+#################
+
+.. document subtitle
+
 =======================================
 Configure TYPO3 configuration variables
 =======================================
@@ -133,7 +142,9 @@ Have a look at all configurations possible for the backend:
 
 There should be a hierarchical menu available:
 
-.. image:: Images/menu.png
+.. figure:: Images/menu.png
+   :class: with-border with-shadow
+   :alt:   How the menu item should look like.
 
 In the Index each value should be listed like this:
 
