@@ -1,6 +1,7 @@
 Admonitions-and-buttons/Index.html
 Blockquotes/Index.html
 Codeblocks/Index.html
+Confvals/Index.html
 Copyright.html
 Directives/Index.html
 Directives/confval.html
