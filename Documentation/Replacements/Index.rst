@@ -34,26 +34,45 @@ Meaning                 Used   Markup                       Importance          
 ======================  =====  ===========================  =======================  =====================  =========
 Audience                       `|dt3m_audience|`            desired                  `audience`             `dt3m_`
 Author                         `|std_author|`               expected                 `author`               `std_`
+Contact                 yes    `|hto_project_contact|`      optional                 `project_contact`      `hto_`
 Copyright               yes    `|std_copyright|`            expected                 `copyright`            `std_`
 Description                    `|dt3m_description|`         recommended              `description`          `dt3m_`
-Doctype                        `|dt3m_doctype|`             desired                  `doctype`              `dt3m_`
-Language (letter code)  yes    `|std_language|`             required if not `en`     `language`             `std_`
-Language (any text)            `|dt3m_language|`            optional                 `language`             `dt3m_`
-License                        `|dt3m_license|`             desired                  `license`              `dt3m_`
-Maintainer                     `|dt3m_maintainer|`          optional                 `maintainer`           `dt3m_`
-Contact                 yes    `|hto_project_contact|`      optional                 `project_contact`      `hto_`
 Discussions             yes    `|hto_project_discussions|`  optional                 `project_discussions`  `hto_`
+Doctype                        `|dt3m_doctype|`             desired                  `doctype`              `dt3m_`
 Home                    yes    `|hto_project_home|`         optional                 `project_home`         `hto_`
 Issues                  yes    `|hto_project_issues|`       optional                 `project_issues`       `hto_`
-Repository              yes    `|hto_project_repository|`   optional                 `project_repository`   `hto_`
+Language (any text)            `|dt3m_language|`            optional                 `language`             `dt3m_`
+Language (letter code)  yes    `|std_language|`             required if not `en`     `language`             `std_`
+License                        `|dt3m_license|`             desired                  `license`              `dt3m_`
+Maintainer                     `|dt3m_maintainer|`          optional                 `maintainer`           `dt3m_`
 Project                 yes    `|std_project|`              required                 `project`              `std_`
-Published                      `|dt3m_published|`           optional                 `published`            `dt3m_`
-Release                 yes    `|release|`                  required                 `release`              ``
 Release                        `|std_release|`              is alias                 `release`              `std_`
+Release                 yes    `|release|`                  required                 `release`              ``
 Rendered                       `|today|`                    is read only             `today`                ``
-Version                 yes    `|version|`                  required                 `version`              `version`
+Repository              yes    `|hto_project_repository|`   optional                 `project_repository`   `hto_`
 Version                        `|std_version|`              is alias                 `version`              `std_`
+Version                 yes    `|version|`                  required                 `version`              `version`
+Website                        `|dt3m_website|`             optional                 `website`              `dt3m_`
 ======================  =====  ===========================  =======================  =====================  =========
+
+If present, the following settings are used to create an "Edit" button.
+
+======================  ===========================  =======================
+Name                    Markup                       Example
+======================  ===========================  =======================
+bitbucket_host          `|hto_bitbucket_host|`       |hto_bitbucket_host|
+bitbucket_repo          `|hto_bitbucket_repo|`       |hto_bitbucket_repo|
+bitbucket_user          `|hto_bitbucket_user|`       |hto_bitbucket_user|
+bitbucket_version       `|hto_bitbucket_version|`    |hto_bitbucket_version|
+github_host             `|hto_github_host|`          |hto_github_host|
+github_repo             `|hto_github_repo|`          |hto_github_repo|
+github_user             `|hto_github_user|`          |hto_github_user|
+github_version          `|hto_github_version|`       |hto_github_version|
+gitlab_host             `|hto_gitlab_host|`          |hto_gitlab_host|
+gitlab_repo             `|hto_gitlab_repo|`          |hto_gitlab_repo|
+gitlab_user             `|hto_gitlab_user|`          |hto_gitlab_user|
+gitlab_version          `|hto_gitlab_version|`       |hto_gitlab_version|
+======================  ===========================  =======================
 
 
 Meaning of prefixes
@@ -89,15 +108,20 @@ Optional postfixes
 You *may* append a postfix to the replacement key to specify through which
 function the replacement text should go.
 
+.. confval:: _json
+
+   'json' means that the replacement text should be valid json code.
+
+.. confval:: _link
+
+   If not empty, the text will be shown as a hyperlink where the target is the
+   same as the link text.
+
 .. confval:: _r
 
    'r' signals that you want a 'representation' of the text, not just the text
    itself. A represention is a string that can be evaluated (by Python)
    and results in the original string.
-
-.. confval:: _json
-
-   'json' means that the replacement text should be valid json code.
 
 
 Postfix example
@@ -116,16 +140,20 @@ Consider this definition:
       follow up line 2
       follow up line 3
 
+   project_home = https://docs.typo3.org/
+
 The replacement text goes to one of three function, depending on what
 postfix you use:
 
-=========================  =========== ====  ===============================
-Markup                     Function          Replacement
-=========================  =========== ====  ===============================
-`|dt3m_description|`       str           →   Some explicite description follow up line 2 follow up line 3
-`|dt3m_description_r|`     repr          →   '\\nSome explicite description\\nfollow up line 2\\nfollow up line 3'
-`|dt3m_description_json|`  json.dumps    →   "\\nSome explicite description\\nfollow up line 2\\nfollow up line 3"
-=========================  =========== ====  ===============================
+=============================  =========== ====  ===============================
+Markup                         Function          Replacement
+=============================  =========== ====  ===============================
+`|dt3m_description|`           str           →   Some explicite description follow up line 2 follow up line 3
+`|dt3m_description_r|`         repr          →   '\\nSome explicite description\\nfollow up line 2\\nfollow up line 3'
+`|dt3m_description_json|`      json.dumps    →   "\\nSome explicite description\\nfollow up line 2\\nfollow up line 3"
+`|dt3m_project_home|`          str           →   https :// docs .typo3 .org/ (think of this as if there were no blanks)
+`|dt3m_project_home_link|`     special       →   https://docs.typo3.org/
+=============================  =========== ====  ===============================
 
 
 
@@ -220,7 +248,7 @@ Source
          language    =  |dt3m_language|
          license     =  |dt3m_license|
          maintainer  =  |dt3m_maintainer|
-         published   =  |dt3m_published|
+         website     =  |dt3m_website|
 
 
          [html-theme-options]
@@ -255,7 +283,7 @@ Rendering result
       language    =  |dt3m_language|
       license     =  |dt3m_license|
       maintainer  =  |dt3m_maintainer|
-      published   =  |dt3m_published|
+      website     =  |dt3m_website|
 
 
       [html-theme-options]
@@ -280,7 +308,7 @@ About the settings
 Audience
 --------
 
-((Describe: This doc is for whom?))
+What audience is this documentation for?
 
 .. confval::     audience
 
@@ -321,7 +349,7 @@ Audience
 Author
 ------
 
-((Describe: Who has written the content?))
+List names and emails of authors.
 
 .. confval::     author
 
@@ -365,7 +393,8 @@ Author
 Contact
 -------
 
-((describe))
+How to contact the authors. Leave empty or provide just the url or email
+address.
 
 .. confval::     project_contact
 
@@ -509,7 +538,7 @@ man, ...
 Discussions
 -----------
 
-URL to create the link "Discussions".
+Leave empty or provide just the url for discussions.
 
 .. confval::     project_discussions
 
@@ -551,7 +580,7 @@ URL to create the link "Discussions".
 Documentation type
 ------------------
 
-((describe: Tutorial? Reference?, Example? ...))
+What kind of documentation is it? ((Tutorial? Reference?, Example? ...))
 
 .. confval::     doctype
 
@@ -593,7 +622,7 @@ Documentation type
 Home
 ----
 
-URL to create a "Home" link.
+Leave empty or provide an url to the source project.
 
 .. confval::     project_home
 
@@ -635,7 +664,7 @@ URL to create a "Home" link.
 Issues
 ------
 
-URL to create an "Issues" link.
+Leave empty or provide just the url of "Issues".
 
 .. confval::     project_issues
 
@@ -674,10 +703,11 @@ URL to create an "Issues" link.
       Report bugs at https://github.com/example/test/issues/.
 
 
-Language 1
-----------
+Language (std_language)
+-----------------------
 
-((describe, this is a two or five letter code, as recognized by Sphinx))
+Default is 'en'. Provide one of the prescribed values that Sphinx recognizes to
+specify the language of the documentation.
 
 .. confval::     std_language
 
@@ -695,8 +725,8 @@ Language 1
    or "zurück" (de).
 
 
-Language 2
-----------
+Language (dt3m_language)
+------------------------
 
 To specify the language in a human readable form, that is, as word or sentence.
 
@@ -709,11 +739,16 @@ To specify the language in a human readable form, that is, as word or sentence.
    :Importance:  optional
    :Value:       any text
 
+   Example::
+
+      [docstypo3-meta]
+      language = English (US)
+
 
 License
 -------
 
-((describe))
+The name and url of the license *for the documentation.*
 
 .. confval::     license
 
@@ -732,7 +767,7 @@ License
 
       [docstypo3-meta]
 
-      license = CC
+      license     = CC-BY 4.0 [https://creativecommons.org/licenses/by/4.0/]
 
    Example :file:`conf.py`:
 
@@ -748,36 +783,19 @@ License
 
          Respect this license: |dt3m_license|.
 
+         Respect this license: |dt3m_license_linked|.
+
    Example result:
 
-      Respect this license: CC.
+      Respect this license: CC-BY 4.0 [https://creativecommons.org/licenses/by/4.0/].
 
-
-License ((todo))
-----------------
-
-((describe))
-
-.. confval:: license
-
-   :Section: [docstypo3-meta]
-
-   Will be replaced by `license` from section `[docstypo3-meta]`.
-
-   Example::
-
-      [docstypo3-meta]
-
-      license = CC-BY 4.0
-      license = https://creativecommons.org/licenses/by/4.0/
-      license = CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>
-      license = MIT
+      Respect this license: `CC-BY 4.0 <https://creativecommons.org/licenses/by/4.0/>`__.
 
 
 Maintainer
 ----------
 
-((describe))
+Who is the maintainer of the documentation?
 
 .. confval::     maintainer
 
@@ -815,29 +833,10 @@ Maintainer
       In case of doubt ask the maintainer: Jon Doe <john.doe@example.org>.
 
 
-Maintainer ((todo))
--------------------
-
-((describe))
-
-.. confval:: |dt3m_maintainer|
-
-   :Section: [docstypo3-meta]
-
-   Will be replaced by `maintainer` from section `[docstypo3-meta]`.
-
-   Example::
-
-      [docstypo3-meta]
-
-      maintainer = "John Doe <john.doe@example.org>"
-
-
-
 Project
 -------
 
-((describe))
+Short and concise name of the project that the documentation describes.
 
 .. confval::     project
 
@@ -963,5 +962,11 @@ Version
       version = main
       version = develop
 
+More pages
+==========
 
+.. toctree::
+   :glob:
 
+   */Index
+   *
