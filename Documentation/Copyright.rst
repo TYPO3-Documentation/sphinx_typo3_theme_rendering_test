@@ -8,5 +8,5 @@
 Copyright
 =========
 
-Here we go.
+An explanation about the Copyright should go here.
 
