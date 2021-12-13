@@ -15,8 +15,6 @@ Navigate this page:
    :depth: 99
    :local:
 
-.. note:: For this page to work a version *newer than* v2.2.1 of the Docker
-          container is required.
 
 What is it?
    This is a sphinx extension for embedding your presentation slides.

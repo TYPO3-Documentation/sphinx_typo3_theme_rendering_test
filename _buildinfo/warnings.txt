@@ -1,5 +1,4 @@
 ./Documentation/Index.rst:7: WARNING: Document or section may not begin with a transition.
-./Documentation/LinkStyles/Index.rst:155: WARNING: Literal block ends without a blank line; unexpected unindent.
 ./Documentation/ConfvalForTYPO3/Index.rst:66: WARNING: Unknown directive type "confval-values".
 
 .. confval-values:: requireMfa
@@ -40,12 +39,19 @@
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
+./Documentation/Replacements/Index.rst:51: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
-./Documentation/Replacements/Index.rst:54: WARNING: Inline literal start-string without end-string.
-./Documentation/Replacements/Index.rst:761: WARNING: duplicate confval description of license, other instance in Replacements/Index
+./Documentation/Replacements/Index.rst:968: WARNING: toctree glob pattern '*/Index' didn't match any documents
+./Documentation/Replacements/Index.rst:212: WARNING: Undefined substitution referenced: "dt3m_published".
 ./Documentation/ConfvalForTYPO3/Index.rst:90: WARNING: undefined label: typo3confvars_fe_lockip
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
 ./Documentation/ConfvalForTYPO3/Index.rst:140: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
+./Documentation/ThisAndThat/Index.rst:283: WARNING: undefined label: t3tsref:stdwrap
+./Documentation/ThisAndThat/Index.rst:299: WARNING: undefined label: t3tsref:stdwrap
+./Documentation/ThisAndThat/Index.rst:312: WARNING: undefined label: t3tsref:stdwrap
+./Documentation/ThisAndThat/Index.rst:335: WARNING: undefined label: stdwrap
+./Documentation/ThisAndThat/Index.rst:350: WARNING: undefined label: t3tsref:stdwrap
+./Documentation/ThisAndThat/Index.rst:362: WARNING: undefined label: t3tsref:stdwrap
 ./Documentation/Highlighting/Index.rst:439: WARNING: Could not lex literal_block as "guess". Highlighting skipped.

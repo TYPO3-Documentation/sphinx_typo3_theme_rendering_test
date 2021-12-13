@@ -6,50 +6,34 @@ Sphinx TYPO3 Theme Rendering Test
 
 -----
 
-.. rubric:: Abstract
-
-:Description:   |dt3m_description|
+:Description:   |dt3m_description_linked|
 
 -----
 
-
-.. rubric:: Project meta
-
-:Project:       |std_project|
-:Version:       |version|
-:Author:        |std_author|
-:Maintainer:    |dt3m_maintainer|
-:Language 2:    |dt3m_language|
-:Doctype:       |dt3m_doctype|
-:Audience:      |dt3m_audience|
-:Copyright:     |std_copyright|
-:License:       |dt3m_license|
+:Project:       |std_project_linked|
+:Version:       |std_version_linked|
+:Author:        |std_author_linked|
+:Maintainer:    |dt3m_maintainer_linked|
+:Language:      |dt3m_language_linked|
+:Doctype:       |dt3m_doctype_linked|
+:Audience:      |dt3m_audience_linked|
+:Copyright:     |std_copyright_linked|
+:License:       |dt3m_license_linked|
 
 -----
-
-
-.. rubric:: Releated links
-
-:Contact:       |hto_project_contact|
-:Discussions:   |hto_project_discussions|
-:Home:          |hto_project_home|
-:Issues:        |hto_project_issues|
-:Repository:    |hto_project_repository|
-
------
-
 
 .. rubric:: Published here
 
-:Online at:     |dt3m_published|
-:Buildinfo:     `_buildinfo <_buildinfo>`_
-:Rendered:      |today| (machine time)
+:Website:    |dt3m_website_linked|
+:Buildinfo:  `_buildinfo <_buildinfo>`_
+:Rendered:   |today| (machine time)
 
 -----
 
+.. rubric:: Pages
+
 .. rst-class::  compact-list
 .. toctree::
-   :caption:    Pages
    :titlesonly:
    :glob:
 

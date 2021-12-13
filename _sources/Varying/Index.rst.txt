@@ -1,8 +1,8 @@
 .. include:: /Includes.rst.txt
 
-=======
-Various
-=======
+====================
+Varying ad hoc tests
+====================
 
 .. contents:: This page
    :backlinks: top
@@ -11,7 +11,7 @@ Various
    :local:
 
 
-2021-11-05
+2021-12-13
 ##########
 
 Something to test

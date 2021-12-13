@@ -474,6 +474,12 @@
          "Replacements/Index.html#confval-_json",
          "-"
       ],
+      "_link": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-_link",
+         "-"
+      ],
       "_r": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -555,7 +561,7 @@
       "license": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-0",
+         "Replacements/Index.html#confval-license",
          "-"
       ],
       "lockIP": [
@@ -641,12 +647,6 @@
          "main",
          "Replacements/Index.html#confval-version",
          "-"
-      ],
-      "|dt3m_maintainer|": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "Replacements/Index.html#confval-dt3m_maintainer",
-         "-"
       ]
    },
    "std:doc": {
@@ -704,12 +704,6 @@
          "Directives/raw.html",
          "raw"
       ],
-      "Directives/sphinx-tabs": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "Directives/sphinx-tabs.html",
-         "sphinx-tabs"
-      ],
       "Directives/sphinx_ext_graphviz": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -733,12 +727,6 @@
          "main",
          "Directives/sphinxcontrib-t3fieldlisttable.html",
          "sphinxcontrib-t3fieldlisttable"
-      ],
-      "Directives/sphinxcontrib-t3targets": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "Directives/sphinxcontrib-t3targets.html",
-         "sphinxcontrib-t3targets"
       ],
       "Directives/sphinxcontrib-youtube": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -804,7 +792,13 @@
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "LinkStyles/Index.html",
-         "Links styles"
+         "Link styles"
+      ],
+      "LinkTargets/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "LinkTargets/Index.html",
+         "LinkTargets"
       ],
       "Lists/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -860,6 +854,12 @@
          "PhpDomain/Index.html",
          "Phpdomain"
       ],
+      "Replacements/FullExample": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/FullExample.html",
+         "Full example of an \"About the project\" page"
+      ],
       "Replacements/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -883,6 +883,12 @@
          "main",
          "SphinxPanels/Index.html",
          "Sphinx panels"
+      ],
+      "SphinxTabs/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "SphinxTabs/Index.html",
+         "sphinx-tabs"
       ],
       "StyledNumberedLists/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -908,11 +914,11 @@
          "Typesetting/Index.html",
          "Typesetting"
       ],
-      "Various/Index": [
+      "Varying/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Various/Index.html",
-         "Various"
+         "Varying/Index.html",
+         "Varying ad hoc tests"
       ],
       "genindex": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -988,6 +994,12 @@
          "Lineblocks/Index.html#line-blocks",
          "Line blocks"
       ],
+      "linktargets": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "LinkTargets/Index.html#linktargets",
+         "LinkTargets"
+      ],
       "modindex": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -1039,14 +1051,8 @@
       "sphinx-tabs": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/sphinx-tabs.html#sphinx-tabs",
+         "SphinxTabs/Index.html#sphinx-tabs",
          "-"
-      ],
-      "sphinxcontrib--t3targets": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "Directives/sphinxcontrib-t3targets.html#sphinxcontrib-t3targets",
-         "sphinxcontrib-t3targets"
       ],
       "sphinxcontrib-php-domain": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -1064,6 +1070,12 @@
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Directives/sphinxcontrib-t3fieldlisttable.html#sphinxcontrib-t3fieldlisttable",
+         "-"
+      ],
+      "sphinxcontrib-t3targets": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "LinkTargets/Index.html#sphinxcontrib-t3targets",
          "-"
       ],
       "sphinxcontrib-youtube": [

@@ -1,6 +1,6 @@
 {
-  "build_time": "2021-12-05 17:30:34",
-  "checksum": "87c4ead63501faa99025d27f7e36a1c5",
+  "build_time": "2021-12-13 21:56:18",
+  "checksum": "a7ccf2eb9541d9622ccdf40d24c487d1",
   "checksum_ttl_seconds": 604800,
   "copyright": "2020, TYPO3 Documentation Team",
   "created": {
@@ -11,8 +11,8 @@
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:develop",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v3.0.dev8",
-    "THEME_MTIME": "1636153200",
+    "OUR_IMAGE_VERSION": "v3.0.dev9",
+    "THEME_MTIME": "1639389494",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
     "TOOLCHAIN_VERSION": "2.12.dev2",
@@ -22,19 +22,19 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 48,
+  "postprocessed_html_files": 49,
   "project": "Sphinx TYPO3 Theme Rendering Test",
   "publish_dir": "project/0.0.0",
   "release": "main",
-  "sitemap_files_html_count": 48,
+  "sitemap_files_html_count": 49,
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1638652954",
+    "build_mtime": "1639431198",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.6.3.dev54+g457db68",
-    "version_scm_build": "g457db68",
-    "version_scm_core": "4.6.3",
-    "version_scm_pre_release": "dev54"
+    "version_scm": "4.7.dev6",
+    "version_scm_build": "",
+    "version_scm_core": "4.7.dev6",
+    "version_scm_pre_release": ""
   },
   "version": "main"
 }
