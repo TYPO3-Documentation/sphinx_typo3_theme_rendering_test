@@ -7,11 +7,11 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="main" name="docsearch:release"/>
 <meta content="main" name="docsearch:version"/>
-<meta content="2021-12-14T16:44:31+00:00" name="docsearch:modified"/>
+<meta content="2021-12-14T16:51:21+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-12-14T16:44:31+00:00" name="dc.modified"/>
-<meta content="2021-12-14T16:44:31+00:00" property="article:modified_time"/>
-<title>Link styles — Sphinx TYPO3 Theme Rendering Test main documentation</title>
+<meta content="2021-12-14T16:51:21+00:00" name="dc.modified"/>
+<meta content="2021-12-14T16:51:21+00:00" property="article:modified_time"/>
+<title>ExtLinks and Link styles — Sphinx TYPO3 Theme Rendering Test main documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
@@ -99,7 +99,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../ImagesAndFigures/Index.html">Images and figures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Inline-code-and-textroles/Index.html">Inline code and text roles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Lineblocks/Index.html">Line blocks</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Link styles</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ExtLinks and Link styles</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../LinkTargets/Index.html">LinkTargets</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Lists/Index.html">Lists</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../ListsAsButtons/Index.html">List Items as Buttons</a></li>
@@ -141,7 +141,8 @@
 </ul>
 <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
 <ul>
-<li><a class="reference internal" href="#">Link styles</a><ul>
+<li><a class="reference internal" href="#">ExtLinks and Link styles</a><ul>
+<li><a class="reference internal" href="#extlinks">ExtLinks</a></li>
 <li><a class="reference internal" href="#various">Various</a><ul>
 <li><a class="reference internal" href="#within-a-page">Within a page</a></li>
 <li><a class="reference internal" href="#external-links-outside-typo3-universe">External links, outside TYPO3 universe</a></li>
@@ -167,7 +168,7 @@
 <div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
 <ol class="breadcrumb">
 <li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
-<li aria-current="page" class="breadcrumb-item active">Link styles</li>
+<li aria-current="page" class="breadcrumb-item active">ExtLinks and Link styles</li>
 </ol>
 <div class="breadcrumb-additions">
 <a class="btn btn-sm btn-light" href="../_sources/LinkStyles/Index.rst.txt" rel="nofollow">
@@ -204,20 +205,97 @@
 <div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
 <div itemprop="articleBody">
 <!-- body -->
-<div class="section" id="link-styles">
-<h1>Link styles<a class="headerlink" href="#link-styles" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="extlinks-and-link-styles">
+<h1>ExtLinks and Link styles<a class="headerlink" href="#extlinks-and-link-styles" title="Permalink to this headline">¶</a></h1>
 <div class="contents compact-list local topic" id="this-page">
 <p class="topic-title">This page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#various" id="id1">Various</a></p>
+<li><p><a class="reference internal" href="#extlinks" id="id1">ExtLinks</a></p></li>
+<li><p><a class="reference internal" href="#various" id="id2">Various</a></p>
 <ul>
-<li><p><a class="reference internal" href="#within-a-page" id="id2">Within a page</a></p></li>
-<li><p><a class="reference internal" href="#external-links-outside-typo3-universe" id="id3">External links, outside TYPO3 universe</a></p></li>
-<li><p><a class="reference internal" href="#external-links-inside-typo3-universe" id="id4">External links, inside TYPO3 universe</a></p></li>
+<li><p><a class="reference internal" href="#within-a-page" id="id3">Within a page</a></p></li>
+<li><p><a class="reference internal" href="#external-links-outside-typo3-universe" id="id4">External links, outside TYPO3 universe</a></p></li>
+<li><p><a class="reference internal" href="#external-links-inside-typo3-universe" id="id5">External links, inside TYPO3 universe</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#other" id="id5">Other</a></p></li>
+<li><p><a class="reference internal" href="#other" id="id6">Other</a></p></li>
 </ul>
+</div>
+<div class="section" id="extlinks">
+<h2><a class="toc-backref" href="#this-page">ExtLinks</a><a class="headerlink" href="#extlinks" title="Permalink to this headline">¶</a></h2>
+<p>In <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code> we have:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extlinks</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">extlinks</span><span class="p">[</span><span class="s2">"forge"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"https://forge.typo3.org/issues/</span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Forge #"</span><span class="p">)</span>
+<span class="n">extlinks</span><span class="p">[</span><span class="s2">"issue"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"https://forge.typo3.org/issues/</span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Issue #"</span><span class="p">)</span>
+<span class="n">extlinks</span><span class="p">[</span><span class="s2">"review"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"https://review.typo3.org/</span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Review #"</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Defined in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
+<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[extlinks]</span>
+
+<span class="na">forge</span>       <span class="o">=</span> <span class="s">https://forge.typo3.org/issues/%s         | forge:</span>
+<span class="na">issue</span>       <span class="o">=</span> <span class="s">https://forge.typo3.org/issues/%s"        | forge:</span>
+<span class="na">packagist</span>   <span class="o">=</span> <span class="s">https://packagist.org/packages/%s         | pckg↗</span>
+<span class="na">packagist3</span>  <span class="o">=</span> <span class="s">https://packagist.org/packages/%s         | pckg:</span>
+<span class="na">packagist4</span>  <span class="o">=</span> <span class="s">https://packagist.org/packages/%s         | PCKG:</span>
+<span class="na">review</span>      <span class="o">=</span> <span class="s">https://review.typo3.org/%s               | review:</span>
+<span class="na">t3ext</span>       <span class="o">=</span> <span class="s">https://extensions.typo3.org/extension/%s | t3ext↗</span>
+<span class="na">t3ext2</span>      <span class="o">=</span> <span class="s">https://extensions.typo3.org/extension/%s | ext↗</span>
+<span class="na">t3ext3</span>      <span class="o">=</span> <span class="s">https://extensions.typo3.org/extension/%s | ext:</span>
+<span class="na">t3ext4</span>      <span class="o">=</span> <span class="s">https://extensions.typo3.org/extension/%s | EXT:</span>
+<span class="na">theme-issue</span> <span class="o">=</span> <span class="s">https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/%s | theme issue #</span>
+</pre></div>
+</div>
+<p>Source:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>====================== ========================= =========================
+Notation               Alt-notation              Result
+====================== ========================= =========================
+<span class="s">``:issue:`12345```</span>     <span class="s">```12345`:issue:``</span>        <span class="na">:issue:</span><span class="nv">`12345`</span>
+<span class="s">``:forge:`345```</span>       <span class="s">```345`:forge:``</span>          <span class="na">:forge:</span><span class="nv">`345`</span>
+<span class="s">``:review:`567```</span>      <span class="s">```567`:review:``</span>         <span class="na">:review:</span><span class="nv">`567`</span>
+<span class="s">``:t3ext:`news```</span>      <span class="s">```news`:t3ext:``</span>         <span class="na">:t3ext:</span><span class="nv">`news`</span>
+<span class="s">``:packagist:`news```</span>  <span class="s">```news`:packagist:``</span>     <span class="na">:packagist:</span><span class="nv">`news`</span>
+====================== ========================= =========================
+</pre></div>
+</div>
+<p>Rendering:</p>
+<blockquote>
+<div><table class="docutils align-default">
+<colgroup>
+<col style="width: 31%"/>
+<col style="width: 35%"/>
+<col style="width: 35%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Notation</p></th>
+<th class="head"><p>Alt-notation</p></th>
+<th class="head"><p>Result</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:issue:`12345`</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">`12345`:issue:</span></code></p></td>
+<td><p><a class="reference external" href='https://forge.typo3.org/issues/12345"'>forge:12345</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">:forge:`345`</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">`345`:forge:</span></code></p></td>
+<td><p><a class="reference external" href="https://forge.typo3.org/issues/345">forge:345</a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:review:`567`</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">`567`:review:</span></code></p></td>
+<td><p><a class="reference external" href="https://review.typo3.org/567">review:567</a></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">:t3ext:`news`</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">`news`:t3ext:</span></code></p></td>
+<td><p><a class="reference external" href="https://extensions.typo3.org/extension/news">t3ext↗news</a></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:packagist:`news`</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">`news`:packagist:</span></code></p></td>
+<td><p><a class="reference external" href="https://packagist.org/packages/news" rel="nofollow noopener">pckg↗news</a></p></td>
+</tr>
+</tbody>
+</table>
+</div></blockquote>
 </div>
 <div class="section" id="various">
 <h2><a class="toc-backref" href="#this-page">Various</a><a class="headerlink" href="#various" title="Permalink to this headline">¶</a></h2>
@@ -281,74 +359,6 @@ documentation purposes.</p>
 <blockquote>
 <div><p>Let's link to <a class="reference internal" href="#various">various</a>.</p>
 </div></blockquote>
-<p>In <code class="file docutils literal notranslate"><span class="pre">conf.py</span></code> we have:</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">extlinks</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="n">extlinks</span><span class="p">[</span><span class="s2">"forge"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"https://forge.typo3.org/issues/</span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Forge #"</span><span class="p">)</span>
-<span class="n">extlinks</span><span class="p">[</span><span class="s2">"issue"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"https://forge.typo3.org/issues/</span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Issue #"</span><span class="p">)</span>
-<span class="n">extlinks</span><span class="p">[</span><span class="s2">"review"</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="s2">"https://review.typo3.org/</span><span class="si">%s</span><span class="s2">"</span><span class="p">,</span> <span class="s2">"Review #"</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Defined in <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code>:</p>
-<div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[extlinks]</span>
-
-<span class="na">forge</span>       <span class="o">=</span> <span class="s">https://forge.typo3.org/issues/%s         | forge:</span>
-<span class="na">issue</span>       <span class="o">=</span> <span class="s">https://forge.typo3.org/issues/%s"        | forge issue #</span>
-<span class="na">packagist</span>   <span class="o">=</span> <span class="s">https://packagist.org/packages/%s         | pckg↗</span>
-<span class="na">review</span>      <span class="o">=</span> <span class="s">https://review.typo3.org/%s               | review:</span>
-<span class="na">t3ext</span>       <span class="o">=</span> <span class="s">https://extensions.typo3.org/extension/%s | t3ext↗</span>
-<span class="na">theme-issue</span> <span class="o">=</span> <span class="s">https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/%s | theme issue #</span>
-</pre></div>
-</div>
-<p>Source:</p>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>====================== ========================= =========================
-Notation               Alt-notation              Result
-====================== ========================= =========================
-<span class="s">``:issue:`12345```</span>     <span class="s">```12345`:issue:``</span>        <span class="na">:issue:</span><span class="nv">`12345`</span>
-<span class="s">``:forge:`345```</span>       <span class="s">```345`:forge:``</span>          <span class="na">:forge:</span><span class="nv">`345`</span>
-<span class="s">``:review:`567```</span>      <span class="s">```567`:review:``</span>         <span class="na">:review:</span><span class="nv">`567`</span>
-<span class="s">``:t3ext:`news```</span>      <span class="s">```news`:t3ext:``</span>         <span class="na">:t3ext:</span><span class="nv">`news`</span>
-<span class="s">``:packagist:`news```</span>  <span class="s">```news`:packagist:``</span>     <span class="na">:packagist:</span><span class="nv">`news`</span>
-====================== ========================= =========================
-</pre></div>
-</div>
-<p>Rendering:</p>
-<blockquote>
-<div><table class="docutils align-default">
-<colgroup>
-<col style="width: 31%"/>
-<col style="width: 35%"/>
-<col style="width: 35%"/>
-</colgroup>
-<thead>
-<tr class="row-odd"><th class="head"><p>Notation</p></th>
-<th class="head"><p>Alt-notation</p></th>
-<th class="head"><p>Result</p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:issue:`12345`</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">`12345`:issue:</span></code></p></td>
-<td><p><a class="reference external" href='https://forge.typo3.org/issues/12345"'>forge issue #12345</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">:forge:`345`</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">`345`:forge:</span></code></p></td>
-<td><p><a class="reference external" href="https://forge.typo3.org/issues/345">forge:345</a></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:review:`567`</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">`567`:review:</span></code></p></td>
-<td><p><a class="reference external" href="https://review.typo3.org/567">review:567</a></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">:t3ext:`news`</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">`news`:t3ext:</span></code></p></td>
-<td><p><a class="reference external" href="https://extensions.typo3.org/extension/news">t3ext↗news</a></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:packagist:`news`</span></code></p></td>
-<td><p><code class="docutils literal notranslate"><span class="pre">`news`:packagist:</span></code></p></td>
-<td><p><a class="reference external" href="https://packagist.org/packages/news" rel="nofollow noopener">pckg↗news</a></p></td>
-</tr>
-</tbody>
-</table>
-</div></blockquote>
 </div>
 </div>
 <!-- /body -->
@@ -388,11 +398,11 @@ Notation               Alt-notation              Result
 </ul>
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/22c91325c0b82323830600f335f3841b5ae5adf4" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Dec 14, 2021 16:44
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/91d405d60b368e10422d563abc071cdac4406afe" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Dec 14, 2021 16:51
                         </a>
 </p>
-<p class="text-center">Last rendered: Dec 14, 2021 16:45</p>
+<p class="text-center">Last rendered: Dec 14, 2021 16:52</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme">
 <span>TYPO3 Theme 4.7.dev6</span></a></li>
