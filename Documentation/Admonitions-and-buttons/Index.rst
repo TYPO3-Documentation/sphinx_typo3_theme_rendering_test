@@ -66,6 +66,45 @@ Admonitions (boxes)
 Buttons
 =======
 
+Technically speaking the following "buttons" aren't real buttons as we know them
+from the Bootstrap framework, but they are "list items" styled like buttons and
+arranged horizontally.
+
+These list items are just list items, so you are free to add links wherever you
+want and "misuse" things, if you like.
+
+
+Using and abusing
+-----------------
+
+To link to something just use ordinary reST links.
+
+.. rst-class:: horizbuttons-important-m
+
+*  To click this "button", click directly on the link: `TYPO3 <https://typo3.org/>`__
+
+*  https://docs.typo3.org/
+
+*  Main product is `TYPO3 <https://typo3.org/>`__ and the `docs <https://docs.typo3.org/>`__
+
+
+Trying something crazy:
+
+.. rst-class:: horizbuttons-note-m
+
+*  Example term
+      Example definition
+
+*  ===== =====
+   A     B
+   ===== =====
+   a     b
+   aa    bb
+   ===== =====
+
+*  Always have three items
+
+
 horizbuttons-attention-m
 ------------------------
 
