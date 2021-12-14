@@ -72,20 +72,15 @@ Rendering:
    ====================== ========================= =========================
    ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
    ``:forge:`345```       ```345`:forge:``          :forge:`345`
+   ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
+   ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
+   ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
    ``:review:`567```      ```567`:review:``         :review:`567`
    ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
+   ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
+   ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
    ====================== ========================= =========================
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -110,6 +105,20 @@ Source::
 Rendering:
 
    Linking to that `target`_.
+
+
+Other, within page
+------------------
+
+Source::
+
+   Let's link to `various`_.
+
+Result:
+
+   Let's link to `various`_.
+
+
 
 
 External links, outside TYPO3 universe
@@ -147,15 +156,4 @@ Expected:
    <a class="reference external" href="https://typo3.com/">https://typo3.com/</a>
    <a class="reference external" href="https://docs.typo3.org/">https://docs.typo3.org/</a>
 
-
-Other
-=====
-
-Source::
-
-   Let's link to `various`_.
-
-Result:
-
-   Let's link to `various`_.
 
