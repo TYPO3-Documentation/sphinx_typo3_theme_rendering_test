@@ -112,16 +112,46 @@ function the replacement text should go.
 
    'json' means that the replacement text should be valid json code.
 
-.. confval:: _link
-
-   If not empty, the text will be shown as a hyperlink where the target is the
-   same as the link text.
-
 .. confval:: _r
 
    'r' signals that you want a 'representation' of the text, not just the text
    itself. A represention is a string that can be evaluated (by Python)
    and results in the original string.
+
+.. confval:: _linked
+
+   Urls and email addresses in the replacement will become a link.
+
+   Forms:
+
+   1. url
+   2. text-a url text-b
+   3. linktext (url) text-b
+
+      The parentheses and the url will not be shown, instead the preceeding text
+      is linked.
+
+   4. text-a [linktext](url) text-b
+
+      Result is: text-a, no brackets, linktext is linked to url, no parentheses,
+      no url, text-b
+
+   All forms can be mixed and added.
+
+   Example output of 'Description':
+
+   \|dt3m_description\|
+      |dt3m_description|
+
+   \|dt3m_description_r\|
+      |dt3m_description_r|
+
+   \|dt3m_description_json\|
+      |dt3m_description_json|
+
+   \|dt3m_description_linked\|
+      |dt3m_description_linked|
+
 
 
 Postfix example
