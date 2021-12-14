@@ -33,6 +33,9 @@ Defined in :file:`Settings.cfg`:
    [extlinks]
 
    forge       = https://forge.typo3.org/issues/%s         | forge:
+   forge2      = https://forge.typo3.org/issues/%s         | forge#
+   forge3      = https://forge.typo3.org/issues/%s         | forge↗#
+   forge4      = https://forge.typo3.org/issues/%s         | forge:#
    issue       = https://forge.typo3.org/issues/%s"        | forge:
    packagist   = https://packagist.org/packages/%s         | pckg↗
    packagist3  = https://packagist.org/packages/%s         | pckg:
@@ -51,9 +54,14 @@ Source::
    ====================== ========================= =========================
    ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
    ``:forge:`345```       ```345`:forge:``          :forge:`345`
+   ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
+   ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
+   ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
    ``:review:`567```      ```567`:review:``         :review:`567`
    ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
+   ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
+   ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
    ====================== ========================= =========================
 
 
