@@ -474,10 +474,10 @@
          "Replacements/Index.html#confval-_json",
          "-"
       ],
-      "_link": [
+      "_linked": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Replacements/Index.html#confval-_link",
+         "Replacements/Index.html#confval-_linked",
          "-"
       ],
       "_r": [
@@ -1113,7 +1113,7 @@
       "CMS": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "Directives/glossary.html#term-CMS",
+         "Inline-code-and-textroles/Index.html#term-CMS",
          "-"
       ],
       "OS": [

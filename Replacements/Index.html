@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="main" name="docsearch:release"/>
 <meta content="main" name="docsearch:version"/>
-<meta content="2021-12-13T21:55:14+00:00" name="docsearch:modified"/>
+<meta content="2021-12-14T11:31:02+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-12-13T21:55:14+00:00" name="dc.modified"/>
-<meta content="2021-12-13T21:55:14+00:00" property="article:modified_time"/>
+<meta content="2021-12-14T11:31:02+00:00" name="dc.modified"/>
+<meta content="2021-12-14T11:31:02+00:00" property="article:modified_time"/>
 <title>Replacements — Sphinx TYPO3 Theme Rendering Test main documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -298,7 +298,7 @@
 </div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
-<p>As of today 2021-12-13 21:56, use this DRC to render this page:</p>
+<p>As of today 2021-12-14 11:32, use this DRC to render this page:</p>
 <div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>docker pull ghcr.io/t3docs/render-documentation:develop
 docker tag ghcr.io/t3docs/render-documentation:develop t3docs/render-documentation:develop
 eval "$(docker run --rm t3docs/render-documentation:develop show-shell-commands)"
@@ -612,17 +612,59 @@ function the replacement text should go.</p>
 <dd><p>'json' means that the replacement text should be valid json code.</p>
 </dd></dl>
 <dl class="std confval">
-<dt class="sig sig-object std" id="confval-_link">
-<span class="sig-name descname"><span class="pre">_link</span></span><a class="headerlink" href="#confval-_link" title="Permalink to this definition">¶</a></dt>
-<dd><p>If not empty, the text will be shown as a hyperlink where the target is the
-same as the link text.</p>
-</dd></dl>
-<dl class="std confval">
 <dt class="sig sig-object std" id="confval-_r">
 <span class="sig-name descname"><span class="pre">_r</span></span><a class="headerlink" href="#confval-_r" title="Permalink to this definition">¶</a></dt>
 <dd><p>'r' signals that you want a 'representation' of the text, not just the text
 itself. A represention is a string that can be evaluated (by Python)
 and results in the original string.</p>
+</dd></dl>
+<dl class="std confval">
+<dt class="sig sig-object std" id="confval-_linked">
+<span class="sig-name descname"><span class="pre">_linked</span></span><a class="headerlink" href="#confval-_linked" title="Permalink to this definition">¶</a></dt>
+<dd><p>Urls and email addresses in the replacement will become a link.</p>
+<p>Forms:</p>
+<ol class="arabic">
+<li><p>url</p></li>
+<li><p>text-a url text-b</p></li>
+<li><p>linktext (url) text-b</p>
+<p>The parentheses and the url will not be shown, instead the preceeding text
+is linked.</p>
+</li>
+<li><p>text-a [linktext](url) text-b</p>
+<p>Result is: text-a, no brackets, linktext is linked to url, no parentheses,
+no url, text-b</p>
+</li>
+</ol>
+<p>All forms can be mixed and added.</p>
+<p>Example output of 'Description':</p>
+<dl class="simple">
+<dt>|dt3m_description|</dt><dd><p>This project
+demonstrates how [reStructuredText markup](https://docutils.sourceforge.io/rst.html)
+looks like when rendered with the
+[sphinx_typo3_theme](https://github.com/TYPO3-Documentation/sphinx_typo3_theme).
+The focus is on technical aspects and behaviour. It is used for theme
+testing. Everything in here "should work".
+
+NOTE: This project DOES NOT show TYPO3 best practices. The purpose is
+(a) to demonstrate what the theme can handle and
+(b) to serve as a test for the theme.</p>
+</dd>
+<dt>|dt3m_description_r|</dt><dd><p>'This project\ndemonstrates how [reStructuredText markup](https://docutils.sourceforge.io/rst.html)\nlooks like when rendered with the\n[sphinx_typo3_theme](https://github.com/TYPO3-Documentation/sphinx_typo3_theme).\nThe focus is on technical aspects and behaviour. It is used for theme\ntesting. Everything in here "should work".\n\nNOTE: This project DOES NOT show TYPO3 best practices. The purpose is\n(a) to demonstrate what the theme can handle and\n(b) to serve as a test for the theme.'</p>
+</dd>
+<dt>|dt3m_description_json|</dt><dd><p>"This project\ndemonstrates how [reStructuredText markup](https://docutils.sourceforge.io/rst.html)\nlooks like when rendered with the\n[sphinx_typo3_theme](https://github.com/TYPO3-Documentation/sphinx_typo3_theme).\nThe focus is on technical aspects and behaviour. It is used for theme\ntesting. Everything in here \"should work\".\n\nNOTE: This project DOES NOT show TYPO3 best practices. The purpose is\n(a) to demonstrate what the theme can handle and\n(b) to serve as a test for the theme."</p>
+</dd>
+<dt>|dt3m_description_linked|</dt><dd><p>This project
+demonstrates how <a class="reference external" href="https://docutils.sourceforge.io/rst.html" rel="nofollow noopener">reStructuredText markup</a>
+looks like when rendered with the
+<a class="reference external" href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener">sphinx_typo3_theme</a>.
+The focus is on technical aspects and behaviour. It is used for theme
+testing. Everything in here "should work".
+
+NOTE: This project DOES NOT show TYPO3 best practices. The purpose is
+(a) to demonstrate what the theme can handle and
+(b) to serve as a test for the theme.</p>
+</dd>
+</dl>
 </dd></dl>
 <div class="section" id="postfix-example">
 <h4><a class="toc-backref" href="#this-page">Postfix example</a><a class="headerlink" href="#postfix-example" title="Permalink to this headline">¶</a></h4>
@@ -777,7 +819,7 @@ NOTE: This project DOES NOT show TYPO3 best practices. The purpose is
 <dd class="field-odd"><p><a href="#id7"><span class="problematic" id="id8">|dt3m_published|</span></a></p>
 </dd>
 <dt class="field-even">Rendered</dt>
-<dd class="field-even"><p>2021-12-13 21:56</p>
+<dd class="field-even"><p>2021-12-14 11:32</p>
 </dd>
 <dt class="field-odd">Release</dt>
 <dd class="field-odd"><p>main</p>
@@ -1759,11 +1801,11 @@ difference.</p>
 </ul>
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/4c443c2009fb14953cd9179552c95f3ce90d544b" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Dec 13, 2021 21:55
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/a3d7fc67b71fd2b846c02932bd70a86c2c9c3e46" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Dec 14, 2021 11:31
                         </a>
 </p>
-<p class="text-center">Last rendered: Dec 13, 2021 21:56</p>
+<p class="text-center">Last rendered: Dec 14, 2021 11:32</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme">
 <span>TYPO3 Theme 4.7.dev6</span></a></li>
