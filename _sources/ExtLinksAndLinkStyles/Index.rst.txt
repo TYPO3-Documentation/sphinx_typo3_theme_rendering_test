@@ -59,6 +59,9 @@ Source::
    ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
    ``:review:`567```      ```567`:review:``         :review:`567`
    ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
+   ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
+   ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
+   ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
    ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
    ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
