@@ -40,6 +40,7 @@ Defined in :file:`Settings.cfg`:
    packagist   = https://packagist.org/packages/%s         | pckg↗
    packagist3  = https://packagist.org/packages/%s         | pckg:
    packagist4  = https://packagist.org/packages/%s         | PCKG:
+   packagist5  = https://packagist.org/packages/%s         | PACKAGIST:
    review      = https://review.typo3.org/%s               | review:
    t3ext       = https://extensions.typo3.org/extension/%s | t3ext↗
    t3ext2      = https://extensions.typo3.org/extension/%s | ext↗
@@ -49,44 +50,46 @@ Defined in :file:`Settings.cfg`:
 
 Source::
 
-   ====================== ========================= =========================
-   Notation               Alt-notation              Result
-   ====================== ========================= =========================
-   ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
-   ``:forge:`345```       ```345`:forge:``          :forge:`345`
-   ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
-   ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
-   ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
-   ``:review:`567```      ```567`:review:``         :review:`567`
-   ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
-   ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
-   ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
-   ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
-   ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
-   ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
-   ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
-   ====================== ========================= =========================
+   ===== ====================== ========================= =========================
+   Line  Notation               Alt-notation              Result
+   ===== ====================== ========================= =========================
+   1     ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
+   2     ``:forge:`345```       ```345`:forge:``          :forge:`345`
+   3     ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
+   4     ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
+   5     ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
+   6     ``:review:`567```      ```567`:review:``         :review:`567`
+   7     ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
+   8     ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
+   9     ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
+   10    ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
+   11    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
+   12    ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
+   13    ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
+   14    ``:packagist5:`news``` ```news`:packagist5:``    :packagist5:`news`
+   ===== ====================== ========================= =========================
 
 
 Rendering:
 
-   ====================== ========================= =========================
-   Notation               Alt-notation              Result
-   ====================== ========================= =========================
-   ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
-   ``:forge:`345```       ```345`:forge:``          :forge:`345`
-   ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
-   ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
-   ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
-   ``:review:`567```      ```567`:review:``         :review:`567`
-   ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
-   ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
-   ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
-   ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
-   ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
-   ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
-   ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
-   ====================== ========================= =========================
+   ===== ====================== ========================= =========================
+   Line  Notation               Alt-notation              Result
+   ===== ====================== ========================= =========================
+   1     ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
+   2     ``:forge:`345```       ```345`:forge:``          :forge:`345`
+   3     ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
+   4     ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
+   5     ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
+   6     ``:review:`567```      ```567`:review:``         :review:`567`
+   7     ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
+   8     ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
+   9     ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
+   10    ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
+   11    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
+   12    ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
+   13    ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
+   14    ``:packagist5:`news``` ```news`:packagist5:``    :packagist5:`news`
+   ===== ====================== ========================= =========================
 
 
 
