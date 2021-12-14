@@ -1,15 +1,84 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 
-===========
-Link styles
-===========
+========================
+ExtLinks and Link styles
+========================
 
 .. contents:: This page
    :backlinks: top
    :class: compact-list
    :depth: 99
    :local:
+
+
+
+ExtLinks
+========
+
+In :file:`conf.py` we have:
+
+.. code-block:: python
+
+   extlinks = {}
+   extlinks["forge"] = ("https://forge.typo3.org/issues/%s", "Forge #")
+   extlinks["issue"] = ("https://forge.typo3.org/issues/%s", "Issue #")
+   extlinks["review"] = ("https://review.typo3.org/%s", "Review #")
+
+
+Defined in :file:`Settings.cfg`:
+
+.. code-block:: ini
+
+   [extlinks]
+
+   forge       = https://forge.typo3.org/issues/%s         | forge:
+   issue       = https://forge.typo3.org/issues/%s"        | forge:
+   packagist   = https://packagist.org/packages/%s         | pckg↗
+   packagist3  = https://packagist.org/packages/%s         | pckg:
+   packagist4  = https://packagist.org/packages/%s         | PCKG:
+   review      = https://review.typo3.org/%s               | review:
+   t3ext       = https://extensions.typo3.org/extension/%s | t3ext↗
+   t3ext2      = https://extensions.typo3.org/extension/%s | ext↗
+   t3ext3      = https://extensions.typo3.org/extension/%s | ext:
+   t3ext4      = https://extensions.typo3.org/extension/%s | EXT:
+   theme-issue = https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/%s | theme issue #
+
+Source::
+
+   ====================== ========================= =========================
+   Notation               Alt-notation              Result
+   ====================== ========================= =========================
+   ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
+   ``:forge:`345```       ```345`:forge:``          :forge:`345`
+   ``:review:`567```      ```567`:review:``         :review:`567`
+   ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
+   ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
+   ====================== ========================= =========================
+
+
+Rendering:
+
+   ====================== ========================= =========================
+   Notation               Alt-notation              Result
+   ====================== ========================= =========================
+   ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
+   ``:forge:`345```       ```345`:forge:``          :forge:`345`
+   ``:review:`567```      ```567`:review:``         :review:`567`
+   ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
+   ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
+   ====================== ========================= =========================
+
+
+
+
+
+
+
+
+
+
+
 
 
 Various
@@ -81,56 +150,4 @@ Source::
 Result:
 
    Let's link to `various`_.
-
-
-In :file:`conf.py` we have:
-
-.. code-block:: python
-
-   extlinks = {}
-   extlinks["forge"] = ("https://forge.typo3.org/issues/%s", "Forge #")
-   extlinks["issue"] = ("https://forge.typo3.org/issues/%s", "Issue #")
-   extlinks["review"] = ("https://review.typo3.org/%s", "Review #")
-
-
-Defined in :file:`Settings.cfg`:
-
-.. code-block:: ini
-
-   [extlinks]
-
-   forge       = https://forge.typo3.org/issues/%s         | forge:
-   issue       = https://forge.typo3.org/issues/%s"        | forge issue #
-   packagist   = https://packagist.org/packages/%s         | pckg↗
-   review      = https://review.typo3.org/%s               | review:
-   t3ext       = https://extensions.typo3.org/extension/%s | t3ext↗
-   theme-issue = https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/%s | theme issue #
-
-
-Source::
-
-   ====================== ========================= =========================
-   Notation               Alt-notation              Result
-   ====================== ========================= =========================
-   ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
-   ``:forge:`345```       ```345`:forge:``          :forge:`345`
-   ``:review:`567```      ```567`:review:``         :review:`567`
-   ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
-   ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
-   ====================== ========================= =========================
-
-
-Rendering:
-
-   ====================== ========================= =========================
-   Notation               Alt-notation              Result
-   ====================== ========================= =========================
-   ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
-   ``:forge:`345```       ```345`:forge:``          :forge:`345`
-   ``:review:`567```      ```567`:review:``         :review:`567`
-   ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
-   ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
-   ====================== ========================= =========================
-
-
 
