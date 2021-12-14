@@ -13,6 +13,7 @@ Directives/sphinxcontrib-slide.html
 Directives/sphinxcontrib-t3fieldlisttable.html
 Directives/sphinxcontrib-youtube.html
 Directives/versionadded.html
+ExtLinksAndLinkStyles/Index.html
 Extensions/Index.html
 FieldLists/Index.html
 Fonts/Index.html
@@ -21,7 +22,6 @@ ImagesAndFigures/Index.html
 Index.html
 Inline-code-and-textroles/Index.html
 Lineblocks/Index.html
-LinkStyles/Index.html
 LinkTargets/Index.html
 Lists/Index.html
 ListsAsButtons/Index.html

@@ -740,6 +740,12 @@
          "Directives/versionadded.html",
          "versionadded & friends"
       ],
+      "ExtLinksAndLinkStyles/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "ExtLinksAndLinkStyles/Index.html",
+         "ExtLinks and Link styles"
+      ],
       "Extensions/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -787,12 +793,6 @@
          "main",
          "Lineblocks/Index.html",
          "Line blocks"
-      ],
-      "LinkStyles/Index": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "LinkStyles/Index.html",
-         "ExtLinks and Link styles"
       ],
       "LinkTargets/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -1093,7 +1093,7 @@
       "target": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
-         "LinkStyles/Index.html#target",
+         "ExtLinksAndLinkStyles/Index.html#target",
          "-"
       ],
       "this is a label": [
