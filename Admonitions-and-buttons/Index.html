@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="main" name="docsearch:release"/>
 <meta content="main" name="docsearch:version"/>
-<meta content="2021-12-14T11:31:02+00:00" name="docsearch:modified"/>
+<meta content="2021-12-14T16:44:31+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2021-12-14T11:31:02+00:00" name="dc.modified"/>
-<meta content="2021-12-14T11:31:02+00:00" property="article:modified_time"/>
+<meta content="2021-12-14T16:44:31+00:00" name="dc.modified"/>
+<meta content="2021-12-14T16:44:31+00:00" property="article:modified_time"/>
 <title>Admonitions and buttons — Sphinx TYPO3 Theme Rendering Test main documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -144,6 +144,7 @@
 <li><a class="reference internal" href="#">Admonitions and buttons</a><ul>
 <li><a class="reference internal" href="#admonitions-boxes">Admonitions (boxes)</a></li>
 <li><a class="reference internal" href="#buttons">Buttons</a><ul>
+<li><a class="reference internal" href="#using-and-abusing">Using and abusing</a></li>
 <li><a class="reference internal" href="#horizbuttons-attention-m">horizbuttons-attention-m</a></li>
 <li><a class="reference internal" href="#horizbuttons-important-m">horizbuttons-important-m</a></li>
 <li><a class="reference internal" href="#horizbuttons-note-m">horizbuttons-note-m</a></li>
@@ -230,27 +231,28 @@
 <li><p><a class="reference internal" href="#admonitions-boxes" id="id2">Admonitions (boxes)</a></p></li>
 <li><p><a class="reference internal" href="#buttons" id="id3">Buttons</a></p>
 <ul>
-<li><p><a class="reference internal" href="#horizbuttons-attention-m" id="id4">horizbuttons-attention-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-important-m" id="id5">horizbuttons-important-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-note-m" id="id6">horizbuttons-note-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-primary-m" id="id7">horizbuttons-primary-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-striking-m" id="id8">horizbuttons-striking-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-tip-m" id="id9">horizbuttons-tip-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-warning-m" id="id10">horizbuttons-warning-m</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-attention-xxl" id="id11">horizbuttons-attention-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-important-xxl" id="id12">horizbuttons-important-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-note-xxl" id="id13">horizbuttons-note-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-primary-xxl" id="id14">horizbuttons-primary-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-striking-xxl" id="id15">horizbuttons-striking-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-tip-xxl" id="id16">horizbuttons-tip-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-warning-xxl" id="id17">horizbuttons-warning-xxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-attention-xxxl" id="id18">horizbuttons-attention-xxxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-important-xxxl" id="id19">horizbuttons-important-xxxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-note-xxxl" id="id20">horizbuttons-note-xxxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-primary-xxxl" id="id21">horizbuttons-primary-xxxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-striking-xxxl" id="id22">horizbuttons-striking-xxxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-tip-xxxl" id="id23">horizbuttons-tip-xxxl</a></p></li>
-<li><p><a class="reference internal" href="#horizbuttons-warning-xxxl" id="id24">horizbuttons-warning-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#using-and-abusing" id="id4">Using and abusing</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-attention-m" id="id5">horizbuttons-attention-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-important-m" id="id6">horizbuttons-important-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-note-m" id="id7">horizbuttons-note-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-primary-m" id="id8">horizbuttons-primary-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-striking-m" id="id9">horizbuttons-striking-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-tip-m" id="id10">horizbuttons-tip-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-warning-m" id="id11">horizbuttons-warning-m</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-attention-xxl" id="id12">horizbuttons-attention-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-important-xxl" id="id13">horizbuttons-important-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-note-xxl" id="id14">horizbuttons-note-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-primary-xxl" id="id15">horizbuttons-primary-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-striking-xxl" id="id16">horizbuttons-striking-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-tip-xxl" id="id17">horizbuttons-tip-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-warning-xxl" id="id18">horizbuttons-warning-xxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-attention-xxxl" id="id19">horizbuttons-attention-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-important-xxxl" id="id20">horizbuttons-important-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-note-xxxl" id="id21">horizbuttons-note-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-primary-xxxl" id="id22">horizbuttons-primary-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-striking-xxxl" id="id23">horizbuttons-striking-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-tip-xxxl" id="id24">horizbuttons-tip-xxxl</a></p></li>
+<li><p><a class="reference internal" href="#horizbuttons-warning-xxxl" id="id25">horizbuttons-warning-xxxl</a></p></li>
 </ul>
 </li>
 </ul>
@@ -314,6 +316,49 @@
 </div>
 <div class="section" id="buttons">
 <h2><a class="toc-backref" href="#this-page">Buttons</a><a class="headerlink" href="#buttons" title="Permalink to this headline">¶</a></h2>
+<p>Technically speaking the following "buttons" aren't real buttons as we know them
+from the Bootstrap framework, but they are "list items" styled like buttons and
+arranged horizontally.</p>
+<p>These list items are just list items, so you are free to add links wherever you
+want and "misuse" things, if you like.</p>
+<div class="section" id="using-and-abusing">
+<h3><a class="toc-backref" href="#this-page">Using and abusing</a><a class="headerlink" href="#using-and-abusing" title="Permalink to this headline">¶</a></h3>
+<p>To link to something just use ordinary reST links.</p>
+<ul class="horizbuttons-important-m simple">
+<li><p>To click this "button", click directly on the link: <a class="reference external" href="https://typo3.org/">TYPO3</a></p></li>
+<li><p><a class="reference external" href="https://docs.typo3.org/">https://docs.typo3.org/</a></p></li>
+<li><p>Main product is <a class="reference external" href="https://typo3.org/">TYPO3</a> and the <a class="reference external" href="https://docs.typo3.org/">docs</a></p></li>
+</ul>
+<p>Trying something crazy:</p>
+<ul class="horizbuttons-note-m">
+<li><dl class="simple">
+<dt>Example term</dt><dd><p>Example definition</p>
+</dd>
+</dl>
+</li>
+<li><table class="docutils align-default">
+<colgroup>
+<col style="width: 50%"/>
+<col style="width: 50%"/>
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>a</p></td>
+<td><p>b</p></td>
+</tr>
+<tr class="row-odd"><td><p>aa</p></td>
+<td><p>bb</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>Always have three items</p></li>
+</ul>
+</div>
 <div class="section" id="horizbuttons-attention-m">
 <h3><a class="toc-backref" href="#this-page">horizbuttons-attention-m</a><a class="headerlink" href="#horizbuttons-attention-m" title="Permalink to this headline">¶</a></h3>
 <p>Like admonition 'attention' (blue)</p>
@@ -542,11 +587,11 @@
 </ul>
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/a3d7fc67b71fd2b846c02932bd70a86c2c9c3e46" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Dec 14, 2021 11:31
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/22c91325c0b82323830600f335f3841b5ae5adf4" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Dec 14, 2021 16:44
                         </a>
 </p>
-<p class="text-center">Last rendered: Dec 14, 2021 11:32</p>
+<p class="text-center">Last rendered: Dec 14, 2021 16:45</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme">
 <span>TYPO3 Theme 4.7.dev6</span></a></li>
