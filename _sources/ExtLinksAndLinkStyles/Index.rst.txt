@@ -56,7 +56,6 @@ Source::
    7     ``:review:`567```                 ```567`:review:``                  :review:`567`
    8     ``:t3ext:`news```                 ```news`:t3ext:``                  :t3ext:`news`
    9     ``:theme-issue:`21```             ```21`:theme-issue:``              :theme-issue:`21`
-   10    ``:packagist5:`news```            ```news`:packagist5:``             :packagist5:`news`
    ===== ================================= ================================== =========================
 
 
@@ -74,7 +73,6 @@ Rendering:
    7     ``:review:`567```                 ```567`:review:``                  :review:`567`
    8     ``:t3ext:`news```                 ```news`:t3ext:``                  :t3ext:`news`
    9     ``:theme-issue:`21```             ```21`:theme-issue:``              :theme-issue:`21`
-   10    ``:packagist5:`news```            ```news`:packagist5:``             :packagist5:`news`
    ===== ================================= ================================== =========================
 
 

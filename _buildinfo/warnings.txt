@@ -40,7 +40,6 @@ WARNING: doing serial read
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
-./Documentation/ExtLinksAndLinkStyles/Index.rst:78: WARNING: Unknown interpreted text role "packagist5".
 ./Documentation/Index.rst:7: WARNING: Document or section may not begin with a transition.
 ./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
 ./Documentation/Replacements/Index.rst:51: WARNING: Inline literal start-string without end-string.
