@@ -40,12 +40,16 @@ WARNING: doing serial read
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
+./Documentation/ExtLinksAndLinkStyles/Index.rst:78: WARNING: Unknown interpreted text role "packagist5".
 ./Documentation/Index.rst:7: WARNING: Document or section may not begin with a transition.
 ./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
 ./Documentation/Replacements/Index.rst:51: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
 ./Documentation/Replacements/Index.rst:242: WARNING: Undefined substitution referenced: "dt3m_published".
+WARNING: unsupported theme option 'edit_github' given
+WARNING: unsupported theme option 'edit_bitbucket' given
+WARNING: unsupported theme option 'edit_gitlab' given
 ./Documentation/ConfvalForTYPO3/Index.rst:90: WARNING: undefined label: typo3confvars_fe_lockip
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP

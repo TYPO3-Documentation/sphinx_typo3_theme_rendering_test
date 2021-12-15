@@ -32,64 +32,50 @@ Defined in :file:`Settings.cfg`:
 
    [extlinks]
 
-   forge       = https://forge.typo3.org/issues/%s         | forge:
-   forge2      = https://forge.typo3.org/issues/%s         | forge#
-   forge3      = https://forge.typo3.org/issues/%s         | forge↗#
-   forge4      = https://forge.typo3.org/issues/%s         | forge:#
+   example1    = https://example.org/%s                    | example#
+   example2    = https://example.org/%s                    | example↗
+   example3    = https://example.org/%s                    | example:
+   forge       = https://forge.typo3.org/issues/%s         | forge#
    issue       = https://forge.typo3.org/issues/%s"        | forge:
-   packagist   = https://packagist.org/packages/%s         | pckg↗
-   packagist3  = https://packagist.org/packages/%s         | pckg:
-   packagist4  = https://packagist.org/packages/%s         | PCKG:
-   packagist5  = https://packagist.org/packages/%s         | PACKAGIST:
+   packagist   = https://packagist.org/packages/%s         |
    review      = https://review.typo3.org/%s               | review:
-   t3ext       = https://extensions.typo3.org/extension/%s | t3ext↗
-   t3ext2      = https://extensions.typo3.org/extension/%s | ext↗
-   t3ext3      = https://extensions.typo3.org/extension/%s | ext:
-   t3ext4      = https://extensions.typo3.org/extension/%s | EXT:
-   theme-issue = https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/%s | theme issue #
+   t3ext       = https://extensions.typo3.org/extension/%s | EXT:
+   theme-issue = https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/%s | theme#
 
 Source::
 
-   ===== ====================== ========================= =========================
-   Line  Notation               Alt-notation              Result
-   ===== ====================== ========================= =========================
-   1     ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
-   2     ``:forge:`345```       ```345`:forge:``          :forge:`345`
-   3     ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
-   4     ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
-   5     ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
-   6     ``:review:`567```      ```567`:review:``         :review:`567`
-   7     ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
-   8     ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
-   9     ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
-   10    ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
-   11    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
-   12    ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
-   13    ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
-   14    ``:packagist5:`news``` ```news`:packagist5:``    :packagist5:`news`
-   ===== ====================== ========================= =========================
+   ===== ================================= ================================== =========================
+   Line  Notation                          Alt-notation                       Result
+   ===== ================================= ================================== =========================
+   1     ``:example1:`dummy```             ```dummy`:example1:``              :example1:`dummy`
+   2     ``:example2:`dummy```             ```dummy`:example2:``              :example2:`dummy`
+   3     ``:example3:`dummy```             ```dummy`:example3:``              :example3:`dummy`
+   4     ``:forge:`345```                  ```345`:forge:``                   :forge:`345`
+   5     ``:issue:`12345```                ```12345`:issue:``                 :issue:`12345`
+   6     ``:packagist:`georgringer/news``` ```georgringer/news`:packagist:``  :packagist:`georgringer/news`
+   7     ``:review:`567```                 ```567`:review:``                  :review:`567`
+   8     ``:t3ext:`news```                 ```news`:t3ext:``                  :t3ext:`news`
+   9     ``:theme-issue:`21```             ```21`:theme-issue:``              :theme-issue:`21`
+   10    ``:packagist5:`news```            ```news`:packagist5:``             :packagist5:`news`
+   ===== ================================= ================================== =========================
 
 
 Rendering:
 
-   ===== ====================== ========================= =========================
-   Line  Notation               Alt-notation              Result
-   ===== ====================== ========================= =========================
-   1     ``:issue:`12345```     ```12345`:issue:``        :issue:`12345`
-   2     ``:forge:`345```       ```345`:forge:``          :forge:`345`
-   3     ``:forge2:`345```      ```345`:forge2:``         :forge2:`345`
-   4     ``:forge3:`345```      ```345`:forge3:``         :forge3:`345`
-   5     ``:forge4:`345```      ```345`:forge4:``         :forge4:`345`
-   6     ``:review:`567```      ```567`:review:``         :review:`567`
-   7     ``:t3ext:`news```      ```news`:t3ext:``         :t3ext:`news`
-   8     ``:t3ext2:`news```     ```news`:t3ext2:``        :t3ext2:`news`
-   9     ``:t3ext3:`news```     ```news`:t3ext3:``        :t3ext3:`news`
-   10    ``:t3ext4:`news```     ```news`:t3ext4:``        :t3ext4:`news`
-   11    ``:packagist:`news```  ```news`:packagist:``     :packagist:`news`
-   12    ``:packagist3:`news``` ```news`:packagist3:``    :packagist3:`news`
-   13    ``:packagist4:`news``` ```news`:packagist4:``    :packagist4:`news`
-   14    ``:packagist5:`news``` ```news`:packagist5:``    :packagist5:`news`
-   ===== ====================== ========================= =========================
+   ===== ================================= ================================== =========================
+   Line  Notation                          Alt-notation                       Result
+   ===== ================================= ================================== =========================
+   1     ``:example1:`dummy```             ```dummy`:example1:``              :example1:`dummy`
+   2     ``:example2:`dummy```             ```dummy`:example2:``              :example2:`dummy`
+   3     ``:example3:`dummy```             ```dummy`:example3:``              :example3:`dummy`
+   4     ``:forge:`345```                  ```345`:forge:``                   :forge:`345`
+   5     ``:issue:`12345```                ```12345`:issue:``                 :issue:`12345`
+   6     ``:packagist:`georgringer/news``` ```georgringer/news`:packagist:``  :packagist:`georgringer/news`
+   7     ``:review:`567```                 ```567`:review:``                  :review:`567`
+   8     ``:t3ext:`news```                 ```news`:t3ext:``                  :t3ext:`news`
+   9     ``:theme-issue:`21```             ```21`:theme-issue:``              :theme-issue:`21`
+   10    ``:packagist5:`news```            ```news`:packagist5:``             :packagist5:`news`
+   ===== ================================= ================================== =========================
 
 
 
