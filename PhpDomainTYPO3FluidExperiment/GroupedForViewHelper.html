@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Sphinx TYPO3 Theme Rendering Test" name="docsearch:name"/>
+<meta content="" name="docsearch:package_type"/>
+<meta content="main" name="docsearch:release"/>
+<meta content="main" name="docsearch:version"/>
+<meta content="2022-02-15T16:46:17+00:00" name="docsearch:modified"/>
+<link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
+<meta content="2022-02-15T16:46:17+00:00" name="dc.modified"/>
+<meta content="2022-02-15T16:46:17+00:00" property="article:modified_time"/>
+<title>TYPO3Fluid\Fluid\ViewHelpers\GroupedForViewHelper — Sphinx TYPO3 Theme Rendering Test main documentation</title>
+<link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/copybutton.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/tabs.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/fontawesome.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/webfonts.css" rel="stylesheet" type="text/css"/>
+<link href="../_static/css/theme.css" rel="stylesheet" type="text/css"/>
+<!-- linktags -->
+<link href="../genindex.html" rel="index" title="Index"/>
+<link href="../search.html" rel="search" title="Search"/>
+<link href="#" rel="top" title="Sphinx TYPO3 Theme Rendering Test main documentation"/>
+<link href="Index.html" rel="up" title="PhpDomain TYPO3Fluid Experiment"/>
+<link href="IfViewHelper.html" rel="next" title="TYPO3Fluid\Fluid\ViewHelpers\IfViewHelper"/>
+<link href="SpacelessViewHelper.html" rel="prev" title="TYPO3Fluid\Fluid\ViewHelpers\SpacelessViewHelper"/>
+<!-- /linktags -->
+<!-- extrahead --><!-- /extrahead -->
+<script src="../_static/js/modernizr.min.js"></script>
+</head>
+<body>
+<div class="page">
+<div class="page-header">
+<div class="page-header-inner">
+<!--block pageheader-->
+<div class="row">
+<div class="col-sm-6 col-lg-7">
+<div class="logo">
+<img alt="TYPO3 Logo" class="logo-image" height="130" src="../_static/img/typo3-logo.svg" title="TYPO3 Documentation" width="484"/>
+</div>
+</div><!--/.col-x-->
+<div class="col-sm-6 col-lg-5">
+<div role="search">
+<!--form global search-->
+</div>
+</div><!--/.col-x-->
+</div><!--/.row-->
+<!--/block pageheader-->
+</div><!--/.page-header-inner-->
+</div><!--/.page-header-->
+<div class="page-main">
+<div class="page-main-inner">
+<div class="page-main-navigation">
+<nav>
+<input class="toc-checkbox" id="toggleToc" type="checkbox"/>
+<div class="toc-header"><div class="toc-title">
+<a class="toc-title-project" href="../Index.html">Sphinx TYPO3 Theme Rendering Test</a></div><div class="toc-actions">
+<label class="toc-toggle" for="toggleToc">
+                                    Menu
+                                </label>
+</div>
+</div>
+<div class="toc-collapse">
+<!-- searchbox.html -->
+<div class="toc-search" id="searchbox" role="search">
+<form action="../search.html" autocomplete="off" id="search-form" method="get">
+<input aria-label="Search this project" class="form-control" id="searchinput" name="q" placeholder="Search this project" type="text"/>
+<input name="check_keywords" type="hidden" value="yes"/>
+<input name="area" type="hidden" value="default"/>
+</form>
+</div>
+<!-- /searchbox.html -->
+<div aria-label="main navigation" class="toc" role="navigation">
+<!-- menu -->
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Admonitions-and-buttons/Index.html">Admonitions and buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Blockquotes/Index.html">Block quotes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Codeblocks/Index.html">Codeblocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Confval/Index.html">confval</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ConfvalForTYPO3/Index.html">confval for TYPO3</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Directives/Index.html">Directives</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/glossary.html">glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/raw.html">raw</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/sphinx_ext_graphviz.html">sphinx.ext.graphviz</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/sphinxcontrib-plantuml.html">Plantuml basic examples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/sphinxcontrib-slide.html">sphinxcontrib-slide</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/sphinxcontrib-t3fieldlisttable.html">sphinxcontrib-t3fieldlisttable</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/sphinxcontrib-youtube.html">sphinxcontrib-youtube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Directives/versionadded.html">versionadded &amp; friends</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../ExtLinksAndLinkStyles/Index.html">ExtLinks and Link styles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Extensions/Index.html">Developing &amp; Using Extensions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../FieldLists/Index.html">Field lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Fonts/Index.html">Fonts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Highlighting/Index.html">Highlighting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ImagesAndFigures/Index.html">Images and figures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Inline-code-and-textroles/Index.html">Inline code and text roles</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Lineblocks/Index.html">Line blocks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../LinkTargets/Index.html">LinkTargets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Lists/Index.html">Lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ListsAsButtons/Index.html">List Items as Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Nested-pages/Index.html">Nested pages</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Nested-pages/1/index.html">Page title</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../Nested-pages/1/1/index.html">Page title</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../Nested-pages/1/1/1/index.html">Page title</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../Nested-pages/1/1/1/1/index.html">Page title</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../Nested-pages/1/1/1/1/1/index.html">Page title</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../PhpDomain/Index.html">Phpdomain</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Index.html">PhpDomain TYPO3Fluid Experiment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="OrViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\OrViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DefaultCaseViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\DefaultCaseViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CaseViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\CaseViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Cache/index.html">TYPO3Fluid\Fluid\ViewHelpers\Cache</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Cache/DisableViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Cache\DisableViewHelper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cache/WarmupViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Cache\WarmupViewHelper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Cache/StaticViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Cache\StaticViewHelper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="CommentViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\CommentViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="DebugViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\DebugViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="RenderViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\RenderViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SectionViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\SectionViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CountViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\CountViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ThenViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\ThenViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SwitchViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\SwitchViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="SpacelessViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\SpacelessViewHelper</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">TYPO3Fluid\Fluid\ViewHelpers\GroupedForViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="IfViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\IfViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Format/index.html">TYPO3Fluid\Fluid\ViewHelpers\Format</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Format/HtmlspecialcharsViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Format\HtmlspecialcharsViewHelper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Format/CdataViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Format\CdataViewHelper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Format/RawViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Format\RawViewHelper</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Format/PrintfViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\Format\PrintfViewHelper</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ForViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\ForViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="LayoutViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\LayoutViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="AliasViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\AliasViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ElseViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\ElseViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="VariableViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\VariableViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="CycleViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\CycleViewHelper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="InlineViewHelper.html">TYPO3Fluid\Fluid\ViewHelpers\InlineViewHelper</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Replacements/Index.html">Replacements</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../Replacements/FullExample.html">Full example of an "About the project" page</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Sitemap/Index.html">Sitemap</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SpecialCharacters/Index.html">Special characters</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SphinxPanels/Index.html">Sphinx panels</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SphinxTabs/Index.html">sphinx-tabs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../StyledNumberedLists/Index.html">Styled numbered lists</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tables/Index.html">Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../ThisAndThat/Index.html">This and that</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Typesetting/Index.html">Typesetting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Typesetting/Index.html#typesetting-h1">Typesetting H1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Typesetting/Index.html#id1">Typesetting H1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Varying/Index.html">Varying ad hoc tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Copyright.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../genindex.html">Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../php-modindex.html">PHP Modules Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../php-objectsindex.html">PHP Objects Index</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../pygmentize-L.html">Lexers of Pygments 2.5.2</a></li>
+</ul>
+<p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
+<ul>
+<li><a class="reference internal" href="#">TYPO3Fluid\Fluid\ViewHelpers\GroupedForViewHelper</a></li>
+</ul>
+<!-- /menu -->
+</div>
+</div>
+</nav>
+</div>
+<div class="page-main-content">
+<div class="rst-content">
+<!-- pager-hidden.html -->
+<a accesskey="p" class="no-focus" href="SpacelessViewHelper.html" tabindex="-1"></a>
+<a accesskey="n" class="no-focus" href="IfViewHelper.html" tabindex="-1"></a>
+<!-- /pager-hidden.html -->
+<!-- breadcrumbs.html -->
+<div aria-label="breadcrumbs navigation" class="breadcrumb-bar" role="navigation">
+<ol class="breadcrumb">
+<li class="breadcrumb-item"><a href="../Index.html">Start</a></li>
+<li class="breadcrumb-item"><a href="Index.html">PhpDomain TYPO3Fluid Experiment</a></li>
+<li aria-current="page" class="breadcrumb-item active">TYPO3Fluid\Fluid\ViewHelpers\GroupedForViewHelper</li>
+</ol>
+<div class="breadcrumb-additions">
+<a class="btn btn-sm btn-light" href="../_sources/PhpDomainTYPO3FluidExperiment/GroupedForViewHelper.rst.txt" rel="nofollow">
+<span class="btn-icon"><span class="fas fa-code"></span></span>
+<span class="btn-text">View source</span>
+</a>
+</div>
+</div>
+<!-- /breadcrumbs.html -->
+<!-- displaysettingsui.html -->
+<div class="displaysettingsui" id="displaysettingsui">
+<div class="dsDivCogwheel"><i class="fas fa-cog" id="dsCogwheel" title="Display settings"></i></div>
+<div class="dsPanel" id="dsPanel"><p><b>Display settings</b></p>
+<input id="cbFullWidth" type="checkbox"/><label for="cbFullWidth">Use full width</label><br/>
+<input id="cbPermanent" type="checkbox"/><label for="cbPermanent">Make settings permanent</label><br/>
+</div><!--/.dsPanel-->
+</div><!--/.displaysettingsui-->
+<!-- /displaysettingsui.html -->
+<!-- versionhints.html -->
+<div class="version-hints">
+<div class="version-hints-inner" data-run-ajax="no">
+<!--filled from _static/ajax-version-hints.html-->
+</div><!--/.version-hints-inner-->
+</div><!--/.version-hints-->
+<!-- /versionhints.html -->
+<div class="document" itemscope="itemscope" itemtype="http://schema.org/Article" role="main">
+<div itemprop="articleBody">
+<!-- body -->
+<div class="section" id="typo3fluid-fluid-viewhelpers-groupedforviewhelper">
+<h1>TYPO3Fluid\Fluid\ViewHelpers\GroupedForViewHelper<a class="headerlink" href="#typo3fluid-fluid-viewhelpers-groupedforviewhelper" title="Permalink to this headline">¶</a></h1>
+<dl class="php class">
+<dt class="sig sig-object php" id="GroupedForViewHelper">
+<em class="property"><span class="pre">class</span> </em><span class="sig-name descname"><span class="pre">GroupedForViewHelper</span></span><a class="headerlink" href="#GroupedForViewHelper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Grouped loop ViewHelper.
+Loops through the specified values.</p>
+<p>The groupBy argument also supports property paths.</p>
+<p>Using this ViewHelper can be a sign of weak architecture. If you end up using it extensively you might want to fine-tune your "view model" (the data you assign to the view).</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">f</span><span class="o">:</span><span class="nx">groupedFor</span> <span class="nb">each</span><span class="o">=</span><span class="s2">"{0: {name: 'apple', color: 'green'}, 1: {name: 'cherry', color: 'red'}, 2: {name: 'banana', color: 'yellow'}, 3: {name: 'strawberry', color: 'red'}}"</span>
+    <span class="k">as</span><span class="o">=</span><span class="s2">"fruitsOfThisColor"</span> <span class="nx">groupBy</span><span class="o">=</span><span class="s2">"color"</span>
+<span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">f</span><span class="o">:</span><span class="k">for</span> <span class="nb">each</span><span class="o">=</span><span class="s2">"{fruitsOfThisColor}"</span> <span class="k">as</span><span class="o">=</span><span class="s2">"fruit"</span><span class="o">&gt;</span>
+        <span class="p">{</span><span class="nx">fruit</span><span class="o">.</span><span class="nx">name</span><span class="p">}</span>
+    <span class="o">&lt;/</span><span class="nx">f</span><span class="o">:</span><span class="k">for</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nx">f</span><span class="o">:</span><span class="nx">groupedFor</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="nx">apple</span> <span class="nx">cherry</span> <span class="nx">strawberry</span> <span class="nx">banana</span>
+</pre></div>
+</div>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">f</span><span class="o">:</span><span class="nx">groupedFor</span> <span class="nb">each</span><span class="o">=</span><span class="s2">"{0: {name: 'apple', color: 'green'}, 1: {name: 'cherry', color: 'red'}, 2: {name: 'banana', color: 'yellow'}, 3: {name: 'strawberry', color: 'red'}}"</span> <span class="k">as</span><span class="o">=</span><span class="s2">"fruitsOfThisColor"</span> <span class="nx">groupBy</span><span class="o">=</span><span class="s2">"color"</span> <span class="nx">groupKey</span><span class="o">=</span><span class="s2">"color"</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span>
+            <span class="p">{</span><span class="nx">color</span><span class="p">}</span> <span class="nx">fruits</span><span class="o">:</span>
+            <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+                <span class="o">&lt;</span><span class="nx">f</span><span class="o">:</span><span class="k">for</span> <span class="nb">each</span><span class="o">=</span><span class="s2">"{fruitsOfThisColor}"</span> <span class="k">as</span><span class="o">=</span><span class="s2">"fruit"</span> <span class="nb">key</span><span class="o">=</span><span class="s2">"label"</span><span class="o">&gt;</span>
+                    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="p">{</span><span class="nx">label</span><span class="p">}</span><span class="o">:</span> <span class="p">{</span><span class="nx">fruit</span><span class="o">.</span><span class="nx">name</span><span class="p">}</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+                <span class="o">&lt;/</span><span class="nx">f</span><span class="o">:</span><span class="k">for</span><span class="o">&gt;</span>
+            <span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nx">f</span><span class="o">:</span><span class="nx">groupedFor</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>Output:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">green</span> <span class="nx">fruits</span>
+        <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="mi">0</span><span class="o">:</span> <span class="nx">apple</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">red</span> <span class="nx">fruits</span>
+        <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="mi">1</span><span class="o">:</span> <span class="nx">cherry</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+        <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="mi">3</span><span class="o">:</span> <span class="nx">strawberry</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+    <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="nx">yellow</span> <span class="nx">fruits</span>
+        <span class="o">&lt;</span><span class="nx">ul</span><span class="o">&gt;</span>
+            <span class="o">&lt;</span><span class="nx">li</span><span class="o">&gt;</span><span class="mi">2</span><span class="o">:</span> <span class="nx">banana</span><span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+        <span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+    <span class="o">&lt;/</span><span class="nx">li</span><span class="o">&gt;</span>
+<span class="o">&lt;/</span><span class="nx">ul</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<dl class="php attr">
+<dt class="sig sig-object php" id="GroupedForViewHelper::$escapeOutput">
+<em class="property"><span class="pre">property</span> </em><span class="sig-name descname"><span class="pre">escapeOutput</span></span><a class="headerlink" href="#GroupedForViewHelper::$escapeOutput" title="Permalink to this definition">¶</a></dt>
+<dd><p>protected boolean</p>
+</dd></dl>
+<dl class="php method">
+<dt class="sig sig-object php" id="GroupedForViewHelper::initializeArguments">
+<span class="sig-name descname"><span class="pre">initializeArguments</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#GroupedForViewHelper::initializeArguments" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>void</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="php method">
+<dt class="sig sig-object php" id="GroupedForViewHelper::renderStatic">
+<span class="sig-name descname"><span class="pre">renderStatic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">$arguments</span></em>, <em class="sig-param"><span class="pre">Closure</span> <span class="pre">$renderChildrenClosure</span></em>, <em class="sig-param"><span class="pre">RenderingContextInterface</span> <span class="pre">$renderingContext</span></em><span class="sig-paren">)</span><a class="headerlink" href="#GroupedForViewHelper::renderStatic" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$arguments</strong> (<span><code class="xref php php-obj docutils literal notranslate"><span class="pre">array</span></code></span>) -- </p></li>
+<li><p><strong>$renderChildrenClosure</strong> (<span><code class="xref php php-obj docutils literal notranslate"><span class="pre">Closure</span></code></span>) -- </p></li>
+<li><p><strong>$renderingContext</strong> (<span><code class="xref php php-obj docutils literal notranslate"><span class="pre">RenderingContextInterface</span></code></span>) -- </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>mixed</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="php method">
+<dt class="sig sig-object php" id="GroupedForViewHelper::groupElements">
+<span class="sig-name descname"><span class="pre">groupElements</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">$elements</span></em>, <em class="sig-param"><span class="pre">$groupBy</span></em><span class="sig-paren">)</span><a class="headerlink" href="#GroupedForViewHelper::groupElements" title="Permalink to this definition">¶</a></dt>
+<dd><p>Groups the given array by the specified groupBy property.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>$elements</strong> (<span><code class="xref php php-obj docutils literal notranslate"><span class="pre">array</span></code></span>) -- The array / traversable object to be grouped</p></li>
+<li><p><strong>$groupBy</strong> (<span><code class="xref php php-obj docutils literal notranslate"><span class="pre">string</span></code></span>) -- Group by this property</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>array The grouped array in the form array('keys' =&gt; array('key1' =&gt; [key1value], 'key2' =&gt; [key2value], ...), 'values' =&gt; array('key1' =&gt; array([key1value] =&gt; [element1]), ...), ...)</p>
+</dd>
+</dl>
+</dd></dl>
+</dd></dl>
+</div>
+<!-- /body -->
+</div>
+</div>
+<!-- pager.html -->
+<nav aria-label="Page navigation example">
+<ul class="pagination justify-content-center">
+<li class="page-item">
+<a class="page-link" href="SpacelessViewHelper.html" title="Accesskey Alt(+Shift)+p">
+                Previous
+            </a>
+</li>
+<li class="page-item">
+<a class="page-link" href="IfViewHelper.html" title="Accesskey Alt(+Shift)+n">
+                Next
+            </a>
+</li>
+</ul>
+</nav>
+<!-- /pager.html -->
+</div>
+</div>
+</div>
+</div>
+<div class="page-footer">
+<!-- footer.html -->
+<footer>
+<div class="frame frame-ruler-before frame-background-dark">
+<div class="frame-container">
+<div class="frame-inner">
+<ul class="footer-simplemenu">
+<li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test" rel="nofollow noopener" title="Home"><span>Home</span></a></li><li><a href="https://typo3.org/community/teams/documentation" title="Contact"><span>Contact</span></a></li>
+<li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/discussions" rel="nofollow noopener" title="Discussions"><span>Discussions</span></a></li>
+<li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/issues" rel="nofollow noopener" title="Issues"><span>Issues</span></a></li>
+<li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test" rel="nofollow noopener" title="Repository"><span>Repository</span></a></li>
+</ul>
+<div class="footer-additional">
+<p class="text-center">
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/d322777a1945932f1f0bc46fdfc66befea1c7063" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Feb 15, 2022 16:46
+                        </a>
+</p>
+<p class="text-center">Last rendered: Feb 15, 2022 16:47</p>
+<ul class="footer-simplemenu">
+<li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme">
+<span>TYPO3 Theme 4.6.3.dev57+g1f6a652</span></a></li>
+</ul>
+</div>
+<div class="footer-meta">
+<div class="footer-meta-copyright">
+<a href="../Copyright.html">© Copyright 2020, TYPO3 Documentation Team</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</footer>
+<!-- /footer.html -->
+</div>
+</div>
+<script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT: '../',
+            VERSION: 'main',
+            COLLAPSE_INDEX: false,
+            FILE_SUFFIX: '.html',
+            HAS_SOURCE: true
+        };
+    </script>
+<script src="../_static/js/jquery.min.js" type="text/javascript"></script>
+<script src="../_static/js/underscore.min.js" type="text/javascript"></script>
+<script src="../_static/js/doctools.min.js" type="text/javascript"></script>
+<script src="../_static/js/popper.min.js" type="text/javascript"></script>
+<script src="../_static/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../_static/js/theme.min.js" type="text/javascript"></script>
+<script src="../_static/language_data.js" type="text/javascript"></script>
+<script src="../_static/js/searchtools.min.js" type="text/javascript"></script>
+<script src="../_static/js/autocomplete.min.js" type="text/javascript"></script>
+<script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+<script src="../_static/clipboard.min.js"></script>
+<script src="../_static/copybutton.js"></script>
+<script type="text/javascript">
+        jQuery(function() { Search.loadIndex("../searchindex.js"); });
+    </script>
+<script id="searchindexloader" type="text/javascript"></script>
+<!-- scripts2 --><!-- /scripts2 -->
+<!-- footer2 --><!-- /footer2 -->
+</body>
+</html>

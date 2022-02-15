@@ -1,6 +1,6 @@
 {
-  "build_time": "2022-02-15 16:17:26",
-  "checksum": "433f95767b420c9a6b8942731bf5f55e",
+  "build_time": "2022-02-15 16:47:28",
+  "checksum": "ae5194f89be12dd5f632f461cd372e6d",
   "checksum_ttl_seconds": 604800,
   "copyright": "2020, TYPO3 Documentation Team",
   "created": {
@@ -22,11 +22,11 @@
   "has_neutralized_images": 0,
   "has_neutralized_links": 0,
   "localization": "default",
-  "postprocessed_html_files": 50,
+  "postprocessed_html_files": 80,
   "project": "Sphinx TYPO3 Theme Rendering Test",
   "publish_dir": "project/0.0.0",
   "release": "main",
-  "sitemap_files_html_count": 50,
+  "sitemap_files_html_count": 80,
   "ter_extension": "0",
   "theme_info": {
     "build_mtime": "1644938864",

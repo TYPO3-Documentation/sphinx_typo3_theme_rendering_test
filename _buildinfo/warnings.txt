@@ -42,22 +42,282 @@ WARNING: doing serial read
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
 ./Documentation/Index.rst:7: ERROR: Document or section may not begin with a transition.
 ./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
-./Documentation/PhpDomain/Index.rst:271: CRITICAL: Title level inconsistent:
+./Documentation/PhpDomain/Index.rst:273: CRITICAL: Title level inconsistent:
 
 Test Case - Global symbols with no namespaces
 ---------------------------------------------
-./Documentation/PhpDomain/Index.rst:430: CRITICAL: Title level inconsistent:
+./Documentation/PhpDomain/Index.rst:432: CRITICAL: Title level inconsistent:
 
 Test Case - not including namespace
 -----------------------------------
-./Documentation/PhpDomain/Index.rst:490: CRITICAL: Title level inconsistent:
+./Documentation/PhpDomain/Index.rst:492: CRITICAL: Title level inconsistent:
 
 Test Case - global access
 -------------------------
-./Documentation/PhpDomain/Index.rst:538: CRITICAL: Title level inconsistent:
+./Documentation/PhpDomain/Index.rst:540: CRITICAL: Title level inconsistent:
 
 Test Case - Test subpackage links
 ---------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/AliasViewHelper.rst:17: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/AliasViewHelper.rst:20: CRITICAL: Unexpected section title.
+
+Single alias
+------------
+./Documentation/PhpDomainTYPO3FluidExperiment/AliasViewHelper.rst:31: CRITICAL: Unexpected section title.
+
+Multiple mappings
+-----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/DisableViewHelper.rst:21: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/DisableViewHelper.rst:24: CRITICAL: Unexpected section title.
+
+Self-closing
+------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/DisableViewHelper.rst:31: CRITICAL: Unexpected section title.
+
+Inline mode
+-----------
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/DisableViewHelper.rst:38: CRITICAL: Unexpected section title.
+
+Container tag
+-------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/StaticViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/StaticViewHelper.rst:30: CRITICAL: Unexpected section title.
+
+Usage and effect
+----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/WarmupViewHelper.rst:24: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Cache/WarmupViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Usage and effect
+----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/CommentViewHelper.rst:17: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/CommentViewHelper.rst:20: CRITICAL: Unexpected section title.
+
+Commenting out fluid code
+-------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/CommentViewHelper.rst:36: CRITICAL: Unexpected section title.
+
+Prevent parsing
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/CountViewHelper.rst:12: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/CountViewHelper.rst:15: CRITICAL: Unexpected section title.
+
+Count array elements
+--------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/CountViewHelper.rst:26: CRITICAL: Unexpected section title.
+
+inline notation
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/CycleViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/CycleViewHelper.rst:21: CRITICAL: Unexpected section title.
+
+Simple
+------
+./Documentation/PhpDomainTYPO3FluidExperiment/CycleViewHelper.rst:36: CRITICAL: Unexpected section title.
+
+Alternating CSS class
+---------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/DebugViewHelper.rst:12: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/DebugViewHelper.rst:15: CRITICAL: Unexpected section title.
+
+Inline notation and custom title
+--------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/DebugViewHelper.rst:26: CRITICAL: Unexpected section title.
+
+Only output the type
+--------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/ElseViewHelper.rst:13: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/ElseViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Output content if condition is not met
+--------------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/ForViewHelper.rst:13: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/ForViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Simple Loop
+-----------
+./Documentation/PhpDomainTYPO3FluidExperiment/ForViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Output array key
+----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/ForViewHelper.rst:49: CRITICAL: Unexpected section title.
+
+Iteration information
+---------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/CdataViewHelper.rst:15: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/CdataViewHelper.rst:18: CRITICAL: Unexpected section title.
+
+Child nodes
+-----------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/CdataViewHelper.rst:29: CRITICAL: Unexpected section title.
+
+Value attribute
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/CdataViewHelper.rst:40: CRITICAL: Unexpected section title.
+
+Inline notation
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/HtmlspecialcharsViewHelper.rst:14: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/HtmlspecialcharsViewHelper.rst:17: CRITICAL: Unexpected section title.
+
+Default notation
+----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/HtmlspecialcharsViewHelper.rst:28: CRITICAL: Unexpected section title.
+
+Inline notation
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/PrintfViewHelper.rst:15: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/PrintfViewHelper.rst:18: CRITICAL: Unexpected section title.
+
+Scientific notation
+-------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/PrintfViewHelper.rst:29: CRITICAL: Unexpected section title.
+
+Argument swapping
+-----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/PrintfViewHelper.rst:40: CRITICAL: Unexpected section title.
+
+Single argument
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/PrintfViewHelper.rst:51: CRITICAL: Unexpected section title.
+
+Inline notation
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/RawViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/RawViewHelper.rst:19: CRITICAL: Unexpected section title.
+
+Child nodes
+-----------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/RawViewHelper.rst:30: CRITICAL: Unexpected section title.
+
+Value attribute
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/Format/RawViewHelper.rst:41: CRITICAL: Unexpected section title.
+
+Inline notation
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/GroupedForViewHelper.rst:17: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/GroupedForViewHelper.rst:20: CRITICAL: Unexpected section title.
+
+Simple
+------
+./Documentation/PhpDomainTYPO3FluidExperiment/GroupedForViewHelper.rst:37: CRITICAL: Unexpected section title.
+
+Two dimensional list
+--------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/IfViewHelper.rst:46: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/IfViewHelper.rst:49: CRITICAL: Unexpected section title.
+
+Basic usage
+-----------
+./Documentation/PhpDomainTYPO3FluidExperiment/IfViewHelper.rst:62: CRITICAL: Unexpected section title.
+
+If / then / else
+----------------
+./Documentation/PhpDomainTYPO3FluidExperiment/IfViewHelper.rst:81: CRITICAL: Unexpected section title.
+
+inline notation
+---------------
+./Documentation/PhpDomainTYPO3FluidExperiment/LayoutViewHelper.rst:12: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:13: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Rendering partials
+------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Rendering sections
+------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:39: CRITICAL: Unexpected section title.
+
+Rendering recursive sections
+----------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:70: CRITICAL: Unexpected section title.
+
+Passing all variables to a partial
+----------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:82: CRITICAL: Unexpected section title.
+
+Rendering via a delegate ParsedTemplateInterface implementation w/ custom arguments
+-----------------------------------------------------------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:12: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:15: CRITICAL: Unexpected section title.
+
+Rendering sections
+------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Rendering recursive sections
+----------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/SpacelessViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Usage of f:spaceless
+====================
+./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:21: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:24: CRITICAL: Unexpected section title.
+
+Simple Switch statement
+-----------------------
 ./Documentation/Replacements/Index.rst:51: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
@@ -74,6 +334,12 @@ WARNING: unsupported theme option 'edit_gitlab' given
 ./Documentation/ConfvalForTYPO3/Index.rst:140: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
 ./Documentation/PhpDomain/Index.rst:44: WARNING: undefined label: php-modindex
 ./Documentation/PhpDomain/Index.rst:45: WARNING: undefined label: php-objectsindex
+./Documentation/PhpDomain/Index.rst:46: WARNING: unknown document: php-modindex
+./Documentation/PhpDomain/Index.rst:47: WARNING: unknown document: php-objectsindex
+./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:16: WARNING: undefined label: php-modindex
+./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:17: WARNING: unknown document: php-modindex
+./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:18: WARNING: undefined label: php-objectsindex
+./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:19: WARNING: unknown document: php-objectsindex
 ./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example1:`discussions/`' instead)
 ./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example2:`discussions/`' instead)
 ./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example3:`discussions/`' instead)
