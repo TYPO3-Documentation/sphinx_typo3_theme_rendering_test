@@ -1,6 +1,6 @@
 WARNING: the sphinxcontrib.t3targets extension is not safe for parallel reading
 WARNING: doing serial read
-./Documentation/ConfvalForTYPO3/Index.rst:66: WARNING: Unknown directive type "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:66: ERROR: Unknown directive type "confval-values".
 
 .. confval-values:: requireMfa
 
@@ -17,7 +17,7 @@ WARNING: doing serial read
    4:
       Require multi-factor authentication only for system maintainers
 ./Documentation/ConfvalForTYPO3/Index.rst:96: WARNING: duplicate confval description of lockIP, other instance in ConfvalForTYPO3/Index
-./Documentation/ConfvalForTYPO3/Index.rst:112: WARNING: Unknown directive type "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:112: ERROR: Unknown directive type "confval-values".
 
 .. confval-values:: lockIP
 
@@ -37,23 +37,44 @@ WARNING: doing serial read
    4
       Use the visitors full IPv4 address (for example "192.168.13.84") as part of
       the session locking of Frontend Users (highest security)
-./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
-./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: Unknown interpreted text role "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:135: ERROR: Unknown interpreted text role "confval-values".
+./Documentation/ConfvalForTYPO3/Index.rst:135: ERROR: Unknown interpreted text role "confval-values".
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
-./Documentation/Index.rst:7: WARNING: Document or section may not begin with a transition.
+./Documentation/Index.rst:7: ERROR: Document or section may not begin with a transition.
 ./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
+./Documentation/PhpDomain/Index.rst:271: CRITICAL: Title level inconsistent:
+
+Test Case - Global symbols with no namespaces
+---------------------------------------------
+./Documentation/PhpDomain/Index.rst:430: CRITICAL: Title level inconsistent:
+
+Test Case - not including namespace
+-----------------------------------
+./Documentation/PhpDomain/Index.rst:490: CRITICAL: Title level inconsistent:
+
+Test Case - global access
+-------------------------
+./Documentation/PhpDomain/Index.rst:538: CRITICAL: Title level inconsistent:
+
+Test Case - Test subpackage links
+---------------------------------
 ./Documentation/Replacements/Index.rst:51: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
-./Documentation/Replacements/Index.rst:242: WARNING: Undefined substitution referenced: "dt3m_published".
+./Documentation/Replacements/Index.rst:242: ERROR: Undefined substitution referenced: "dt3m_published".
+WARNING: unsupported theme option 't3docs_locale' given
 WARNING: unsupported theme option 'edit_github' given
 WARNING: unsupported theme option 'edit_bitbucket' given
 WARNING: unsupported theme option 'edit_gitlab' given
+./Documentation/Codeblocks/Index.rst:81: WARNING: hardcoded link 'https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/148' could be replaced by an extlink (try using ':theme-issue:`148`' instead)
 ./Documentation/ConfvalForTYPO3/Index.rst:90: WARNING: undefined label: typo3confvars_fe_lockip
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
 ./Documentation/ConfvalForTYPO3/Index.rst:140: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
+./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example1:`discussions/`' instead)
+./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example2:`discussions/`' instead)
+./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example3:`discussions/`' instead)
 ./Documentation/ThisAndThat/Index.rst:283: WARNING: undefined label: t3tsref:stdwrap
 ./Documentation/ThisAndThat/Index.rst:299: WARNING: undefined label: t3tsref:stdwrap
 ./Documentation/ThisAndThat/Index.rst:312: WARNING: undefined label: t3tsref:stdwrap

@@ -45,5 +45,6 @@ Typesetting/Index.html
 Varying/Index.html
 genindex.html
 php-modindex.html
+php-objectsindex.html
 pygmentize-L.html
 search.html

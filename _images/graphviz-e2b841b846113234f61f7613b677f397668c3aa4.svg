@@ -12,20 +12,20 @@
 <!-- bar -->
 <g id="node1" class="node">
 <title>bar</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-90" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-86.3" font-family="Times,serif" font-size="14.00">bar</text>
+<ellipse fill="none" stroke="#a80036" cx="27" cy="-90" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-87.5" font-family="sans-serif" font-size="10.00" fill="#333333">bar</text>
 </g>
 <!-- baz -->
 <g id="node2" class="node">
 <title>baz</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-14.3" font-family="Times,serif" font-size="14.00">baz</text>
+<ellipse fill="none" stroke="#a80036" cx="27" cy="-18" rx="27" ry="18"/>
+<text text-anchor="middle" x="27" y="-15.5" font-family="sans-serif" font-size="10.00" fill="#333333">baz</text>
 </g>
 <!-- bar&#45;&gt;baz -->
 <g id="edge1" class="edge">
 <title>bar&#45;&gt;baz</title>
-<path fill="none" stroke="black" d="M27,-71.7C27,-63.98 27,-54.71 27,-46.11"/>
-<polygon fill="black" stroke="black" points="30.5,-46.1 27,-36.1 23.5,-46.1 30.5,-46.1"/>
+<path fill="none" stroke="#f49700" d="M27,-71.7C27,-63.98 27,-54.71 27,-46.11"/>
+<polygon fill="#f49700" stroke="#f49700" points="30.5,-46.1 27,-36.1 23.5,-46.1 30.5,-46.1"/>
 </g>
 </g>
 </svg>

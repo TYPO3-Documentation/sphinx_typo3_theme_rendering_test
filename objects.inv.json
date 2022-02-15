@@ -1018,6 +1018,12 @@
          "php-modindex.html",
          "PHP Namespace Index"
       ],
+      "php-objectsindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "php-objectsindex.html",
+         "PHP Objects Index"
+      ],
       "plantuml-basic-examples": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
