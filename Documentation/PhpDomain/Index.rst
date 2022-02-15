@@ -6,8 +6,14 @@
 Phpdomain
 ========================
 
-About Sphinx extension `sphinxcontrib-phpdomain
-<https://pypi.org/project/sphinxcontrib-phpdomain/>`__.
+.. seealso::
+
+   *  Find the original Sphinx extension at PyPi, the Python Package Index:
+      `sphinxcontrib-phpdomain
+      <https://pypi.org/project/sphinxcontrib-phpdomain/>`__.
+
+   *  We are using a fork and the branch `develop-for-typo3
+      <https://github.com/TYPO3-Documentation/sphinxcontrib-phpdomain/tree/develop-for-typo3>`__
 
 
 .. contents:: This page
@@ -16,6 +22,27 @@ About Sphinx extension `sphinxcontrib-phpdomain
    :depth: 99
    :local:
 
+
+The PHP Index pages
+===================
+
+Two extra index pages are created for the PHP domain.
+
+:file:`php-modindex.html`
+   This one is the "module index" and lists the namespaces.
+
+:file:`php-objectsindex.html`
+   This index contains all known PHP objects.
+
+When index files come into play, you can reference them by using the reference
+textrole and the apropriate target name:
+
+============================  ========================
+reST source                   rendering
+============================  ========================
+``:ref:`php-modindex```       `:ref:`php-modindex`
+``:ref:`php-objectsindex```   `:ref:`php-objectsindex`
+============================  ========================
 
 
 Quick Sample
