@@ -72,6 +72,8 @@ WARNING: unsupported theme option 'edit_gitlab' given
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
 ./Documentation/ConfvalForTYPO3/Index.rst:140: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
+./Documentation/PhpDomain/Index.rst:44: WARNING: undefined label: php-modindex
+./Documentation/PhpDomain/Index.rst:45: WARNING: undefined label: php-objectsindex
 ./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example1:`discussions/`' instead)
 ./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example2:`discussions/`' instead)
 ./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example3:`discussions/`' instead)

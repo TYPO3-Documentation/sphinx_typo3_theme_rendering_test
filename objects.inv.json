@@ -926,6 +926,18 @@
          "genindex.html",
          "Index"
       ],
+      "php-modindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "php-modindex.html",
+         "Index"
+      ],
+      "php-objectsindex": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "php-objectsindex.html",
+         "Index"
+      ],
       "pygmentize-L": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -1011,18 +1023,6 @@
          "main",
          "SphinxPanels/Index.html#panels-usage",
          "Dummy target 'panels/usage'"
-      ],
-      "php-modindex": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "php-modindex.html",
-         "PHP Namespace Index"
-      ],
-      "php-objectsindex": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "php-objectsindex.html",
-         "PHP Objects Index"
       ],
       "plantuml-basic-examples": [
          "Sphinx TYPO3 Theme Rendering Test",
