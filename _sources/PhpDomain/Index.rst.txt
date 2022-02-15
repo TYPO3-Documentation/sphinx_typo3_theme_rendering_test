@@ -40,8 +40,8 @@ textrole and the apropriate target name:
 ============================  ========================
 reST source                   rendering
 ============================  ========================
-``:ref:`php-modindex```       `:ref:`php-modindex`
-``:ref:`php-objectsindex```   `:ref:`php-objectsindex`
+``:ref:`php-modindex```       :ref:`php-modindex`
+``:ref:`php-objectsindex```   :ref:`php-objectsindex`
 ============================  ========================
 
 
