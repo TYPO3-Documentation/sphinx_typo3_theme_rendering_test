@@ -322,11 +322,7 @@ Simple Switch statement
 ./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
 ./Documentation/Replacements/Index.rst:242: ERROR: Undefined substitution referenced: "dt3m_published".
-WARNING: unsupported theme option 't3docs_locale' given
-WARNING: unsupported theme option 'edit_github' given
-WARNING: unsupported theme option 'edit_bitbucket' given
-WARNING: unsupported theme option 'edit_gitlab' given
-./Documentation/Codeblocks/Index.rst:81: WARNING: hardcoded link 'https://github.com/TYPO3-Documentation/sphinx_typo3_theme/issues/148' could be replaced by an extlink (try using ':theme-issue:`148`' instead)
+./Documentation/SphinxTabs/Index.rst:11: WARNING: duplicate label sphinx-tabs, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/AddObjectType/Index.rst
 ./Documentation/ConfvalForTYPO3/Index.rst:90: WARNING: undefined label: typo3confvars_fe_lockip
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
 ./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
@@ -336,9 +332,6 @@ WARNING: unsupported theme option 'edit_gitlab' given
 ./Documentation/PhpDomain/Index.rst:47: WARNING: unknown document: php-objectsindex
 ./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:17: WARNING: unknown document: php-modindex
 ./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:19: WARNING: unknown document: php-objectsindex
-./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example1:`discussions/`' instead)
-./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example2:`discussions/`' instead)
-./Documentation/Replacements/Index.rst:607: WARNING: hardcoded link 'https://example.org/discussions/' could be replaced by an extlink (try using ':example3:`discussions/`' instead)
 ./Documentation/ThisAndThat/Index.rst:283: WARNING: undefined label: t3tsref:stdwrap
 ./Documentation/ThisAndThat/Index.rst:299: WARNING: undefined label: t3tsref:stdwrap
 ./Documentation/ThisAndThat/Index.rst:312: WARNING: undefined label: t3tsref:stdwrap

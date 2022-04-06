@@ -1,3 +1,4 @@
+AddObjectType/Index.html
 Admonitions-and-buttons/Index.html
 Blockquotes/Index.html
 Codeblocks/Index.html

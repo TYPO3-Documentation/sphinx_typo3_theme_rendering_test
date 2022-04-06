@@ -1429,7 +1429,37 @@
          "-"
       ]
    },
+   "std:cvtca": {
+      "columns": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "AddObjectType/Index.html#cvtca-columns",
+         "-"
+      ]
+   },
+   "std:cvtcainline": {
+      "appearance": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "AddObjectType/Index.html#cvtcainline-appearance",
+         "-"
+      ]
+   },
+   "std:cvtcainput": {
+      "appearance": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "AddObjectType/Index.html#cvtcainput-appearance",
+         "-"
+      ]
+   },
    "std:doc": {
+      "AddObjectType/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "AddObjectType/Index.html",
+         "add_object_type"
+      ],
       "Admonitions-and-buttons/Index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
