@@ -86,6 +86,24 @@ typeface). One significant effect of typesetting was that authorship of
 works could be spotted more easily; making it difficult for copiers who
 have not gained permission.
 
+*Typesetting requires the prior process of designing a
+font (which is widely but erroneously confused with and substituted for
+typeface). One significant effect of typesetting was that authorship of
+works could be spotted more easily; making it difficult for copiers who
+have not gained permission.*
+
+**Typesetting requires the prior process of designing a
+font (which is widely but erroneously confused with and substituted for
+typeface). One significant effect of typesetting was that authorship of
+works could be spotted more easily; making it difficult for copiers who
+have not gained permission.**
+
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz
+
+*ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz*
+
+**ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz**
+
 
 Typesetting H3
 --------------
