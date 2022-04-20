@@ -1,6 +1,5 @@
-
 .. include:: /Includes.rst.txt
-
+.. index:: ! confval
 .. _confval:
 
 =========================
@@ -21,20 +20,15 @@ Summary
 
 `:confval:` is a text role to create a reference to the description.
 
-`:default:` and `:type:` are recognized fields in the field list table and
-- possible - be normalized or localized on output. We may choose to add more
-names in future if needed.
-
-
 
 Examples:
 
-•  A page where sphinx-doc.org uses the `:confval` directive:
+*  A page where sphinx-doc.org uses the `:confval` directive:
    https://www.sphinx-doc.org/en/master/usage/configuration.html
    \• `rst-source
    <http://www.sphinx-doc.org/en/master/_sources/usage/configuration.rst.txt>`__
 
-•  See long list of automatic entries for "configuration value" in the index:
+*  See long list of automatic entries for "configuration value" in the index:
    https://www.sphinx-doc.org/en/master/genindex.html#C
 
 
@@ -63,9 +57,6 @@ Result:
 
 You can easily link to the description of a 'confval' by means of the
 `:confval:` text role. Example: Here is a link to :confval:`mr_pommeroy`.
-
-**Note** that `:default:` has become 'Default:' and `:type:` has become
-'Type:'.
 
 
 
