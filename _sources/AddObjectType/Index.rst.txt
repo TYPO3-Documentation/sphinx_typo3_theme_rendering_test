@@ -9,8 +9,9 @@ Added object types
 
 You can add your own `object types
 <https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_object_type>`__
-"on the fly". Define as many triples of "directive", "textrole" and "index
-entry" as you need.
+"on the fly". Define as many triples of ["directive", "textrole", "index
+entry"] as you need. Each triple forms a namespace that groups elements
+together.
 
 
 .. contents:: This page
