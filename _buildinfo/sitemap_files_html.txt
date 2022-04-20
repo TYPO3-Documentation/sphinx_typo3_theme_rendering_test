@@ -3,7 +3,6 @@ Admonitions-and-buttons/Index.html
 Blockquotes/Index.html
 Codeblocks/Index.html
 Confval/Index.html
-ConfvalForTYPO3/Index.html
 Copyright.html
 Directives/Index.html
 Directives/glossary.html

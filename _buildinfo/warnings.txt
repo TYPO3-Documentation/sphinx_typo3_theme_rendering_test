@@ -1,44 +1,5 @@
 WARNING: the sphinxcontrib.t3targets extension is not safe for parallel reading
 WARNING: doing serial read
-./Documentation/ConfvalForTYPO3/Index.rst:66: ERROR: Unknown directive type "confval-values".
-
-.. confval-values:: requireMfa
-
-   :shortdescription: 0 (no MFA), 1 (MFA for all users) - 4 (MFA for system maintainers)
-
-   0:
-      Default: Do not require multi-factor authentication
-   1:
-      Require multi-factor authentication for all users
-   2:
-      Require multi-factor authentication only for non-admin users
-   3:
-      Require multi-factor authentication only for admin users
-   4:
-      Require multi-factor authentication only for system maintainers
-./Documentation/ConfvalForTYPO3/Index.rst:96: WARNING: duplicate confval description of lockIP, other instance in ConfvalForTYPO3/Index
-./Documentation/ConfvalForTYPO3/Index.rst:112: ERROR: Unknown directive type "confval-values".
-
-.. confval-values:: lockIP
-
-   :shortdescription: 0 (no lock) - 5 (full IPv4 address)
-
-   0
-      Default Do not lock Frontend User sessions to their IP address at all
-   1
-      Use the first part of the visitors IPv4 address (for example "192.") as part
-      of the session locking of Frontend Users
-   2
-      Use the first two parts of the visitors IPv4 address (for example "192.168")
-      as part of the session locking of Frontend Users
-   3
-      Use the first three parts of the visitors IPv4 address
-      (for example "192.168.13") as part of the session locking of Frontend Users
-   4
-      Use the visitors full IPv4 address (for example "192.168.13.84") as part of
-      the session locking of Frontend Users (highest security)
-./Documentation/ConfvalForTYPO3/Index.rst:135: ERROR: Unknown interpreted text role "confval-values".
-./Documentation/ConfvalForTYPO3/Index.rst:135: ERROR: Unknown interpreted text role "confval-values".
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
 ./Documentation/Index.rst:7: ERROR: Document or section may not begin with a transition.
 ./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
@@ -323,11 +284,6 @@ Simple Switch statement
 ./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
 ./Documentation/Replacements/Index.rst:242: ERROR: Undefined substitution referenced: "dt3m_published".
 ./Documentation/SphinxTabs/Index.rst:11: WARNING: duplicate label sphinx-tabs, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/AddObjectType/Index.rst
-./Documentation/ConfvalForTYPO3/Index.rst:90: WARNING: undefined label: typo3confvars_fe_lockip
-./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > lockIP
-./Documentation/ConfvalForTYPO3/Index.rst:132: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > FE > lockIP
-./Documentation/ConfvalForTYPO3/Index.rst:135: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
-./Documentation/ConfvalForTYPO3/Index.rst:140: WARNING: 'confval' reference target not found: $GLOBALS > TYPO3_CONF_VARS > BE > requireMfa
 ./Documentation/PhpDomain/Index.rst:46: WARNING: unknown document: php-modindex
 ./Documentation/PhpDomain/Index.rst:47: WARNING: unknown document: php-objectsindex
 ./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:17: WARNING: unknown document: php-modindex

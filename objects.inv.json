@@ -1230,24 +1230,6 @@
       ]
    },
    "std:confval": {
-      "BE": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html#confval-BE",
-         "-"
-      ],
-      "FE": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html#confval-FE",
-         "-"
-      ],
-      "TYPO3_CONF_VARS": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html#confval-TYPO3_CONF_VARS",
-         "-"
-      ],
       "_json": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -1344,12 +1326,6 @@
          "Replacements/Index.html#confval-license",
          "-"
       ],
-      "lockIP": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html#confval-0",
-         "-"
-      ],
       "maintainer": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -1402,12 +1378,6 @@
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Replacements/Index.html#confval-release",
-         "-"
-      ],
-      "requireMfa": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html#confval-requireMfa",
          "-"
       ],
       "std_": [
@@ -1483,12 +1453,6 @@
          "main",
          "Confval/Index.html",
          "confval"
-      ],
-      "ConfvalForTYPO3/Index": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html",
-         "confval for TYPO3"
       ],
       "Copyright": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -2097,12 +2061,6 @@
          "main",
          "Directives/sphinx_ext_graphviz.html#this-is-a-label",
          "caption of the graph"
-      ],
-      "typo3_conf_var_usage": [
-         "Sphinx TYPO3 Theme Rendering Test",
-         "main",
-         "ConfvalForTYPO3/Index.html#typo3-conf-var-usage",
-         "-"
       ]
    },
    "std:term": {
