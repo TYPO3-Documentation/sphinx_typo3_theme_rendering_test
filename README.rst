@@ -12,3 +12,4 @@ purpose there will be a separate repository.
 :Source:      https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/
 :Rendered at: https://typo3-documentation.github.io/sphinx_typo3_theme_rendering_test/
 
+
