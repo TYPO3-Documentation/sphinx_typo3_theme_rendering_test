@@ -72,7 +72,10 @@ give definitions of properties of this object type 'tca':
 Example for 'cvtca'
 ~~~~~~~~~~~~~~~~~~~
 
+Speak: configuration value TCA
+
 Definition line: `cvtca =  cvtca // cvtca // TCA configuration value`
+
 
 .. cvtca:: columns
 
@@ -87,6 +90,8 @@ definition, which by design, is unique: ``"Linking to :cvtca:`columns`"`` ->
 
 Example for 'cvtcainline'
 ~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Speak: configuration value TCA inline
 
 Definition line: `cvtcainline =  cvtcainline // cvtcainline // TCA 'inline' configuration value`
 
@@ -107,6 +112,8 @@ definition: ``"Linking to :cvtcainline:`appearance`"`` ->
 
 Example for 'cvtcainput'
 ~~~~~~~~~~~~~~~~~~~~~~~~
+
+Speak: configuration value TCA input
 
 Definition line: `cvtcainput =  cvtcainput // cvtcainput // TCA 'input' configuration value`
 
