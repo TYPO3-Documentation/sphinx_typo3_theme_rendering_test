@@ -3,15 +3,24 @@
 
 .. _Sphinx-Tabs:
 
-===============
-add_object_type
-===============
+=========================
+Added object types
+=========================
+
+You can add your own `object types
+<https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_object_type>`__
+"on the fly". Define as many triples of "directive", "textrole" and "index
+entry" as you need.
+
 
 .. contents:: This page
    :backlinks: top
    :class: compact-list
    :depth: 99
    :local:
+
+
+
 
 
 Sphinx API app.add_object_type()
@@ -22,7 +31,22 @@ Sphinx API app.add_object_type()
 
 See: https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_object_type
 
-Authors can use that function with appropriate lines in :file:`Settings.cfg`.
+Authors can use that functionionality with appropriate lines in
+:file:`Settings.cfg`. Each line adds define a triple ⓐ directive plus ⓑ
+textrole ⓒ plus index entry that work together. They form a namespace to
+describe properties (alias attributes) of an object.
+
+The ⓐ directive is used to describe the property. In general that description
+is typeset as a "definition", but may have a special styling if the theme
+accounts for it.
+
+The ⓑ textrole allows easy linking to the definition.
+
+All definitions are ⓒ appear as grouped index entries in the main index.
+
+
+
+
 
 
 Define and use object types
