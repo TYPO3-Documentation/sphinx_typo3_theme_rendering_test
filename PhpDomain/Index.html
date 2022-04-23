@@ -7,10 +7,10 @@
 <meta content="" name="docsearch:package_type"/>
 <meta content="main" name="docsearch:release"/>
 <meta content="main" name="docsearch:version"/>
-<meta content="2022-04-23T18:49:25+00:00" name="docsearch:modified"/>
+<meta content="2022-04-23T19:29:19+00:00" name="docsearch:modified"/>
 <link href="http://purl.org/dc/elements/1.1/" rel="schema.dc"/>
-<meta content="2022-04-23T18:49:25+00:00" name="dc.modified"/>
-<meta content="2022-04-23T18:49:25+00:00" property="article:modified_time"/>
+<meta content="2022-04-23T19:29:19+00:00" name="dc.modified"/>
+<meta content="2022-04-23T19:29:19+00:00" property="article:modified_time"/>
 <title>Phpdomain — Sphinx TYPO3 Theme Rendering Test main documentation</title>
 <link href="../_static/pygments.css" rel="stylesheet" type="text/css"/>
 <link href="../_static/graphviz.css" rel="stylesheet" type="text/css"/>
@@ -188,10 +188,20 @@
 <li><a class="reference internal" href="#exceptions">Exceptions</a></li>
 <li><a class="reference internal" href="#interfaces">Interfaces</a></li>
 <li><a class="reference internal" href="#traits">Traits</a></li>
-<li><a class="reference internal" href="#more-globals-after-classes">More globals after classes</a></li>
-<li><a class="reference internal" href="#namespaced-elements">Namespaced elements</a></li>
+<li><a class="reference internal" href="#more-globals-after-classes">More globals after classes</a><ul>
+<li><a class="reference internal" href="#test-case-global-symbols-with-no-namespaces">Test Case - Global symbols with no namespaces</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#namespaced-elements">Namespaced elements</a><ul>
+<li><a class="reference internal" href="#test-case-not-including-namespace">Test Case - not including namespace</a></li>
+<li><a class="reference internal" href="#test-case-global-access">Test Case - global access</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#any-cross-ref">Any Cross Ref</a></li>
-<li><a class="reference internal" href="#namespace-LibraryName\SubPackage">Nested namespaces</a></li>
+<li><a class="reference internal" href="#namespace-LibraryName\SubPackage">Nested namespaces</a><ul>
+<li><a class="reference internal" href="#test-case-test-subpackage-links">Test Case - Test subpackage links</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#namespace-OtherLibrary">Return Types</a><ul>
 <li><a class="reference internal" href="#top-level-namespace">Top Level Namespace</a></li>
 </ul>
@@ -276,16 +286,29 @@
 <li><p><a class="reference internal" href="#exceptions" id="id6">Exceptions</a></p></li>
 <li><p><a class="reference internal" href="#interfaces" id="id7">Interfaces</a></p></li>
 <li><p><a class="reference internal" href="#traits" id="id8">Traits</a></p></li>
-<li><p><a class="reference internal" href="#more-globals-after-classes" id="id9">More globals after classes</a></p></li>
-<li><p><a class="reference internal" href="#namespaced-elements" id="id10">Namespaced elements</a></p></li>
-<li><p><a class="reference internal" href="#any-cross-ref" id="id11">Any Cross Ref</a></p></li>
-<li><p><a class="reference internal" href="#namespace-LibraryName\SubPackage" id="id12">Nested namespaces</a></p></li>
-<li><p><a class="reference internal" href="#namespace-OtherLibrary" id="id13">Return Types</a></p>
+<li><p><a class="reference internal" href="#more-globals-after-classes" id="id9">More globals after classes</a></p>
 <ul>
-<li><p><a class="reference internal" href="#top-level-namespace" id="id14">Top Level Namespace</a></p></li>
+<li><p><a class="reference internal" href="#test-case-global-symbols-with-no-namespaces" id="id10">Test Case - Global symbols with no namespaces</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#re-used-namespace" id="id15">Re-used namespace</a></p></li>
+<li><p><a class="reference internal" href="#namespaced-elements" id="id11">Namespaced elements</a></p>
+<ul>
+<li><p><a class="reference internal" href="#test-case-not-including-namespace" id="id12">Test Case - not including namespace</a></p></li>
+<li><p><a class="reference internal" href="#test-case-global-access" id="id13">Test Case - global access</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#any-cross-ref" id="id14">Any Cross Ref</a></p></li>
+<li><p><a class="reference internal" href="#namespace-LibraryName\SubPackage" id="id15">Nested namespaces</a></p>
+<ul>
+<li><p><a class="reference internal" href="#test-case-test-subpackage-links" id="id16">Test Case - Test subpackage links</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#namespace-OtherLibrary" id="id17">Return Types</a></p>
+<ul>
+<li><p><a class="reference internal" href="#top-level-namespace" id="id18">Top Level Namespace</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#re-used-namespace" id="id19">Re-used namespace</a></p></li>
 </ul>
 </div>
 <div class="section" id="the-php-index-pages">
@@ -315,12 +338,6 @@ textrole and the apropriate target name:</p>
 </tr>
 <tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">:ref:`php-objectsindex`</span></code></p></td>
 <td><p><a class="reference internal" href="../php-objectsindex.html"><span class="std std-ref">PHP Objects Index</span></a></p></td>
-</tr>
-<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">:doc:`php-modindex`</span></code></p></td>
-<td><p><span class="xref std std-doc">php-modindex</span></p></td>
-</tr>
-<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">:doc:`php-objectsindex`</span></code></p></td>
-<td><p><span class="xref std std-doc">php-objectsindex</span></p></td>
 </tr>
 </tbody>
 </table>
@@ -608,6 +625,8 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 <span class="sig-name descname"><span class="pre">strpos</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="pre">$needle</span></em>, <em class="sig-param"><span class="pre">$haystack</span></em><span class="sig-paren">)</span><a class="headerlink" href="#strpos" title="Permalink to this definition">¶</a></dt>
 <dd><p>Position of needle in haystack</p>
 </dd></dl>
+<div class="section" id="test-case-global-symbols-with-no-namespaces">
+<h3><a class="toc-backref" href="#this-page">Test Case - Global symbols with no namespaces</a><a class="headerlink" href="#test-case-global-symbols-with-no-namespaces" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#$global_var" title="$global_var"><code class="xref php php-global docutils literal notranslate"><span class="pre">$global_var</span></code></a></p>
 <p><a class="reference internal" href="#$other_global_var" title="$other_global_var"><code class="xref php php-global docutils literal notranslate"><span class="pre">$other_global_var</span></code></a></p>
 <p><code class="xref php php-const docutils literal notranslate"><span class="pre">SOME_CONSTANT</span></code></p>
@@ -633,6 +652,7 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 <p><a class="reference internal" href="#LogTrait" title="LogTrait"><code class="xref php php-trait docutils literal notranslate"><span class="pre">LogTrait</span></code></a></p>
 <p><a class="reference internal" href="#LogTrait::log" title="LogTrait::log"><code class="xref php php-func docutils literal notranslate"><span class="pre">LogTrait::log()</span></code></a></p>
 <span class="target" id="namespace-LibraryName"></span></div>
+</div>
 <div class="section" id="namespaced-elements">
 <h2><a class="toc-backref" href="#this-page">Namespaced elements</a><a class="headerlink" href="#namespaced-elements" title="Permalink to this headline">¶</a></h2>
 <dl class="php function">
@@ -763,6 +783,8 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 <dd></dd></dl>
 <p>Render a template.</p>
 </dd></dl>
+<div class="section" id="test-case-not-including-namespace">
+<h3><a class="toc-backref" href="#this-page">Test Case - not including namespace</a><a class="headerlink" href="#test-case-not-including-namespace" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#namespace-LibraryName"><code class="xref php php-ns docutils literal notranslate"><span class="pre">LibraryName</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\namespaced_function" title="LibraryName\namespaced_function"><code class="xref php php-func docutils literal notranslate"><span class="pre">namespaced_function()</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\NS_CONST" title="LibraryName\NS_CONST"><code class="xref php php-const docutils literal notranslate"><span class="pre">NS_CONST</span></code></a></p>
@@ -791,6 +813,9 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 <p><a class="reference internal" href="#LibraryName\TemplateTrait" title="LibraryName\TemplateTrait"><code class="xref php php-trait docutils literal notranslate"><span class="pre">TemplateTrait</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\TemplateTrait" title="LibraryName\TemplateTrait"><code class="xref php php-trait docutils literal notranslate"><span class="pre">LibraryName\TemplateTrait</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\TemplateTrait::render" title="LibraryName\TemplateTrait::render"><code class="xref php php-func docutils literal notranslate"><span class="pre">LibraryName\TemplateTrait::render()</span></code></a></p>
+</div>
+<div class="section" id="test-case-global-access">
+<h3><a class="toc-backref" href="#this-page">Test Case - global access</a><a class="headerlink" href="#test-case-global-access" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#DateTime" title="DateTime"><code class="xref php php-class docutils literal notranslate"><span class="pre">DateTime</span></code></a></p>
 <p><a class="reference internal" href="#DateTime::setTime" title="DateTime::setTime"><code class="xref php php-func docutils literal notranslate"><span class="pre">DateTime::setTime()</span></code></a></p>
 <p><a class="reference internal" href="#$global_var" title="$global_var"><code class="xref php php-global docutils literal notranslate"><span class="pre">$global_var</span></code></a></p>
@@ -800,6 +825,7 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 <p><a class="reference internal" href="#LibraryName\NS_CONST" title="LibraryName\NS_CONST"><code class="xref php php-const docutils literal notranslate"><span class="pre">LibraryName\NS_CONST</span></code></a></p>
 <p><a class="reference internal" href="#DateTimeInterface" title="DateTimeInterface"><code class="xref php php-interface docutils literal notranslate"><span class="pre">DateTimeInterface</span></code></a></p>
 <p><a class="reference internal" href="#DateTimeInterface::setTime" title="DateTimeInterface::setTime"><code class="xref php php-func docutils literal notranslate"><span class="pre">DateTimeInterface::setTime()</span></code></a></p>
+</div>
 </div>
 <div class="section" id="any-cross-ref">
 <h2><a class="toc-backref" href="#this-page">Any Cross Ref</a><a class="headerlink" href="#any-cross-ref" title="Permalink to this headline">¶</a></h2>
@@ -823,12 +849,15 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 <em class="property"><span class="pre">interface</span> </em><span class="sig-prename descclassname"><span class="pre">LibraryName\SubPackage\</span></span><span class="sig-name descname"><span class="pre">SubpackageInterface</span></span><a class="headerlink" href="#LibraryName\SubPackage\SubpackageInterface" title="Permalink to this definition">¶</a></dt>
 <dd><p>A class in a subpackage</p>
 </dd></dl>
+<div class="section" id="test-case-test-subpackage-links">
+<h3><a class="toc-backref" href="#this-page">Test Case - Test subpackage links</a><a class="headerlink" href="#test-case-test-subpackage-links" title="Permalink to this headline">¶</a></h3>
 <p><a class="reference internal" href="#namespace-LibraryName\SubPackage"><code class="xref php php-ns docutils literal notranslate"><span class="pre">LibraryName\SubPackage</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\SubPackage\SubpackageClass" title="LibraryName\SubPackage\SubpackageClass"><code class="xref php php-class docutils literal notranslate"><span class="pre">SubpackageClass</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\SubPackage\SubpackageClass" title="LibraryName\SubPackage\SubpackageClass"><code class="xref php php-class docutils literal notranslate"><span class="pre">LibraryName\SubPackage\SubpackageClass</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\SubPackage\SubpackageInterface" title="LibraryName\SubPackage\SubpackageInterface"><code class="xref php php-interface docutils literal notranslate"><span class="pre">SubpackageInterface</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\SubPackage\SubpackageInterface" title="LibraryName\SubPackage\SubpackageInterface"><code class="xref php php-class docutils literal notranslate"><span class="pre">LibraryName\SubPackage\SubpackageInterface</span></code></a></p>
 <p><a class="reference internal" href="#LibraryName\SubPackage\NestedNamespaceException" title="LibraryName\SubPackage\NestedNamespaceException"><code class="xref php php-exc docutils literal notranslate"><span class="pre">LibraryName\SubPackage\NestedNamespaceException</span></code></a></p>
+</div>
 </div>
 <div class="section" id="namespace-OtherLibrary">
 <span id="return-types"></span><h2><a class="toc-backref" href="#this-page">Return Types</a><a class="headerlink" href="#namespace-OtherLibrary" title="Permalink to this headline">¶</a></h2>
@@ -1013,11 +1042,11 @@ repository markstory/sphinxcontrib-phpdomain</a>.</p>
 </ul>
 <div class="footer-additional">
 <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/76252500e468b95205cac63a40da877a490896f3" rel="nofollow noopener" target="_blank" title="Last commit">
-                           Apr 23, 2022 18:49
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/2276ca64410f11f3c1e9295a5db0ca940bf88ce3" rel="nofollow noopener" target="_blank" title="Last commit">
+                           Apr 23, 2022 19:29
                         </a>
 </p>
-<p class="text-center">Last rendered: Apr 23, 2022 18:50</p>
+<p class="text-center">Last rendered: Apr 23, 2022 19:30</p>
 <ul class="footer-simplemenu">
 <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" rel="nofollow noopener" target="_blank" title="sphinx_typo3_theme">
 <span>TYPO3 Theme 4.7.dev65+g8197a49</span></a></li>

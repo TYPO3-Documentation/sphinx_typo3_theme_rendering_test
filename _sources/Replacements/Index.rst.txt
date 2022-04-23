@@ -47,8 +47,8 @@ License                        `|dt3m_license|`             desired             
 Maintainer                     `|dt3m_maintainer|`          optional                 `maintainer`           `dt3m_`
 Project                 yes    `|std_project|`              required                 `project`              `std_`
 Release                        `|std_release|`              is alias                 `release`              `std_`
-Release                 yes    `|release|`                  required                 `release`              ``
-Rendered                       `|today|`                    is read only             `today`                ``
+Release                 yes    `|release|`                  required                 `release`
+Rendered                       `|today|`                    is read only             `today`
 Repository              yes    `|hto_project_repository|`   optional                 `project_repository`   `hto_`
 Version                        `|std_version|`              is alias                 `version`              `std_`
 Version                 yes    `|version|`                  required                 `version`              `version`
@@ -209,18 +209,18 @@ Source
       :Doctype:       |dt3m_doctype|
       :Home:          |hto_project_home|
       :Issues:        |hto_project_issues|
-      :Language 1:    |std_language_json|
+      :Language 1:    |std_language|
       :Language 2:    |dt3m_language|
       :License:       |dt3m_license|
       :Maintainer:    |dt3m_maintainer|
       :Project:       |std_project|
-      :Published:     |dt3m_published|
-      :Rendered:      |today|
-      :Release:       |release|
       :Release alias: |std_release|
+      :Release:       |release|
+      :Rendered:      |today|
       :Repository:    |hto_project_repository|
-      :Version:       |version|
       :Version alias: |std_version|
+      :Version:       |version|
+      :Website:       |dt3m_website|
 
 Rendering result
 ~~~~~~~~~~~~~~~~
@@ -239,13 +239,13 @@ Rendering result
    :License:       |dt3m_license|
    :Maintainer:    |dt3m_maintainer|
    :Project:       |std_project|
-   :Published:     |dt3m_published|
-   :Rendered:      |today|
-   :Release:       |release|
    :Release alias: |std_release|
+   :Release:       |release|
+   :Rendered:      |today|
    :Repository:    |hto_project_repository|
-   :Version:       |version|
    :Version alias: |std_version|
+   :Version:       |version|
+   :Website:       |dt3m_website|
 
 
 Recreate Settings.cfg

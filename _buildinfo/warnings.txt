@@ -1,23 +1,6 @@
 WARNING: the sphinxcontrib.t3targets extension is not safe for parallel reading
 WARNING: doing serial read
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
-./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
-./Documentation/PhpDomain/Index.rst:273: CRITICAL: Title level inconsistent:
-
-Test Case - Global symbols with no namespaces
----------------------------------------------
-./Documentation/PhpDomain/Index.rst:432: CRITICAL: Title level inconsistent:
-
-Test Case - not including namespace
------------------------------------
-./Documentation/PhpDomain/Index.rst:492: CRITICAL: Title level inconsistent:
-
-Test Case - global access
--------------------------
-./Documentation/PhpDomain/Index.rst:540: CRITICAL: Title level inconsistent:
-
-Test Case - Test subpackage links
----------------------------------
 ./Documentation/PhpDomainTYPO3FluidExperiment/AliasViewHelper.rst:17: CRITICAL: Unexpected section title.
 
 Examples
@@ -278,19 +261,4 @@ Examples
 
 Simple Switch statement
 -----------------------
-./Documentation/Replacements/Index.rst:51: WARNING: Inline literal start-string without end-string.
-./Documentation/Replacements/Index.rst:52: WARNING: Inline literal start-string without end-string.
 ./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
-./Documentation/Replacements/Index.rst:242: ERROR: Undefined substitution referenced: "dt3m_published".
-./Documentation/SphinxTabs/Index.rst:11: WARNING: duplicate label sphinx-tabs, other instance in /ALL/Makedir/SYMLINK_THE_PROJECT/Documentation/AddObjectType/Index.rst
-./Documentation/PhpDomain/Index.rst:46: WARNING: unknown document: php-modindex
-./Documentation/PhpDomain/Index.rst:47: WARNING: unknown document: php-objectsindex
-./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:17: WARNING: unknown document: php-modindex
-./Documentation/PhpDomainTYPO3FluidExperiment/Index.rst:19: WARNING: unknown document: php-objectsindex
-./Documentation/ThisAndThat/Index.rst:283: WARNING: undefined label: t3tsref:stdwrap
-./Documentation/ThisAndThat/Index.rst:299: WARNING: undefined label: t3tsref:stdwrap
-./Documentation/ThisAndThat/Index.rst:312: WARNING: undefined label: t3tsref:stdwrap
-./Documentation/ThisAndThat/Index.rst:335: WARNING: undefined label: stdwrap
-./Documentation/ThisAndThat/Index.rst:350: WARNING: undefined label: t3tsref:stdwrap
-./Documentation/ThisAndThat/Index.rst:362: WARNING: undefined label: t3tsref:stdwrap
-./Documentation/Highlighting/Index.rst:439: WARNING: Could not lex literal_block as "guess". Highlighting skipped.

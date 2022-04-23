@@ -1888,6 +1888,12 @@
       ]
    },
    "std:label": {
+      "add-object-types": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "AddObjectType/Index.html#add-object-types",
+         "Added object types"
+      ],
       "block-quotes": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -2068,6 +2074,12 @@
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Inline-code-and-textroles/Index.html#term-CMS",
+         "-"
+      ],
+      "ECMS": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Directives/glossary.html#term-ECMS",
          "-"
       ],
       "OS": [
