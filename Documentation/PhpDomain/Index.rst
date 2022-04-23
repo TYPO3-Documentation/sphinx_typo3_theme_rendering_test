@@ -42,8 +42,6 @@ reST source                   rendering
 ============================  ========================
 ``:ref:`php-modindex```       :ref:`php-modindex`
 ``:ref:`php-objectsindex```   :ref:`php-objectsindex`
-``:doc:`php-modindex```       :doc:`php-modindex`
-``:doc:`php-objectsindex```   :doc:`php-objectsindex`
 ============================  ========================
 
 

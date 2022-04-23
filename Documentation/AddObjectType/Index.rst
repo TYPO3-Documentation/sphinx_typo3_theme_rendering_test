@@ -1,7 +1,7 @@
 .. include:: /Includes.rst.txt
 .. highlight:: rst
 
-.. _Sphinx-Tabs:
+.. _Add-object-types:
 
 =========================
 Added object types
