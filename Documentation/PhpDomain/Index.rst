@@ -48,7 +48,7 @@ reST source                   rendering
 
 
 Quick Sample
-############
+------------
 
 This is source:
 
@@ -112,7 +112,7 @@ This is source:
 
 
 Acceptance tests for PHPdomain
-##############################
+------------------------------
 
 Credit: The source for this section was taken from the original `GitHub
 repository markstory/sphinxcontrib-phpdomain
@@ -604,7 +604,7 @@ Return Types
 
 
 Top Level Namespace
-###################
+-------------------
 
 Credit: The source for this section was taken from the original `GitHub
 repository markstory/sphinxcontrib-phpdomain
