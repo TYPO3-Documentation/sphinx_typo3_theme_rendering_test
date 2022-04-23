@@ -1,7 +1,6 @@
 WARNING: the sphinxcontrib.t3targets extension is not safe for parallel reading
 WARNING: doing serial read
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
-./Documentation/Index.rst:7: ERROR: Document or section may not begin with a transition.
 ./Documentation/Inline-code-and-textroles/Index.rst:117: WARNING: duplicate term description of CMS, other instance in Directives/glossary
 ./Documentation/PhpDomain/Index.rst:273: CRITICAL: Title level inconsistent:
 

@@ -4,8 +4,6 @@
 Sphinx TYPO3 Theme Rendering Test
 =================================
 
------
-
 :Description:   |dt3m_description_linked|
 
 -----
