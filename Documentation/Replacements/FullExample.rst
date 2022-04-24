@@ -48,24 +48,24 @@ Nice links to these URLs should appear in the footer of the web pages.
 
 .. rubric:: Publication of this documentation
 
-:Publication:   |dt3m_website_linked|
-:Buildinfo:     `_buildinfo <_buildinfo>`_
-:Rendered:      |today| (machine time)
+:Website:    |dt3m_website_linked|
+:Buildinfo:  `_buildinfo <_buildinfo>`_
+:Rendered:   |today| (machine time)
 
 -----
 
 .. rubric:: More settings
 
-:github_host:          |hto_github_host|
-:github_user:          |hto_github_user|
-:github_repo:          |hto_github_repo|
-:github_version:       |hto_github_version|
-:bitbucket_host:       |hto_bitbucket_host|
-:bitbucket_user:       |hto_bitbucket_user|
-:bitbucket_repo:       |hto_bitbucket_repo|
-:bitbucket_version:    |hto_bitbucket_version|
-:gitlab_host:          |hto_gitlab_host|
-:gitlab_user:          |hto_gitlab_user|
-:gitlab_repo:          |hto_gitlab_repo|
-:gitlab_version:       |hto_gitlab_version|
+:github_host:        |hto_github_host|
+:github_user:        |hto_github_user|
+:github_repo:        |hto_github_repo|
+:github_version:     |hto_github_version|
+:bitbucket_host:     |hto_bitbucket_host|
+:bitbucket_user:     |hto_bitbucket_user|
+:bitbucket_repo:     |hto_bitbucket_repo|
+:bitbucket_version:  |hto_bitbucket_version|
+:gitlab_host:        |hto_gitlab_host|
+:gitlab_user:        |hto_gitlab_user|
+:gitlab_repo:        |hto_gitlab_repo|
+:gitlab_version:     |hto_gitlab_version|
 
