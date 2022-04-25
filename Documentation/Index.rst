@@ -23,7 +23,10 @@ Sphinx TYPO3 Theme Rendering Test
 .. rubric:: Published here
 
 :Website:    |dt3m_website_linked|
-:Buildinfo:  `_buildinfo <_buildinfo>`_
+:Buildinfo 1:  `_buildinfo <_buildinfo>`_
+:Buildinfo 2:  `_buildinfo/results.json <_buildinfo/results.json>`_
+:Buildinfo 3:  `_buildinfo/sitemap_files_html.txt <_buildinfo/sitemap_files_html.txt>`_
+:Buildinfo 4:  `_buildinfo/warnings.txt <_buildinfo/warnings.txt>`_
 :Rendered:   |today| (machine time)
 
 -----
