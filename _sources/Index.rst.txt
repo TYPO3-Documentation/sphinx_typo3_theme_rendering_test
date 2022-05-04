@@ -4,6 +4,8 @@
 Sphinx TYPO3 Theme Rendering Test
 =================================
 
+For DRC (Docker Rendering Container) >= v3.0.dev20
+
 :Description:   |dt3m_description_linked|
 
 -----

@@ -56,16 +56,6 @@ Nice links to these URLs should appear in the footer of the web pages.
 
 .. rubric:: More settings
 
-:github_host:        |hto_github_host|
-:github_user:        |hto_github_user|
-:github_repo:        |hto_github_repo|
-:github_version:     |hto_github_version|
-:bitbucket_host:     |hto_bitbucket_host|
-:bitbucket_user:     |hto_bitbucket_user|
-:bitbucket_repo:     |hto_bitbucket_repo|
-:bitbucket_version:  |hto_bitbucket_version|
-:gitlab_host:        |hto_gitlab_host|
-:gitlab_user:        |hto_gitlab_user|
-:gitlab_repo:        |hto_gitlab_repo|
-:gitlab_version:     |hto_gitlab_version|
+:edit_button_type:    |hto_edit_button_type|
+:repo_file_edit_url:  |hto_repo_file_edit_url|
 

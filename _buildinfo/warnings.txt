@@ -1,6 +1,6 @@
-WARNING: the sphinxcontrib.t3targets extension is not safe for parallel reading
-WARNING: doing serial read
-./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
+./Documentation/LinkTargets/Index.rst:23: ERROR: Unknown directive type "ref-targets-list".
+
+.. ref-targets-list::
 ./Documentation/PhpDomainTYPO3FluidExperiment/AliasViewHelper.rst:17: CRITICAL: Unexpected section title.
 
 Examples
@@ -45,6 +45,7 @@ Examples
 
 Usage and effect
 ----------------
+./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
 ./Documentation/PhpDomainTYPO3FluidExperiment/CommentViewHelper.rst:17: CRITICAL: Unexpected section title.
 
 Examples
@@ -253,6 +254,7 @@ Rendering recursive sections
 
 Usage of f:spaceless
 ====================
+./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:15: ERROR: Unknown interpreted text role "html".
 ./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:21: CRITICAL: Unexpected section title.
 
 Examples
@@ -261,4 +263,4 @@ Examples
 
 Simple Switch statement
 -----------------------
-./Documentation/Replacements/Index.rst:998: WARNING: toctree glob pattern '*/Index' didn't match any documents
+./Documentation/Replacements/Index.rst:989: WARNING: toctree glob pattern '*/Index' didn't match any documents

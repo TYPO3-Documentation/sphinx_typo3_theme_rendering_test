@@ -55,23 +55,14 @@ Version                 yes    `|version|`                  required            
 Website                        `|dt3m_website|`             optional                 `website`              `dt3m_`
 ======================  =====  ===========================  =======================  =====================  =========
 
+
 If present, the following settings are used to create an "Edit" button.
 
 ======================  ===========================  =======================
 Name                    Markup                       Example
 ======================  ===========================  =======================
-bitbucket_host          `|hto_bitbucket_host|`       |hto_bitbucket_host|
-bitbucket_repo          `|hto_bitbucket_repo|`       |hto_bitbucket_repo|
-bitbucket_user          `|hto_bitbucket_user|`       |hto_bitbucket_user|
-bitbucket_version       `|hto_bitbucket_version|`    |hto_bitbucket_version|
-github_host             `|hto_github_host|`          |hto_github_host|
-github_repo             `|hto_github_repo|`          |hto_github_repo|
-github_user             `|hto_github_user|`          |hto_github_user|
-github_version          `|hto_github_version|`       |hto_github_version|
-gitlab_host             `|hto_gitlab_host|`          |hto_gitlab_host|
-gitlab_repo             `|hto_gitlab_repo|`          |hto_gitlab_repo|
-gitlab_user             `|hto_gitlab_user|`          |hto_gitlab_user|
-gitlab_version          `|hto_gitlab_version|`       |hto_gitlab_version|
+edit_button_type        `|hto_edit_button_type|`     |hto_edit_button_type|
+repo_file_edit_url      `|hto_repo_file_edit_url|`   |hto_repo_file_edit_url|
 ======================  ===========================  =======================
 
 
