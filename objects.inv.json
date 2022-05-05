@@ -1314,6 +1314,24 @@
          "Replacements/Index.html#confval-dt3m_language",
          "-"
       ],
+      "edit_button_type": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-edit_button_type",
+         "-"
+      ],
+      "github_branch (deprecated)": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-github_branch-deprecated",
+         "-"
+      ],
+      "github_repository (deprecated)": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-github_repository-deprecated",
+         "-"
+      ],
       "hto_": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -1378,6 +1396,24 @@
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Replacements/Index.html#confval-release",
+         "-"
+      ],
+      "repo_file_edit_url": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-repo_file_edit_url",
+         "-"
+      ],
+      "repository_branch": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-repository_branch",
+         "-"
+      ],
+      "repository_url": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Replacements/Index.html#confval-repository_url",
          "-"
       ],
       "std_": [

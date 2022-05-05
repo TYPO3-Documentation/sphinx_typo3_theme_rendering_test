@@ -46,6 +46,56 @@ Examples
 Usage and effect
 ----------------
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:13: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Rendering partials
+------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Rendering sections
+------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:39: CRITICAL: Unexpected section title.
+
+Rendering recursive sections
+----------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:70: CRITICAL: Unexpected section title.
+
+Passing all variables to a partial
+----------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:82: CRITICAL: Unexpected section title.
+
+Rendering via a delegate ParsedTemplateInterface implementation w/ custom arguments
+-----------------------------------------------------------------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:12: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:15: CRITICAL: Unexpected section title.
+
+Rendering sections
+------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:27: CRITICAL: Unexpected section title.
+
+Rendering recursive sections
+----------------------------
+./Documentation/PhpDomainTYPO3FluidExperiment/SpacelessViewHelper.rst:16: CRITICAL: Unexpected section title.
+
+Usage of f:spaceless
+====================
+./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:15: ERROR: Unknown interpreted text role "html".
+./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:21: CRITICAL: Unexpected section title.
+
+Examples
+========
+./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:24: CRITICAL: Unexpected section title.
+
+Simple Switch statement
+-----------------------
+./Documentation/Replacements/Index.rst:1225: WARNING: toctree glob pattern '*/Index' didn't match any documents
 ./Documentation/PhpDomainTYPO3FluidExperiment/CommentViewHelper.rst:17: CRITICAL: Unexpected section title.
 
 Examples
@@ -214,53 +264,4 @@ inline notation
 
 Examples
 ========
-./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:13: CRITICAL: Unexpected section title.
-
-Examples
-========
-./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:16: CRITICAL: Unexpected section title.
-
-Rendering partials
-------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:27: CRITICAL: Unexpected section title.
-
-Rendering sections
-------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:39: CRITICAL: Unexpected section title.
-
-Rendering recursive sections
-----------------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:70: CRITICAL: Unexpected section title.
-
-Passing all variables to a partial
-----------------------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/RenderViewHelper.rst:82: CRITICAL: Unexpected section title.
-
-Rendering via a delegate ParsedTemplateInterface implementation w/ custom arguments
------------------------------------------------------------------------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:12: CRITICAL: Unexpected section title.
-
-Examples
-========
-./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:15: CRITICAL: Unexpected section title.
-
-Rendering sections
-------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/SectionViewHelper.rst:27: CRITICAL: Unexpected section title.
-
-Rendering recursive sections
-----------------------------
-./Documentation/PhpDomainTYPO3FluidExperiment/SpacelessViewHelper.rst:16: CRITICAL: Unexpected section title.
-
-Usage of f:spaceless
-====================
-./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:15: ERROR: Unknown interpreted text role "html".
-./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:21: CRITICAL: Unexpected section title.
-
-Examples
-========
-./Documentation/PhpDomainTYPO3FluidExperiment/SwitchViewHelper.rst:24: CRITICAL: Unexpected section title.
-
-Simple Switch statement
------------------------
-./Documentation/Replacements/Index.rst:989: WARNING: toctree glob pattern '*/Index' didn't match any documents
+./Documentation/Replacements/Index.rst:1155: WARNING: 'confval' reference target not found: repository_repository
