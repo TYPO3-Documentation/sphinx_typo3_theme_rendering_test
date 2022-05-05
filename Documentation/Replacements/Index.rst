@@ -983,6 +983,242 @@ Version
       version = main
       version = develop
 
+
+About "Edit button" settings
+============================
+
+For DRC (Docker Rendering Container) >= v3.0.dev21
+
+
+edit_button_type
+----------------
+
+This is a theme variable, that, in the end, controls whether the "Edit on …"
+button is to be shown and whether it targets a Bitbucket, GitHub or GitLab like
+hosting.
+
+Works together with :confval:`repo_file_edit_url`.
+
+.. confval::     edit_button_type
+
+   :Name:        edit_button_type
+   :Prefix:      hto\_
+   :Section:     [html_theme_options]
+   :Notation:    \|hto_edit_button_type\|
+   :Required:    No, since it comes with 'auto' as default value.
+   :Default:     auto
+   :Value:       Pick one of: auto | bitbucket | github | gitlab | none
+   :Used by:     sphinx_typo3_theme
+
+   Example 1:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Never show the edit button
+      edit_button_type = none
+
+   Example 2:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Try to guess the type, looking for
+      # '//bitbucket', '//github' or '//gitlab' in the url.
+      # This is the default.
+      edit_button_type = auto
+
+   Example 3:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Do not guess the type. Always show "Edit on GitLab".
+      edit_button_type = gitlab
+
+
+repo_file_edit_url
+------------------
+
+This is the real theme variable representing the leading, constant part of the
+url that is used to edit files on Bitbucket, GitHub or GitLab.
+Usually you don't set this value yourself but specify :confval:`repository_url`
+and :confval:`repository_branch`.
+However, if you DO specify a value, it will always take effect and no further
+calculation takes place.
+
+Works together with :confval:`edit_button_type`.
+
+.. confval::     repo_file_edit_url
+
+   :Name:        repo_file_edit_url
+   :Prefix:      hto\_
+   :Section:     [html_theme_options]
+   :Notation:    \|hto_repo_file_edit_url\|
+   :Required:    No, because usually it is calculated internally and derived
+                 from :confval:`repository_url` and :confval:`repository_branch`.
+   :Default:     "" (empty string)
+   :Used by:     sphinx_typo3_theme
+
+   Example 1:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Show 'Edit on Bitbucket' button, use custom url
+      edit_button_type = bitbucket
+      repo_file_edit_url = https://bitbucket.com/USER/REPOSITORY/src/BRANCH
+
+   Example 2:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Show 'Edit on GitHub' button, use custom url
+      edit_button_type = github
+      repo_file_edit_url = https://github.com/USER/REPOSITORY/edit/BRANCH
+
+   Example 3:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Show edit on GitLab button, use custom url
+      edit_button_type = gitlab
+      repo_file_edit_url = https://gitlab.com/USER/REPOSITORY/-/edit/BRANCH
+
+
+repository_url
+--------------
+
+This setting works together with :confval:`repository_branch`. If both are
+given the "Edit on …" button will be shown, unless you explicitely turned the
+button off by setting :confval:`edit_button_type` to "none".
+
+:confval:`repository_url` and :confval:`repository_branch` are not real theme
+variables. They are only used to calculate the real theme variables
+:confval:`edit_button_type` and :confval:`repo_file_edit_url` and they are
+dropped afterwards. This is why they aren't available for replacements.
+
+.. confval::     repository_url
+
+   :Name:        repository_url
+   :Prefix:      n. a.
+   :Section:     [html_theme_options]
+   :Notation:    n. a.
+   :Required:    yes, together with :confval:`repository_branch`, if the Edit
+                 button is to be shown
+   :Default:     "" (empty string)
+   :Used for:    internal calculation
+
+   Example 1:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Turn on the 'Edit on Bitbucket' button
+      repository_url    = https://bitbucket.org/USER/REPOSITORY
+      repository_branch = main
+
+
+   Example 2:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Turn on the 'Edit on GitHub' button
+      repository_url    = https://github.com/USER/REPOSITORY
+      repository_branch = main
+
+   Example 3:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Turn on the 'Edit on GitLab' button
+      repository_url    = https://gitlab.com/USER/REPOSITORY
+      repository_branch = main
+
+
+repository_branch
+-----------------
+
+This setting works together with :confval:`repository_repository`. If both are
+given the "Edit on …" button will be shown, unless you explicitely turned the
+button off by setting :confval:`edit_button_type` to "none".
+
+.. confval::     repository_branch
+
+   :Name:        repository_branch
+   :Prefix:      n. a.
+   :Section:     [html_theme_options]
+   :Notation:    n. a.
+   :Required:    yes, together with :confval:`repository_url`, if the Edit
+                 button is to be shown
+   :Default:     "" (empty string)
+   :Used for:    internal calculation
+
+
+github_branch (deprecated)
+--------------------------
+
+Is used as value for :confval:`repository_branch`, if that value is otherwise
+empty.
+
+.. confval::     github_branch (deprecated)
+
+   :Name:        github_branch
+   :Prefix:      n. a.
+   :Section:     [html_theme_options]
+   :Notation:    n. a.
+   :Required:    no, deprecated, use :confval:`repository_branch` instead
+   :Default:     "" (empty string)
+   :Used for:    internal calculation
+
+
+github_repository (deprecated)
+------------------------------
+
+Is used as value `https://github.com/[github_repository]` for
+:confval:`repository_url`, if that value is otherwise empty.
+
+.. confval::     github_repository (deprecated)
+
+   :Name:        github_repository
+   :Prefix:      n. a.
+   :Section:     [html_theme_options]
+   :Notation:    n. a.
+   :Required:    no, deprecated, use :confval:`repository_url` instead
+   :Default:     "" (empty string)
+   :Value:       user/repository
+   :Used for:    internal calculation
+
+   Example:
+
+   .. code-block:: ini
+
+      [html_theme_options]
+
+      # Deprecated form - remove these two lines
+      github_repository  = USER/REPOSITORY
+      github_branch      = main
+
+      # Correct form - use these two lines instead
+      repository_url    = https://gitlab.com/USER/REPOSITORY
+      repository_branch = main
+
+
+
+
 More pages
 ==========
 
