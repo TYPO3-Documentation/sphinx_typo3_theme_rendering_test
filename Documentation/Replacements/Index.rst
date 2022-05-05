@@ -1109,9 +1109,9 @@ dropped afterwards. This is why they aren't available for replacements.
 .. confval::     repository_url
 
    :Name:        repository_url
-   :Prefix:      n. a.
+   :Prefix:      \-
    :Section:     [html_theme_options]
-   :Notation:    n. a.
+   :Notation:    \-
    :Required:    yes, together with :confval:`repository_branch`, if the Edit
                  button is to be shown
    :Default:     "" (empty string)
@@ -1159,9 +1159,9 @@ button off by setting :confval:`edit_button_type` to "none".
 .. confval::     repository_branch
 
    :Name:        repository_branch
-   :Prefix:      n. a.
+   :Prefix:      \-
    :Section:     [html_theme_options]
-   :Notation:    n. a.
+   :Notation:    \-
    :Required:    yes, together with :confval:`repository_url`, if the Edit
                  button is to be shown
    :Default:     "" (empty string)
@@ -1177,9 +1177,9 @@ empty.
 .. confval::     github_branch (deprecated)
 
    :Name:        github_branch
-   :Prefix:      n. a.
+   :Prefix:      \-
    :Section:     [html_theme_options]
-   :Notation:    n. a.
+   :Notation:    \-
    :Required:    no, deprecated, use :confval:`repository_branch` instead
    :Default:     "" (empty string)
    :Used for:    internal calculation
@@ -1194,9 +1194,9 @@ Is used as value `https://github.com/[github_repository]` for
 .. confval::     github_repository (deprecated)
 
    :Name:        github_repository
-   :Prefix:      n. a.
+   :Prefix:      \-
    :Section:     [html_theme_options]
-   :Notation:    n. a.
+   :Notation:    \-
    :Required:    no, deprecated, use :confval:`repository_url` instead
    :Default:     "" (empty string)
    :Value:       user/repository
