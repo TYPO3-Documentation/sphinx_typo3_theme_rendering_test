@@ -210,3 +210,15 @@ Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
 
 Inline `code` :php:`MyCustomException` :ts:`PAGE` in title
 ##########################################################
+
+Fully qualified names
+=====================
+
+:code:`TYPO3\CMS\Core\Cache\Frontend\FrontendInterface`
+
+:php:`TYPO3\CMS\Core\Cache\Frontend\FrontendInterface`
+
+`TYPO3\CMS\Core\Cache\Frontend\FrontendInterface`
+
+``TYPO3\CMS\Core\Cache\Frontend\FrontendInterface``
+
