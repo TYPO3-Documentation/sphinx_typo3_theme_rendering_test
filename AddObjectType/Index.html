@@ -7,10 +7,10 @@
     <meta name="docsearch:package_type" content="" />
     <meta name="docsearch:release" content="main" />
     <meta name="docsearch:version" content="main" />
-    <meta name="docsearch:modified" content="2022-05-05T08:45:19+00:00" />
+    <meta name="docsearch:modified" content="2022-07-14T13:05:27+00:00" />
     <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
-    <meta name="dc.modified" content="2022-05-05T08:45:19+00:00" />
-    <meta property="article:modified_time" content="2022-05-05T08:45:19+00:00" />
+    <meta name="dc.modified" content="2022-07-14T13:05:27+00:00" />
+    <meta property="article:modified_time" content="2022-07-14T13:05:27+00:00" />
 
     <title>Added object types &mdash; Sphinx TYPO3 Theme Rendering Test main documentation</title>
 
@@ -261,7 +261,7 @@
                             <div itemprop="articleBody">
 <!-- body -->
     <div class="section" id="added-object-types">
-<span id="add-object-types"></span><h1>Added object types<a class="headerlink" href="#added-object-types" title="Permalink to this headline">¶</a></h1>
+<span id="add-object-types"></span><h1>Added object types<a class="headerlink" href="#added-object-types" title="Permalink to this heading">¶</a></h1>
 <p>You can add your own <a class="reference external" href="https://www.sphinx-doc.org/en/master/extdev/appapi.html#sphinx.application.Sphinx.add_object_type">object types</a>
 &quot;on the fly&quot;. Define as many triples of [&quot;directive&quot;, &quot;textrole&quot;, &quot;index
 entry&quot;] as you need. Each triple forms a namespace that groups elements
@@ -284,7 +284,7 @@ together.</p>
 </ul>
 </div>
 <div class="section" id="sphinx-api-app-add-object-type">
-<h2><a class="toc-backref" href="#this-page">Sphinx API app.add_object_type()</a><a class="headerlink" href="#sphinx-api-app-add-object-type" title="Permalink to this headline">¶</a></h2>
+<h2><a class="toc-backref" href="#this-page">Sphinx API app.add_object_type()</a><a class="headerlink" href="#sphinx-api-app-add-object-type" title="Permalink to this heading">¶</a></h2>
 <div class="versionadded">
 <p><span class="versionmodified added">New in version v3.0.dev13: </span>of DRC (Docker Rendering Container)</p>
 </div>
@@ -299,7 +299,7 @@ accounts for it.</p>
 <p>The ⓑ textrole allows easy linking to the definition.</p>
 <p>All definitions are ⓒ appear as grouped index entries in the main index.</p>
 <div class="section" id="define-and-use-object-types">
-<h3><a class="toc-backref" href="#this-page">Define and use object types</a><a class="headerlink" href="#define-and-use-object-types" title="Permalink to this headline">¶</a></h3>
+<h3><a class="toc-backref" href="#this-page">Define and use object types</a><a class="headerlink" href="#define-and-use-object-types" title="Permalink to this heading">¶</a></h3>
 <p>In file <code class="file docutils literal notranslate"><span class="pre">Settings.cfg</span></code> we add, for example:</p>
 <div class="highlight-ini notranslate"><div class="highlight"><pre><span></span><span class="k">[sphinx_object_types_to_add]</span><span class="w"></span>
 
@@ -315,7 +315,7 @@ accounts for it.</p>
 <p>Now we can use the directive 'cvtca' (&quot;TCA configuration value&quot;) to conveniently
 give definitions of properties of this object type 'tca':</p>
 <div class="section" id="example-for-cvtca">
-<h4><a class="toc-backref" href="#this-page">Example for 'cvtca'</a><a class="headerlink" href="#example-for-cvtca" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#this-page">Example for 'cvtca'</a><a class="headerlink" href="#example-for-cvtca" title="Permalink to this heading">¶</a></h4>
 <p>Speak: configuration value TCA</p>
 <p>Definition line: <code class="code docutils literal notranslate"><span class="pre">cvtca</span> <span class="pre">=</span>&#160; <span class="pre">cvtca</span> <span class="pre">//</span> <span class="pre">cvtca</span> <span class="pre">//</span> <span class="pre">TCA</span> <span class="pre">configuration</span> <span class="pre">value</span></code></p>
 <dl class="std cvtca">
@@ -331,7 +331,7 @@ definition, which by design, is unique: <code class="docutils literal notranslat
 &quot;Linking to <a class="reference internal" href="#cvtca-columns"><code class="xref std std-cvtca docutils literal notranslate"><span class="pre">columns</span></code></a>.</p>
 </div>
 <div class="section" id="example-for-cvtcainline">
-<h4><a class="toc-backref" href="#this-page">Example for 'cvtcainline'</a><a class="headerlink" href="#example-for-cvtcainline" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#this-page">Example for 'cvtcainline'</a><a class="headerlink" href="#example-for-cvtcainline" title="Permalink to this heading">¶</a></h4>
 <p>Speak: configuration value TCA inline</p>
 <p>Definition line: <code class="code docutils literal notranslate"><span class="pre">cvtcainline</span> <span class="pre">=</span>&#160; <span class="pre">cvtcainline</span> <span class="pre">//</span> <span class="pre">cvtcainline</span> <span class="pre">//</span> <span class="pre">TCA</span> <span class="pre">'inline'</span> <span class="pre">configuration</span> <span class="pre">value</span></code></p>
 <dl class="std cvtcainline">
@@ -359,7 +359,7 @@ definition: <code class="docutils literal notranslate"><span class="pre">&quot;L
 &quot;Linking to <a class="reference internal" href="#cvtcainline-appearance"><code class="xref std std-cvtcainline docutils literal notranslate"><span class="pre">appearance</span></code></a>&quot;.</p>
 </div>
 <div class="section" id="example-for-cvtcainput">
-<h4><a class="toc-backref" href="#this-page">Example for 'cvtcainput'</a><a class="headerlink" href="#example-for-cvtcainput" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#this-page">Example for 'cvtcainput'</a><a class="headerlink" href="#example-for-cvtcainput" title="Permalink to this heading">¶</a></h4>
 <p>Speak: configuration value TCA input</p>
 <p>Definition line: <code class="code docutils literal notranslate"><span class="pre">cvtcainput</span> <span class="pre">=</span>&#160; <span class="pre">cvtcainput</span> <span class="pre">//</span> <span class="pre">cvtcainput</span> <span class="pre">//</span> <span class="pre">TCA</span> <span class="pre">'input'</span> <span class="pre">configuration</span> <span class="pre">value</span></code></p>
 <dl class="std cvtcainput">
@@ -387,7 +387,7 @@ this definition: <code class="docutils literal notranslate"><span class="pre">&q
 &quot;Linking to <a class="reference internal" href="#cvtcainput-appearance"><code class="xref std std-cvtcainput docutils literal notranslate"><span class="pre">appearance</span></code></a>&quot;.</p>
 </div>
 <div class="section" id="automatically-created-index-entries">
-<h4><a class="toc-backref" href="#this-page">Automatically created index entries</a><a class="headerlink" href="#automatically-created-index-entries" title="Permalink to this headline">¶</a></h4>
+<h4><a class="toc-backref" href="#this-page">Automatically created index entries</a><a class="headerlink" href="#automatically-created-index-entries" title="Permalink to this heading">¶</a></h4>
 <p>And this will be the result on the index page:</p>
 <div class="figure align-default">
 <img alt="How the entries appear on the index page" class="with-border with-shadow" src="../_images/result-on-index-page.png" />
@@ -438,14 +438,14 @@ this definition: <code class="docutils literal notranslate"><span class="pre">&q
                 </ul>
                 <div class="footer-additional">
                     <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/f0dd7e12138c76969108cd7e7b474a22d72bd0ac" rel="nofollow" target="_blank" title="Last commit">
-                           May 05, 2022 08:45
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/83b3301d3cd103d3702136e016d3fcee9995712a" rel="nofollow" target="_blank" title="Last commit">
+                           Jul 14, 2022 13:05
                         </a>
                     </p>
-                    <p class="text-center">Last rendered: May 05, 2022 08:47</p>
+                    <p class="text-center">Last rendered: Jul 14, 2022 13:06</p>
                     <ul class="footer-simplemenu">
                         <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" title="sphinx_typo3_theme" target="_blank">
-                        <span>TYPO3 Theme 4.7.3</span></a></li>
+                        <span>TYPO3 Theme 4.7.5</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-meta">
@@ -480,6 +480,7 @@ this definition: <code class="docutils literal notranslate"><span class="pre">&q
     <script type="text/javascript" src="../_static/js/searchtools.min.js"></script>
     <script type="text/javascript" src="../_static/js/autocomplete.min.js"></script>
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script type="text/javascript">

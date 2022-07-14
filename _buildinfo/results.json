@@ -1,5 +1,5 @@
 {
-  "checksum": "1d3732938b21fde472fe956652903ef5",
+  "checksum": "8c55cf9c0db83ed309ffd28971520a1d",
   "checksum_ttl_seconds": 604800,
   "copyright": "2020, TYPO3 Documentation Team",
   "created": {
@@ -8,11 +8,11 @@
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:develop",
     "OUR_IMAGE_SHORT": "t3rd",
-    "OUR_IMAGE_VERSION": "v3.0.dev21",
-    "THEME_MTIME": "1650837600",
+    "OUR_IMAGE_VERSION": "v3.0.dev25",
+    "THEME_MTIME": "1652047200",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
-    "TOOLCHAIN_VERSION": "3.0.0",
+    "TOOLCHAIN_VERSION": "3.1.0",
     "TYPOSCRIPT_PY_VERSION": "v2.2.4"
   },
   "gitdir": "/PROJECT",
@@ -25,41 +25,41 @@
   "release": "main",
   "scm_version_info": {
     "00info": "Showing what the Python module 'setuptools_scm' can tell us about the input repository and its version.",
-    "guessed_version": "0.1.dev1+gf0dd7e1",
+    "guessed_version": "0.1.dev1+g83b3301",
     "is_shallow": true,
     "json": {
       "_extra": {},
       "branch": "master",
       "dirty": false,
       "distance": 1,
-      "node": "gf0dd7e1",
+      "node": "g83b3301",
       "preformatted": false
     },
     "pprint": {
       "_extra": {},
       "branch": "master",
-      "config": "<setuptools_scm.config.Configuration object at 0x7f37aed95d90>",
+      "config": "<setuptools_scm.config.Configuration object at 0x7ff9f262f760>",
       "dirty": false,
       "distance": 1,
-      "node": "gf0dd7e1",
-      "node_date": "datetime.date(2022, 5, 5)",
+      "node": "g83b3301",
+      "node_date": "datetime.date(2022, 7, 14)",
       "preformatted": false,
       "tag": "<Version('0.0')>",
-      "time": "datetime.datetime(2022, 5, 5, 8, 47, 11, 471971, tzinfo=datetime.timezone.utc)"
+      "time": "datetime.datetime(2022, 7, 14, 13, 6, 17, 583525, tzinfo=datetime.timezone.utc)"
     },
     "project": "/PROJECT",
     "warnings": [
-      "message=UserWarning('\"/PROJECT\" is shallow and may cause errors') category=<class 'UserWarning'> filename='/ALL/venv/.venv/lib/python3.8/site-packages/setuptools_scm/git.py' lineno=105"
+      "message=UserWarning('\"/PROJECT\" is shallow and may cause errors') category=<class 'UserWarning'> filename='/ALL/venv/.venv/lib/python3.8/site-packages/setuptools_scm/git.py' lineno=135"
     ]
   },
   "sitemap_files_html_count": 80,
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1651733910",
+    "build_mtime": "1657726491",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.7.3",
+    "version_scm": "4.7.5",
     "version_scm_build": "",
-    "version_scm_core": "4.7.3",
+    "version_scm_core": "4.7.5",
     "version_scm_pre_release": ""
   },
   "version": "main"
