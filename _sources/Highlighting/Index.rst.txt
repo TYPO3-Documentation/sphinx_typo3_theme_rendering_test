@@ -1,5 +1,5 @@
 .. include:: /Includes.rst.txt
-
+.. index:: highlighting
 
 ============
 Highlighting
@@ -21,10 +21,10 @@ Examples taken from https://highlightjs.org/static/demo/
    Code needs to be syntactically correct.
 
 
-Active Scheme
+Sample Scheme
 =============
 
-Here's a screenshot of the color scheme used for highlighting.
+Here's a screenshot of a color scheme used for highlighting.
 Development of that scheme started with the 'Prism higher lightness' scheme.
 
 .. figure:: ../images/scheme-prism-higher-lightness.png
@@ -44,7 +44,7 @@ Development of that scheme started with the 'Prism higher lightness' scheme.
 
 .. note::
 
-   We could easily change colors by switching to another list of 16 colors
+   We can easily change colors by switching to another list of 16 colors
    as available from the `Base16 Builder <https://github.com/chriskempson/base16-builder>`__.
    As it turned out however some color tweaking usually seems necessary.
 

@@ -88,23 +88,6 @@ To link to something just use ordinary reST links.
 *  Main product is `TYPO3 <https://typo3.org/>`__ and the `docs <https://docs.typo3.org/>`__
 
 
-Trying something crazy:
-
-.. rst-class:: horizbuttons-note-m
-
-*  Example term
-      Example definition
-
-*  ===== =====
-   A     B
-   ===== =====
-   a     b
-   aa    bb
-   ===== =====
-
-*  Always have three items
-
-
 horizbuttons-attention-m
 ------------------------
 

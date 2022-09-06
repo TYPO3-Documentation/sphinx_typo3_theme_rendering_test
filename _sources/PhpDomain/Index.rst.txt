@@ -28,10 +28,10 @@ The PHP Index pages
 
 Two extra index pages are created for the PHP domain.
 
-:file:`php-modindex.html`
+File :file:`php-modindex.html`
    This one is the "module index" and lists the namespaces.
 
-:file:`php-objectsindex.html`
+File :file:`php-objectsindex.html`
    This index contains all known PHP objects.
 
 When index files come into play, you can reference them by using the reference
