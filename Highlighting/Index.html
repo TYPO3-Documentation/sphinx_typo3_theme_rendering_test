@@ -7,10 +7,10 @@
     <meta name="docsearch:package_type" content="" />
     <meta name="docsearch:release" content="main" />
     <meta name="docsearch:version" content="main" />
-    <meta name="docsearch:modified" content="2022-09-06T07:44:24+00:00" />
+    <meta name="docsearch:modified" content="2022-09-23T11:10:51+00:00" />
     <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
-    <meta name="dc.modified" content="2022-09-06T07:44:24+00:00" />
-    <meta property="article:modified_time" content="2022-09-06T07:44:24+00:00" />
+    <meta name="dc.modified" content="2022-09-23T11:10:51+00:00" />
+    <meta property="article:modified_time" content="2022-09-23T11:10:51+00:00" />
 
     <title>Highlighting &mdash; Sphinx TYPO3 Theme Rendering Test main documentation</title>
 
@@ -158,7 +158,7 @@
                                     <p class="caption"><span class="caption-text">PAGE CONTENTS</span></p>
                                     <ul>
 <li><a class="reference internal" href="#">Highlighting</a><ul>
-<li><a class="reference internal" href="#sample-scheme">Sample Scheme</a></li>
+<li><a class="reference internal" href="#php">PHP</a></li>
 <li><a class="reference internal" href="#apache">Apache</a></li>
 <li><a class="reference internal" href="#bash">Bash</a></li>
 <li><a class="reference internal" href="#c">C++</a></li>
@@ -175,13 +175,11 @@
 <li><a class="reference internal" href="#nginx">Nginx</a></li>
 <li><a class="reference internal" href="#objective-c">Objective C</a></li>
 <li><a class="reference internal" href="#perl">Perl</a></li>
-<li><a class="reference internal" href="#php">PHP</a></li>
 <li><a class="reference internal" href="#python">Python</a></li>
 <li><a class="reference internal" href="#ruby">Ruby</a></li>
 <li><a class="reference internal" href="#sql">SQL</a></li>
 <li><a class="reference internal" href="#html">Html</a></li>
 <li><a class="reference internal" href="#xml">Xml</a></li>
-<li><a class="reference internal" href="#pymentize-l">pymentize -L</a></li>
 </ul>
 </li>
 </ul>
@@ -226,7 +224,13 @@
 <div class="dsDivCogwheel"><i id="dsCogwheel" class="fas fa-cog" title="Display settings"></i></div>
 <div id="dsPanel" class="dsPanel" ><p><b>Display settings</b></p>
 <input type="checkbox" id="cbFullWidth"><label for="cbFullWidth">Use full width</label><br>
+Color scheme of code blocks:<br>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeDark" checked="checked" value="dark"/>
+<label for="rbCbsThemeDark">dark</label>
+<input type="radio" name="rbCbsTheme" id="rbCbsThemeLight" value="light"/>
+<label for="rbCbsThemeLight">light</label><br>
 <input type="checkbox" id="cbPermanent"><label for="cbPermanent">Make settings permanent</label><br>
+</div><!--/.dsPanel-->
 </div><!--/.dsPanel-->
 </div><!--/.displaysettingsui-->
 <!-- /displaysettingsui.html -->
@@ -247,7 +251,7 @@
 <div class="contents compact-list local topic" id="this-page">
 <p class="topic-title">This page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#sample-scheme" id="id2">Sample Scheme</a></p></li>
+<li><p><a class="reference internal" href="#php" id="id2">PHP</a></p></li>
 <li><p><a class="reference internal" href="#apache" id="id3">Apache</a></p></li>
 <li><p><a class="reference internal" href="#bash" id="id4">Bash</a></p></li>
 <li><p><a class="reference internal" href="#c" id="id5">C++</a></p></li>
@@ -264,33 +268,624 @@
 <li><p><a class="reference internal" href="#nginx" id="id16">Nginx</a></p></li>
 <li><p><a class="reference internal" href="#objective-c" id="id17">Objective C</a></p></li>
 <li><p><a class="reference internal" href="#perl" id="id18">Perl</a></p></li>
-<li><p><a class="reference internal" href="#php" id="id19">PHP</a></p></li>
-<li><p><a class="reference internal" href="#python" id="id20">Python</a></p></li>
-<li><p><a class="reference internal" href="#ruby" id="id21">Ruby</a></p></li>
-<li><p><a class="reference internal" href="#sql" id="id22">SQL</a></p></li>
-<li><p><a class="reference internal" href="#html" id="id23">Html</a></p></li>
-<li><p><a class="reference internal" href="#xml" id="id24">Xml</a></p></li>
-<li><p><a class="reference internal" href="#pymentize-l" id="id25">pymentize -L</a></p></li>
+<li><p><a class="reference internal" href="#python" id="id19">Python</a></p></li>
+<li><p><a class="reference internal" href="#ruby" id="id20">Ruby</a></p></li>
+<li><p><a class="reference internal" href="#sql" id="id21">SQL</a></p></li>
+<li><p><a class="reference internal" href="#html" id="id22">Html</a></p></li>
+<li><p><a class="reference internal" href="#xml" id="id23">Xml</a></p></li>
 </ul>
 </div>
-<div class="admonition attention">
-<p class="admonition-title">Attention</p>
 <p>If highlighting is missing it may be due to the fact
 that the pygments lexer has detected a syntax error.
 Code needs to be syntactically correct.</p>
+<div class="section" id="php">
+<h2><a class="toc-backref" href="#this-page">PHP</a><a class="headerlink" href="#php" title="Permalink to this headline">¶</a></h2>
+<p>Thi snippet is <code class="code docutils literal notranslate"><span class="pre">test.php</span></code> of the pygments test suite:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
+
+<span class="nv">$disapproval_ಠ_ಠ_of_php</span> <span class="o">=</span> <span class="s1">&#39;unicode var&#39;</span><span class="p">;</span>
+
+<span class="nv">$test</span> <span class="o">=</span> <span class="k">function</span><span class="p">(</span><span class="nv">$a</span><span class="p">)</span> <span class="p">{</span> <span class="nv">$lambda</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="p">}</span>
+
+<span class="sd">/**</span>
+<span class="sd"> *  Zip class file</span>
+<span class="sd"> *</span>
+<span class="sd"> *  @package     fnord.bb</span>
+<span class="sd"> *  @subpackage  archive</span>
+<span class="sd"> */</span>
+
+<span class="c1">// Unlock?</span>
+<span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">defined</span><span class="p">(</span><span class="s1">&#39;UNLOCK&#39;</span><span class="p">)</span> <span class="o">||</span> <span class="o">!</span><span class="nx">UNLOCK</span><span class="p">)</span>
+  <span class="k">die</span><span class="p">();</span>
+
+<span class="c1">// Load the parent archive class</span>
+<span class="k">require_once</span><span class="p">(</span><span class="nx">ROOT_PATH</span><span class="o">.</span><span class="s1">&#39;/classes/archive.class.php&#39;</span><span class="p">);</span>
+
+<span class="k">class</span> <span class="nc">Zip\Zippಠ_ಠ_</span> <span class="p">{</span>
+
+<span class="p">}</span>
+
+<span class="sd">/**</span>
+<span class="sd"> *  Zip class</span>
+<span class="sd"> *</span>
+<span class="sd"> *  @author      Manni &lt;manni@fnord.name&gt;</span>
+<span class="sd"> *  @copyright   Copyright (c) 2006, Manni</span>
+<span class="sd"> *  @version     1.0</span>
+<span class="sd"> *  @link        http://www.pkware.com/business_and_developers/developer/popups/appnote.txt</span>
+<span class="sd"> *  @link        http://mannithedark.is-a-geek.net/</span>
+<span class="sd"> *  @since       1.0</span>
+<span class="sd"> *  @package     fnord.bb</span>
+<span class="sd"> *  @subpackage  archive</span>
+<span class="sd"> */</span>
+<span class="k">class</span> <span class="nc">Zip</span> <span class="k">extends</span> <span class="nx">Archive</span> <span class="p">{</span>
+ <span class="sd">/**</span>
+<span class="sd">  *  Outputs the zip file</span>
+<span class="sd">  *</span>
+<span class="sd">  *  This function creates the zip file with the dirs and files given.</span>
+<span class="sd">  *  If the optional parameter $file is given, the zip file is will be</span>
+<span class="sd">  *  saved at that location. Otherwise the function returns the zip file&#39;s content.</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @access                   public</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @link                     http://www.pkware.com/business_and_developers/developer/popups/appnote.txt</span>
+<span class="sd">  *  @param  string $filename  The path where the zip file will be saved</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @return bool|string       Returns either true if the fil is sucessfully created or the content of the zip file</span>
+<span class="sd">  */</span>
+  <span class="k">function</span> <span class="nf">out</span><span class="p">(</span><span class="nv">$filename</span> <span class="o">=</span> <span class="k">false</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Empty output</span>
+    <span class="nv">$file_data</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span> <span class="c1">// Data of the file part</span>
+    <span class="nv">$cd_data</span>   <span class="o">=</span> <span class="k">array</span><span class="p">();</span> <span class="c1">// Data of the central directory</span>
+
+    <span class="c1">// Sort dirs and files by path length</span>
+    <span class="nb">uksort</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">dirs</span><span class="p">,</span>  <span class="s1">&#39;sort_by_length&#39;</span><span class="p">);</span>
+    <span class="nb">uksort</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">files</span><span class="p">,</span> <span class="s1">&#39;sort_by_length&#39;</span><span class="p">);</span>
+
+    <span class="c1">// Handle dirs</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">dirs</span> <span class="k">as</span> <span class="nv">$dir</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$dir</span> <span class="o">.=</span> <span class="s1">&#39;/&#39;</span><span class="p">;</span>
+      <span class="c1">// File part</span>
+
+      <span class="c1">// Reset dir data</span>
+      <span class="nv">$dir_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+      <span class="c1">// Local file header</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x03\x04</span><span class="s2">&quot;</span><span class="p">;</span>      <span class="c1">// Local file header signature</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>           <span class="c1">// Version needed to extract</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// General purpose bit flag</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Compression method</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Last mod file time</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Last mod file date</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// crc-32</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Compressed size</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Uncompressed size</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$dir</span><span class="p">));</span> <span class="c1">// File name length</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Extra field length</span>
+
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nv">$dir</span><span class="p">;</span>                    <span class="c1">// File name</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                      <span class="c1">// Extra field (is empty)</span>
+
+      <span class="c1">// File data</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                      <span class="c1">// Dirs have no file data</span>
+
+      <span class="c1">// Data descriptor</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// crc-32</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Compressed size</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Uncompressed size</span>
+
+      <span class="c1">// Save current offset</span>
+      <span class="nv">$offset</span> <span class="o">=</span> <span class="nb">strlen</span><span class="p">(</span><span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$file_data</span><span class="p">));</span>
+
+      <span class="c1">// Append dir data to the file part</span>
+      <span class="nv">$file_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$dir_data</span><span class="p">;</span>
+
+      <span class="c1">// Central directory</span>
+
+      <span class="c1">// Reset dir data</span>
+      <span class="nv">$dir_data</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+      <span class="c1">// File header</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x01\x02</span><span class="s2">&quot;</span><span class="p">;</span>      <span class="c1">// Local file header signature</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Version made by</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>           <span class="c1">// Version needed to extract</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// General purpose bit flag</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Compression method</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Last mod file time</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Last mod file date</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// crc-32</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Compressed size</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Uncompressed size</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$dir</span><span class="p">));</span> <span class="c1">// File name length</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Extra field length</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// File comment length</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Disk number start</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>            <span class="c1">// Internal file attributes</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">16</span><span class="p">);</span>           <span class="c1">// External file attributes</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nv">$offset</span><span class="p">);</span>      <span class="c1">// Relative offset of local header</span>
+
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="nv">$dir</span><span class="p">;</span>                    <span class="c1">// File name</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                      <span class="c1">// Extra field (is empty)</span>
+      <span class="nv">$dir_data</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                      <span class="c1">// File comment (is empty)</span>
+
+      <span class="cm">/*</span>
+<span class="cm">      // Data descriptor</span>
+<span class="cm">      $dir_data .= pack(&quot;V&quot;, 0);            // crc-32</span>
+<span class="cm">      $dir_data .= pack(&quot;V&quot;, 0);            // Compressed size</span>
+<span class="cm">      $dir_data .= pack(&quot;V&quot;, 0);            // Uncompressed size</span>
+<span class="cm">      */</span>
+
+      <span class="c1">// Append dir data to the central directory data</span>
+      <span class="nv">$cd_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$dir_data</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Handle files</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">files</span> <span class="k">as</span> <span class="nv">$name</span> <span class="o">=&gt;</span> <span class="nv">$file</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Get values</span>
+      <span class="nv">$content</span> <span class="o">=</span> <span class="nv">$file</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+
+      <span class="c1">// File part</span>
+
+      <span class="c1">// Reset file data</span>
+      <span class="nv">$fd</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+      <span class="c1">// Detect possible compressions</span>
+      <span class="c1">// Use deflate</span>
+      <span class="k">if</span><span class="p">(</span><span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;gzdeflate&#39;</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nv">$method</span> <span class="o">=</span> <span class="mi">8</span><span class="p">;</span>
+
+        <span class="c1">// Compress file content</span>
+        <span class="nv">$compressed_data</span> <span class="o">=</span> <span class="nb">gzdeflate</span><span class="p">(</span><span class="nv">$content</span><span class="p">);</span>
+
+      <span class="c1">// Use bzip2</span>
+      <span class="p">}</span> <span class="k">elseif</span><span class="p">(</span><span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;bzcompress&#39;</span><span class="p">))</span> <span class="p">{</span>
+        <span class="nv">$method</span> <span class="o">=</span> <span class="mi">12</span><span class="p">;</span>
+
+        <span class="c1">// Compress file content</span>
+        <span class="nv">$compressed_data</span> <span class="o">=</span> <span class="nb">bzcompress</span><span class="p">(</span><span class="nv">$content</span><span class="p">);</span>
+
+      <span class="c1">// No compression</span>
+      <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+        <span class="nv">$method</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+        <span class="c1">// Do not compress the content :P</span>
+        <span class="nv">$compressed_data</span> <span class="o">=</span> <span class="nv">$content</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Local file header</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x03\x04</span><span class="s2">&quot;</span><span class="p">;</span>                  <span class="c1">// Local file header signature</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>                       <span class="c1">// Version needed to extract</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// General purpose bit flag</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nv">$method</span><span class="p">);</span>                  <span class="c1">// Compression method</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Last mod file time</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Last mod file date</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">crc32</span><span class="p">(</span><span class="nv">$content</span><span class="p">));</span>          <span class="c1">// crc-32</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$compressed_data</span><span class="p">));</span> <span class="c1">// Compressed size</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$content</span><span class="p">));</span>         <span class="c1">// Uncompressed size</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$name</span><span class="p">));</span>            <span class="c1">// File name length</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Extra field length</span>
+
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nv">$name</span><span class="p">;</span>                               <span class="c1">// File name</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                                  <span class="c1">// Extra field (is empty)</span>
+
+      <span class="c1">// File data</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nv">$compressed_data</span><span class="p">;</span>
+
+      <span class="c1">// Data descriptor</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">crc32</span><span class="p">(</span><span class="nv">$content</span><span class="p">));</span>          <span class="c1">// crc-32</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$compressed_data</span><span class="p">));</span> <span class="c1">// Compressed size</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$content</span><span class="p">));</span>         <span class="c1">// Uncompressed size</span>
+
+      <span class="c1">// Save current offset</span>
+      <span class="nv">$offset</span> <span class="o">=</span> <span class="nb">strlen</span><span class="p">(</span><span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$file_data</span><span class="p">));</span>
+
+      <span class="c1">// Append file data to the file part</span>
+      <span class="nv">$file_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$fd</span><span class="p">;</span>
+
+      <span class="c1">// Central directory</span>
+
+      <span class="c1">// Reset file data</span>
+      <span class="nv">$fd</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+
+      <span class="c1">// File header</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x01\x02</span><span class="s2">&quot;</span><span class="p">;</span>                  <span class="c1">// Local file header signature</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Version made by</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">);</span>                       <span class="c1">// Version needed to extract</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// General purpose bit flag</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nv">$method</span><span class="p">);</span>                  <span class="c1">// Compression method</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Last mod file time</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Last mod file date</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">crc32</span><span class="p">(</span><span class="nv">$content</span><span class="p">));</span>          <span class="c1">// crc-32</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$compressed_data</span><span class="p">));</span> <span class="c1">// Compressed size</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$content</span><span class="p">));</span>         <span class="c1">// Uncompressed size</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$name</span><span class="p">));</span>            <span class="c1">// File name length</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Extra field length</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// File comment length</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Disk number start</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                        <span class="c1">// Internal file attributes</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="mi">32</span><span class="p">);</span>                       <span class="c1">// External file attributes</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nv">$offset</span><span class="p">);</span>                  <span class="c1">// Relative offset of local header</span>
+
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="nv">$name</span><span class="p">;</span>                               <span class="c1">// File name</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                                  <span class="c1">// Extra field (is empty)</span>
+      <span class="nv">$fd</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                                  <span class="c1">// File comment (is empty)</span>
+
+      <span class="cm">/*</span>
+<span class="cm">      // Data descriptor</span>
+<span class="cm">      $fd .= pack(&quot;V&quot;, crc32($content));          // crc-32</span>
+<span class="cm">      $fd .= pack(&quot;V&quot;, strlen($compressed_data)); // Compressed size</span>
+<span class="cm">      $fd .= pack(&quot;V&quot;, strlen($content));         // Uncompressed size</span>
+<span class="cm">      */</span>
+
+      <span class="c1">// Append file data to the central directory data</span>
+      <span class="nv">$cd_data</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$fd</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Digital signature</span>
+    <span class="nv">$digital_signature</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+    <span class="nv">$digital_signature</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x05\x05</span><span class="s2">&quot;</span><span class="p">;</span>  <span class="c1">// Header signature</span>
+    <span class="nv">$digital_signature</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>        <span class="c1">// Size of data</span>
+    <span class="nv">$digital_signature</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                  <span class="c1">// Signature data (is empty)</span>
+
+    <span class="nv">$tmp_file_data</span> <span class="o">=</span> <span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$file_data</span><span class="p">);</span>  <span class="c1">// File data</span>
+    <span class="nv">$tmp_cd_data</span>   <span class="o">=</span> <span class="nb">implode</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="nv">$cd_data</span><span class="p">)</span><span class="o">.</span>    <span class="c1">// Central directory</span>
+                     <span class="nv">$digital_signature</span><span class="p">;</span>       <span class="c1">// Digital signature</span>
+
+    <span class="c1">// End of central directory</span>
+    <span class="nv">$eof_cd</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x05\x06</span><span class="s2">&quot;</span><span class="p">;</span>                <span class="c1">// End of central dir signature</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                      <span class="c1">// Number of this disk</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                      <span class="c1">// Number of the disk with the start of the central directory</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$cd_data</span><span class="p">));</span>        <span class="c1">// Total number of entries in the central directory on this disk</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="nb">count</span><span class="p">(</span><span class="nv">$cd_data</span><span class="p">));</span>        <span class="c1">// Total number of entries in the central directory</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$tmp_cd_data</span><span class="p">));</span>   <span class="c1">// Size of the central directory</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;V&quot;</span><span class="p">,</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$tmp_file_data</span><span class="p">));</span> <span class="c1">// Offset of start of central directory with respect to the starting disk number</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="nb">pack</span><span class="p">(</span><span class="s2">&quot;v&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>                      <span class="c1">// .ZIP file comment length</span>
+    <span class="nv">$eof_cd</span> <span class="o">.=</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>                                <span class="c1">// .ZIP file comment (is empty)</span>
+
+    <span class="c1">// Content of the zip file</span>
+    <span class="nv">$data</span> <span class="o">=</span> <span class="nv">$tmp_file_data</span><span class="o">.</span>
+            <span class="c1">// $extra_data_record.</span>
+            <span class="nv">$tmp_cd_data</span><span class="o">.</span>
+            <span class="nv">$eof_cd</span><span class="p">;</span>
+
+    <span class="c1">// Return content?</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$filename</span><span class="p">)</span>
+      <span class="k">return</span> <span class="nv">$data</span><span class="p">;</span>
+
+    <span class="c1">// Write to file</span>
+    <span class="k">return</span> <span class="nb">file_put_contents</span><span class="p">(</span><span class="nv">$filename</span><span class="p">,</span> <span class="nv">$data</span><span class="p">);</span>
+  <span class="p">}</span>
+
+ <span class="sd">/**</span>
+<span class="sd">  *  Load a zip file</span>
+<span class="sd">  *</span>
+<span class="sd">  *  This function loads the files and dirs from a zip file from the harddrive.</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @access                public</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @param  string $file   The path to the zip file</span>
+<span class="sd">  *  @param  bool   $reset  Reset the files and dirs before adding the zip file&#39;s content?</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @return bool           Returns true if the file was loaded sucessfully</span>
+<span class="sd">  */</span>
+  <span class="k">function</span> <span class="nf">load_file</span><span class="p">(</span><span class="nv">$file</span><span class="p">,</span> <span class="nv">$reset</span> <span class="o">=</span> <span class="k">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Check whether the file exists</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">file_exists</span><span class="p">(</span><span class="nv">$file</span><span class="p">))</span>
+      <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+    <span class="c1">// Load the files content</span>
+    <span class="nv">$content</span> <span class="o">=</span> <span class="o">@</span><span class="nb">file_get_contents</span><span class="p">(</span><span class="nv">$file</span><span class="p">);</span>
+
+    <span class="c1">// Return false if the file cannot be opened</span>
+    <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$content</span><span class="p">)</span>
+      <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+    <span class="c1">// Read the zip</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">load_string</span><span class="p">(</span><span class="nv">$content</span><span class="p">,</span> <span class="nv">$reset</span><span class="p">);</span>
+  <span class="p">}</span>
+
+ <span class="sd">/**</span>
+<span class="sd">  *  Load a zip string</span>
+<span class="sd">  *</span>
+<span class="sd">  *  This function loads the files and dirs from a string</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @access                 public</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @param  string $string  The string the zip is generated from</span>
+<span class="sd">  *  @param  bool   $reset   Reset the files and dirs before adding the zip file&#39;s content?</span>
+<span class="sd">  *</span>
+<span class="sd">  *  @return bool            Returns true if the string was loaded sucessfully</span>
+<span class="sd">  */</span>
+  <span class="k">function</span> <span class="nf">load_string</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="nv">$reset</span> <span class="o">=</span> <span class="k">true</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Reset the zip?</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$reset</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">dirs</span>  <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+      <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">files</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Get the starting position of the end of central directory record</span>
+    <span class="nv">$start</span> <span class="o">=</span> <span class="nb">strpos</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x05\x06</span><span class="s2">&quot;</span><span class="p">);</span>
+
+    <span class="c1">// Error</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$start</span> <span class="o">===</span> <span class="k">false</span><span class="p">)</span>
+      <span class="k">die</span><span class="p">(</span><span class="s1">&#39;Could not find the end of central directory record&#39;</span><span class="p">);</span>
+
+    <span class="c1">// Get the ecdr</span>
+    <span class="nv">$eof_cd</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="nv">$start</span><span class="o">+</span><span class="mi">4</span><span class="p">,</span> <span class="mi">18</span><span class="p">);</span>
+
+    <span class="c1">// Unpack the ecdr infos</span>
+    <span class="nv">$eof_cd</span> <span class="o">=</span> <span class="nb">unpack</span><span class="p">(</span><span class="s1">&#39;vdisc1/&#39;</span><span class="o">.</span>
+                     <span class="s1">&#39;vdisc2/&#39;</span><span class="o">.</span>
+                     <span class="s1">&#39;ventries1/&#39;</span><span class="o">.</span>
+                     <span class="s1">&#39;ventries2/&#39;</span><span class="o">.</span>
+                     <span class="s1">&#39;Vsize/&#39;</span><span class="o">.</span>
+                     <span class="s1">&#39;Voffset/&#39;</span><span class="o">.</span>
+                     <span class="s1">&#39;vcomment_lenght&#39;</span><span class="p">,</span> <span class="nv">$eof_cd</span><span class="p">);</span>
+
+    <span class="c1">// Do not allow multi disc zips</span>
+    <span class="k">if</span><span class="p">(</span><span class="nv">$eof_cd</span><span class="p">[</span><span class="s1">&#39;disc1&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">)</span>
+      <span class="k">die</span><span class="p">(</span><span class="s1">&#39;multi disk stuff is not yet implemented :/&#39;</span><span class="p">);</span>
+
+    <span class="c1">// Save the interesting values</span>
+    <span class="nv">$cd_entries</span> <span class="o">=</span> <span class="nv">$eof_cd</span><span class="p">[</span><span class="s1">&#39;entries1&#39;</span><span class="p">];</span>
+    <span class="nv">$cd_size</span>    <span class="o">=</span> <span class="nv">$eof_cd</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">];</span>
+    <span class="nv">$cd_offset</span>  <span class="o">=</span> <span class="nv">$eof_cd</span><span class="p">[</span><span class="s1">&#39;offset&#39;</span><span class="p">];</span>
+
+    <span class="c1">// Get the central directory record</span>
+    <span class="nv">$cdr</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="nv">$cd_offset</span><span class="p">,</span> <span class="nv">$cd_size</span><span class="p">);</span>
+
+    <span class="c1">// Reset the position and the list of the entries</span>
+    <span class="nv">$pos</span>     <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="nv">$entries</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+
+    <span class="c1">// Handle cdr</span>
+    <span class="k">while</span><span class="p">(</span><span class="nv">$pos</span> <span class="o">&lt;</span> <span class="nb">strlen</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">))</span> <span class="p">{</span>
+      <span class="c1">// Check header signature</span>
+      <span class="c1">// Digital signature</span>
+      <span class="k">if</span><span class="p">(</span><span class="nb">substr</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">,</span> <span class="nv">$pos</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;</span><span class="se">\x50\x4b\x05\x05</span><span class="s2">&quot;</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Get digital signature size</span>
+        <span class="nv">$tmp_info</span> <span class="o">=</span> <span class="nb">unpack</span><span class="p">(</span><span class="s1">&#39;vsize&#39;</span><span class="p">,</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">,</span> <span class="nv">$pos</span> <span class="o">+</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">2</span><span class="p">));</span>
+
+        <span class="c1">// Read out the digital signature</span>
+        <span class="nv">$digital_sig</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$header</span><span class="p">,</span> <span class="nv">$pos</span> <span class="o">+</span> <span class="mi">6</span><span class="p">,</span> <span class="nv">$tmp_info</span><span class="p">[</span><span class="s1">&#39;size&#39;</span><span class="p">]);</span>
+
+        <span class="k">break</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Get file header</span>
+      <span class="nv">$header</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">,</span> <span class="nv">$pos</span><span class="p">,</span> <span class="mi">46</span><span class="p">);</span>
+
+      <span class="c1">// Unpack the header information</span>
+      <span class="nv">$header_info</span> <span class="o">=</span> <span class="o">@</span><span class="nb">unpack</span><span class="p">(</span><span class="s1">&#39;Vheader/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vversion_made_by/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vversion_needed/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vgeneral_purpose/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vcompression_method/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vlast_mod_time/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vlast_mod_date/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vcrc32/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vcompressed_size/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vuncompressed_size/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vname_length/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vextra_length/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vcomment_length/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vdisk_number/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vinternal_attributes/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vexternal_attributes/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Voffset&#39;</span><span class="p">,</span>
+                             <span class="nv">$header</span><span class="p">);</span>
+
+      <span class="c1">// Valid header?</span>
+      <span class="k">if</span><span class="p">(</span><span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;header&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">33639248</span><span class="p">)</span>
+        <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+      <span class="c1">// New position</span>
+      <span class="nv">$pos</span> <span class="o">+=</span> <span class="mi">46</span><span class="p">;</span>
+
+      <span class="c1">// Read out the file name</span>
+      <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">,</span> <span class="nv">$pos</span><span class="p">,</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;name_length&#39;</span><span class="p">]);</span>
+
+      <span class="c1">// New position</span>
+      <span class="nv">$pos</span> <span class="o">+=</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;name_length&#39;</span><span class="p">];</span>
+
+      <span class="c1">// Read out the extra stuff</span>
+      <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;extra&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">,</span> <span class="nv">$pos</span><span class="p">,</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;extra_length&#39;</span><span class="p">]);</span>
+
+      <span class="c1">// New position</span>
+      <span class="nv">$pos</span> <span class="o">+=</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;extra_length&#39;</span><span class="p">];</span>
+
+      <span class="c1">// Read out the comment</span>
+      <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;comment&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$cdr</span><span class="p">,</span> <span class="nv">$pos</span><span class="p">,</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;comment_length&#39;</span><span class="p">]);</span>
+
+      <span class="c1">// New position</span>
+      <span class="nv">$pos</span> <span class="o">+=</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;comment_length&#39;</span><span class="p">];</span>
+
+      <span class="c1">// Append this file/dir to the entry list</span>
+      <span class="nv">$entries</span><span class="p">[]</span> <span class="o">=</span> <span class="nv">$header_info</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// Check whether all entries where read sucessfully</span>
+    <span class="k">if</span><span class="p">(</span><span class="nb">count</span><span class="p">(</span><span class="nv">$entries</span><span class="p">)</span> <span class="o">!=</span> <span class="nv">$cd_entries</span><span class="p">)</span>
+      <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+    <span class="c1">// Handle files/dirs</span>
+    <span class="k">foreach</span><span class="p">(</span><span class="nv">$entries</span> <span class="k">as</span> <span class="nv">$entry</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">// Is a dir?</span>
+      <span class="k">if</span><span class="p">(</span><span class="nv">$entry</span><span class="p">[</span><span class="s1">&#39;external_attributes&#39;</span><span class="p">]</span> <span class="o">&amp;</span> <span class="mi">16</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">add_dir</span><span class="p">(</span><span class="nv">$entry</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]);</span>
+        <span class="k">continue</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Get local file header</span>
+      <span class="nv">$header</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="nv">$entry</span><span class="p">[</span><span class="s1">&#39;offset&#39;</span><span class="p">],</span> <span class="mi">30</span><span class="p">);</span>
+
+      <span class="c1">// Unpack the header information</span>
+      <span class="nv">$header_info</span> <span class="o">=</span> <span class="o">@</span><span class="nb">unpack</span><span class="p">(</span><span class="s1">&#39;Vheader/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vversion_needed/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vgeneral_purpose/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vcompression_method/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vlast_mod_time/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vlast_mod_date/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vcrc32/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vcompressed_size/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;Vuncompressed_size/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vname_length/&#39;</span><span class="o">.</span>
+                             <span class="s1">&#39;vextra_length&#39;</span><span class="p">,</span>
+                             <span class="nv">$header</span><span class="p">);</span>
+
+      <span class="c1">// Valid header?</span>
+      <span class="k">if</span><span class="p">(</span><span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;header&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">67324752</span><span class="p">)</span>
+        <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+      <span class="c1">// Get content start position</span>
+      <span class="nv">$start</span> <span class="o">=</span> <span class="nv">$entry</span><span class="p">[</span><span class="s1">&#39;offset&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="mi">30</span> <span class="o">+</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;name_length&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;extra_length&#39;</span><span class="p">];</span>
+
+      <span class="c1">// Get the compressed data</span>
+      <span class="nv">$data</span> <span class="o">=</span> <span class="nb">substr</span><span class="p">(</span><span class="nv">$string</span><span class="p">,</span> <span class="nv">$start</span><span class="p">,</span> <span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;compressed_size&#39;</span><span class="p">]);</span>
+
+      <span class="c1">// Detect compression type</span>
+      <span class="k">switch</span><span class="p">(</span><span class="nv">$header_info</span><span class="p">[</span><span class="s1">&#39;compression_method&#39;</span><span class="p">])</span> <span class="p">{</span>
+        <span class="c1">// No compression</span>
+        <span class="k">case</span> <span class="mi">0</span><span class="o">:</span>
+          <span class="c1">// Ne decompression needed</span>
+          <span class="nv">$content</span> <span class="o">=</span> <span class="nv">$data</span><span class="p">;</span>
+          <span class="k">break</span><span class="p">;</span>
+
+        <span class="c1">// Gzip</span>
+        <span class="k">case</span> <span class="mi">8</span><span class="o">:</span>
+          <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;gzinflate&#39;</span><span class="p">))</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+          <span class="c1">// Uncompress data</span>
+          <span class="nv">$content</span> <span class="o">=</span> <span class="nb">gzinflate</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
+
+        <span class="c1">// Bzip2</span>
+        <span class="k">case</span> <span class="mi">12</span><span class="o">:</span>
+          <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nb">function_exists</span><span class="p">(</span><span class="s1">&#39;bzdecompress&#39;</span><span class="p">))</span>
+            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+
+          <span class="c1">// Decompress data</span>
+          <span class="nv">$content</span> <span class="o">=</span> <span class="nb">bzdecompress</span><span class="p">(</span><span class="nv">$data</span><span class="p">);</span>
+          <span class="k">break</span><span class="p">;</span>
+
+        <span class="c1">// Compression not supported -&gt; error</span>
+        <span class="k">default</span><span class="o">:</span>
+          <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+      <span class="p">}</span>
+
+      <span class="c1">// Try to add file</span>
+      <span class="k">if</span><span class="p">(</span><span class="o">!</span><span class="nv">$this</span><span class="o">-&gt;</span><span class="na">add_file</span><span class="p">(</span><span class="nv">$entry</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">],</span> <span class="nv">$content</span><span class="p">))</span>
+        <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="k">return</span> <span class="k">true</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">function</span> <span class="o">&amp;</span><span class="nf">byref</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nv">$x</span> <span class="o">=</span> <span class="k">array</span><span class="p">();</span>
+    <span class="k">return</span> <span class="nv">$x</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="c1">// Test highlighting of magic methods and variables</span>
+<span class="k">class</span> <span class="nc">MagicClass</span> <span class="p">{</span>
+  <span class="k">public</span> <span class="nv">$magic_str</span><span class="p">;</span>
+  <span class="k">public</span> <span class="nv">$ordinary_str</span><span class="p">;</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="fm">__construct</span><span class="p">(</span><span class="nv">$some_var</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">magic_str</span> <span class="o">=</span> <span class="no">__FILE__</span><span class="p">;</span>
+    <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ordinary_str</span> <span class="o">=</span> <span class="nv">$some_var</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="fm">__toString</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">magic_str</span><span class="p">;</span>
+  <span class="p">}</span>
+
+  <span class="k">public</span> <span class="k">function</span> <span class="nf">nonMagic</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">ordinary_str</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="nv">$magic</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">MagicClass</span><span class="p">(</span><span class="no">__DIR__</span><span class="p">);</span>
+<span class="nx">__toString</span><span class="p">();</span>
+<span class="nv">$magic</span><span class="o">-&gt;</span><span class="na">nonMagic</span><span class="p">();</span>
+<span class="nv">$magic</span><span class="o">-&gt;</span><span class="na">__toString</span><span class="p">();</span>
+
+     <span class="k">echo</span> <span class="s">&lt;&lt;&lt;</span><span class="dl">EOF</span><span class="s"></span>
+
+<span class="s">     Test the heredocs...</span>
+
+<span class="s">     </span><span class="dl">EOF</span><span class="p">;</span>
+
+<span class="k">echo</span> <span class="s">&lt;&lt;&lt;&quot;</span><span class="dl">some_delimiter</span><span class="s">&quot;</span>
+<span class="s">more heredoc testing</span>
+<span class="s">continues on this line</span>
+<span class="dl">some_delimiter</span><span class="p">;</span>
+
+<span class="cp">?&gt;</span><span class="x"></span>
+</pre></div>
 </div>
-<div class="section" id="sample-scheme">
-<h2><a class="toc-backref" href="#this-page">Sample Scheme</a><a class="headerlink" href="#sample-scheme" title="Permalink to this headline">¶</a></h2>
-<p>Here's a screenshot of a color scheme used for highlighting.
-Development of that scheme started with the 'Prism higher lightness' scheme.</p>
-<div class="figure align-default">
-<a class="reference external image-reference" href="https://github.com/chriskempson/base16-builder/blob/master/schemes/"><img alt="colors and values of the scheme" src="../_images/scheme-prism-higher-lightness.png" /></a>
+<p>From highlightjs.org:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
+
+<span class="k">require_once</span> <span class="s1">&#39;Zend/Uri/Http.php&#39;</span><span class="p">;</span>
+
+<span class="k">namespace</span> <span class="nx">Location\Web</span><span class="p">;</span>
+
+<span class="k">interface</span> <span class="nx">Factory</span>
+<span class="p">{</span>
+    <span class="k">static</span> <span class="k">function</span> <span class="nf">_factory</span><span class="p">();</span>
+<span class="p">}</span>
+
+<span class="k">abstract</span> <span class="k">class</span> <span class="nc">URI</span> <span class="k">extends</span> <span class="nx">BaseURI</span> <span class="k">implements</span> <span class="nx">Factory</span>
+<span class="p">{</span>
+    <span class="k">abstract</span> <span class="k">function</span> <span class="nf">test</span><span class="p">();</span>
+
+    <span class="k">public</span> <span class="k">static</span> <span class="nv">$st1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="k">const</span> <span class="no">ME</span> <span class="o">=</span> <span class="s2">&quot;Yo&quot;</span><span class="p">;</span>
+    <span class="k">var</span> <span class="nv">$list</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">;</span>
+    <span class="k">private</span> <span class="nv">$var</span><span class="p">;</span>
+
+    <span class="sd">/**</span>
+<span class="sd">     * Returns a URI</span>
+<span class="sd">     *</span>
+<span class="sd">     * @return URI</span>
+<span class="sd">     */</span>
+    <span class="k">static</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">_factory</span><span class="p">(</span><span class="nv">$stats</span> <span class="o">=</span> <span class="k">array</span><span class="p">(),</span> <span class="nv">$uri</span> <span class="o">=</span> <span class="s1">&#39;http&#39;</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="k">echo</span> <span class="no">__METHOD__</span><span class="p">;</span>
+        <span class="nv">$uri</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nv">$uri</span><span class="p">,</span> <span class="mi">0</span><span class="nx">b10</span><span class="p">);</span>
+        <span class="nv">$schemeSpecific</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$uri</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$uri</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
+        <span class="nv">$desc</span> <span class="o">=</span> <span class="s1">&#39;Multi</span>
+<span class="s1">    line description&#39;</span><span class="p">;</span>
+
+        <span class="c1">// Security check</span>
+        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">ctype_alnum</span><span class="p">(</span><span class="nv">$scheme</span><span class="p">))</span> <span class="p">{</span>
+            <span class="k">throw</span> <span class="k">new</span> <span class="nx">Zend_Uri_Exception</span><span class="p">(</span><span class="s1">&#39;Illegal scheme&#39;</span><span class="p">);</span>
+        <span class="p">}</span>
+
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">var</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">-</span> <span class="nx">self</span><span class="o">::</span><span class="nv">$st</span><span class="p">;</span>
+        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">list</span> <span class="o">=</span> <span class="k">list</span><span class="p">(</span><span class="k">Array</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="o">=&gt;</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="o">=&gt;</span><span class="nx">self</span><span class="o">::</span><span class="na">ME</span><span class="p">,</span> <span class="mi">3</span> <span class="o">=&gt;</span> <span class="nx">\Location\Web\URI</span><span class="o">::</span><span class="na">class</span><span class="p">));</span>
+
+        <span class="k">return</span> <span class="p">[</span>
+            <span class="s1">&#39;uri&#39;</span>   <span class="o">=&gt;</span> <span class="nv">$uri</span><span class="p">,</span>
+            <span class="s1">&#39;value&#39;</span> <span class="o">=&gt;</span> <span class="k">null</span><span class="p">,</span>
+        <span class="p">];</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>We can easily change colors by switching to another list of 16 colors
-as available from the <a class="reference external" href="https://github.com/chriskempson/base16-builder">Base16 Builder</a>.
-As it turned out however some color tweaking usually seems necessary.</p>
+<p>From somewhere:</p>
+<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
+
+<span class="k">echo</span> <span class="nx">URI</span><span class="o">::</span><span class="na">ME</span> <span class="o">.</span> <span class="nx">URI</span><span class="o">::</span><span class="nv">$st1</span><span class="p">;</span>
+
+<span class="nb">__halt_compiler</span> <span class="p">()</span> <span class="p">;</span> <span class="nx">datahere</span>
+<span class="nx">datahere</span>
+<span class="nx">datahere</span> <span class="o">*/</span>
+<span class="nx">datahere</span>
+</pre></div>
 </div>
 </div>
 <div class="section" id="apache">
@@ -779,68 +1374,6 @@ you can write text [<span class="nt">with links</span>](<span class="na">https:/
 </pre></div>
 </div>
 </div>
-<div class="section" id="php">
-<h2><a class="toc-backref" href="#this-page">PHP</a><a class="headerlink" href="#php" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
-
-<span class="k">require_once</span> <span class="s1">&#39;Zend/Uri/Http.php&#39;</span><span class="p">;</span>
-
-<span class="k">namespace</span> <span class="nx">Location\Web</span><span class="p">;</span>
-
-<span class="k">interface</span> <span class="nx">Factory</span>
-<span class="p">{</span>
-    <span class="k">static</span> <span class="k">function</span> <span class="nf">_factory</span><span class="p">();</span>
-<span class="p">}</span>
-
-<span class="k">abstract</span> <span class="k">class</span> <span class="nc">URI</span> <span class="k">extends</span> <span class="nx">BaseURI</span> <span class="k">implements</span> <span class="nx">Factory</span>
-<span class="p">{</span>
-    <span class="k">abstract</span> <span class="k">function</span> <span class="nf">test</span><span class="p">();</span>
-
-    <span class="k">public</span> <span class="k">static</span> <span class="nv">$st1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-    <span class="k">const</span> <span class="no">ME</span> <span class="o">=</span> <span class="s2">&quot;Yo&quot;</span><span class="p">;</span>
-    <span class="k">var</span> <span class="nv">$list</span> <span class="o">=</span> <span class="k">NULL</span><span class="p">;</span>
-    <span class="k">private</span> <span class="nv">$var</span><span class="p">;</span>
-
-    <span class="sd">/**</span>
-<span class="sd">     * Returns a URI</span>
-<span class="sd">     *</span>
-<span class="sd">     * @return URI</span>
-<span class="sd">     */</span>
-    <span class="k">static</span> <span class="k">public</span> <span class="k">function</span> <span class="nf">_factory</span><span class="p">(</span><span class="nv">$stats</span> <span class="o">=</span> <span class="k">array</span><span class="p">(),</span> <span class="nv">$uri</span> <span class="o">=</span> <span class="s1">&#39;http&#39;</span><span class="p">)</span>
-    <span class="p">{</span>
-        <span class="k">echo</span> <span class="no">__METHOD__</span><span class="p">;</span>
-        <span class="nv">$uri</span> <span class="o">=</span> <span class="nb">explode</span><span class="p">(</span><span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nv">$uri</span><span class="p">,</span> <span class="mi">0</span><span class="nx">b10</span><span class="p">);</span>
-        <span class="nv">$schemeSpecific</span> <span class="o">=</span> <span class="nb">isset</span><span class="p">(</span><span class="nv">$uri</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="o">?</span> <span class="nv">$uri</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">:</span> <span class="s1">&#39;&#39;</span><span class="p">;</span>
-        <span class="nv">$desc</span> <span class="o">=</span> <span class="s1">&#39;Multi</span>
-<span class="s1">    line description&#39;</span><span class="p">;</span>
-
-        <span class="c1">// Security check</span>
-        <span class="k">if</span> <span class="p">(</span><span class="o">!</span><span class="nb">ctype_alnum</span><span class="p">(</span><span class="nv">$scheme</span><span class="p">))</span> <span class="p">{</span>
-            <span class="k">throw</span> <span class="k">new</span> <span class="nx">Zend_Uri_Exception</span><span class="p">(</span><span class="s1">&#39;Illegal scheme&#39;</span><span class="p">);</span>
-        <span class="p">}</span>
-
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">var</span> <span class="o">=</span> <span class="mi">0</span> <span class="o">-</span> <span class="nx">self</span><span class="o">::</span><span class="nv">$st</span><span class="p">;</span>
-        <span class="nv">$this</span><span class="o">-&gt;</span><span class="na">list</span> <span class="o">=</span> <span class="k">list</span><span class="p">(</span><span class="k">Array</span><span class="p">(</span><span class="s2">&quot;1&quot;</span><span class="o">=&gt;</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="o">=&gt;</span><span class="nx">self</span><span class="o">::</span><span class="na">ME</span><span class="p">,</span> <span class="mi">3</span> <span class="o">=&gt;</span> <span class="nx">\Location\Web\URI</span><span class="o">::</span><span class="na">class</span><span class="p">));</span>
-
-        <span class="k">return</span> <span class="p">[</span>
-            <span class="s1">&#39;uri&#39;</span>   <span class="o">=&gt;</span> <span class="nv">$uri</span><span class="p">,</span>
-            <span class="s1">&#39;value&#39;</span> <span class="o">=&gt;</span> <span class="k">null</span><span class="p">,</span>
-        <span class="p">];</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</pre></div>
-</div>
-<div class="highlight-php notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;?</span><span class="nx">php</span>
-
-<span class="k">echo</span> <span class="nx">URI</span><span class="o">::</span><span class="na">ME</span> <span class="o">.</span> <span class="nx">URI</span><span class="o">::</span><span class="nv">$st1</span><span class="p">;</span>
-
-<span class="nb">__halt_compiler</span> <span class="p">()</span> <span class="p">;</span> <span class="nx">datahere</span>
-<span class="nx">datahere</span>
-<span class="nx">datahere</span> <span class="o">*/</span>
-<span class="nx">datahere</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="python">
 <h2><a class="toc-backref" href="#this-page">Python</a><a class="headerlink" href="#python" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="nd">@requires_authorization</span>
@@ -948,945 +1481,6 @@ you can write text [<span class="nt">with links</span>](<span class="na">https:/
 </pre></div>
 </div>
 </div>
-<div class="section" id="pymentize-l">
-<h2><a class="toc-backref" href="#this-page">pymentize -L</a><a class="headerlink" href="#pymentize-l" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>2021-07-14
-
-dockrun_t3rd bashcmd &quot;pygmentize -L lexers&quot;
-
-Pygments version 2.5.2, (c) 2006-2019 by Georg Brandl.
-
-<span class="gh">Lexers:</span>
-<span class="gh">~~~~~~~</span>
-<span class="m">*</span> abap:
-    ABAP (filenames <span class="ge">*.abap, *</span>.ABAP)
-<span class="m">*</span> abnf:
-    ABNF (filenames *.abnf)
-<span class="m">*</span> ada, ada95, ada2005:
-    Ada (filenames <span class="ge">*.adb, *</span>.ads, *.ada)
-<span class="m">*</span> adl:
-    ADL (filenames <span class="ge">*.adl, *</span>.adls, <span class="ge">*.adlf, *</span>.adlx)
-<span class="m">*</span> agda:
-    Agda (filenames *.agda)
-<span class="m">*</span> aheui:
-    Aheui (filenames *.aheui)
-<span class="m">*</span> ahk, autohotkey:
-    autohotkey (filenames <span class="ge">*.ahk, *</span>.ahkl)
-<span class="m">*</span> alloy:
-    Alloy (filenames *.als)
-<span class="m">*</span> ampl:
-    Ampl (filenames *.run)
-<span class="m">*</span> antlr-as, antlr-actionscript:
-    ANTLR With ActionScript Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-cpp:
-    ANTLR With CPP Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-csharp, antlr-c#:
-    ANTLR With C# Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-java:
-    ANTLR With Java Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-objc:
-    ANTLR With ObjectiveC Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-perl:
-    ANTLR With Perl Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-python:
-    ANTLR With Python Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr-ruby, antlr-rb:
-    ANTLR With Ruby Target (filenames <span class="ge">*.G, *</span>.g)
-<span class="m">*</span> antlr:
-    ANTLR
-<span class="m">*</span> apacheconf, aconf, apache:
-    ApacheConf (filenames .htaccess, apache.conf, apache2.conf)
-<span class="m">*</span> apl:
-    APL (filenames *.apl)
-<span class="m">*</span> applescript:
-    AppleScript (filenames *.applescript)
-<span class="m">*</span> arduino:
-    Arduino (filenames *.ino)
-<span class="m">*</span> as, actionscript:
-    ActionScript (filenames *.as)
-<span class="m">*</span> as3, actionscript3:
-    ActionScript 3 (filenames *.as)
-<span class="m">*</span> aspectj:
-    AspectJ (filenames *.aj)
-<span class="m">*</span> aspx-cs:
-    aspx-cs (filenames <span class="ge">*.aspx, *</span>.asax, <span class="ge">*.ascx, *</span>.ashx, <span class="ge">*.asmx, *</span>.axd)
-<span class="m">*</span> aspx-vb:
-    aspx-vb (filenames <span class="ge">*.aspx, *</span>.asax, <span class="ge">*.ascx, *</span>.ashx, <span class="ge">*.asmx, *</span>.axd)
-<span class="m">*</span> asy, asymptote:
-    Asymptote (filenames *.asy)
-<span class="m">*</span> at, ambienttalk, ambienttalk/2:
-    AmbientTalk (filenames *.at)
-<span class="m">*</span> augeas:
-    Augeas (filenames *.aug)
-<span class="m">*</span> autoit:
-    AutoIt (filenames *.au3)
-<span class="m">*</span> awk, gawk, mawk, nawk:
-    Awk (filenames *.awk)
-<span class="m">*</span> basemake:
-    Base Makefile
-<span class="m">*</span> bash, sh, ksh, zsh, shell:
-    Bash (filenames <span class="ge">*.sh, *</span>.ksh, <span class="ge">*.bash, *</span>.ebuild, <span class="ge">*.eclass, *</span>.exheres-0, <span class="ge">*.exlib, *</span>.zsh, .bashrc, bashrc, .bash_<span class="ge">*, bash_*</span>, zshrc, .zshrc, PKGBUILD)
-<span class="m">*</span> bat, batch, dosbatch, winbatch:
-    Batchfile (filenames <span class="ge">*.bat, *</span>.cmd)
-<span class="m">*</span> bbcbasic:
-    BBC Basic (filenames *.bbc)
-<span class="m">*</span> bbcode:
-    BBCode
-<span class="m">*</span> bc:
-    BC (filenames *.bc)
-<span class="m">*</span> befunge:
-    Befunge (filenames *.befunge)
-<span class="m">*</span> bib, bibtex:
-    BibTeX (filenames *.bib)
-<span class="m">*</span> blitzbasic, b3d, bplus:
-    BlitzBasic (filenames <span class="ge">*.bb, *</span>.decls)
-<span class="m">*</span> blitzmax, bmax:
-    BlitzMax (filenames *.bmx)
-<span class="m">*</span> bnf:
-    BNF (filenames *.bnf)
-<span class="m">*</span> boa:
-    Boa (filenames *.boa)
-<span class="m">*</span> boo:
-    Boo (filenames *.boo)
-<span class="m">*</span> boogie:
-    Boogie (filenames *.bpl)
-<span class="m">*</span> brainfuck, bf:
-    Brainfuck (filenames <span class="ge">*.bf, *</span>.b)
-<span class="m">*</span> bst, bst-pybtex:
-    BST (filenames *.bst)
-<span class="m">*</span> bugs, winbugs, openbugs:
-    BUGS (filenames *.bug)
-<span class="m">*</span> c-objdump:
-    c-objdump (filenames *.c-objdump)
-<span class="m">*</span> c:
-    C (filenames <span class="ge">*.c, *</span>.h, *.idc)
-<span class="m">*</span> ca65:
-    ca65 assembler (filenames *.s)
-<span class="m">*</span> cadl:
-    cADL (filenames *.cadl)
-<span class="m">*</span> camkes, idl4:
-    CAmkES (filenames <span class="ge">*.camkes, *</span>.idl4)
-<span class="m">*</span> capdl:
-    CapDL (filenames *.cdl)
-<span class="m">*</span> capnp:
-    Cap&#39;n Proto (filenames *.capnp)
-<span class="m">*</span> cbmbas:
-    CBM BASIC V2 (filenames *.bas)
-<span class="m">*</span> ceylon:
-    Ceylon (filenames *.ceylon)
-<span class="m">*</span> cfc:
-    Coldfusion CFC (filenames *.cfc)
-<span class="m">*</span> cfengine3, cf3:
-    CFEngine3 (filenames *.cf)
-<span class="m">*</span> cfm:
-    Coldfusion HTML (filenames <span class="ge">*.cfm, *</span>.cfml)
-<span class="m">*</span> cfs:
-    cfstatement
-<span class="m">*</span> chai, chaiscript:
-    ChaiScript (filenames *.chai)
-<span class="m">*</span> chapel, chpl:
-    Chapel (filenames *.chpl)
-<span class="m">*</span> charmci:
-    Charmci (filenames *.ci)
-<span class="m">*</span> cheetah, spitfire:
-    Cheetah (filenames <span class="ge">*.tmpl, *</span>.spt)
-<span class="m">*</span> cirru:
-    Cirru (filenames *.cirru)
-<span class="m">*</span> clay:
-    Clay (filenames *.clay)
-<span class="m">*</span> clean:
-    Clean (filenames <span class="ge">*.icl, *</span>.dcl)
-<span class="m">*</span> clojure, clj:
-    Clojure (filenames *.clj)
-<span class="m">*</span> clojurescript, cljs:
-    ClojureScript (filenames *.cljs)
-<span class="m">*</span> cmake:
-    CMake (filenames *.cmake, CMakeLists.txt)
-<span class="m">*</span> cobol:
-    COBOL (filenames <span class="ge">*.cob, *</span>.COB, <span class="ge">*.cpy, *</span>.CPY)
-<span class="m">*</span> cobolfree:
-    COBOLFree (filenames <span class="ge">*.cbl, *</span>.CBL)
-<span class="m">*</span> coffee-script, coffeescript, coffee:
-    CoffeeScript (filenames *.coffee)
-<span class="m">*</span> common-lisp, cl, lisp:
-    Common Lisp (filenames <span class="ge">*.cl, *</span>.lisp)
-<span class="m">*</span> componentpascal, cp:
-    Component Pascal (filenames <span class="ge">*.cp, *</span>.cps)
-<span class="m">*</span> console, shell-session:
-    Bash Session (filenames <span class="ge">*.sh-session, *</span>.shell-session)
-<span class="m">*</span> control, debcontrol:
-    Debian Control file (filenames control)
-<span class="m">*</span> coq:
-    Coq (filenames *.v)
-<span class="m">*</span> cpp, c++:
-    C++ (filenames <span class="ge">*.cpp, *</span>.hpp, <span class="ge">*.c++, *</span>.h++, <span class="ge">*.cc, *</span>.hh, <span class="ge">*.cxx, *</span>.hxx, <span class="ge">*.C, *</span>.H, <span class="ge">*.cp, *</span>.CPP)
-<span class="m">*</span> cpp-objdump, c++-objdumb, cxx-objdump:
-    cpp-objdump (filenames <span class="ge">*.cpp-objdump, *</span>.c++-objdump, *.cxx-objdump)
-<span class="m">*</span> cpsa:
-    CPSA (filenames *.cpsa)
-<span class="m">*</span> cr, crystal:
-    Crystal (filenames *.cr)
-<span class="m">*</span> crmsh, pcmk:
-    Crmsh (filenames <span class="ge">*.crmsh, *</span>.pcmk)
-<span class="m">*</span> croc:
-    Croc (filenames *.croc)
-<span class="m">*</span> cryptol, cry:
-    Cryptol (filenames *.cry)
-<span class="m">*</span> csharp, c#:
-    C# (filenames *.cs)
-<span class="m">*</span> csound, csound-orc:
-    Csound Orchestra (filenames <span class="ge">*.orc, *</span>.udo)
-<span class="m">*</span> csound-document, csound-csd:
-    Csound Document (filenames *.csd)
-<span class="m">*</span> csound-score, csound-sco:
-    Csound Score (filenames *.sco)
-<span class="m">*</span> css+django, css+jinja:
-    CSS+Django/Jinja
-<span class="m">*</span> css+erb, css+ruby:
-    CSS+Ruby
-<span class="m">*</span> css+genshitext, css+genshi:
-    CSS+Genshi Text
-<span class="m">*</span> css+lasso:
-    CSS+Lasso
-<span class="m">*</span> css+mako:
-    CSS+Mako
-<span class="m">*</span> css+mozpreproc:
-    CSS+mozpreproc (filenames *.css.in)
-<span class="m">*</span> css+myghty:
-    CSS+Myghty
-<span class="m">*</span> css+php:
-    CSS+PHP
-<span class="m">*</span> css+smarty:
-    CSS+Smarty
-<span class="m">*</span> css:
-    CSS (filenames *.css)
-<span class="m">*</span> cucumber, gherkin:
-    Gherkin (filenames *.feature)
-<span class="m">*</span> cuda, cu:
-    CUDA (filenames <span class="ge">*.cu, *</span>.cuh)
-<span class="m">*</span> cypher:
-    Cypher (filenames <span class="ge">*.cyp, *</span>.cypher)
-<span class="m">*</span> cython, pyx, pyrex:
-    Cython (filenames <span class="ge">*.pyx, *</span>.pxd, *.pxi)
-<span class="m">*</span> d-objdump:
-    d-objdump (filenames *.d-objdump)
-<span class="m">*</span> d:
-    D (filenames <span class="ge">*.d, *</span>.di)
-<span class="m">*</span> dart:
-    Dart (filenames *.dart)
-<span class="m">*</span> dasm16:
-    DASM16 (filenames <span class="ge">*.dasm16, *</span>.dasm)
-<span class="m">*</span> delphi, pas, pascal, objectpascal:
-    Delphi (filenames <span class="ge">*.pas, *</span>.dpr)
-<span class="m">*</span> dg:
-    dg (filenames *.dg)
-<span class="m">*</span> diff, udiff:
-    Diff (filenames <span class="ge">*.diff, *</span>.patch)
-<span class="m">*</span> django, jinja:
-    Django/Jinja
-<span class="m">*</span> docker, dockerfile:
-    Docker (filenames Dockerfile, *.docker)
-<span class="m">*</span> doscon:
-    MSDOS Session
-<span class="m">*</span> dpatch:
-    Darcs Patch (filenames <span class="ge">*.dpatch, *</span>.darcspatch)
-<span class="m">*</span> dtd:
-    DTD (filenames *.dtd)
-<span class="m">*</span> duel, jbst, jsonml+bst:
-    Duel (filenames <span class="ge">*.duel, *</span>.jbst)
-<span class="m">*</span> dylan-console, dylan-repl:
-    Dylan session (filenames *.dylan-console)
-<span class="m">*</span> dylan-lid, lid:
-    DylanLID (filenames <span class="ge">*.lid, *</span>.hdp)
-<span class="m">*</span> dylan:
-    Dylan (filenames <span class="ge">*.dylan, *</span>.dyl, *.intr)
-<span class="m">*</span> earl-grey, earlgrey, eg:
-    Earl Grey (filenames *.eg)
-<span class="m">*</span> easytrieve:
-    Easytrieve (filenames <span class="ge">*.ezt, *</span>.mac)
-<span class="m">*</span> ebnf:
-    EBNF (filenames *.ebnf)
-<span class="m">*</span> ec:
-    eC (filenames <span class="ge">*.ec, *</span>.eh)
-<span class="m">*</span> ecl:
-    ECL (filenames *.ecl)
-<span class="m">*</span> eiffel:
-    Eiffel (filenames *.e)
-<span class="m">*</span> elixir, ex, exs:
-    Elixir (filenames <span class="ge">*.ex, *</span>.exs)
-<span class="m">*</span> elm:
-    Elm (filenames *.elm)
-<span class="m">*</span> emacs, elisp, emacs-lisp:
-    EmacsLisp (filenames *.el)
-<span class="m">*</span> email, eml:
-    E-mail (filenames *.eml)
-<span class="m">*</span> erb:
-    ERB
-<span class="m">*</span> erl:
-    Erlang erl session (filenames *.erl-sh)
-<span class="m">*</span> erlang:
-    Erlang (filenames <span class="ge">*.erl, *</span>.hrl, <span class="ge">*.es, *</span>.escript)
-<span class="m">*</span> evoque:
-    Evoque (filenames *.evoque)
-<span class="m">*</span> extempore:
-    xtlang (filenames *.xtm)
-<span class="m">*</span> ezhil:
-    Ezhil (filenames *.n)
-<span class="m">*</span> factor:
-    Factor (filenames *.factor)
-<span class="m">*</span> fan:
-    Fantom (filenames *.fan)
-<span class="m">*</span> fancy, fy:
-    Fancy (filenames <span class="ge">*.fy, *</span>.fancypack)
-<span class="m">*</span> felix, flx:
-    Felix (filenames <span class="ge">*.flx, *</span>.flxh)
-<span class="m">*</span> fennel, fnl:
-    Fennel (filenames *.fnl)
-<span class="m">*</span> fish, fishshell:
-    Fish (filenames <span class="ge">*.fish, *</span>.load)
-<span class="m">*</span> flatline:
-    Flatline
-<span class="m">*</span> floscript, flo:
-    FloScript (filenames *.flo)
-<span class="m">*</span> forth:
-    Forth (filenames <span class="ge">*.frt, *</span>.fs)
-<span class="m">*</span> fortran:
-    Fortran (filenames <span class="ge">*.f03, *</span>.f90, <span class="ge">*.F03, *</span>.F90)
-<span class="m">*</span> fortranfixed:
-    FortranFixed (filenames <span class="ge">*.f, *</span>.F)
-<span class="m">*</span> foxpro, vfp, clipper, xbase:
-    FoxPro (filenames <span class="ge">*.PRG, *</span>.prg)
-<span class="m">*</span> freefem:
-    Freefem (filenames *.edp)
-<span class="m">*</span> fsharp, f#:
-    F# (filenames <span class="ge">*.fs, *</span>.fsi)
-<span class="m">*</span> gap:
-    GAP (filenames <span class="ge">*.g, *</span>.gd, <span class="ge">*.gi, *</span>.gap)
-<span class="m">*</span> gas, asm:
-    GAS (filenames <span class="ge">*.s, *</span>.S)
-<span class="m">*</span> genshi, kid, xml+genshi, xml+kid:
-    Genshi (filenames *.kid)
-<span class="m">*</span> genshitext:
-    Genshi Text
-<span class="m">*</span> glsl:
-    GLSL (filenames <span class="ge">*.vert, *</span>.frag, *.geo)
-<span class="m">*</span> gnuplot:
-    Gnuplot (filenames <span class="ge">*.plot, *</span>.plt)
-<span class="m">*</span> go:
-    Go (filenames *.go)
-<span class="m">*</span> golo:
-    Golo (filenames *.golo)
-<span class="m">*</span> gooddata-cl:
-    GoodData-CL (filenames *.gdc)
-<span class="m">*</span> gosu:
-    Gosu (filenames <span class="ge">*.gs, *</span>.gsx, <span class="ge">*.gsp, *</span>.vark)
-<span class="m">*</span> groff, nroff, man:
-    Groff (filenames <span class="ge">*.[1234567], *</span>.man)
-<span class="m">*</span> groovy:
-    Groovy (filenames <span class="ge">*.groovy, *</span>.gradle)
-<span class="m">*</span> gst:
-    Gosu Template (filenames *.gst)
-<span class="m">*</span> haml:
-    Haml (filenames *.haml)
-<span class="m">*</span> handlebars:
-    Handlebars
-<span class="m">*</span> haskell, hs:
-    Haskell (filenames *.hs)
-<span class="m">*</span> haxeml, hxml:
-    Hxml (filenames *.hxml)
-<span class="m">*</span> hexdump:
-    Hexdump
-<span class="m">*</span> hlsl:
-    HLSL (filenames <span class="ge">*.hlsl, *</span>.hlsli)
-<span class="m">*</span> hsail, hsa:
-    HSAIL (filenames *.hsail)
-<span class="m">*</span> hspec:
-    Hspec
-<span class="m">*</span> html+cheetah, html+spitfire, htmlcheetah:
-    HTML+Cheetah
-<span class="m">*</span> html+django, html+jinja, htmldjango:
-    HTML+Django/Jinja
-<span class="m">*</span> html+evoque:
-    HTML+Evoque (filenames *.html)
-<span class="m">*</span> html+genshi, html+kid:
-    HTML+Genshi
-<span class="m">*</span> html+handlebars:
-    HTML+Handlebars (filenames <span class="ge">*.handlebars, *</span>.hbs)
-<span class="m">*</span> html+lasso:
-    HTML+Lasso
-<span class="m">*</span> html+mako:
-    HTML+Mako
-<span class="m">*</span> html+myghty:
-    HTML+Myghty
-<span class="m">*</span> html+ng2:
-    HTML + Angular2 (filenames *.ng2)
-<span class="m">*</span> html+php:
-    HTML+PHP (filenames *.phtml)
-<span class="m">*</span> html+smarty:
-    HTML+Smarty
-<span class="m">*</span> html+twig:
-    HTML+Twig (filenames *.twig)
-<span class="m">*</span> html+velocity:
-    HTML+Velocity
-<span class="m">*</span> html:
-    HTML (filenames <span class="ge">*.html, *</span>.htm, <span class="ge">*.xhtml, *</span>.xslt)
-<span class="m">*</span> http:
-    HTTP
-<span class="m">*</span> hx, haxe, hxsl:
-    Haxe (filenames <span class="ge">*.hx, *</span>.hxsl)
-<span class="m">*</span> hybris, hy:
-    Hybris (filenames <span class="ge">*.hy, *</span>.hyb)
-<span class="m">*</span> hylang:
-    Hy (filenames *.hy)
-<span class="m">*</span> i6t:
-    Inform 6 template (filenames *.i6t)
-<span class="m">*</span> icon:
-    Icon (filenames <span class="ge">*.icon, *</span>.ICON)
-<span class="m">*</span> idl:
-    IDL (filenames *.pro)
-<span class="m">*</span> idris, idr:
-    Idris (filenames *.idr)
-<span class="m">*</span> iex:
-    Elixir iex session
-<span class="m">*</span> igor, igorpro:
-    Igor (filenames *.ipf)
-<span class="m">*</span> inform6, i6:
-    Inform 6 (filenames *.inf)
-<span class="m">*</span> inform7, i7:
-    Inform 7 (filenames <span class="ge">*.ni, *</span>.i7x)
-<span class="m">*</span> ini, cfg, dosini:
-    INI (filenames <span class="ge">*.ini, *</span>.cfg, *.inf)
-<span class="m">*</span> io:
-    Io (filenames *.io)
-<span class="m">*</span> ioke, ik:
-    Ioke (filenames *.ik)
-<span class="m">*</span> irc:
-    IRC logs (filenames *.weechatlog)
-<span class="m">*</span> isabelle:
-    Isabelle (filenames *.thy)
-<span class="m">*</span> j:
-    J (filenames *.ijs)
-<span class="m">*</span> jags:
-    JAGS (filenames <span class="ge">*.jag, *</span>.bug)
-<span class="m">*</span> jasmin, jasminxt:
-    Jasmin (filenames *.j)
-<span class="m">*</span> java:
-    Java (filenames *.java)
-<span class="m">*</span> javascript+mozpreproc:
-    Javascript+mozpreproc (filenames *.js.in)
-<span class="m">*</span> jcl:
-    JCL (filenames *.jcl)
-<span class="m">*</span> jlcon:
-    Julia console
-<span class="m">*</span> js+cheetah, javascript+cheetah, js+spitfire, javascript+spitfire:
-    JavaScript+Cheetah
-<span class="m">*</span> js+django, javascript+django, js+jinja, javascript+jinja:
-    JavaScript+Django/Jinja
-<span class="m">*</span> js+erb, javascript+erb, js+ruby, javascript+ruby:
-    JavaScript+Ruby
-<span class="m">*</span> js+genshitext, js+genshi, javascript+genshitext, javascript+genshi:
-    JavaScript+Genshi Text
-<span class="m">*</span> js+lasso, javascript+lasso:
-    JavaScript+Lasso
-<span class="m">*</span> js+mako, javascript+mako:
-    JavaScript+Mako
-<span class="m">*</span> js+myghty, javascript+myghty:
-    JavaScript+Myghty
-<span class="m">*</span> js+php, javascript+php:
-    JavaScript+PHP
-<span class="m">*</span> js+smarty, javascript+smarty:
-    JavaScript+Smarty
-<span class="m">*</span> js, javascript:
-    JavaScript (filenames <span class="ge">*.js, *</span>.jsm)
-<span class="m">*</span> jsgf:
-    JSGF (filenames *.jsgf)
-<span class="m">*</span> json-object:
-    JSONBareObject
-<span class="m">*</span> json:
-    JSON (filenames *.json)
-<span class="m">*</span> jsonld, json-ld:
-    JSON-LD (filenames *.jsonld)
-<span class="m">*</span> jsp:
-    Java Server Page (filenames *.jsp)
-<span class="m">*</span> julia, jl:
-    Julia (filenames *.jl)
-<span class="m">*</span> juttle, juttle:
-    Juttle (filenames *.juttle)
-<span class="m">*</span> kal:
-    Kal (filenames *.kal)
-<span class="m">*</span> kconfig, menuconfig, linux-config, kernel-config:
-    Kconfig (filenames Kconfig, <span class="ge">*Config.in*</span>, external.in*, standard-modules.in)
-<span class="m">*</span> koka:
-    Koka (filenames <span class="ge">*.kk, *</span>.kki)
-<span class="m">*</span> kotlin:
-    Kotlin (filenames *.kt)
-<span class="m">*</span> lagda, literate-agda:
-    Literate Agda (filenames *.lagda)
-<span class="m">*</span> lasso, lassoscript:
-    Lasso (filenames <span class="ge">*.lasso, *</span>.lasso[89])
-<span class="m">*</span> lcry, literate-cryptol, lcryptol:
-    Literate Cryptol (filenames *.lcry)
-<span class="m">*</span> lean:
-    Lean (filenames *.lean)
-<span class="m">*</span> less:
-    LessCss (filenames *.less)
-<span class="m">*</span> lhs, literate-haskell, lhaskell:
-    Literate Haskell (filenames *.lhs)
-<span class="m">*</span> lidr, literate-idris, lidris:
-    Literate Idris (filenames *.lidr)
-<span class="m">*</span> lighty, lighttpd:
-    Lighttpd configuration file
-<span class="m">*</span> limbo:
-    Limbo (filenames *.b)
-<span class="m">*</span> liquid:
-    liquid (filenames *.liquid)
-<span class="m">*</span> live-script, livescript:
-    LiveScript (filenames *.ls)
-<span class="m">*</span> llvm:
-    LLVM (filenames *.ll)
-<span class="m">*</span> logos:
-    Logos (filenames <span class="ge">*.x, *</span>.xi, <span class="ge">*.xm, *</span>.xmi)
-<span class="m">*</span> logtalk:
-    Logtalk (filenames <span class="ge">*.lgt, *</span>.logtalk)
-<span class="m">*</span> lsl:
-    LSL (filenames *.lsl)
-<span class="m">*</span> lua:
-    Lua (filenames <span class="ge">*.lua, *</span>.wlua)
-<span class="m">*</span> make, makefile, mf, bsdmake:
-    Makefile (filenames <span class="ge">*.mak, *</span>.mk, Makefile, makefile, Makefile.*, GNUmakefile)
-<span class="m">*</span> mako:
-    Mako (filenames *.mao)
-<span class="m">*</span> maql:
-    MAQL (filenames *.maql)
-<span class="m">*</span> mask:
-    Mask (filenames *.mask)
-<span class="m">*</span> mason:
-    Mason (filenames <span class="ge">*.m, *</span>.mhtml, <span class="ge">*.mc, *</span>.mi, autohandler, dhandler)
-<span class="m">*</span> mathematica, mma, nb:
-    Mathematica (filenames <span class="ge">*.nb, *</span>.cdf, <span class="ge">*.nbp, *</span>.ma)
-<span class="m">*</span> matlab:
-    Matlab (filenames *.m)
-<span class="m">*</span> matlabsession:
-    Matlab session
-<span class="m">*</span> md:
-    markdown (filenames *.md)
-<span class="m">*</span> mime:
-    MIME
-<span class="m">*</span> minid:
-    MiniD
-<span class="m">*</span> modelica:
-    Modelica (filenames *.mo)
-<span class="m">*</span> modula2, m2:
-    Modula-2 (filenames <span class="ge">*.def, *</span>.mod)
-<span class="m">*</span> monkey:
-    Monkey (filenames *.monkey)
-<span class="m">*</span> monte:
-    Monte (filenames *.mt)
-<span class="m">*</span> moocode, moo:
-    MOOCode (filenames *.moo)
-<span class="m">*</span> moon, moonscript:
-    MoonScript (filenames *.moon)
-<span class="m">*</span> mozhashpreproc:
-    mozhashpreproc
-<span class="m">*</span> mozpercentpreproc:
-    mozpercentpreproc
-<span class="m">*</span> mql, mq4, mq5, mql4, mql5:
-    MQL (filenames <span class="ge">*.mq4, *</span>.mq5, *.mqh)
-<span class="m">*</span> mscgen, msc:
-    Mscgen (filenames *.msc)
-<span class="m">*</span> mupad:
-    MuPAD (filenames *.mu)
-<span class="m">*</span> mxml:
-    MXML (filenames *.mxml)
-<span class="m">*</span> myghty:
-    Myghty (filenames *.myt, autodelegate)
-<span class="m">*</span> mysql:
-    MySQL
-<span class="m">*</span> nasm:
-    NASM (filenames <span class="ge">*.asm, *</span>.ASM)
-<span class="m">*</span> ncl:
-    NCL (filenames *.ncl)
-<span class="m">*</span> nemerle:
-    Nemerle (filenames *.n)
-<span class="m">*</span> nesc:
-    nesC (filenames *.nc)
-<span class="m">*</span> newlisp:
-    NewLisp (filenames <span class="ge">*.lsp, *</span>.nl, *.kif)
-<span class="m">*</span> newspeak:
-    Newspeak (filenames *.ns2)
-<span class="m">*</span> ng2:
-    Angular2
-<span class="m">*</span> nginx:
-    Nginx configuration file (filenames nginx.conf)
-<span class="m">*</span> nim, nimrod:
-    Nimrod (filenames <span class="ge">*.nim, *</span>.nimrod)
-<span class="m">*</span> nit:
-    Nit (filenames *.nit)
-<span class="m">*</span> nixos, nix:
-    Nix (filenames *.nix)
-<span class="m">*</span> notmuch:
-    Notmuch
-<span class="m">*</span> nsis, nsi, nsh:
-    NSIS (filenames <span class="ge">*.nsi, *</span>.nsh)
-<span class="m">*</span> numpy:
-    NumPy
-<span class="m">*</span> nusmv:
-    NuSMV (filenames *.smv)
-<span class="m">*</span> objdump-nasm:
-    objdump-nasm (filenames *.objdump-intel)
-<span class="m">*</span> objdump:
-    objdump (filenames *.objdump)
-<span class="m">*</span> objective-c++, objectivec++, obj-c++, objc++:
-    Objective-C++ (filenames <span class="ge">*.mm, *</span>.hh)
-<span class="m">*</span> objective-c, objectivec, obj-c, objc:
-    Objective-C (filenames <span class="ge">*.m, *</span>.h)
-<span class="m">*</span> objective-j, objectivej, obj-j, objj:
-    Objective-J (filenames *.j)
-<span class="m">*</span> ocaml:
-    OCaml (filenames <span class="ge">*.ml, *</span>.mli, <span class="ge">*.mll, *</span>.mly)
-<span class="m">*</span> octave:
-    Octave (filenames *.m)
-<span class="m">*</span> odin:
-    ODIN (filenames *.odin)
-<span class="m">*</span> ooc:
-    Ooc (filenames *.ooc)
-<span class="m">*</span> opa:
-    Opa (filenames *.opa)
-<span class="m">*</span> openedge, abl, progress:
-    OpenEdge ABL (filenames <span class="ge">*.p, *</span>.cls)
-<span class="m">*</span> pacmanconf:
-    PacmanConf (filenames pacman.conf)
-<span class="m">*</span> pan:
-    Pan (filenames *.pan)
-<span class="m">*</span> parasail:
-    ParaSail (filenames <span class="ge">*.psi, *</span>.psl)
-<span class="m">*</span> pawn:
-    Pawn (filenames <span class="ge">*.p, *</span>.pwn, *.inc)
-<span class="m">*</span> perl, pl:
-    Perl (filenames <span class="ge">*.pl, *</span>.pm, *.t)
-<span class="m">*</span> perl6, pl6:
-    Perl6 (filenames <span class="ge">*.pl, *</span>.pm, <span class="ge">*.nqp, *</span>.p6, <span class="ge">*.6pl, *</span>.p6l, <span class="ge">*.pl6, *</span>.6pm, <span class="ge">*.p6m, *</span>.pm6, *.t)
-<span class="m">*</span> php, php3, php4, php5:
-    PHP (filenames <span class="ge">*.php, *</span>.php[345], *.inc)
-<span class="m">*</span> pig:
-    Pig (filenames *.pig)
-<span class="m">*</span> pike:
-    Pike (filenames <span class="ge">*.pike, *</span>.pmod)
-<span class="m">*</span> pkgconfig:
-    PkgConfig (filenames *.pc)
-<span class="m">*</span> plpgsql:
-    PL/pgSQL
-<span class="m">*</span> pony:
-    Pony (filenames *.pony)
-<span class="m">*</span> postgresql, postgres:
-    PostgreSQL SQL dialect
-<span class="m">*</span> postscript, postscr:
-    PostScript (filenames <span class="ge">*.ps, *</span>.eps)
-<span class="m">*</span> pot, po:
-    Gettext Catalog (filenames <span class="ge">*.pot, *</span>.po)
-<span class="m">*</span> pov:
-    POVRay (filenames <span class="ge">*.pov, *</span>.inc)
-<span class="m">*</span> powershell, posh, ps1, psm1:
-    PowerShell (filenames <span class="ge">*.ps1, *</span>.psm1)
-<span class="m">*</span> praat:
-    Praat (filenames <span class="ge">*.praat, *</span>.proc, *.psc)
-<span class="m">*</span> prolog:
-    Prolog (filenames <span class="ge">*.ecl, *</span>.prolog, <span class="ge">*.pro, *</span>.pl)
-<span class="m">*</span> properties, jproperties:
-    Properties (filenames *.properties)
-<span class="m">*</span> protobuf, proto:
-    Protocol Buffer (filenames *.proto)
-<span class="m">*</span> ps1con:
-    PowerShell Session
-<span class="m">*</span> psql, postgresql-console, postgres-console:
-    PostgreSQL console (psql)
-<span class="m">*</span> pug, jade:
-    Pug (filenames <span class="ge">*.pug, *</span>.jade)
-<span class="m">*</span> puppet:
-    Puppet (filenames *.pp)
-<span class="m">*</span> py2tb:
-    Python 2.x Traceback (filenames *.py2tb)
-<span class="m">*</span> pycon:
-    Python console session
-<span class="m">*</span> pypylog, pypy:
-    PyPy Log (filenames *.pypylog)
-<span class="m">*</span> pytb, py3tb:
-    Python Traceback (filenames <span class="ge">*.pytb, *</span>.py3tb)
-<span class="m">*</span> python, py, sage, python3, py3:
-    Python (filenames <span class="ge">*.py, *</span>.pyw, <span class="ge">*.jy, *</span>.sage, <span class="ge">*.sc, SConstruct, SConscript, *</span>.bzl, BUCK, BUILD, BUILD.bazel, WORKSPACE, *.tac)
-<span class="m">*</span> python2, py2:
-    Python 2.x
-<span class="m">*</span> qbasic, basic:
-    QBasic (filenames <span class="ge">*.BAS, *</span>.bas)
-<span class="m">*</span> qml, qbs:
-    QML (filenames <span class="ge">*.qml, *</span>.qbs)
-<span class="m">*</span> qvto, qvt:
-    QVTO (filenames *.qvto)
-<span class="m">*</span> racket, rkt:
-    Racket (filenames <span class="ge">*.rkt, *</span>.rktd, *.rktl)
-<span class="m">*</span> ragel-c:
-    Ragel in C Host (filenames *.rl)
-<span class="m">*</span> ragel-cpp:
-    Ragel in CPP Host (filenames *.rl)
-<span class="m">*</span> ragel-d:
-    Ragel in D Host (filenames *.rl)
-<span class="m">*</span> ragel-em:
-    Embedded Ragel (filenames *.rl)
-<span class="m">*</span> ragel-java:
-    Ragel in Java Host (filenames *.rl)
-<span class="m">*</span> ragel-objc:
-    Ragel in Objective C Host (filenames *.rl)
-<span class="m">*</span> ragel-ruby, ragel-rb:
-    Ragel in Ruby Host (filenames *.rl)
-<span class="m">*</span> ragel:
-    Ragel
-<span class="m">*</span> raw:
-    Raw token data
-<span class="m">*</span> rb, ruby, duby:
-    Ruby (filenames <span class="ge">*.rb, *</span>.rbw, Rakefile, <span class="ge">*.rake, *</span>.gemspec, <span class="ge">*.rbx, *</span>.duby, Gemfile)
-<span class="m">*</span> rbcon, irb:
-    Ruby irb session
-<span class="m">*</span> rconsole, rout:
-    RConsole (filenames *.Rout)
-<span class="m">*</span> rd:
-    Rd (filenames *.Rd)
-<span class="m">*</span> rebol:
-    REBOL (filenames <span class="ge">*.r, *</span>.r3, *.reb)
-<span class="m">*</span> red, red/system:
-    Red (filenames <span class="ge">*.red, *</span>.reds)
-<span class="m">*</span> redcode:
-    Redcode (filenames *.cw)
-<span class="m">*</span> registry:
-    reg (filenames *.reg)
-<span class="m">*</span> resource, resourcebundle:
-    ResourceBundle
-<span class="m">*</span> rexx, arexx:
-    Rexx (filenames <span class="ge">*.rexx, *</span>.rex, <span class="ge">*.rx, *</span>.arexx)
-<span class="m">*</span> rhtml, html+erb, html+ruby:
-    RHTML (filenames *.rhtml)
-<span class="m">*</span> rnc, rng-compact:
-    Relax-NG Compact (filenames *.rnc)
-<span class="m">*</span> roboconf-graph:
-    Roboconf Graph (filenames *.graph)
-<span class="m">*</span> roboconf-instances:
-    Roboconf Instances (filenames *.instances)
-<span class="m">*</span> robotframework:
-    RobotFramework (filenames *.robot)
-<span class="m">*</span> rql:
-    RQL (filenames *.rql)
-<span class="m">*</span> rsl:
-    RSL (filenames *.rsl)
-<span class="m">*</span> rst, rest, restructuredtext:
-    reStructuredText (filenames <span class="ge">*.rst, *</span>.rest)
-<span class="m">*</span> rts, trafficscript:
-    TrafficScript (filenames *.rts)
-<span class="m">*</span> rust, rs:
-    Rust (filenames <span class="ge">*.rs, *</span>.rs.in)
-<span class="m">*</span> sarl:
-    SARL (filenames *.sarl)
-<span class="m">*</span> sas:
-    SAS (filenames <span class="ge">*.SAS, *</span>.sas)
-<span class="m">*</span> sass:
-    Sass (filenames *.sass)
-<span class="m">*</span> sc, supercollider:
-    SuperCollider (filenames <span class="ge">*.sc, *</span>.scd)
-<span class="m">*</span> scala:
-    Scala (filenames *.scala)
-<span class="m">*</span> scaml:
-    Scaml (filenames *.scaml)
-<span class="m">*</span> scdoc, scd:
-    scdoc (filenames <span class="ge">*.scd, *</span>.scdoc)
-<span class="m">*</span> scheme, scm:
-    Scheme (filenames <span class="ge">*.scm, *</span>.ss)
-<span class="m">*</span> scilab:
-    Scilab (filenames <span class="ge">*.sci, *</span>.sce, *.tst)
-<span class="m">*</span> scss:
-    SCSS (filenames *.scss)
-<span class="m">*</span> sgf:
-    SmartGameFormat (filenames *.sgf)
-<span class="m">*</span> shen:
-    Shen (filenames *.shen)
-<span class="m">*</span> shexc, shex:
-    ShExC (filenames *.shex)
-<span class="m">*</span> silver:
-    Silver (filenames <span class="ge">*.sil, *</span>.vpr)
-<span class="m">*</span> slash:
-    Slash (filenames *.sl)
-<span class="m">*</span> slim:
-    Slim (filenames *.slim)
-<span class="m">*</span> slurm, sbatch:
-    Slurm (filenames *.sl)
-<span class="m">*</span> smali:
-    Smali (filenames *.smali)
-<span class="m">*</span> smalltalk, squeak, st:
-    Smalltalk (filenames *.st)
-<span class="m">*</span> smarty:
-    Smarty (filenames *.tpl)
-<span class="m">*</span> sml:
-    Standard ML (filenames <span class="ge">*.sml, *</span>.sig, *.fun)
-<span class="m">*</span> snobol:
-    Snobol (filenames *.snobol)
-<span class="m">*</span> snowball:
-    Snowball (filenames *.sbl)
-<span class="m">*</span> solidity:
-    Solidity (filenames *.sol)
-<span class="m">*</span> sourceslist, sources.list, debsources:
-    Debian Sourcelist (filenames sources.list)
-<span class="m">*</span> sp:
-    SourcePawn (filenames *.sp)
-<span class="m">*</span> sparql:
-    SPARQL (filenames <span class="ge">*.rq, *</span>.sparql)
-<span class="m">*</span> spec:
-    RPMSpec (filenames *.spec)
-<span class="m">*</span> splus, s, r:
-    S (filenames <span class="ge">*.S, *</span>.R, .Rhistory, .Rprofile, .Renviron)
-<span class="m">*</span> sql:
-    SQL (filenames *.sql)
-<span class="m">*</span> sqlite3:
-    sqlite3con (filenames *.sqlite3-console)
-<span class="m">*</span> squidconf, squid.conf, squid:
-    SquidConf (filenames squid.conf)
-<span class="m">*</span> ssp:
-    Scalate Server Page (filenames *.ssp)
-<span class="m">*</span> stan:
-    Stan (filenames *.stan)
-<span class="m">*</span> stata, do:
-    Stata (filenames <span class="ge">*.do, *</span>.ado)
-<span class="m">*</span> swift:
-    Swift (filenames *.swift)
-<span class="m">*</span> swig:
-    SWIG (filenames <span class="ge">*.swg, *</span>.i)
-<span class="m">*</span> systemverilog, sv:
-    systemverilog (filenames <span class="ge">*.sv, *</span>.svh)
-<span class="m">*</span> tads3:
-    TADS 3 (filenames *.t)
-<span class="m">*</span> tap:
-    TAP (filenames *.tap)
-<span class="m">*</span> tasm:
-    TASM (filenames <span class="ge">*.asm, *</span>.ASM, *.tasm)
-<span class="m">*</span> tcl:
-    Tcl (filenames <span class="ge">*.tcl, *</span>.rvt)
-<span class="m">*</span> tcsh, csh:
-    Tcsh (filenames <span class="ge">*.tcsh, *</span>.csh)
-<span class="m">*</span> tcshcon:
-    Tcsh Session
-<span class="m">*</span> tea:
-    Tea (filenames *.tea)
-<span class="m">*</span> termcap:
-    Termcap (filenames termcap, termcap.src)
-<span class="m">*</span> terminfo:
-    Terminfo (filenames terminfo, terminfo.src)
-<span class="m">*</span> terraform, tf:
-    Terraform (filenames *.tf)
-<span class="m">*</span> tex, latex:
-    TeX (filenames <span class="ge">*.tex, *</span>.aux, *.toc)
-<span class="m">*</span> text:
-    Text only (filenames *.txt)
-<span class="m">*</span> thrift:
-    Thrift (filenames *.thrift)
-<span class="m">*</span> todotxt:
-    Todotxt (filenames todo.txt, *.todotxt)
-<span class="m">*</span> toml:
-    TOML (filenames *.toml)
-<span class="m">*</span> trac-wiki, moin:
-    MoinMoin/Trac Wiki markup
-<span class="m">*</span> treetop:
-    Treetop (filenames <span class="ge">*.treetop, *</span>.tt)
-<span class="m">*</span> ts, typescript:
-    TypeScript (filenames <span class="ge">*.ts, *</span>.tsx)
-<span class="m">*</span> tsql, t-sql:
-    Transact-SQL (filenames *.sql)
-<span class="m">*</span> ttl, teraterm, teratermmacro:
-    Tera Term macro (filenames *.ttl)
-<span class="m">*</span> turtle:
-    Turtle (filenames *.ttl)
-<span class="m">*</span> twig:
-    Twig
-<span class="m">*</span> typoscript:
-    TypoScript (filenames <span class="ge">*.ts, *</span>.txt)
-<span class="m">*</span> typoscriptcssdata:
-    TypoScriptCssData
-<span class="m">*</span> typoscripthtmldata:
-    TypoScriptHtmlData
-<span class="m">*</span> ucode:
-    ucode (filenames <span class="ge">*.u, *</span>.u1, *.u2)
-<span class="m">*</span> unicon:
-    Unicon (filenames *.icn)
-<span class="m">*</span> urbiscript:
-    UrbiScript (filenames *.u)
-<span class="m">*</span> vala, vapi:
-    Vala (filenames <span class="ge">*.vala, *</span>.vapi)
-<span class="m">*</span> vb.net, vbnet:
-    VB.net (filenames <span class="ge">*.vb, *</span>.bas)
-<span class="m">*</span> vbscript:
-    VBScript (filenames <span class="ge">*.vbs, *</span>.VBS)
-<span class="m">*</span> vcl:
-    VCL (filenames *.vcl)
-<span class="m">*</span> vclsnippets, vclsnippet:
-    VCLSnippets
-<span class="m">*</span> vctreestatus:
-    VCTreeStatus
-<span class="m">*</span> velocity:
-    Velocity (filenames <span class="ge">*.vm, *</span>.fhtml)
-<span class="m">*</span> verilog, v:
-    verilog (filenames *.v)
-<span class="m">*</span> vgl:
-    VGL (filenames *.rpf)
-<span class="m">*</span> vhdl:
-    vhdl (filenames <span class="ge">*.vhdl, *</span>.vhd)
-<span class="m">*</span> vim:
-    VimL (filenames *.vim, .vimrc, .exrc, .gvimrc, _vimrc, _exrc, _gvimrc, vimrc, gvimrc)
-<span class="m">*</span> wdiff:
-    WDiff (filenames *.wdiff)
-<span class="m">*</span> whiley:
-    Whiley (filenames *.whiley)
-<span class="m">*</span> x10, xten:
-    X10 (filenames *.x10)
-<span class="m">*</span> xml+cheetah, xml+spitfire:
-    XML+Cheetah
-<span class="m">*</span> xml+django, xml+jinja:
-    XML+Django/Jinja
-<span class="m">*</span> xml+erb, xml+ruby:
-    XML+Ruby
-<span class="m">*</span> xml+evoque:
-    XML+Evoque (filenames *.xml)
-<span class="m">*</span> xml+lasso:
-    XML+Lasso
-<span class="m">*</span> xml+mako:
-    XML+Mako
-<span class="m">*</span> xml+myghty:
-    XML+Myghty
-<span class="m">*</span> xml+php:
-    XML+PHP
-<span class="m">*</span> xml+smarty:
-    XML+Smarty
-<span class="m">*</span> xml+velocity:
-    XML+Velocity
-<span class="m">*</span> xml:
-    XML (filenames <span class="ge">*.xml, *</span>.xsl, <span class="ge">*.rss, *</span>.xslt, <span class="ge">*.xsd, *</span>.wsdl, *.wsf)
-<span class="m">*</span> xorg.conf:
-    Xorg (filenames xorg.conf)
-<span class="m">*</span> xquery, xqy, xq, xql, xqm:
-    XQuery (filenames <span class="ge">*.xqy, *</span>.xquery, <span class="ge">*.xq, *</span>.xql, *.xqm)
-<span class="m">*</span> xslt:
-    XSLT (filenames <span class="ge">*.xsl, *</span>.xslt, *.xpl)
-<span class="m">*</span> xtend:
-    Xtend (filenames *.xtend)
-<span class="m">*</span> xul+mozpreproc:
-    XUL+mozpreproc (filenames *.xul.in)
-<span class="m">*</span> yaml+jinja, salt, sls:
-    YAML+Jinja (filenames *.sls)
-<span class="m">*</span> yaml:
-    YAML (filenames <span class="ge">*.yaml, *</span>.yml)
-<span class="m">*</span> zeek, bro:
-    Zeek (filenames <span class="ge">*.zeek, *</span>.bro)
-<span class="m">*</span> zephir:
-    Zephir (filenames *.zep)
-<span class="m">*</span> zig:
-    Zig (filenames *.zig)
-</pre></div>
-</div>
-</div>
 </div>
 
 <!-- /body -->
@@ -1930,14 +1524,14 @@ Pygments version 2.5.2, (c) 2006-2019 by Georg Brandl.
                 </ul>
                 <div class="footer-additional">
                     <p class="text-center">
-                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/8112d12b4e782b505308f8506da0119c0e808bca" rel="nofollow" target="_blank" title="Last commit">
-                           Sep 06, 2022 07:44
+                        Last updated: <a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme_rendering_test/commit/4d0032b9ef3f5b4cfb1ccd82aba4c58029669f0b" rel="nofollow" target="_blank" title="Last commit">
+                           Sep 23, 2022 11:10
                         </a>
                     </p>
-                    <p class="text-center">Last rendered: Sep 06, 2022 07:45</p>
+                    <p class="text-center">Last rendered: Sep 23, 2022 11:11</p>
                     <ul class="footer-simplemenu">
                         <li><a href="https://github.com/TYPO3-Documentation/sphinx_typo3_theme" title="sphinx_typo3_theme" target="_blank">
-                        <span>TYPO3 Theme 4.7.7</span></a></li>
+                        <span>TYPO3 Theme 4.7.8</span></a></li>
                     </ul>
                 </div>
                 <div class="footer-meta">
