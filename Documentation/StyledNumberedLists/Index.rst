@@ -69,6 +69,42 @@ ol.bignums
 
 
 
+ol.bignums-hint
+===============
+
+.. rst-class:: bignums-hint
+
+1. ONE One one bignums-hint
+
+   More ...
+
+2. TWO Two two
+
+   More ...
+
+3. THREE Three three
+
+   More ...
+
+
+ol.bignums-info
+===============
+
+.. rst-class:: bignums-info
+
+1. ONE One one bignums-info
+
+   More ...
+
+2. TWO Two two
+
+   More ...
+
+3. THREE Three three
+
+   More ...
+
+
 ol.bignums-tip
 ==============
 
@@ -107,6 +143,42 @@ ol.bignums-attention
    More ...
 
 
+ol.bignums-caution
+==================
+
+.. rst-class:: bignums-caution
+
+1. ONE One one bignums-caution
+
+   More ...
+
+2. TWO Two two
+
+   More ...
+
+3. THREE Three three
+
+   More ...
+
+
+ol.bignums-warning
+==================
+
+.. rst-class:: bignums-warning
+
+1. ONE One one bignums-warning
+
+   More ...
+
+2. TWO Two two
+
+   More ...
+
+3. THREE Three three
+
+   More ...
+
+
 
 ol.bignums-important
 ====================
@@ -126,13 +198,12 @@ ol.bignums-important
    More ...
 
 
+ol.bignums-seealso
+==================
 
-ol.bignums-warning
-====================
+.. rst-class:: bignums-seealso
 
-.. rst-class:: bignums-warning
-
-1. ONE One one bignums-warning
+1. ONE One one bignums-seealso
 
    More ...
 
@@ -143,6 +214,27 @@ ol.bignums-warning
 3. THREE Three three
 
    More ...
+
+
+ol.bignums-tip
+==============
+
+.. rst-class:: bignums-tip
+
+1. ONE One one bignums-tip
+
+   More ...
+
+2. TWO Two two
+
+   More ...
+
+3. THREE Three three
+
+   More ...
+
+
+
 
 
 
