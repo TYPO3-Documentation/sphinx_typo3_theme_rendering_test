@@ -1,6 +1,18 @@
 ./Documentation/LinkTargets/Index.rst:23: ERROR: Unknown directive type "ref-targets-list".
 
 .. ref-targets-list::
+./Documentation/AddObjectType/Index.rst:80: WARNING: role for external cross-reference not found: std
+./Documentation/AddObjectType/Index.rst:82: WARNING: role for external cross-reference not found: cobj-case
+./Documentation/AddObjectType/Index.rst:57: ERROR: Unknown interpreted text role "cobj-case".
+WARNING: unknown directive or role name: ref:cobj-case
+./Documentation/AddObjectType/Index.rst:59: ERROR: Unknown interpreted text role "ref:cobj-case".
+WARNING: unknown directive or role name: t3tsref:cobj-case
+./Documentation/AddObjectType/Index.rst:61: ERROR: Unknown interpreted text role "t3tsref:cobj-case".
+WARNING: unknown directive or role name: ref:t3tsref:cobj-case
+./Documentation/AddObjectType/Index.rst:63: ERROR: Unknown interpreted text role "ref:t3tsref:cobj-case".
+./Documentation/AddObjectType/Index.rst:: ERROR: Anonymous hyperlink mismatch: 2 references but 0 targets.
+See "backrefs" attribute for IDs.
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
 ./Documentation/Replacements/Index.rst:1225: WARNING: toctree glob pattern '*/Index' didn't match any documents
+./Documentation/AddObjectType/Index.rst:55: WARNING: undefined label: t3tsref:cobj-case-stdwrap
 ./Documentation/Replacements/Index.rst:1155: WARNING: 'confval' reference target not found: repository_repository
