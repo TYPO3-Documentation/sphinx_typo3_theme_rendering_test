@@ -22,6 +22,52 @@ together.
 
 
 
+A demo link to t3tsref
+======================
+
+1. Find out what link target "the other" manual offers and visit
+   https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/objects.inv.json
+
+2. Url `.../objects.inv.json` is available for all manuals we have that were rendered
+   with the DRC (docker rendering container)
+
+3. In this manual in :file:`Settings.cfg` we associate 't3tsref' with the TypoScript
+   reference manual::
+
+   .. code-block:: ini
+
+       [intersphinx_mapping]
+
+       t3tsref = https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/
+
+4. Now we can link to a special target in another manual symbolically, that is without
+   mentioning the absolute url. Let's link to `'https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/ContentObjects/Case/Index.html#cobj-case-stdWrap'
+   <https://docs.typo3.org/m/typo3/reference-typoscript/main/en-us/ContentObjects/Case/Index.html#cobj-case-stdWrap>`__ can create a link to
+
+   :ref:`stdWrap`
+
+   :external:std:`stdWrap`
+
+   :external:cobj-case:`stdWrap`
+
+   :ref:`t3tsref:stdWrap`
+
+   :ref:`t3tsref:cobj-case-stdWrap`
+
+   :cobj-case:`stdWrap`
+
+   :ref:cobj-case:`stdWrap`
+
+   :t3tsref:cobj-case:`stdWrap`
+
+   :ref:t3tsref:cobj-case:`stdWrap`
+
+   `t3tsref:cobj-case-stdWrap`__
+
+   `t3tsref:cobj-case:stdWrap`__
+
+
+
 
 
 Sphinx API app.add_object_type()
