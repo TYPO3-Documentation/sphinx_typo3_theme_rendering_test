@@ -80,13 +80,6 @@ jobs:
       - uses: actions/checkout@v2
       - run: |
           mkdir -p Documentation-GENERATED-temp
-          echo '{"Overrides_cfg":{"html_theme_options":{"docstypo3org":""}}}' > Documentation-GENERATED-temp/jobfile.json
-          if [[ "${{ matrix.mode }}" = "offline" ]]; then
-              echo '{"Overrides_cfg":{"html_theme_options":{"docstypo3org":""}}}' > Documentation-GENERATED-temp/jobfile.json
-          fi
-          if [[ "${{ matrix.mode }}" = "online" ]]; then
-              echo '{"Overrides_cfg":{"html_theme_options":{"docstypo3org":"nonempty"}}}' > Documentation-GENERATED-temp/jobfile.json
-          fi
       - name: docker run
         run: |
           docker run --rm --user=$(id -u):$(id -g) \
@@ -95,7 +88,9 @@ jobs:
             -v $(pwd)/Documentation-Wheels:/WHEELS \
             ghcr.io/t3docs/render-documentation:develop makehtml-no-cache \
               -c make_singlehtml 0 \
-              -c jobfile /RESULT/jobfile.json
+              -c hto docstypo3org="" \
+              -c force_html_postprocessing 1 \
+              -c replace_static_in_html 0
 
       - run: stat Documentation-GENERATED-temp/Result/project/0.0.0/Index.html
       - run: touch Documentation-GENERATED-temp/Result/project/0.0.0/.nojekyll
