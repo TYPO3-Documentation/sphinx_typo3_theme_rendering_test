@@ -14,5 +14,15 @@ WARNING: unknown directive or role name: ref:t3tsref:cobj-case
 See "backrefs" attribute for IDs.
 ./Documentation/Directives/raw.rst:33: WARNING: "raw" directive disabled.
 ./Documentation/Replacements/Index.rst:1225: WARNING: toctree glob pattern '*/Index' didn't match any documents
+WARNING: unsupported theme option '3' given
+WARNING: unsupported theme option 'c' given
+WARNING: unsupported theme option 'd' given
+WARNING: unsupported theme option 'g' given
+WARNING: unsupported theme option 'o' given
+WARNING: unsupported theme option 'p' given
+WARNING: unsupported theme option 'r' given
+WARNING: unsupported theme option 's' given
+WARNING: unsupported theme option 't' given
+WARNING: unsupported theme option 'y' given
 ./Documentation/AddObjectType/Index.rst:55: WARNING: undefined label: t3tsref:cobj-case-stdwrap
 ./Documentation/Replacements/Index.rst:1155: WARNING: 'confval' reference target not found: repository_repository
