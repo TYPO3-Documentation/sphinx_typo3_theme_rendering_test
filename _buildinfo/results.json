@@ -1,5 +1,5 @@
 {
-  "checksum": "0f5ea479649794bd396b8305ac19e6a6",
+  "checksum": "da14aec959c6d2317b009dd8cbead09a",
   "checksum_ttl_seconds": 604800,
   "copyright": "2020, TYPO3 Documentation Team",
   "created": {
@@ -25,27 +25,27 @@
   "release": "main",
   "scm_version_info": {
     "00info": "Showing what the Python module 'setuptools_scm' can tell us about the input repository and its version.",
-    "guessed_version": "0.1.dev1+ga1ea3f2",
+    "guessed_version": "0.1.dev1+g3d80d39",
     "is_shallow": true,
     "json": {
       "_extra": {},
-      "branch": "debug",
+      "branch": "master",
       "dirty": false,
       "distance": 1,
-      "node": "ga1ea3f2",
+      "node": "g3d80d39",
       "preformatted": false
     },
     "pprint": {
       "_extra": {},
-      "branch": "debug",
-      "config": "<setuptools_scm.config.Configuration object at 0x7f56bc6da790>",
+      "branch": "master",
+      "config": "<setuptools_scm.config.Configuration object at 0x7f51ad6e1790>",
       "dirty": false,
       "distance": 1,
-      "node": "ga1ea3f2",
-      "node_date": "datetime.date(2023, 6, 22)",
+      "node": "g3d80d39",
+      "node_date": "datetime.date(2023, 6, 23)",
       "preformatted": false,
       "tag": "<Version('0.0')>",
-      "time": "datetime.datetime(2023, 6, 22, 9, 9, 17, 177861, tzinfo=datetime.timezone.utc)"
+      "time": "datetime.datetime(2023, 6, 23, 9, 22, 57, 392334, tzinfo=datetime.timezone.utc)"
     },
     "project": "/PROJECT",
     "warnings": [
