@@ -1,5 +1,5 @@
 {
-  "checksum": "da14aec959c6d2317b009dd8cbead09a",
+  "checksum": "a11b68538580514dbc6134ac02adfc9d",
   "checksum_ttl_seconds": 604800,
   "copyright": "2020, TYPO3 Documentation Team",
   "created": {
@@ -8,7 +8,7 @@
   "environ": {
     "OUR_IMAGE": "t3docs/render-documentation:develop",
     "OUR_IMAGE_SHORT": "develop",
-    "OUR_IMAGE_VERSION": "v3.1.dev3",
+    "OUR_IMAGE_VERSION": "v3.1.0",
     "THEME_MTIME": "1683583200",
     "THEME_NAME": "unknown",
     "THEME_VERSION": "unknown",
@@ -25,27 +25,27 @@
   "release": "main",
   "scm_version_info": {
     "00info": "Showing what the Python module 'setuptools_scm' can tell us about the input repository and its version.",
-    "guessed_version": "0.1.dev1+g3d80d39",
+    "guessed_version": "0.1.dev1+gdd37e79",
     "is_shallow": true,
     "json": {
       "_extra": {},
       "branch": "master",
       "dirty": false,
       "distance": 1,
-      "node": "g3d80d39",
+      "node": "gdd37e79",
       "preformatted": false
     },
     "pprint": {
       "_extra": {},
       "branch": "master",
-      "config": "<setuptools_scm.config.Configuration object at 0x7f51ad6e1790>",
+      "config": "<setuptools_scm.config.Configuration object at 0x7f586f605790>",
       "dirty": false,
       "distance": 1,
-      "node": "g3d80d39",
-      "node_date": "datetime.date(2023, 6, 23)",
+      "node": "gdd37e79",
+      "node_date": "datetime.date(2023, 7, 6)",
       "preformatted": false,
       "tag": "<Version('0.0')>",
-      "time": "datetime.datetime(2023, 6, 23, 9, 22, 57, 392334, tzinfo=datetime.timezone.utc)"
+      "time": "datetime.datetime(2023, 7, 6, 9, 55, 38, 847552, tzinfo=datetime.timezone.utc)"
     },
     "project": "/PROJECT",
     "warnings": [
@@ -55,11 +55,11 @@
   "sitemap_files_html_count": 50,
   "ter_extension": "0",
   "theme_info": {
-    "build_mtime": "1686860179",
+    "build_mtime": "1687549957",
     "module_name": "sphinx_typo3_theme",
-    "version_scm": "4.7.10",
+    "version_scm": "4.8.0",
     "version_scm_build": "",
-    "version_scm_core": "4.7.10",
+    "version_scm_core": "4.8.0",
     "version_scm_pre_release": ""
   },
   "version": "main"
