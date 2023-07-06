@@ -15,7 +15,7 @@ Admonitions and buttons
 Admonitions (boxes)
 ===================
 
-.. admonition:: Generic admonition
+.. admonition:: Admonition with individual title
 
    Equations within a note
    :math:`G_{\mu\nu} = 8 \pi G (T_{\mu\nu}  + \rho_\Lambda g_{\mu\nu})`.
