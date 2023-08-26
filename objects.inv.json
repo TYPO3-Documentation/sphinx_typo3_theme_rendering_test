@@ -842,6 +842,18 @@
          "ListsAsButtons/Index.html",
          "List Items as Buttons"
       ],
+      "Markdown/Index": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Index.html",
+         "Markdown files"
+      ],
+      "Markdown/Keep-a-changelog-example": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html",
+         "\u201cKeep a changelog\u201d example"
+      ],
       "Nested-pages/1/1/1/1/1/index": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
@@ -970,11 +982,113 @@
          "AddObjectType/Index.html#add-object-types",
          "Added object types"
       ],
+      "added-1": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-1",
+         "Added"
+      ],
+      "added-10": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-10",
+         "Added"
+      ],
+      "added-11": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-11",
+         "Added"
+      ],
+      "added-2": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-2",
+         "Added"
+      ],
+      "added-3": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-3",
+         "Added"
+      ],
+      "added-4": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-4",
+         "Added"
+      ],
+      "added-5": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-5",
+         "Added"
+      ],
+      "added-6": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-6",
+         "Added"
+      ],
+      "added-7": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-7",
+         "Added"
+      ],
+      "added-8": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-8",
+         "Added"
+      ],
+      "added-9": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#added-9",
+         "Added"
+      ],
       "block-quotes": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "Blockquotes/Index.html#block-quotes",
          "Block quotes"
+      ],
+      "changed-1": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#changed-1",
+         "Changed"
+      ],
+      "changed-2": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#changed-2",
+         "Changed"
+      ],
+      "changed-3": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#changed-3",
+         "Changed"
+      ],
+      "changed-4": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#changed-4",
+         "Changed"
+      ],
+      "changed-5": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#changed-5",
+         "Changed"
+      ],
+      "changed-6": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#changed-6",
+         "Changed"
       ],
       "codeblocks": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -1005,6 +1119,24 @@
          "main",
          "Directives/Index.html#directives",
          "Directives"
+      ],
+      "fixed-1": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#fixed-1",
+         "Fixed"
+      ],
+      "fixed-2": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#fixed-2",
+         "Fixed"
+      ],
+      "fixed-3": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#fixed-3",
+         "Fixed"
       ],
       "glossary": [
          "Sphinx TYPO3 Theme Rendering Test",
@@ -1072,11 +1204,101 @@
          "py-modindex.html",
          "Python Module Index"
       ],
+      "removed-1": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#removed-1",
+         "Removed"
+      ],
+      "removed-2": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#removed-2",
+         "Removed"
+      ],
       "search": [
          "Sphinx TYPO3 Theme Rendering Test",
          "main",
          "search.html",
          "Search Page"
+      ],
+      "section-1": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-1",
+         "1.1.0 - 2019-02-15"
+      ],
+      "section-10": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-10",
+         "0.0.4 - 2014-08-09"
+      ],
+      "section-11": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-11",
+         "0.0.3 - 2014-08-09"
+      ],
+      "section-12": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-12",
+         "0.0.2 - 2014-07-10"
+      ],
+      "section-13": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-13",
+         "0.0.1 - 2014-05-31"
+      ],
+      "section-2": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-2",
+         "1.0.0 - 2017-06-20"
+      ],
+      "section-3": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-3",
+         "0.3.0 - 2015-12-03"
+      ],
+      "section-4": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-4",
+         "0.2.0 - 2015-10-06"
+      ],
+      "section-5": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-5",
+         "0.1.0 - 2015-10-06"
+      ],
+      "section-6": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-6",
+         "0.0.8 - 2015-02-17"
+      ],
+      "section-7": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-7",
+         "0.0.7 - 2015-02-16"
+      ],
+      "section-8": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-8",
+         "0.0.6 - 2014-12-12"
+      ],
+      "section-9": [
+         "Sphinx TYPO3 Theme Rendering Test",
+         "main",
+         "Markdown/Keep-a-changelog-example.html#section-9",
+         "0.0.5 - 2014-08-09"
       ],
       "sitemap": [
          "Sphinx TYPO3 Theme Rendering Test",

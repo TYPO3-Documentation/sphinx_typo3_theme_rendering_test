@@ -25,6 +25,8 @@ Lineblocks/Index.html
 LinkTargets/Index.html
 Lists/Index.html
 ListsAsButtons/Index.html
+Markdown/Index.html
+Markdown/Keep-a-changelog-example.html
 Nested-pages/1/1/1/1/1/index.html
 Nested-pages/1/1/1/1/index.html
 Nested-pages/1/1/1/index.html
