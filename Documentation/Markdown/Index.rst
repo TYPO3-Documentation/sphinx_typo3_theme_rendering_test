@@ -17,4 +17,3 @@ There should - at least - be a subpage *"Keep a changelog" example*.
    :glob:
 
    *
-
